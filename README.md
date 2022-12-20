@@ -1,5 +1,6 @@
 ___
 **For the theme to work properly, turn on the "Material You" theme in the settings**
+Only dark theme worked
 [![Download](https://img.shields.io/badge/GET-the%20APK-brightgreen.svg)](https://github.com/h6rd/Hentoid-Material-You/releases/tag/Releases)
 
 ![](https://raw.githubusercontent.com/h6rd/assets/main/welcome.png)
