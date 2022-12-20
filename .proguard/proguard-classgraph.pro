@@ -1,2 +1,0 @@
--keep class io.github.classgraph.** { *; }
--keep class nonapi.io.github.classgraph.** { *; }
