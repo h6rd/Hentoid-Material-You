@@ -2,9 +2,6 @@ package me.devsaki.hentoid.database.domains;
 
 import androidx.annotation.Nullable;
 
-import com.annimon.stream.Stream;
-
-import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
@@ -118,11 +115,6 @@ public class Chapter {
     @Nullable
     public ToMany<ImageFile> getImageFiles() {
         return imageFiles;
-    }
-
-    public List<ImageFile> getReadableImageFiles() {
-        if (null == imageFiles) return Collections.emptyList();
-        return Stream.of(imageFiles).filter(ImageFile::isReadable).toList();
     }
 
     public void setImageFiles(List<ImageFile> imageFiles) {

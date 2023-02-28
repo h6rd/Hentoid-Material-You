@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <string name="define_license_LGPL_2_1_or_later" translatable="false"></string>
+  <string name="license_LGPL_2_1_or_later_licenseName" translatable="false">GNU Lesser General Public License v2.1 or later</string>
+  <string name="license_LGPL_2_1_or_later_licenseWebsite" translatable="false">https://spdx.org/licenses/LGPL-2.1-or-later.html</string>
+</resources>

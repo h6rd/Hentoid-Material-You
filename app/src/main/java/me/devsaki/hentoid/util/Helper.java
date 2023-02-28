@@ -8,7 +8,6 @@ import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.res.Configuration;
-import android.content.res.Resources;
 import android.graphics.Point;
 import android.graphics.drawable.InsetDrawable;
 import android.os.Handler;
@@ -69,7 +68,6 @@ import me.devsaki.hentoid.database.CollectionDAO;
 import me.devsaki.hentoid.database.domains.RenamingRule;
 import me.devsaki.hentoid.database.domains.SiteBookmark;
 import me.devsaki.hentoid.enums.AttributeType;
-import me.devsaki.hentoid.enums.StorageLocation;
 import me.devsaki.hentoid.json.JsonContentCollection;
 import me.devsaki.hentoid.util.file.FileHelper;
 import timber.log.Timber;
@@ -164,15 +162,6 @@ public final class Helper {
     public static int[] getPrimitiveArrayFromSet(Set<Integer> input) {
         int[] ret = new int[input.size()];
         Iterator<Integer> iterator = input.iterator();
-        for (int i = 0; i < ret.length; i++) {
-            ret[i] = iterator.next();
-        }
-        return ret;
-    }
-
-    public static long[] getPrimitiveLongArrayFromSet(Set<Long> input) {
-        long[] ret = new long[input.size()];
-        Iterator<Long> iterator = input.iterator();
         for (int i = 0; i < ret.length; i++) {
             ret[i] = iterator.next();
         }
@@ -471,16 +460,6 @@ public final class Helper {
         return 0;
     }
 
-    public static String formatEpochToDate(long epoch, String pattern) {
-        return formatEpochToDate(epoch, DateTimeFormatter.ofPattern(pattern, Locale.ENGLISH));
-    }
-
-    public static String formatEpochToDate(long epoch, DateTimeFormatter formatter) {
-        if (0 == epoch) return "";
-        Instant i = Instant.ofEpochMilli(epoch);
-        return i.atZone(ZoneId.systemDefault()).format(formatter);
-    }
-
     /**
      * Update the JSON file that stores bookmarks with the current bookmarks
      *
@@ -495,7 +474,7 @@ public final class Helper {
         JsonContentCollection contentCollection = new JsonContentCollection();
         contentCollection.setBookmarks(bookmarks);
 
-        DocumentFile rootFolder = FileHelper.getDocumentFromTreeUriString(context, Preferences.getStorageUri(StorageLocation.PRIMARY_1));
+        DocumentFile rootFolder = FileHelper.getFolderFromTreeUriString(context, Preferences.getStorageUri());
         if (null == rootFolder) return false;
 
         try {
@@ -526,7 +505,7 @@ public final class Helper {
         JsonContentCollection contentCollection = new JsonContentCollection();
         contentCollection.setRenamingRules(rules);
 
-        DocumentFile rootFolder = FileHelper.getDocumentFromTreeUriString(context, Preferences.getStorageUri(StorageLocation.PRIMARY_1));
+        DocumentFile rootFolder = FileHelper.getFolderFromTreeUriString(context, Preferences.getStorageUri());
         if (null == rootFolder) return false;
 
         try {
@@ -600,15 +579,5 @@ public final class Helper {
             return new Point(p.leftMargin + view.getWidth() / 2, p.topMargin + view.getHeight() / 2);
         }
         return null;
-    }
-
-    public static int getPrefsIndex(@NonNull Resources res, int valuesRes, String value) {
-        String[] values = res.getStringArray(valuesRes);
-        int index = 0;
-        for (String val : values) {
-            if (val.equals(value)) return index;
-            index++;
-        }
-        return -1;
     }
 }

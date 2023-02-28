@@ -2,11 +2,11 @@ package me.devsaki.hentoid.parsers.images;
 
 import static me.devsaki.hentoid.util.network.HttpHelper.getOnlineDocument;
 
+import androidx.core.util.Pair;
 import android.webkit.URLUtil;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.util.Pair;
 
 import com.annimon.stream.Stream;
 
@@ -108,9 +108,8 @@ public class ToonilyParser extends BaseImageListParser {
         int imgOffset = ParseHelper.getMaxImageOrder(storedChapters);
 
         // 2. Open each chapter URL and get the image data until all images are found
-        int storedOrderOffset = ParseHelper.getMaxChapterOrder(storedChapters);
         for (Chapter chp : extraChapters) {
-            chp.setOrder(++storedOrderOffset);
+            if (processHalted.get()) break;
             doc = getOnlineDocument(chp.getUrl(), headers, Site.TOONILY.useHentoidAgent(), Site.TOONILY.useWebviewAgent());
             if (doc != null) {
                 List<Element> images = doc.select(".reading-content img");
@@ -126,17 +125,17 @@ public class ToonilyParser extends BaseImageListParser {
             } else {
                 Timber.i("Chapter parsing failed for %s : no response", chp.getUrl());
             }
-            if (processHalted.get()) break;
             progressPlus();
         }
-        // If the process has been halted manually, the result is incomplete and should not be returned as is
-        if (processHalted.get()) throw new PreparationInterruptedException();
+        progressComplete();
 
         // Add cover if it's a first download
         if (storedChapters.isEmpty())
             result.add(ImageFile.newCover(onlineContent.getCoverImageUrl(), StatusContent.SAVED));
 
-        progressComplete();
+        // If the process has been halted manually, the result is incomplete and should not be returned as is
+        if (processHalted.get()) throw new PreparationInterruptedException();
+
         return result;
     }
 

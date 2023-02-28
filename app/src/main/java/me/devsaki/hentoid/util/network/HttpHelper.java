@@ -26,8 +26,6 @@ import java.util.Set;
 import javax.annotation.Nullable;
 
 import me.devsaki.hentoid.BuildConfig;
-import me.devsaki.hentoid.util.Helper;
-import me.devsaki.hentoid.util.StringHelper;
 import me.devsaki.hentoid.util.file.FileHelper;
 import okhttp3.MediaType;
 import okhttp3.Request;
@@ -98,9 +96,8 @@ public class HttpHelper {
      */
     @Nullable
     public static Document getOnlineDocument(String url, List<Pair<String, String>> headers, boolean useHentoidAgent, boolean useWebviewAgent) throws IOException {
-        try (ResponseBody resource = getOnlineResource(url, headers, true, useHentoidAgent, useWebviewAgent).body()) {
-            if (resource != null) return Jsoup.parse(resource.string());
-        }
+        ResponseBody resource = getOnlineResource(url, headers, true, useHentoidAgent, useWebviewAgent).body();
+        if (resource != null) return Jsoup.parse(resource.string());
         return null;
     }
 
@@ -111,8 +108,9 @@ public class HttpHelper {
             boolean useHentoidAgent, boolean useWebviewAgent,
             @NonNull final String body,
             @NonNull final String mimeType) throws IOException {
-        try (ResponseBody resource = postOnlineResource(url, headers, true, useHentoidAgent, useWebviewAgent, body, mimeType).body()) {
-            if (resource != null) return Jsoup.parse(resource.string());
+        ResponseBody resource = postOnlineResource(url, headers, true, useHentoidAgent, useWebviewAgent, body, mimeType).body();
+        if (resource != null) {
+            return Jsoup.parse(resource.string());
         }
         return null;
     }
@@ -122,9 +120,7 @@ public class HttpHelper {
      *
      * @param url             URL to read the resource from
      * @param headers         Headers to use when building the request
-     * @param useMobileAgent  True to use the mobile User-Agent; false to use the desktop User-Agent
-     * @param useHentoidAgent True to use the Hentoid User-Agent; false to use a neutral User-Agent
-     * @param useWebviewAgent True to reveal the use of a webview through the User-Agent; false to use a neutral User-Agent
+     * @param useHentoidAgent True if the Hentoid User-Agent has to be used; false if a neutral User-Agent has to be used
      * @return HTTP response
      * @throws IOException in case something bad happens when trying to access the online resource
      */
@@ -159,11 +155,8 @@ public class HttpHelper {
      *
      * @param url             URL to read the resource from
      * @param headers         Headers to use when building the request
-     * @param useMobileAgent  True to use the mobile User-Agent; false to use the desktop User-Agent
-     * @param useHentoidAgent True to use the Hentoid User-Agent; false to use a neutral User-Agent
-     * @param useWebviewAgent True to reveal the use of a webview through the User-Agent; false to use a neutral User-Agent
+     * @param useHentoidAgent True if the Hentoid User-Agent has to be used; false if a neutral User-Agent has to be used
      * @param body            Body of the resource to post
-     * @param mimeType        MIME-type of the posted body
      * @return HTTP response
      * @throws IOException in case something bad happens when trying to access the online resource
      */
@@ -185,9 +178,8 @@ public class HttpHelper {
      *
      * @param url             URL to read the resource from
      * @param headers         Headers to use when building the request
-     * @param useMobileAgent  True to use the mobile User-Agent; false to use the desktop User-Agent
-     * @param useHentoidAgent True to use the Hentoid User-Agent; false to use a neutral User-Agent
-     * @param useWebviewAgent True to reveal the use of a webview through the User-Agent; false to use a neutral User-Agent
+     * @param useMobileAgent  True if a mobile User-Agent has to be used; false if a desktop User-Agent has to be used
+     * @param useHentoidAgent True if the Hentoid User-Agent has to be used; false if a neutral User-Agent has to be used
      * @return HTTP request built with the given arguments
      */
     private static Request.Builder buildRequest(@NonNull String url, @Nullable List<Pair<String, String>> headers, boolean useMobileAgent, boolean useHentoidAgent, boolean useWebviewAgent) {
@@ -203,13 +195,12 @@ public class HttpHelper {
     }
 
     /**
-     * Convert the given OkHttp {@link Response} into a {@link WebResourceResponse}, using the data from the given InputStream
+     * Convert the given OkHttp {@link Response} into a {@link WebResourceResponse}
      *
-     * @param resp         OkHttp {@link Response}
-     * @param responseData Data to include in the resulting response
+     * @param resp OkHttp {@link Response}
      * @return The {@link WebResourceResponse} converted from the given OkHttp {@link Response}
      */
-    public static WebResourceResponse okHttpResponseToWebkitResponse(@NonNull final Response resp, @NonNull final InputStream responseData) {
+    public static WebResourceResponse okHttpResponseToWebkitResponse(@NonNull final Response resp, @NonNull final InputStream is) {
         final String contentTypeValue = resp.header(HEADER_CONTENT_TYPE);
 
         WebResourceResponse result;
@@ -218,9 +209,9 @@ public class HttpHelper {
         if (message.trim().isEmpty()) message = "None";
         if (contentTypeValue != null) {
             Pair<String, String> details = cleanContentType(contentTypeValue);
-            result = new WebResourceResponse(details.first, details.second, resp.code(), message, responseHeaders, responseData);
+            result = new WebResourceResponse(details.first, details.second, resp.code(), message, responseHeaders, is);
         } else {
-            result = new WebResourceResponse(FileHelper.DEFAULT_MIME_TYPE, null, resp.code(), message, responseHeaders, responseData);
+            result = new WebResourceResponse(FileHelper.DEFAULT_MIME_TYPE, null, resp.code(), message, responseHeaders, is);
         }
 
         return result;
@@ -348,13 +339,7 @@ public class HttpHelper {
         return parts[parts.length - 2] + "." + parts[parts.length - 1];
     }
 
-    /**
-     * Extract and return the protocol from the given HTTP URL
-     *
-     * @param url URL to parse, in String form
-     * @return Protocol of the given URL : https ou http
-     */
-    public static String getHttpProtocol(@NonNull final String url) {
+    public static String getProtocol(@NonNull final String url) {
         return url.startsWith("https") ? "https" : "http";
     }
 
@@ -585,7 +570,6 @@ public class HttpHelper {
      * Get the app's mobile user agent
      *
      * @param withHentoid True if the Hentoid user-agent has to appear
-     * @param withWebview True if the user-agent has to mention the use of a webview
      * @return The app's mobile user agent
      */
     public static String getMobileUserAgent(boolean withHentoid, boolean withWebview) {
@@ -596,7 +580,6 @@ public class HttpHelper {
      * Get the app's desktop user agent
      *
      * @param withHentoid True if the Hentoid user-agent has to appear
-     * @param withWebview True if the user-agent has to mention the use of a webview
      * @return The app's desktop user agent
      */
     public static String getDesktopUserAgent(boolean withHentoid, boolean withWebview) {
@@ -612,7 +595,6 @@ public class HttpHelper {
      * Get the app's default user agent
      *
      * @param withHentoid True if the Hentoid user-agent has to appear
-     * @param withWebview True if the user-agent has to mention the use of a webview
      * @return The app's default user agent
      */
     public static String getDefaultUserAgent(boolean withHentoid, boolean withWebview) {
@@ -657,46 +639,6 @@ public class HttpHelper {
         if (-1 == defaultChromeVersion)
             throw new RuntimeException(AGENT_INIT_ISSUE);
         return defaultChromeVersion;
-    }
-
-    /**
-     * Simplify the given URL :
-     * - Remove parameters
-     * - Turn -'s into /'s (Hitomi : /doujinshi/this_is_a_title-lang_code-launch_code.html vs. /launch_code.html)
-     * - Make sure there's a trailing /
-     *
-     * @param url Url to simplify
-     * @return Simplified URL according to the above rules
-     */
-    public static String simplifyUrl(@NonNull String url) {
-        String result = url;
-        // Remove parameters
-        int paramsIndex = result.indexOf("?");
-        if (paramsIndex > -1) result = result.substring(0, paramsIndex);
-        // Simplify & eliminate double separators
-        result = result.trim().replace("-", "/");
-        if (!result.endsWith("/")) result = result + "/";
-        return result;
-    }
-
-    /**
-     * If the given response is an HTTP 429, block and wait according to the delay supplied in the response
-     *
-     * @param response Response to examine
-     * @return True if the response is an HTTP 429 _and_ a delay has been supplied and waited out
-     */
-    public static boolean waitBlocking429(retrofit2.Response<?> response, int defaultDelayMs) {
-        if (429 == response.code()) {
-            int delay = defaultDelayMs;
-            String retryDelay = response.headers().get("Retry-After");
-            if (null == retryDelay) retryDelay = response.headers().get("retry-after");
-            if (retryDelay != null && StringHelper.isNumeric(retryDelay)) {
-                delay = Integer.parseInt(retryDelay) + 1000; // 1s extra margin
-            }
-            Helper.pause(delay);
-            return true;
-        }
-        return false;
     }
 
     /**

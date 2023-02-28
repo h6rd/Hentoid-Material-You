@@ -38,7 +38,7 @@ class DuplicateDetectorActivity : BaseActivity() {
         binding = ActivityDuplicateDetectorBinding.inflate(layoutInflater)
         binding?.let {
             setContentView(it.root)
-            it.toolbar.setNavigationOnClickListener { finish() }
+            it.toolbar.setNavigationOnClickListener { onBackPressed() }
         }
 
         val vmFactory = ViewModelFactory(application)
@@ -82,12 +82,8 @@ class DuplicateDetectorActivity : BaseActivity() {
                 enableCurrentFragment()
                 hideSettingsBar()
                 updateToolbar(0, 0, 0)
-                viewModel.allDuplicates.observe(
-                    this@DuplicateDetectorActivity
-                ) { entry ->
-                    updateTitle(entry.groupBy { it.referenceContent }
-                        .mapValues { it.value.sumOf { 1L } }.size * -1)
-                }
+                viewModel.allDuplicates.observe(this@DuplicateDetectorActivity,
+                        { updateTitle(it.groupBy { it.referenceContent }.mapValues { it.value.sumOf { 1 as Int } }.size * -1) })
                 updateSelectionToolbar()
             }
         })
@@ -179,7 +175,7 @@ class DuplicateDetectorActivity : BaseActivity() {
                 )
     }
 
-    fun getToolbarView(): View {
+    fun getToolbarView() : View {
         return binding!!.toolbar
     }
 

@@ -85,15 +85,15 @@ public interface CollectionDAO {
 
     // MASS OPERATIONS
 
-    // Primary library ("internal books")
+    // Internal library (i.e. managed in the Hentoid folder)
 
-    long countAllInternalBooks(@NonNull String rootPath, boolean favsOnly);
+    long countAllInternalBooks(boolean favsOnly);
 
-    void streamAllInternalBooks(@NonNull String rootPath, boolean favsOnly, Consumer<Content> consumer);
+    void streamAllInternalBooks(boolean favsOnly, Consumer<Content> consumer);
 
-    void flagAllInternalBooks(@NonNull String rootPath, boolean includePlaceholders);
+    void flagAllInternalBooks(boolean includePlaceholders);
 
-    void deleteAllInternalBooks(@NonNull String rootPath, boolean resetRemainingImagesStatus);
+    void deleteAllInternalBooks(boolean resetRemainingImagesStatus);
 
     // Queued books
 
@@ -103,19 +103,19 @@ public interface CollectionDAO {
 
     LiveData<Integer> countAllQueueBooksLive();
 
-    void deleteAllQueuedBooks();
+    List<Content> selectAllQueueBooks();
 
+    void deleteAllQueuedBooks();
 
     // Flagging
 
-    void deleteAllFlaggedBooks(boolean resetRemainingImagesStatus, @Nullable String pathRoot);
-
+    void deleteAllFlaggedBooks(boolean resetRemainingImagesStatus);
 
     // External library
 
-    void deleteAllExternalBooks();
+    long countAllExternalBooks();
 
-    void flagAllExternalBooks();
+    void deleteAllExternalBooks();
 
 
     // GROUPS
@@ -124,11 +124,9 @@ public interface CollectionDAO {
 
     LiveData<List<Group>> selectGroupsLive(int grouping, @Nullable String query, int orderField, boolean orderDesc, int artistGroupVisibility, boolean groupFavouritesOnly, int filterRating);
 
-    List<Group> selectGroups(int grouping);
-
     List<Group> selectGroups(int grouping, int subType);
 
-    List<Group> selectEditedGroups(int grouping);
+    List<Group> selectGroups(int grouping);
 
     @Nullable
     Group selectGroup(long groupId);
@@ -157,14 +155,16 @@ public interface CollectionDAO {
 
     // High-level queries (internal and external locations)
 
-    Set<Long> selectStoredFavContentIds(boolean bookFavs, boolean groupFavs);
+    List<Long> selectStoredContentIds(boolean nonFavouritesOnly, boolean includeQueued, int orderField, boolean orderDesc);
+
+    long countStoredContent(boolean nonFavouriteOnly, boolean includeQueued);
 
     List<Content> selectContentWithUnhashedCovers();
 
     long countContentWithUnhashedCovers();
 
 
-    void streamStoredContent(boolean includeQueued, int orderField, boolean orderDesc, Consumer<Content> consumer);
+    void streamStoredContent(boolean nonFavouritesOnly, boolean includeQueued, int orderField, boolean orderDesc, Consumer<Content> consumer);
 
 
     Single<List<Long>> selectRecentBookIds(ContentSearchManager.ContentSearchBundle searchBundle);
@@ -223,8 +223,6 @@ public interface CollectionDAO {
 
     Map<Site, ImmutablePair<Integer, Long>> selectPrimaryMemoryUsagePerSource();
 
-    Map<Site, ImmutablePair<Integer, Long>> selectPrimaryMemoryUsagePerSource(@NonNull String rootPath);
-
     Map<Site, ImmutablePair<Integer, Long>> selectExternalMemoryUsagePerSource();
 
 
@@ -236,7 +234,7 @@ public interface CollectionDAO {
 
     LiveData<List<QueueRecord>> selectQueueLive(String query);
 
-    void addContentToQueue(@NonNull final Content content, StatusContent targetImageStatus, @ContentHelper.QueuePosition int position, long replacedContentId, @Nullable String replacementTitle, boolean isQueueActive);
+    void addContentToQueue(@NonNull final Content content, StatusContent targetImageStatus, @ContentHelper.QueuePosition int position, long replacedContentId, boolean isQueueActive);
 
     void updateQueue(@NonNull List<QueueRecord> queue);
 
@@ -335,17 +333,21 @@ public interface CollectionDAO {
 
     void deleteRenamingRules(List<Long> ids);
 
+    void deleteAllRenamingRules();
+
 
     // RESOURCES
 
     void cleanup();
 
-    void cleanupOrphanAttributes();
-
     long getDbSizeBytes();
 
 
     // ONE-TIME USE QUERIES (MIGRATION & CLEANUP)
+
+    Single<List<Long>> selectOldStoredBookIds();
+
+    long countOldStoredContent();
 
     long[] selectContentIdsWithUpdatableJson();
 }

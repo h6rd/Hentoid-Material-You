@@ -11,7 +11,6 @@ public class QueueRecord {
     public long id;
     private ToOne<Content> content;
     private int rank;
-    private boolean frozen = false;
 
     public QueueRecord() { // Required by ObjectBox when an alternate constructor exists
     }
@@ -39,13 +38,5 @@ public class QueueRecord {
 
     public void setRank(int rank) {
         this.rank = rank;
-    }
-
-    public boolean isFrozen() {
-        return frozen;
-    }
-
-    public void setFrozen(boolean frozen) {
-        this.frozen = frozen;
     }
 }

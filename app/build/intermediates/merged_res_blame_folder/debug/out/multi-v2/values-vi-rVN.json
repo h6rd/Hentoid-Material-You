@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "me.devsaki.hentoid.app-mergeDebugResources-66:/values-vi-rVN/values-vi-rVN.xml",
+            "map": [
+                {
+                    "source": "/home/hrdq/.gradle/caches/transforms-3/791595cb6e1032b66326571e0be886a4/transformed/AppIntro-6.1.0/res/values-vi-rVN/values-vi-rVN.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,116",
+                        "endColumns": "60,56",
+                        "endOffsets": "111,168"
+                    }
+                }
+            ]
+        }
+    ]
+}

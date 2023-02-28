@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">583935290989-2kl8tt93pa0rjhudop1vlif7lhid1g2r.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://hentoid-e0f49.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">583935290989</string>
+    <string name="google_api_key" translatable="false">AIzaSyBz0c5GX0BXOWCaPccMr74dKdAVgCPVwSk</string>
+    <string name="google_app_id" translatable="false">1:583935290989:android:ce70ca6e84c9199d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBz0c5GX0BXOWCaPccMr74dKdAVgCPVwSk</string>
+    <string name="google_storage_bucket" translatable="false">hentoid-e0f49.appspot.com</string>
+    <string name="project_id" translatable="false">hentoid-e0f49</string>
+</resources>

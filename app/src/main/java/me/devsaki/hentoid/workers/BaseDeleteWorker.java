@@ -12,9 +12,7 @@ import androidx.work.WorkerParameters;
 
 import org.greenrobot.eventbus.EventBus;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 import me.devsaki.hentoid.R;
 import me.devsaki.hentoid.database.CollectionDAO;
@@ -72,17 +70,8 @@ public abstract class BaseDeleteWorker extends BaseWorker {
 
         // Queried here to avoid serialization hard-limit of androidx.work.Data.Builder
         // when passing a large long[] through DeleteData
-        if (inputData.isDeleteAllContentExceptFavsBooks() || inputData.isDeleteAllContentExceptFavsGroups()) {
-            Set<Long> keptContentIds = dao.selectStoredFavContentIds(inputData.isDeleteAllContentExceptFavsBooks(), inputData.isDeleteAllContentExceptFavsGroups());
-            Set<Long> deletedContentIds = new HashSet<>();
-            dao.streamStoredContent(false, -1, false,
-                    content -> {
-                        if (!keptContentIds.contains(content.getId()))
-                            deletedContentIds.add(content.getId());
-                    }
-            );
-            askedContentIds = Helper.getPrimitiveLongArrayFromSet(deletedContentIds);
-        }
+        if (inputData.isDeleteAllContentExceptFavs())
+            askedContentIds = Helper.getPrimitiveArrayFromList(dao.selectStoredContentIds(true, false, -1, false));
         contentIds = askedContentIds;
 
         deleteMax = contentIds.length + contentPurgeIds.length + groupIds.length + queueIds.length;
@@ -283,6 +272,6 @@ public abstract class BaseDeleteWorker extends BaseWorker {
 
     private void progressDone() {
         notificationManager.notify(new DeleteCompleteNotification(deleteMax, nbError > 0));
-        EventBus.getDefault().postSticky(new ProcessEvent(ProcessEvent.EventType.COMPLETE, R.id.generic_progress, 0, deleteProgress, nbError, deleteMax));
+        EventBus.getDefault().post(new ProcessEvent(ProcessEvent.EventType.COMPLETE, R.id.generic_progress, 0, deleteProgress, nbError, deleteMax));
     }
 }

@@ -389,7 +389,7 @@ public class ReaderViewModel extends AndroidViewModel {
         int startingIndex = 0;
 
         // Auto-restart at last read position if asked to
-        if (Preferences.isReaderResumeLastLeft() && theContent.getLastReadPageIndex() > -1)
+        if (Preferences.isViewerResumeLastLeft() && theContent.getLastReadPageIndex() > -1)
             startingIndex = theContent.getLastReadPageIndex();
 
         // Start at the given page number, if any
@@ -512,8 +512,8 @@ public class ReaderViewModel extends AndroidViewModel {
      * @param viewerIndex Viewer index of the active page when the user left the book
      */
     public void onLeaveBook(int viewerIndex) {
-        if (Preferences.Constant.VIEWER_DELETE_ASK_BOOK == Preferences.getReaderDeleteAskMode())
-            Preferences.setReaderDeleteAskMode(Preferences.Constant.VIEWER_DELETE_ASK_AGAIN);
+        if (Preferences.Constant.VIEWER_DELETE_ASK_BOOK == Preferences.getViewerDeleteAskMode())
+            Preferences.setViewerDeleteAskMode(Preferences.Constant.VIEWER_DELETE_ASK_AGAIN);
 
         indexProcessInProgress.clear();
         interruptArchiveExtract.set(true);
@@ -534,7 +534,7 @@ public class ReaderViewModel extends AndroidViewModel {
         int nbReadablePages = (int) Stream.of(theImages).filter(ImageFile::isReadable).count();
 
         int readThresholdPosition;
-        switch (Preferences.getReaderPageReadThreshold()) {
+        switch (Preferences.getViewerPageReadThreshold()) {
             case Preferences.Constant.VIEWER_READ_THRESHOLD_1:
                 readThresholdPosition = 1;
                 break;
@@ -550,7 +550,7 @@ public class ReaderViewModel extends AndroidViewModel {
         }
 
         float completedThresholdRatio;
-        switch (Preferences.getReaderRatioCompletedThreshold()) {
+        switch (Preferences.getViewerRatioCompletedThreshold()) {
             case Preferences.Constant.VIEWER_COMPLETED_RATIO_THRESHOLD_10:
                 completedThresholdRatio = 0.1f;
                 break;
@@ -858,7 +858,7 @@ public class ReaderViewModel extends AndroidViewModel {
      */
     public void setCover(ImageFile page) {
         compositeDisposable.add(
-                Completable.fromRunnable(() -> ContentHelper.setAndSaveContentCover(page, dao, getApplication()))
+                Completable.fromRunnable(() -> ContentHelper.setContentCover(page, dao, getApplication()))
                         .subscribeOn(Schedulers.io())
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribe(
@@ -906,7 +906,7 @@ public class ReaderViewModel extends AndroidViewModel {
      * @param pageNumber Page number to start with
      */
     private void loadContent(@NonNull Content theContent, int pageNumber) {
-        Preferences.setReaderCurrentContent(theContent.getId());
+        Preferences.setViewerCurrentContent(theContent.getId());
         currentContentIndex = contentIds.indexOf(theContent.getId());
         if (-1 == currentContentIndex) currentContentIndex = 0;
 
@@ -984,7 +984,7 @@ public class ReaderViewModel extends AndroidViewModel {
         Helper.assertNonUiThread();
         if (!content.getJsonUri().isEmpty() || content.isArchive()) return;
 
-        DocumentFile folder = FileHelper.getDocumentFromTreeUriString(context, content.getStorageUri());
+        DocumentFile folder = FileHelper.getFolderFromTreeUriString(context, content.getStorageUri());
         if (null == folder) return;
 
         DocumentFile foundFile = FileHelper.findFile(getApplication(), folder, Consts.JSON_FILE_NAME_V2);
@@ -1428,13 +1428,13 @@ public class ReaderViewModel extends AndroidViewModel {
                         .doOnNext(c -> {
                             if (c.right.isEmpty()) throw new EmptyResultException();
                             dao.addContentToQueue(
-                                    c.right.get(), StatusContent.SAVED, ContentHelper.QueuePosition.TOP, -1, null,
-                                    ContentQueueManager.INSTANCE.isQueueActive(getApplication()));
+                                    c.right.get(), StatusContent.SAVED, ContentHelper.QueuePosition.TOP, -1,
+                                    ContentQueueManager.getInstance().isQueueActive(getApplication()));
                         })
                         .observeOn(AndroidSchedulers.mainThread())
                         .doOnComplete(() -> {
                             if (Preferences.isQueueAutostart())
-                                ContentQueueManager.INSTANCE.resumeQueue(getApplication());
+                                ContentQueueManager.getInstance().resumeQueue(getApplication());
                         })
                         .subscribe(
                                 v -> { // Nothing; feedback is done through LiveData
@@ -1597,9 +1597,6 @@ public class ReaderViewModel extends AndroidViewModel {
 
         // Save chapters
         dao.insertChapters(updatedChapters);
-
-        Content finalContent = dao.selectContent(contentId);
-        if (finalContent != null) ContentHelper.persistJson(getApplication(), finalContent);
     }
 
     /**
@@ -1717,7 +1714,7 @@ public class ReaderViewModel extends AndroidViewModel {
 
         if (oldIndex < 0 || oldIndex >= chapters.size()) return;
 
-        // Don't take the last chapter into account if it doesn't exist (means the user has moved the item below "no chapter")
+        // Don't take the last chapter into acconut if it doesn't exist (means the user has moved the item below "no chapter")
         if (newIndex >= chapters.size()) newIndex = chapters.size() - 1;
 
         // Move the item
@@ -1759,7 +1756,7 @@ public class ReaderViewModel extends AndroidViewModel {
 
         // Compute all renaming tasks
         List<ImmutableTriple<ImageFile, DocumentFile, String>> firstPass = new ArrayList<>();
-        DocumentFile parentFolder = FileHelper.getDocumentFromTreeUriString(getApplication(), chapters.get(0).getContent().getTarget().getStorageUri());
+        DocumentFile parentFolder = FileHelper.getFolderFromTreeUriString(getApplication(), chapters.get(0).getContent().getTarget().getStorageUri());
         if (parentFolder != null) {
             List<DocumentFile> contentFiles = FileHelper.listFiles(getApplication(), parentFolder, null);
             for (DocumentFile doc : contentFiles) {
@@ -1812,10 +1809,7 @@ public class ReaderViewModel extends AndroidViewModel {
 
         dao.insertImageFiles(images);
 
-        Content finalContent = dao.selectContent(contentId);
-        if (finalContent != null) ContentHelper.persistJson(getApplication(), finalContent);
-
-        EventBus.getDefault().postSticky(new ProcessEvent(ProcessEvent.EventType.COMPLETE, R.id.generic_progress, 0, nbImages, 0, nbImages));
+        EventBus.getDefault().post(new ProcessEvent(ProcessEvent.EventType.COMPLETE, R.id.generic_progress, 0, nbImages, 0, nbImages));
 
         // Reset locations cache as image order has changed
         imageLocationCache.clear();

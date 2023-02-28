@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "me.devsaki.hentoid.app-mergeDebugResources-66:/values-sw360dp-v13/values-sw360dp-v13.xml",
+            "map": [
+                {
+                    "source": "/home/hrdq/Hentoid/Hentoid/app/src/main/res/values-sw360dp/dimens.xml",
+                    "from": {
+                        "startLines": "4,3,6,7,5,8",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "129,74,237,290,185,345",
+                        "endColumns": "55,54,52,54,51,45",
+                        "endOffsets": "180,124,285,340,232,386"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "127,183,238,291,346,398",
+                        "endColumns": "55,54,52,54,51,45",
+                        "endOffsets": "178,233,286,341,393,439"
+                    }
+                },
+                {
+                    "source": "/home/hrdq/.gradle/caches/transforms-3/afee10e78bebfb5f164f305e4ab0f0e1/transformed/preference-1.2.0/res/values-sw360dp-v13/values-sw360dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "71",
+                        "endOffsets": "122"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -2,8 +2,9 @@ package me.devsaki.hentoid.parsers.images;
 
 import static me.devsaki.hentoid.util.network.HttpHelper.getOnlineDocument;
 
-import androidx.annotation.NonNull;
 import androidx.core.util.Pair;
+
+import androidx.annotation.NonNull;
 
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -49,20 +50,21 @@ public class MrmParser extends BaseImageListParser {
 
         // 2. Open each chapter URL and get the image data until all images are found
         for (String url : chapterUrls) {
+            if (processHalted.get()) break;
             doc = getOnlineDocument(url, headers, Site.MRM.useHentoidAgent(), Site.MRM.useWebviewAgent());
             if (doc != null) {
                 List<Element> images = doc.select(".entry-content img");
                 for (Element e : images) result.add(ParseHelper.getImgSrc(e));
             }
-            if (processHalted.get()) break;
             progressPlus();
         }
-        // If the process has been halted manually, the result is incomplete and should not be returned as is
-        if (processHalted.get()) throw new PreparationInterruptedException();
+        progressComplete();
 
         if (!result.isEmpty()) content.setCoverImageUrl(result.get(0));
 
-        progressComplete();
+        // If the process has been halted manually, the result is incomplete and should not be returned as is
+        if (processHalted.get()) throw new PreparationInterruptedException();
+
         return result;
     }
 }

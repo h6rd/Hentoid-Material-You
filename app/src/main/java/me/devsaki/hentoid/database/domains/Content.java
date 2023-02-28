@@ -68,6 +68,7 @@ import me.devsaki.hentoid.util.Preferences;
 import me.devsaki.hentoid.util.StringHelper;
 import me.devsaki.hentoid.util.file.ArchiveHelper;
 import me.devsaki.hentoid.util.network.HttpHelper;
+import me.devsaki.hentoid.workers.PrimaryImportWorker;
 import timber.log.Timber;
 
 /**
@@ -117,6 +118,11 @@ public class Content implements Serializable {
     @Index
     @Convert(converter = Site.SiteConverter.class, dbType = Long.class)
     private Site site;
+    /**
+     * @deprecated Replaced by {@link PrimaryImportWorker} methods; class is kept for retrocompatibilty
+     */
+    @Deprecated
+    private String storageFolder; // Used as pivot for API29 migration; no use after that (replaced by storageUri)
     private String storageUri; // Not exposed because it will vary according to book location -> valued at import
     private boolean favourite = false;
     private int rating = 0;
@@ -131,7 +137,6 @@ public class Content implements Serializable {
     private @DownloadMode
     int downloadMode;
     private ToOne<Content> contentToReplace;
-    private String replacementTitle;
 
     // Aggregated data redundant with the sum of individual data contained in ImageFile
     // ObjectBox can't do the sum in a single Query, so here it is !
@@ -170,8 +175,6 @@ public class Content implements Serializable {
     private int readPagesCount = -1;  // Read pages count fed by payload; only useful to update list display
     @Transient
     private String archiveLocationUri;  // Only used when importing external archives
-    @Transient
-    private boolean isFrozen;  // Only used when importing queued items (temp location to simplify JSON structure; definite storage in QueueRecord)
     @Transient
     private boolean updatedProperties = false;  // Only used when using ImageListParsers to indicate the passed Content has been updated
 
@@ -255,7 +258,7 @@ public class Content implements Serializable {
             case TSUMINO:
                 return url.replace("/Read/Index", "");
             case PURURIN:
-                return url.replace(HttpHelper.getHttpProtocol(url) + "://pururin.to/gallery", "");
+                return url.replace(HttpHelper.getProtocol(url) + "://pururin.to/gallery", "");
             case NHENTAI:
                 return url.replace(site.getUrl(), "").replace("/g", "").replaceFirst("/1/$", "/");
             case MUSES:
@@ -268,11 +271,9 @@ public class Content implements Serializable {
             case IMHENTAI:
             case HENTAIFOX:
                 return url.replace(site.getUrl(), "").replace("/gallery", "");
-                /*
             case ASMHENTAI:
             case ASMHENTAI_COMICS:
-                return
-                 */
+                return url.substring(url.indexOf("/gallery/") + 8, url.length() - 2);
             case PIXIV:
                 return url.replace(site.getUrl(), "").replaceAll("^[a-z]{2}/", "");
             case ALLPORNCOMIC:
@@ -287,8 +288,6 @@ public class Content implements Serializable {
                 return url.replace(site.getUrl(), "");
             case EHENTAI:
             case EXHENTAI:
-            case ASMHENTAI:
-            case ASMHENTAI_COMICS:
                 return url.replace(site.getUrl() + "/g", "");
             case LUSCIOUS:
                 return url.replace(site.getUrl().replace("/manga/", ""), "");
@@ -759,6 +758,25 @@ public class Content implements Serializable {
         return this;
     }
 
+
+    /**
+     * @deprecated Replaced by getStorageUri; accessor is kept for API29 migration
+     */
+    @SuppressWarnings("deprecation")
+    @Deprecated
+    public String getStorageFolder() {
+        return storageFolder == null ? "" : storageFolder;
+    }
+
+    /**
+     * @deprecated Replaced by getStorageUri; accessor is kept for API29 migration
+     */
+    @SuppressWarnings("deprecation")
+    @Deprecated
+    public void resetStorageFolder() {
+        storageFolder = "";
+    }
+
     public String getStorageUri() {
         return storageUri == null ? "" : storageUri;
     }
@@ -981,22 +999,6 @@ public class Content implements Serializable {
 
     public void setContentIdToReplace(long contentIdToReplace) {
         this.contentToReplace.setTargetId(contentIdToReplace);
-    }
-
-    public String getReplacementTitle() {
-        return (null == replacementTitle) ? "" : replacementTitle;
-    }
-
-    public void setReplacementTitle(String replacementTitle) {
-        this.replacementTitle = replacementTitle;
-    }
-
-    public boolean isFrozen() {
-        return isFrozen;
-    }
-
-    public void setFrozen(boolean frozen) {
-        isFrozen = frozen;
     }
 
     public static class StringMapConverter implements PropertyConverter<Map<String, String>, String> {

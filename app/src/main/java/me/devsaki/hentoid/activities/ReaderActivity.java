@@ -44,7 +44,7 @@ public class ReaderActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (Preferences.isReaderKeepScreenOn())
+        if (Preferences.isViewerKeepScreenOn())
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         Intent intent = getIntent();
@@ -76,12 +76,12 @@ public class ReaderActivity extends BaseActivity {
         }
 
         // Allows an full recolor of the status bar with the custom color defined in the activity's theme
-        getWindow().setStatusBarColor(getResources().getColor(R.color.black));
+        getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
 
         if (null == savedInstanceState) {
             Fragment fragment;
-            if (Preferences.isReaderOpenBookInGalleryMode() || parser.isForceShowGallery())
+            if (Preferences.isViewerOpenBookInGalleryMode() || parser.isForceShowGallery())
                 fragment = new ReaderGalleryFragment();
             else fragment = new ReaderPagerFragment();
 
@@ -107,9 +107,9 @@ public class ReaderActivity extends BaseActivity {
     protected void onStop() {
         if (isFinishing()) { // i.e. the activity is closing for good; not being paused / backgrounded
             if (viewModel != null) viewModel.onActivityLeave();
-            Preferences.setReaderDeleteAskMode(Preferences.Constant.VIEWER_DELETE_ASK_AGAIN);
-            Preferences.setReaderCurrentPageNum(-1);
-            Preferences.setReaderCurrentContent(-1);
+            Preferences.setViewerDeleteAskMode(Preferences.Constant.VIEWER_DELETE_ASK_AGAIN);
+            Preferences.setViewerCurrentPageNum(-1);
+            Preferences.setViewerCurrentContent(-1);
             setRunning(false);
         }
         super.onStop();

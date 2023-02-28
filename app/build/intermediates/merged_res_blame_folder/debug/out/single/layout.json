@@ -1,0 +1,362 @@
+[
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/include_library_sort_filter_bottom_panel.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_library_sort_filter_bottom_panel.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/item_library_content_grid.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_library_content_grid.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/intro_slide_04.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/intro_slide_04.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/include_reader_controls_overlay.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_reader_controls_overlay.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_web_bookmarks.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_web_bookmarks.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/fragment_duplicate_details.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_duplicate_details.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_reader_browse_mode_chooser.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_reader_browse_mode_chooser.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/fragment_queue_errors.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_queue_errors.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_library_search_id.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_library_search_id.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/activity_library.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_library.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_prefs_memory.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_prefs_memory.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/item_library_group_grid.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_library_group_grid.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_meta_rule_edit.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_meta_rule_edit.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/fragment_navigation_drawer.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_navigation_drawer.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/include_library_pager.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_library_pager.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_meta_rename.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_meta_rename.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/activity_queue.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_queue.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/include_library_alert_banner.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_library_alert_banner.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/item_drawer_edit.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_drawer_edit.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_tools_meta_export.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_tools_meta_export.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_library_errors.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_library_errors.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/activity_meta_edit.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_meta_edit.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/fragment_queue.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_queue.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/fragment_pin_dialog.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_pin_dialog.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_tools_meta_import.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_tools_meta_import.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/fragment_reader_gallery.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_reader_gallery.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_tools_settings_import.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_tools_settings_import.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/include_queue_bottom_bar.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_queue_bottom_bar.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_library_split.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_library_split.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/fragment_pin_preference_on.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_pin_preference_on.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_web_duplicate.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_web_duplicate.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/item_duplicate_main.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_duplicate_main.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/activity_api29_migration.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_api29_migration.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/item_reader_gallery_image.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_reader_gallery_image.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/include_import_steps.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_import_steps.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_library_change_group.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_library_change_group.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/item_reader_image.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_reader_image.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/item_chip_choice.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_chip_choice.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_tools_app_logs.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_tools_app_logs.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/item_rule.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_rule.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/item_badge.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_badge.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/item_library_group.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_library_group.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_reader_delete.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_reader_delete.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/include_reader_image_bottom_panel.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_reader_image_bottom_panel.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/intro_slide_01.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/intro_slide_01.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/item_duplicate_detail.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_duplicate_detail.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/intro_slide_end.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/intro_slide_end.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_library_merge.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_library_merge.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/item_drawer.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_drawer.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/fragment_changelog.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_changelog.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/include_duplicate_controls.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_duplicate_controls.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/item_queue.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_queue.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/fragment_library_groups.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_library_groups.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/activity_rules.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_rules.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_reader_book_prefs.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_reader_book_prefs.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_library_rating.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_library_rating.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/fragment_pin_preference_off.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_pin_preference_off.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/include_item_details.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_item_details.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/include_library_search_subbar.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_library_search_subbar.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/item_attribute_type_filter.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_attribute_type_filter.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/activity_about.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_about.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/intro_slide_06.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/intro_slide_06.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_queue_errors.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_queue_errors.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/activity_missing_web_view.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_missing_web_view.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/activity_search.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_search.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/item_library_content.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_library_content.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/item_text.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_text.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/activity_splash.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_meta_new_attribute.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_meta_new_attribute.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/include_rules_controls.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_rules_controls.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/activity_drawer_edit.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_drawer_edit.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_progress.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_progress.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/activity_duplicate_detector.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_duplicate_detector.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_prefs_refresh.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_prefs_refresh.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/activity_base_web.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_base_web.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/intro_slide_05.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/intro_slide_05.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/intro_slide_02.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/intro_slide_02.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/item_expandable.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_expandable.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/item_pagecarousel.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_pagecarousel.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_queue_downloads_import.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_queue_downloads_import.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_library_update_success.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_library_update_success.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/dialog_meta_gallery.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_meta_gallery.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/include_reader_content_bottom_panel.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_reader_content_bottom_panel.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/fragment_reader_pager.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_reader_pager.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/include_library_groups_bottom_panel.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_library_groups_bottom_panel.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/fragment_duplicate_main.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_duplicate_main.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/item_changelog.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_changelog.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/include_search_bottom_panel.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_search_bottom_panel.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/fragment_library.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_library.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-mergeDebugResources-67:/layout/fragment_library_content.xml",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_library_content.xml"
+    }
+]

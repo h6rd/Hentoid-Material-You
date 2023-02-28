@@ -6,7 +6,6 @@ import static me.devsaki.hentoid.events.CommunicationEvent.EV_ADVANCED_SEARCH;
 import static me.devsaki.hentoid.events.CommunicationEvent.EV_DISABLE;
 import static me.devsaki.hentoid.events.CommunicationEvent.EV_ENABLE;
 import static me.devsaki.hentoid.events.CommunicationEvent.EV_SEARCH;
-import static me.devsaki.hentoid.events.CommunicationEvent.EV_UPDATE_EDIT_MODE;
 import static me.devsaki.hentoid.events.CommunicationEvent.EV_UPDATE_TOOLBAR;
 import static me.devsaki.hentoid.events.CommunicationEvent.RC_CONTENTS;
 import static me.devsaki.hentoid.util.Preferences.Constant.QUEUE_NEW_DOWNLOADS_POSITION_ASK;
@@ -76,13 +75,11 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 import org.jetbrains.annotations.NotNull;
-import org.threeten.bp.format.DateTimeFormatter;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Locale;
 import java.util.Objects;
 import java.util.Set;
 
@@ -126,7 +123,6 @@ import me.devsaki.hentoid.widget.FastAdapterPreClickSelectHelper;
 import me.devsaki.hentoid.widget.LibraryPager;
 import me.devsaki.hentoid.widget.ScrollPositionListener;
 import me.zhanghai.android.fastscroll.FastScrollerBuilder;
-import me.zhanghai.android.fastscroll.PopupTextProvider;
 import timber.log.Timber;
 
 @SuppressLint("NonConstantResourceId")
@@ -135,7 +131,6 @@ public class LibraryContentFragment extends Fragment implements
         MergeDialogFragment.Parent,
         SplitDialogFragment.Parent,
         RatingDialogFragment.Parent,
-        PopupTextProvider,
         ItemTouchCallback,
         SimpleSwipeDrawerCallback.ItemSwipeCallback {
 
@@ -254,7 +249,7 @@ public class LibraryContentFragment extends Fragment implements
 
     }).build();
 
-    // The one for "legacy" List (paged mode)
+    // The one for "classic" List (paged mode)
     public static final DiffCallback<ContentItem> CONTENT_ITEM_DIFF_CALLBACK = new DiffCallback<ContentItem>() {
         @Override
         public boolean areItemsTheSame(ContentItem oldItem, ContentItem newItem) {
@@ -263,11 +258,7 @@ public class LibraryContentFragment extends Fragment implements
 
         @Override
         public boolean areContentsTheSame(ContentItem oldContentItem, ContentItem newContentItem) {
-            boolean result = Objects.equals(oldContentItem.getContent(), newContentItem.getContent());
-            if (oldContentItem.getQueueRecord() != null && newContentItem.getQueueRecord() != null) {
-                result &= oldContentItem.getQueueRecord().isFrozen() == newContentItem.getQueueRecord().isFrozen();
-            }
-            return result;
+            return Objects.equals(oldContentItem.getContent(), newContentItem.getContent());
         }
 
         @Override
@@ -302,11 +293,6 @@ public class LibraryContentFragment extends Fragment implements
             }
             if (oldItem.getDownloadMode() != newItem.getDownloadMode()) {
                 diffBundleBuilder.setDownloadMode(newItem.getDownloadMode());
-            }
-            if (oldContentItem.getQueueRecord() != null
-                    && newContentItem.getQueueRecord() != null
-                    && oldContentItem.getQueueRecord().isFrozen() != newContentItem.getQueueRecord().isFrozen()) {
-                diffBundleBuilder.setFrozen(newContentItem.getQueueRecord().isFrozen());
             }
 
             if (diffBundleBuilder.isEmpty()) return null;
@@ -387,9 +373,7 @@ public class LibraryContentFragment extends Fragment implements
             llm = new AutofitGridLayoutManager(requireContext(), (int) getResources().getDimension(R.dimen.card_grid_width));
         recyclerView.setLayoutManager(llm);
         recyclerView.addOnScrollListener(scrollListener);
-        new FastScrollerBuilder(recyclerView)
-                .setPopupTextProvider(this)
-                .build();
+        new FastScrollerBuilder(recyclerView).build();
 
         // Top FAB
         topFab = requireViewById(rootView, R.id.top_fab);
@@ -435,6 +419,8 @@ public class LibraryContentFragment extends Fragment implements
     }
 
     private void enterEditMode() {
+        activity.get().setEditMode(true);
+
         if (group.hasCustomBookOrder) { // Warn if a custom order already exists
             new MaterialAlertDialogBuilder(requireContext(), ThemeHelper.getIdForCurrentTheme(requireContext(), R.style.Theme_Light_Dialog))
                     .setIcon(R.drawable.ic_warning)
@@ -450,14 +436,18 @@ public class LibraryContentFragment extends Fragment implements
                     .create()
                     .show();
         }
-        activity.get().setEditMode(true);
+
+        setPagingMethod(Preferences.getEndlessScroll(), activity.get().isEditMode());
     }
 
     private void cancelEdit() {
         activity.get().setEditMode(false);
+        setPagingMethod(Preferences.getEndlessScroll(), false);
     }
 
     private void confirmEdit() {
+        activity.get().setEditMode(false);
+
         // == Save new item position
         // Set ordering field to custom
         Preferences.setContentSortField(Preferences.Constant.ORDER_FIELD_CUSTOM);
@@ -466,7 +456,7 @@ public class LibraryContentFragment extends Fragment implements
         viewModel.saveContentPositions(Stream.of(itemAdapter.getAdapterItems()).map(ContentItem::getContent).withoutNulls().toList(), this::refreshIfNeeded);
         group.hasCustomBookOrder = true;
 
-        activity.get().setEditMode(false);
+        setPagingMethod(Preferences.getEndlessScroll(), activity.get().isEditMode());
     }
 
     private boolean onToolbarItemClicked(@NonNull MenuItem menuItem) {
@@ -677,7 +667,7 @@ public class LibraryContentFragment extends Fragment implements
                     return;
                 }
 
-                DocumentFile folder = FileHelper.getDocumentFromTreeUriString(requireContext(), c.getStorageUri());
+                DocumentFile folder = FileHelper.getFolderFromTreeUriString(requireContext(), c.getStorageUri());
                 if (folder != null) {
                     selectExtension.deselect(selectExtension.getSelections());
                     activity.get().getSelectionToolbar().setVisibility(View.GONE);
@@ -902,9 +892,6 @@ public class LibraryContentFragment extends Fragment implements
             case EV_DISABLE:
                 onDisable();
                 break;
-            case EV_UPDATE_EDIT_MODE:
-                setPagingMethod(Preferences.getEndlessScroll(), activity.get().isEditMode());
-                break;
             default:
                 // No default behaviour
         }
@@ -1036,7 +1023,7 @@ public class LibraryContentFragment extends Fragment implements
     @OptIn(markerClass = com.mikepenz.fastadapter.paged.ExperimentalPagedSupport.class)
     private void setPagingMethod(boolean isEndless, boolean isEditMode) {
         // Editing will always be done in Endless mode
-        viewModel.setContentPagingMethod(isEndless && !isEditMode);
+        viewModel.setContentPagingMethod(isEndless || isEditMode);
 
         // RecyclerView horizontal centering
         ViewGroup.LayoutParams layoutParams = recyclerView.getLayoutParams();
@@ -1070,9 +1057,6 @@ public class LibraryContentFragment extends Fragment implements
         }
 
         if (!fastAdapter.hasObservers()) fastAdapter.setHasStableIds(true);
-
-
-        // == CLICK LISTENERS
 
         // Item click listener
         fastAdapter.setOnClickListener((v, a, i, p) -> onItemClick(p, i));
@@ -1547,8 +1531,8 @@ public class LibraryContentFragment extends Fragment implements
         refreshIfNeeded();
     }
 
-    @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
-    public void onProcessStickyEvent(ProcessEvent event) {
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onProcessEvent(ProcessEvent event) {
         // Filter on delete complete event
         if (R.id.delete_service_delete != event.processId) return;
         if (ProcessEvent.EventType.COMPLETE != event.eventType) return;
@@ -1673,45 +1657,6 @@ public class LibraryContentFragment extends Fragment implements
                 topFab.setVisibility(View.VISIBLE);
             else
                 topFab.setVisibility(View.GONE);
-        }
-    }
-
-    @NonNull
-    @Override
-    public CharSequence getPopupText(int position) {
-        IAdapter<ContentItem> adapter = getItemAdapter();
-        if (null == adapter) return "";
-        Content c = adapter.getAdapterItem(position).getContent();
-        if (null == c) return "";
-
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd", Locale.ENGLISH);
-
-        switch (Preferences.getContentSortField()) {
-            case (Preferences.Constant.ORDER_FIELD_TITLE):
-                return (c.getTitle().isEmpty()) ? "" : (c.getTitle().charAt(0) + "").toUpperCase();
-            case (Preferences.Constant.ORDER_FIELD_ARTIST):
-                return (c.getAuthor().isEmpty()) ? "" : (c.getAuthor().charAt(0) + "").toUpperCase();
-            case (Preferences.Constant.ORDER_FIELD_NB_PAGES):
-                return Long.toString(c.getQtyPages());
-            case (Preferences.Constant.ORDER_FIELD_READS):
-                return Long.toString(c.getReads());
-            case (Preferences.Constant.ORDER_FIELD_SIZE):
-                return FileHelper.formatHumanReadableSize(c.getSize(), getResources());
-            case (Preferences.Constant.ORDER_FIELD_READ_PROGRESS):
-                return String.format(Locale.ENGLISH, "%d %%", Math.round(c.getReadProgress() * 100));
-            case (Preferences.Constant.ORDER_FIELD_DOWNLOAD_PROCESSING_DATE):
-                return Helper.formatEpochToDate(c.getDownloadDate(), formatter);
-            case (Preferences.Constant.ORDER_FIELD_UPLOAD_DATE):
-                return Helper.formatEpochToDate(c.getUploadDate(), formatter);
-            case (Preferences.Constant.ORDER_FIELD_READ_DATE):
-                return Helper.formatEpochToDate(c.getLastReadDate(), formatter);
-            case (Preferences.Constant.ORDER_FIELD_DOWNLOAD_COMPLETION_DATE):
-                return Helper.formatEpochToDate(c.getDownloadCompletionDate(), formatter);
-            case (Preferences.Constant.ORDER_FIELD_NONE):
-            case (Preferences.Constant.ORDER_FIELD_CUSTOM):
-            case (Preferences.Constant.ORDER_FIELD_RANDOM):
-            default:
-                return "";
         }
     }
 }

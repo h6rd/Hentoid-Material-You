@@ -1,15 +1,12 @@
 package me.devsaki.hentoid.activities.sources;
 
 import android.net.Uri;
-import android.os.Bundle;
-import android.view.View;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
 
 import androidx.annotation.NonNull;
 
-import java.util.List;
 import java.util.Map;
 
 import me.devsaki.hentoid.database.domains.Content;
@@ -17,7 +14,6 @@ import me.devsaki.hentoid.enums.Site;
 import me.devsaki.hentoid.enums.StatusContent;
 import me.devsaki.hentoid.parsers.images.HitomiParser;
 import me.devsaki.hentoid.util.Helper;
-import me.devsaki.hentoid.util.Preferences;
 import me.devsaki.hentoid.util.network.HttpHelper;
 import timber.log.Timber;
 
@@ -32,44 +28,11 @@ public class HitomiActivity extends BaseWebActivity {
     private static final String[] BLOCKED_CONTENT = {"hitomi-horizontal.js", "hitomi-vertical.js", "invoke.js", "ion.sound"};
     private static final String[] JS_URL_PATTERN_WHITELIST = {"//hitomi.la[/]{0,1}$", "galleries/[\\w%\\-]+.js$", "//hitomi.la/[?]page=[0-9]+"};
     private static final String[] JS_URL_WHITELIST = {"nozomiurlindex", "languagesindex", "tagindex", "filesaver", "common", "date", "download", "gallery", "jquery", "cookie", "jszip", "limitlists", "moment-with-locales", "moveimage", "pagination", "search", "searchlib", "yall", "reader", "decode_webp", "bootstrap", "gg.js", "paging", "language_support"};
-    private static final String[] JS_CONTENT_BLACKLIST = {"exoloader", "popunder", "da_etirw", "ad_trigger_class", "ad_popup_force", "exosrv.com", "realsrv.com", "ad-provider", "adprovider"};
-    private static final String[] REMOVABLE_ELEMENTS = {
-            ".content div[class^=hitomi-]",
-            ".container div[class^=hitomi-]",
-            ".top-content > div:not(.list-title)",
-            ".content > div:not(.gallery,.cover-column,.gallery-preview)",
-            ".wnvtqvsW"
-    };
+    private static final String[] JS_CONTENT_BLACKLIST = {"exoloader", "popunder", "da_etirw"};
+    private static final String[] REMOVABLE_ELEMENTS = {".content div[class^=hitomi-]", ".container div[class^=hitomi-]", ".top-content > div:not(.list-title)", ".wnvtqvsW",".content > div:not(.gallery,.cover-column,.gallery-preview)"};
 
     Site getStartSite() {
         return Site.HITOMI;
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        languageFilterButton.setOnClickListener(v -> onLangFilterButtonClick());
-    }
-
-    @Override
-    public void onPageStarted(
-            String url,
-            boolean isGalleryPage,
-            boolean isHtmlLoaded,
-            boolean isBookmarkable,
-            List<String> jsStartupScripts) {
-        languageFilterButton.setVisibility(View.INVISIBLE);
-        super.onPageStarted(url, isGalleryPage, isHtmlLoaded, isBookmarkable, jsStartupScripts);
-    }
-
-    @Override
-    public void onPageFinished(boolean isResultsPage, boolean isGalleryPage) {
-        if (Preferences.isLanguageFilterButton() && isUrlFilterable(webView.getUrl()))
-            languageFilterButton.setVisibility(View.VISIBLE);
-        else
-            languageFilterButton.setVisibility(View.INVISIBLE);
-
-        super.onPageFinished(isResultsPage, isGalleryPage);
     }
 
     @Override
@@ -105,22 +68,6 @@ public class HitomiActivity extends BaseWebActivity {
         return builder.toString();
     }
 
-    private void onLangFilterButtonClick() {
-        String temp = Preferences.getLanguageFilterButtonValue().concat(".html").toLowerCase();
-        if (webView.getUrl().contains("-all.html"))
-            webView.loadUrl(webView.getUrl().replace("all.html", temp));
-        else
-            webView.loadUrl(webView.getUrl().concat("index-").concat(temp));
-    }
-
-    private boolean isUrlFilterable(String url) {
-        //only works on 1st page
-        if (url.equals("https://hitomi.la/") || url.equals("https://hitomi.la/?page=1") || (url.endsWith("-all.html") || url.endsWith("-all.html?page=1")))
-            return true;
-        else
-            return false;
-    }
-
     private class HitomiWebClient extends CustomWebViewClient {
 
         HitomiWebClient(Site site, String[] filter, CustomWebActivity activity) {
@@ -131,13 +78,13 @@ public class HitomiActivity extends BaseWebActivity {
         public WebResourceResponse shouldInterceptRequest(@NonNull WebView view, @NonNull WebResourceRequest request) {
             String url = request.getUrl().toString();
 
-            if ((isMarkDownloaded() || isMarkMerged() || isMarkBlockedTags()) && url.contains("galleryblock")) { // Process book blocks to mark existing ones
+            if ((isMarkDownloaded() || isMarkMerged()) && url.contains("galleryblock")) { // Process book blocks to mark existing ones
                 WebResourceResponse result = parseResponse(url, request.getRequestHeaders(), false, false);
                 if (result != null) return result;
                 else return sendRequest(request);
             }
 
-            return super.shouldInterceptRequest(view, request);
+           return super.shouldInterceptRequest(view, request);
         }
 
         @Override

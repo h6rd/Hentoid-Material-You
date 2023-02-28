@@ -2,15 +2,13 @@ package me.devsaki.hentoid.parsers.images;
 
 import static me.devsaki.hentoid.util.network.HttpHelper.getOnlineDocument;
 
-import android.webkit.URLUtil;
+import androidx.core.util.Pair;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.util.Pair;
 
 import com.annimon.stream.Stream;
 
-import org.greenrobot.eventbus.EventBus;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
@@ -34,29 +32,8 @@ public class Manhwa18Parser extends BaseImageListParser {
 
     @Override
     public List<ImageFile> parseImageListImpl(@NonNull Content onlineContent, @Nullable Content storedContent) throws Exception {
-        String readerUrl = onlineContent.getReaderUrl();
-        processedUrl = onlineContent.getGalleryUrl();
-
-        if (!URLUtil.isValidUrl(readerUrl))
-            throw new IllegalArgumentException("Invalid gallery URL : " + readerUrl);
-
-        Timber.d("Gallery URL: %s", readerUrl);
-
-        EventBus.getDefault().register(this);
-
-        List<ImageFile> result;
-        try {
-            result = parseImageFiles(onlineContent, storedContent);
-            ParseHelper.setDownloadParams(result, onlineContent.getSite().getUrl());
-        } finally {
-            EventBus.getDefault().unregister(this);
-        }
-
-        return result;
-    }
-
-    private List<ImageFile> parseImageFiles(@NonNull Content onlineContent, @Nullable Content storedContent) throws Exception {
         List<ImageFile> result = new ArrayList<>();
+        processedUrl = onlineContent.getGalleryUrl();
 
         List<Pair<String, String>> headers = new ArrayList<>();
         ParseHelper.addSavedCookiesToHeader(onlineContent.getDownloadParams(), headers);
@@ -89,10 +66,9 @@ public class Manhwa18Parser extends BaseImageListParser {
 
         // 2. Open each chapter URL and get the image data until all images are found
         long minEpoch = Long.MAX_VALUE;
-        int storedOrderOffset = ParseHelper.getMaxChapterOrder(storedChapters);
         for (Chapter chp : extraChapters) {
-            chp.setOrder(++storedOrderOffset);
             if (chp.getUploadDate() > 0) minEpoch = Math.min(minEpoch, chp.getUploadDate());
+            if (processHalted.get()) break;
             doc = getOnlineDocument(chp.getUrl(), headers, Site.MANHWA18.useHentoidAgent(), Site.MANHWA18.useWebviewAgent());
             if (doc != null) {
                 List<Element> images = doc.select("#chapter-content img");
@@ -104,12 +80,8 @@ public class Manhwa18Parser extends BaseImageListParser {
             } else {
                 Timber.i("Chapter parsing failed for %s : no response", chp.getUrl());
             }
-            if (processHalted.get()) break;
             progressPlus();
         }
-        // If the process has been halted manually, the result is incomplete and should not be returned as is
-        if (processHalted.get()) throw new PreparationInterruptedException();
-
         if (minEpoch > 0) {
             onlineContent.setUploadDate(minEpoch);
             onlineContent.setUpdatedProperties(true);
@@ -119,6 +91,9 @@ public class Manhwa18Parser extends BaseImageListParser {
         // Add cover if it's a first download
         if (storedChapters.isEmpty())
             result.add(ImageFile.newCover(onlineContent.getCoverImageUrl(), StatusContent.SAVED));
+
+        // If the process has been halted manually, the result is incomplete and should not be returned as is
+        if (processHalted.get()) throw new PreparationInterruptedException();
 
         return result;
     }

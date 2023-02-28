@@ -31,8 +31,8 @@ class ThemeIntroFragment : Fragment(R.layout.intro_slide_05) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val parentActivity = context as IntroActivity
-        binding.intro5Light.setOnClickListener { parentActivity.setThemePrefs(Preferences.Constant.COLOR_THEME_LIGHT) }
+//        binding.intro5Light.setOnClickListener { parentActivity.setThemePrefs(Preferences.Constant.COLOR_THEME_LIGHT) }
         binding.intro5Dark.setOnClickListener { parentActivity.setThemePrefs(Preferences.Constant.COLOR_THEME_DARK) }
-        binding.intro5Black.setOnClickListener { parentActivity.setThemePrefs(Preferences.Constant.COLOR_THEME_BLACK) }
+//        binding.intro5Black.setOnClickListener { parentActivity.setThemePrefs(Preferences.Constant.COLOR_THEME_BLACK) }
     }
 }

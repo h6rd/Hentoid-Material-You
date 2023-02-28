@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "me.devsaki.hentoid.app-mergeDebugResources-66:/values-notnight-v31/values-notnight-v31.xml",
+            "map": [
+                {
+                    "source": "/home/hrdq/Hentoid/Hentoid/app/src/main/res/values-notnight-v31/colors.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "57,144",
+                        "endColumns": "85,94",
+                        "endOffsets": "138,234"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,141",
+                        "endColumns": "85,94",
+                        "endOffsets": "136,231"
+                    }
+                }
+            ]
+        }
+    ]
+}

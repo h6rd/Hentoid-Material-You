@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.devsaki.hentoid.debug"
+    android:installLocation="auto"
+    android:versionCode="130"
+    android:versionName="1.17.1-DEBUG" >
+
+    <uses-sdk
+        android:minSdkVersion="33"
+        android:targetSdkVersion="33" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- Somehow needed by Firebase for reliable local dispatching on non-Google Play devices -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- Required to install update packages when targeting API 25 or higher -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- Required to run keep-alive service when targeting API 28 or higher -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <!-- Required to install update packages when targeting API 29 or higher -->
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="me.devsaki.hentoid.core.HentoidApp"
+        android:allowBackup="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:extractNativeLibs="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:localeConfig="@xml/locales_config"
+        android:supportsRtl="false"
+        android:testOnly="true"
+        android:theme="@style/Theme.Light"
+        android:usesCleartextTraffic="true" >
+        <meta-data
+            android:name="android.webkit.WebView.MetricsOptOut"
+            android:value="true" />
+
+        <activity
+            android:name="me.devsaki.hentoid.activities.MissingWebViewActivity"
+            android:exported="false"
+            android:label="@string/missing_web_view"
+            android:noHistory="true" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.SplashActivity"
+            android:exported="true"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="me.devsaki.hentoid.activities.IntroActivity"
+            android:label="@string/app_intro" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.Api29MigrationActivity"
+            android:label="@string/title_activity_api29_migration" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.HitomiActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.NhentaiActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.TsuminoActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.ASMHentaiActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.PururinActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.EHentaiActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.MusesActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.DoujinsActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.LusciousActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.ExHentaiActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.PorncomixActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.HbrowseActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.Hentai2ReadActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.HentaifoxActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.MrmActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.ManhwaActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.ImhentaiActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.ToonilyActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.AllPornComicActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.PixivActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.Manhwa18Activity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.MultpornActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.SimplyActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.sources.HdPornComicsActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.LibraryActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_downloads"
+            android:launchMode="singleTop" >
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="me.devsaki.hentoid.activities.QueueActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_queue"
+            android:parentActivityName="me.devsaki.hentoid.activities.LibraryActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.LibraryActivity" />
+        </activity>
+        <activity
+            android:name="me.devsaki.hentoid.activities.PrefsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_preferences"
+            android:parentActivityName="me.devsaki.hentoid.activities.LibraryActivity"
+            android:theme="@style/Theme.Light.Prefs" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.LibraryActivity" />
+        </activity>
+        <activity
+            android:name="me.devsaki.hentoid.activities.ToolsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_preferences"
+            android:parentActivityName="me.devsaki.hentoid.activities.LibraryActivity"
+            android:theme="@style/Theme.Light.Prefs" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.LibraryActivity" />
+        </activity>
+        <activity
+            android:name="me.devsaki.hentoid.activities.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="me.devsaki.hentoid.activities.LibraryActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.LibraryActivity" />
+        </activity>
+        <activity
+            android:name="me.devsaki.hentoid.activities.DrawerEditActivity"
+            android:label="@string/title_activity_drawer_edit" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.DuplicateDetectorActivity"
+            android:label="@string/title_activity_duplicate_detector" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.SearchActivity"
+            android:label="@string/title_activity_search" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.UnlockActivity"
+            android:noHistory="true"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.PinPreferenceActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.MetadataEditActivity"
+            android:label="@string/title_activity_meta_edit" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.RenamingRulesActivity"
+            android:label="@string/title_activity_rules" />
+        <activity
+            android:name="me.devsaki.hentoid.activities.IntentActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Invisible" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="hitomi.la"
+                    android:pathPattern="/..*/..*"
+                    android:scheme="https" />
+                <data
+                    android:host="www.hitomi.la"
+                    android:pathPattern="/..*/..*"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="nhentai.net"
+                    android:pathPrefix="/g/"
+                    android:scheme="https" />
+                <data
+                    android:host="www.nhentai.net"
+                    android:pathPrefix="/g/"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.tsumino.com"
+                    android:pathPrefix="/entry/"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="asmhentai.com"
+                    android:pathPrefix="/g"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="comics.asmhentai.com"
+                    android:pathPrefix="/g"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="pururin.to"
+                    android:pathPrefix="/gallery"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="e-hentai.org"
+                    android:pathPrefix="/g/"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="exhentai.org"
+                    android:pathPrefix="/g/"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="8muses.com"
+                    android:pathPrefix="/comics/album/"
+                    android:scheme="https" />
+                <data
+                    android:host="www.8muses.com"
+                    android:pathPrefix="/comics/album/"
+                    android:scheme="https" />
+                <data
+                    android:host="comics.8muses.com"
+                    android:pathPrefix="/comics/album/"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="doujins.com"
+                    android:pathPattern="..*/..*"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="luscious.net"
+                    android:pathPattern="..*/..*"
+                    android:scheme="https" />
+                <data
+                    android:host="www.luscious.net"
+                    android:pathPattern="..*/..*"
+                    android:scheme="https" />
+                <data
+                    android:host="members.luscious.net"
+                    android:pathPattern="..*/..*"
+                    android:scheme="https" />
+                <data
+                    android:host="www.members.luscious.net"
+                    android:pathPattern="..*/..*"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="porncomixonline.net"
+                    android:pathPattern="..*/.*"
+                    android:scheme="https" />
+                <data
+                    android:host="porncomixonline.com"
+                    android:pathPattern="..*/.*"
+                    android:scheme="https" />
+                <data
+                    android:host="www.porncomixonline.net"
+                    android:pathPattern="..*/.*"
+                    android:scheme="https" />
+                <data
+                    android:host="www.porncomixonline.com"
+                    android:pathPattern="..*/.*"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.hbrowse.com"
+                    android:pathPattern="/..*/..*"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="hentai2read.com"
+                    android:pathPattern="/..*/"
+                    android:scheme="https" />
+                <data
+                    android:host="hentai2read.com"
+                    android:pathPattern="/..*/..*"
+                    android:scheme="https" />
+                <data
+                    android:host="hentai2read.com"
+                    android:pathPattern="/..*/..*/..*"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="hentaifox.com"
+                    android:pathPattern="/gallery/..*/"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="myreadingmanga.info"
+                    android:pathPattern="/..*/"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="manhwahentai.me"
+                    android:pathPattern="/..*/..*"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="imhentai.com"
+                    android:pathPattern="/gallery/..*"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="toonily.com"
+                    android:pathPattern="/..*/..*"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="allporncomic.com"
+                    android:pathPattern="/porncomic/..*/"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="pixiv.net"
+                    android:pathPattern="/..*/artworks/..*"
+                    android:scheme="https" />
+                <data
+                    android:host="pixiv.net"
+                    android:pathPattern="/..*/user/..*/series/..*"
+                    android:scheme="https" />
+                <data
+                    android:host="pixiv.net"
+                    android:pathPattern="/..*/users/..*"
+                    android:scheme="https" />
+                <data
+                    android:host="www.pixiv.net"
+                    android:pathPattern="/..*/artworks/..*"
+                    android:scheme="https" />
+                <data
+                    android:host="www.pixiv.net"
+                    android:pathPattern="/..*/user/..*/series/..*"
+                    android:scheme="https" />
+                <data
+                    android:host="www.pixiv.net"
+                    android:pathPattern="/..*/users/..*"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="manhwa18.com"
+                    android:pathPattern="/manga/..*"
+                    android:scheme="https" />
+                <data
+                    android:host="manhwa18.com"
+                    android:pathPattern="/manga/..*/..*"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="multporn.net"
+                    android:pathPattern="/..*/..*"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.simply-hentai.com"
+                    android:pathPattern="/..*/..*"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="hdporncomics.com"
+                    android:pathPattern="/..*/"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="me.devsaki.hentoid.activities.ReaderActivity"
+            android:label="Image Viewer"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Light.Monochrome" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.LibraryActivity" />
+        </activity>
+
+        <!-- Services -->
+
+        <service android:name="me.devsaki.hentoid.services.UpdateCheckService" />
+        <service android:name="me.devsaki.hentoid.services.API29MigrationService" />
+
+        <!-- Receivers -->
+
+        <receiver android:name="me.devsaki.hentoid.receiver.DownloadNotificationDeleteReceiver" />
+        <receiver android:name="me.devsaki.hentoid.receiver.ArchiveNotificationSuccessReceiver" />
+        <receiver android:name="me.devsaki.hentoid.receiver.DownloadNotificationPauseReceiver" />
+        <receiver android:name="me.devsaki.hentoid.receiver.DuplicateNotificationStopReceiver" />
+        <receiver android:name="me.devsaki.hentoid.receiver.AppUpdateDownloadReceiver" />
+
+        <!-- Providers -->
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="me.devsaki.hentoid.debug.provider.FileProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name="com.mikepenz.aboutlibraries.ui.LibsActivity" />
+
+        <meta-data
+            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+            android:value="GlideModule" />
+        <meta-data
+            android:name="com.bumptech.glide.integration.webp.WebpGlideModule"
+            android:value="GlideModule" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="me.devsaki.hentoid.debug.firebaseinitprovider"
+            android:directBootAware="true"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="me.devsaki.hentoid.debug.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.work.WorkManagerInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false" />
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_job_service_default"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_foreground_service_default"
+            android:exported="false" />
+
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY" />
+                <action android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false" >
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

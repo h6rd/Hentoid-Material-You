@@ -16,15 +16,9 @@
 
 
 
-
     <string name="empty">vazio</string>
 
-
-
-
-
-
-<string name="title_activity_downloads">Biblioteca</string>
+    <string name="title_activity_downloads">Biblioteca</string>
     <string name="title_activity_preferences">Configurações</string>
 
 
@@ -32,9 +26,7 @@
 
 
 
-
     <string name="refresh_options_remove_or">ou</string>
-
 
 <string name="import_title">Importar metadados</string>
 
@@ -155,10 +147,7 @@
 
 
 
-
-
     <string name="category_source">Fonte</string>
-
 
 
 
@@ -174,7 +163,6 @@
 
 
 
-<string name="meta_rule_source">Fonte</string>
 <string name="group_today">Hoje</string>
 
 

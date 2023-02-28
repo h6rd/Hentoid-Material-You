@@ -34,10 +34,9 @@ public class FastAdapterPreClickSelectHelper<T extends IItem<? extends RecyclerV
 
     public Boolean onPreLongClickListener(View v, IAdapter<T> adapter, T item, Integer position) {
         Set<Integer> selectedPositions = selectExtension.getSelections();
-        if (selectExtension.getSelectOnLongClick()) {
+        if (selectedPositions.isEmpty() && selectExtension.getSelectOnLongClick()) { // No selection -> select things
+            selectExtension.select(position);
             selectExtension.setSelectOnLongClick(false);
-            // No selection -> select things
-            if (selectedPositions.isEmpty()) selectExtension.select(position);
             return true;
         }
         return false;

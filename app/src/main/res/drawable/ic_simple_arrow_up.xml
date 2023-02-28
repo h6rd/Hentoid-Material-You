@@ -8,7 +8,7 @@
         android:pivotY="12"
         android:rotation="270" >
     <path
-        android:fillColor="#DEFFFFFF"
+        android:fillColor="@android:color/system_accent1_100"
         android:pathData="M22,12l-4,-4v3H3v2h15v3z" />
     </group>
 </vector>

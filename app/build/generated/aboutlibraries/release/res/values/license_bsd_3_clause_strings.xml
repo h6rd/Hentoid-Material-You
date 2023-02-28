@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <string name="define_license_BSD_3_Clause" translatable="false"></string>
+  <string name="license_BSD_3_Clause_licenseName" translatable="false">BSD 3-Clause "New" or "Revised" License</string>
+  <string name="license_BSD_3_Clause_licenseWebsite" translatable="false">https://spdx.org/licenses/BSD-3-Clause.html</string>
+</resources>

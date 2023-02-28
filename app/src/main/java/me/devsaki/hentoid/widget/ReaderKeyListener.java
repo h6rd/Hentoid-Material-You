@@ -62,18 +62,18 @@ public final class ReaderKeyListener implements View.OnKeyListener {
     }
 
     private boolean isTurboEnabled() {
-        return !Preferences.isReaderVolumeToSwitchBooks();
+        return !Preferences.isViewerVolumeToSwitchBooks();
     }
 
     private boolean isDetectLongPress() {
-        return Preferences.isReaderVolumeToSwitchBooks();
+        return Preferences.isViewerVolumeToSwitchBooks();
     }
 
     private boolean isVolumeKey(int keyCode, int targetKeyCode) {
         // Ignore volume keys when disabled in preferences
-        if (!Preferences.isReaderVolumeToTurn()) return false;
+        if (!Preferences.isViewerVolumeToTurn()) return false;
 
-        if (Preferences.isReaderInvertVolumeRocker()) {
+        if (Preferences.isViewerInvertVolumeRocker()) {
             if (targetKeyCode == KeyEvent.KEYCODE_VOLUME_DOWN)
                 return (keyCode == KeyEvent.KEYCODE_VOLUME_UP);
             else if (targetKeyCode == KeyEvent.KEYCODE_VOLUME_UP)
@@ -91,9 +91,9 @@ public final class ReaderKeyListener implements View.OnKeyListener {
             listener = onVolumeDownListener;
         } else if (isVolumeKey(keyCode, KeyEvent.KEYCODE_VOLUME_UP)) {
             listener = onVolumeUpListener;
-        } else if (keyCode == KeyEvent.KEYCODE_DPAD_LEFT && Preferences.isReaderKeyboardToTurn()) {
+        } else if (keyCode == KeyEvent.KEYCODE_DPAD_LEFT && Preferences.isViewerKeyboardToTurn()) {
             listener = onKeyLeftListener;
-        } else if (keyCode == KeyEvent.KEYCODE_DPAD_RIGHT && Preferences.isReaderKeyboardToTurn()) {
+        } else if (keyCode == KeyEvent.KEYCODE_DPAD_RIGHT && Preferences.isViewerKeyboardToTurn()) {
             listener = onKeyRightListener;
         } else if (keyCode == KeyEvent.KEYCODE_BACK) {
             listener = onBackListener;

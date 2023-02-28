@@ -24,7 +24,6 @@ import javax.annotation.Nonnull;
 
 import me.devsaki.hentoid.BuildConfig;
 import me.devsaki.hentoid.core.HentoidApp;
-import me.devsaki.hentoid.enums.StorageLocation;
 import me.devsaki.hentoid.util.file.FileHelper;
 import timber.log.Timber;
 
@@ -245,7 +244,7 @@ public class LogHelper {
             String log = buildLog(logInfo);
 
             // Save the log; use primary folder by default
-            DocumentFile folder = FileHelper.getDocumentFromTreeUriString(context, Preferences.getStorageUri(StorageLocation.PRIMARY_1));
+            DocumentFile folder = FileHelper.getFolderFromTreeUriString(context, Preferences.getStorageUri());
             if (folder != null) {
                 DocumentFile logDocumentFile = FileHelper.findOrCreateDocumentFile(context, folder, "text/plain", logFileName);
                 if (logDocumentFile != null)

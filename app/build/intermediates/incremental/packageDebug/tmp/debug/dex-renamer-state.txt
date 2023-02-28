@@ -1,0 +1,7 @@
+#Sat Feb 11 13:12:03 MSK 2023
+base.1=/home/hrdq/Hentoid/Hentoid/app/build/intermediates/dex/debug/minifyDebugWithR8/classes2.dex
+path.1=classes2.dex
+base.0=/home/hrdq/Hentoid/Hentoid/app/build/intermediates/dex/debug/minifyDebugWithR8/classes.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex

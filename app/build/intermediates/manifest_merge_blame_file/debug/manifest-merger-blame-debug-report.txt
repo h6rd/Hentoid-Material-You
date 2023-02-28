@@ -1,0 +1,1548 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="me.devsaki.hentoid.debug"
+4    android:installLocation="auto"
+5    android:versionCode="130"
+6    android:versionName="1.17.1-DEBUG" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="33"
+9-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml
+10        android:targetSdkVersion="33" />
+10-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml
+11
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:6:5-67
+12-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:7:5-79
+13-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:7:22-76
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:8:5-76
+14-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:8:22-73
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:9:5-80
+15-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:9:22-77
+16    <!-- Somehow needed by Firebase for reliable local dispatching on non-Google Play devices -->
+17    <uses-permission android:name="android.permission.WAKE_LOCK" />
+17-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:11:5-68
+17-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:11:22-65
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:12:5-81
+18-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:12:22-78
+19    <uses-permission android:name="android.permission.VIBRATE" />
+19-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:13:5-66
+19-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:13:22-63
+20    <!-- Required to install update packages when targeting API 25 or higher -->
+21    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+21-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:15:5-83
+21-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:15:22-80
+22    <!-- Required to run keep-alive service when targeting API 28 or higher -->
+23    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+23-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:17:5-77
+23-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:17:22-74
+24    <!-- Required to install update packages when targeting API 29 or higher -->
+25    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+25-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:19:5-81
+25-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:19:22-78
+26    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+26-->[com.google.android.gms:play-services-measurement:21.1.0] /home/hrdq/.gradle/caches/transforms-3/ee1a9e227cd812ee2e50a75ba2a2dcea/transformed/play-services-measurement-21.1.0/AndroidManifest.xml:26:5-110
+26-->[com.google.android.gms:play-services-measurement:21.1.0] /home/hrdq/.gradle/caches/transforms-3/ee1a9e227cd812ee2e50a75ba2a2dcea/transformed/play-services-measurement-21.1.0/AndroidManifest.xml:26:22-107
+27    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+27-->[com.google.android.gms:play-services-measurement-api:21.1.0] /home/hrdq/.gradle/caches/transforms-3/b6ed8fe63a9f7a18861f361632b94bc0/transformed/play-services-measurement-api-21.1.0/AndroidManifest.xml:25:5-79
+27-->[com.google.android.gms:play-services-measurement-api:21.1.0] /home/hrdq/.gradle/caches/transforms-3/b6ed8fe63a9f7a18861f361632b94bc0/transformed/play-services-measurement-api-21.1.0/AndroidManifest.xml:25:22-76
+28    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+28-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:5-81
+28-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:22-78
+29
+30    <application
+30-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:22:5-611:19
+31        android:name="me.devsaki.hentoid.core.HentoidApp"
+31-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:23:9-40
+32        android:allowBackup="false"
+32-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:24:9-36
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.8.0] /home/hrdq/.gradle/caches/transforms-3/b6c4927b7e4c8ffd06558bb89e337ee6/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+34        android:debuggable="true"
+35        android:extractNativeLibs="true"
+35-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:25:9-41
+36        android:icon="@drawable/ic_launcher"
+36-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:26:9-45
+37        android:label="@string/app_name"
+37-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:27:9-41
+38        android:largeHeap="true"
+38-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:28:9-33
+39        android:localeConfig="@xml/locales_config"
+39-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:29:9-51
+40        android:supportsRtl="false"
+40-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:30:9-36
+41        android:testOnly="true"
+42        android:theme="@style/Theme.Light"
+42-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:31:9-43
+43        android:usesCleartextTraffic="true" >
+43-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:32:9-44
+44        <meta-data
+44-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:35:9-37:36
+45            android:name="android.webkit.WebView.MetricsOptOut"
+45-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:36:13-64
+46            android:value="true" />
+46-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:37:13-33
+47
+48        <activity
+48-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:39:9-43:40
+49            android:name="me.devsaki.hentoid.activities.MissingWebViewActivity"
+49-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:40:13-62
+50            android:exported="false"
+50-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:41:13-37
+51            android:label="@string/missing_web_view"
+51-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:42:13-53
+52            android:noHistory="true" />
+52-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:43:13-37
+53        <activity
+53-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:44:9-52:20
+54            android:name="me.devsaki.hentoid.activities.SplashActivity"
+54-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:45:13-54
+55            android:exported="true"
+55-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:46:13-36
+56            android:noHistory="true" >
+56-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:47:13-37
+57            <intent-filter>
+57-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:48:13-51:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:49:17-69
+58-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:49:25-66
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:50:17-77
+60-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:50:27-74
+61            </intent-filter>
+62        </activity>
+63        <activity
+63-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:53:9-55:49
+64            android:name="me.devsaki.hentoid.activities.IntroActivity"
+64-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:54:13-53
+65            android:label="@string/app_intro" />
+65-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:55:13-46
+66        <activity
+66-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:56:9-58:70
+67            android:name="me.devsaki.hentoid.activities.Api29MigrationActivity"
+67-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:57:13-62
+68            android:label="@string/title_activity_api29_migration" />
+68-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:58:13-67
+69        <activity
+69-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:59:9-61:62
+70            android:name="me.devsaki.hentoid.activities.sources.HitomiActivity"
+70-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:60:13-62
+71            android:configChanges="orientation|screenSize" />
+71-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:61:13-59
+72        <activity
+72-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:62:9-64:62
+73            android:name="me.devsaki.hentoid.activities.sources.NhentaiActivity"
+73-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:63:13-63
+74            android:configChanges="orientation|screenSize" />
+74-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:64:13-59
+75        <activity
+75-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:65:9-67:62
+76            android:name="me.devsaki.hentoid.activities.sources.TsuminoActivity"
+76-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:66:13-63
+77            android:configChanges="orientation|screenSize" />
+77-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:67:13-59
+78        <activity
+78-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:68:9-70:62
+79            android:name="me.devsaki.hentoid.activities.sources.ASMHentaiActivity"
+79-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:69:13-65
+80            android:configChanges="orientation|screenSize" />
+80-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:70:13-59
+81        <activity
+81-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:71:9-73:62
+82            android:name="me.devsaki.hentoid.activities.sources.PururinActivity"
+82-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:72:13-63
+83            android:configChanges="orientation|screenSize" />
+83-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:73:13-59
+84        <activity
+84-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:74:9-76:62
+85            android:name="me.devsaki.hentoid.activities.sources.EHentaiActivity"
+85-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:75:13-63
+86            android:configChanges="orientation|screenSize" />
+86-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:76:13-59
+87        <activity
+87-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:77:9-79:62
+88            android:name="me.devsaki.hentoid.activities.sources.MusesActivity"
+88-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:78:13-61
+89            android:configChanges="orientation|screenSize" />
+89-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:79:13-59
+90        <activity
+90-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:80:9-82:62
+91            android:name="me.devsaki.hentoid.activities.sources.DoujinsActivity"
+91-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:81:13-63
+92            android:configChanges="orientation|screenSize" />
+92-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:82:13-59
+93        <activity
+93-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:83:9-85:62
+94            android:name="me.devsaki.hentoid.activities.sources.LusciousActivity"
+94-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:84:13-64
+95            android:configChanges="orientation|screenSize" />
+95-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:85:13-59
+96        <activity
+96-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:86:9-88:62
+97            android:name="me.devsaki.hentoid.activities.sources.ExHentaiActivity"
+97-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:87:13-64
+98            android:configChanges="orientation|screenSize" />
+98-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:88:13-59
+99        <activity
+99-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:89:9-91:62
+100            android:name="me.devsaki.hentoid.activities.sources.PorncomixActivity"
+100-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:90:13-65
+101            android:configChanges="orientation|screenSize" />
+101-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:91:13-59
+102        <activity
+102-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:92:9-94:62
+103            android:name="me.devsaki.hentoid.activities.sources.HbrowseActivity"
+103-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:93:13-63
+104            android:configChanges="orientation|screenSize" />
+104-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:94:13-59
+105        <activity
+105-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:95:9-97:62
+106            android:name="me.devsaki.hentoid.activities.sources.Hentai2ReadActivity"
+106-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:96:13-67
+107            android:configChanges="orientation|screenSize" />
+107-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:97:13-59
+108        <activity
+108-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:98:9-100:62
+109            android:name="me.devsaki.hentoid.activities.sources.HentaifoxActivity"
+109-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:99:13-65
+110            android:configChanges="orientation|screenSize" />
+110-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:100:13-59
+111        <activity
+111-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:101:9-103:62
+112            android:name="me.devsaki.hentoid.activities.sources.MrmActivity"
+112-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:102:13-59
+113            android:configChanges="orientation|screenSize" />
+113-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:103:13-59
+114        <activity
+114-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:104:9-106:62
+115            android:name="me.devsaki.hentoid.activities.sources.ManhwaActivity"
+115-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:105:13-62
+116            android:configChanges="orientation|screenSize" />
+116-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:106:13-59
+117        <activity
+117-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:107:9-109:62
+118            android:name="me.devsaki.hentoid.activities.sources.ImhentaiActivity"
+118-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:108:13-64
+119            android:configChanges="orientation|screenSize" />
+119-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:109:13-59
+120        <activity
+120-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:110:9-112:62
+121            android:name="me.devsaki.hentoid.activities.sources.ToonilyActivity"
+121-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:111:13-63
+122            android:configChanges="orientation|screenSize" />
+122-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:112:13-59
+123        <activity
+123-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:113:9-115:62
+124            android:name="me.devsaki.hentoid.activities.sources.AllPornComicActivity"
+124-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:114:13-68
+125            android:configChanges="orientation|screenSize" />
+125-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:115:13-59
+126        <activity
+126-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:116:9-118:62
+127            android:name="me.devsaki.hentoid.activities.sources.PixivActivity"
+127-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:117:13-61
+128            android:configChanges="orientation|screenSize" />
+128-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:118:13-59
+129        <activity
+129-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:119:9-121:62
+130            android:name="me.devsaki.hentoid.activities.sources.Manhwa18Activity"
+130-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:120:13-64
+131            android:configChanges="orientation|screenSize" />
+131-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:121:13-59
+132        <activity
+132-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:122:9-124:62
+133            android:name="me.devsaki.hentoid.activities.sources.MultpornActivity"
+133-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:123:13-64
+134            android:configChanges="orientation|screenSize" />
+134-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:124:13-59
+135        <activity
+135-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:125:9-127:62
+136            android:name="me.devsaki.hentoid.activities.sources.SimplyActivity"
+136-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:126:13-62
+137            android:configChanges="orientation|screenSize" />
+137-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:127:13-59
+138        <activity
+138-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:128:9-130:62
+139            android:name="me.devsaki.hentoid.activities.sources.HdPornComicsActivity"
+139-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:129:13-68
+140            android:configChanges="orientation|screenSize" />
+140-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:130:13-59
+141        <activity
+141-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:131:9-139:20
+142            android:name="me.devsaki.hentoid.activities.LibraryActivity"
+142-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:132:13-55
+143            android:configChanges="orientation|screenSize"
+143-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:133:13-59
+144            android:label="@string/title_activity_downloads"
+144-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:134:13-61
+145            android:launchMode="singleTop" >
+145-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:135:13-43
+146            <meta-data
+146-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:136:13-138:54
+147                android:name="android.app.searchable"
+147-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:137:17-54
+148                android:resource="@xml/searchable" />
+148-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:138:17-51
+149        </activity>
+150        <activity
+150-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:140:9-149:20
+151            android:name="me.devsaki.hentoid.activities.QueueActivity"
+151-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:141:13-53
+152            android:configChanges="orientation|screenSize"
+152-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:142:13-59
+153            android:label="@string/title_activity_queue"
+153-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:143:13-57
+154            android:parentActivityName="me.devsaki.hentoid.activities.LibraryActivity" >
+154-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:144:13-69
+155            <meta-data
+155-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:146:13-148:63
+156                android:name="android.support.PARENT_ACTIVITY"
+156-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:147:17-63
+157                android:value=".activities.LibraryActivity" />
+157-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:148:17-60
+158        </activity>
+159        <activity
+159-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:150:9-160:20
+160            android:name="me.devsaki.hentoid.activities.PrefsActivity"
+160-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:151:13-53
+161            android:configChanges="orientation|screenSize"
+161-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:152:13-59
+162            android:label="@string/title_activity_preferences"
+162-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:153:13-63
+163            android:parentActivityName="me.devsaki.hentoid.activities.LibraryActivity"
+163-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:154:13-69
+164            android:theme="@style/Theme.Light.Prefs" >
+164-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:155:13-53
+165            <meta-data
+165-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:146:13-148:63
+166                android:name="android.support.PARENT_ACTIVITY"
+166-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:147:17-63
+167                android:value=".activities.LibraryActivity" />
+167-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:148:17-60
+168        </activity>
+169        <activity
+169-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:161:9-171:20
+170            android:name="me.devsaki.hentoid.activities.ToolsActivity"
+170-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:162:13-53
+171            android:configChanges="orientation|screenSize"
+171-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:163:13-59
+172            android:label="@string/title_activity_preferences"
+172-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:164:13-63
+173            android:parentActivityName="me.devsaki.hentoid.activities.LibraryActivity"
+173-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:165:13-69
+174            android:theme="@style/Theme.Light.Prefs" >
+174-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:166:13-53
+175            <meta-data
+175-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:146:13-148:63
+176                android:name="android.support.PARENT_ACTIVITY"
+176-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:147:17-63
+177                android:value=".activities.LibraryActivity" />
+177-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:148:17-60
+178        </activity>
+179        <activity
+179-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:172:9-180:20
+180            android:name="me.devsaki.hentoid.activities.AboutActivity"
+180-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:173:13-53
+181            android:label="@string/title_activity_about"
+181-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:174:13-57
+182            android:parentActivityName="me.devsaki.hentoid.activities.LibraryActivity" >
+182-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:175:13-69
+183            <meta-data
+183-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:146:13-148:63
+184                android:name="android.support.PARENT_ACTIVITY"
+184-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:147:17-63
+185                android:value=".activities.LibraryActivity" />
+185-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:148:17-60
+186        </activity>
+187        <activity
+187-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:181:9-184:46
+188            android:name="me.devsaki.hentoid.activities.DrawerEditActivity"
+188-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:182:13-58
+189            android:label="@string/title_activity_drawer_edit" />
+189-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:183:13-63
+190        <activity
+190-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:185:9-188:46
+191            android:name="me.devsaki.hentoid.activities.DuplicateDetectorActivity"
+191-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:186:13-65
+192            android:label="@string/title_activity_duplicate_detector" />
+192-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:187:13-70
+193        <activity
+193-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:189:9-192:46
+194            android:name="me.devsaki.hentoid.activities.SearchActivity"
+194-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:190:13-54
+195            android:label="@string/title_activity_search" />
+195-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:191:13-58
+196        <activity
+196-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:193:9-197:52
+197            android:name="me.devsaki.hentoid.activities.UnlockActivity"
+197-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:194:13-54
+198            android:noHistory="true"
+198-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:195:13-37
+199            android:resizeableActivity="false"
+199-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:196:13-47
+200            android:screenOrientation="portrait" />
+200-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:197:13-49
+201        <activity
+201-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:198:9-201:52
+202            android:name="me.devsaki.hentoid.activities.PinPreferenceActivity"
+202-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:199:13-61
+203            android:resizeableActivity="false"
+203-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:200:13-47
+204            android:screenOrientation="portrait" />
+204-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:201:13-49
+205        <activity
+205-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:202:9-205:46
+206            android:name="me.devsaki.hentoid.activities.MetadataEditActivity"
+206-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:203:13-60
+207            android:label="@string/title_activity_meta_edit" />
+207-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:204:13-61
+208        <activity
+208-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:206:9-209:46
+209            android:name="me.devsaki.hentoid.activities.RenamingRulesActivity"
+209-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:207:13-61
+210            android:label="@string/title_activity_rules" />
+210-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:208:13-57
+211        <activity
+211-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:210:9-568:20
+212            android:name="me.devsaki.hentoid.activities.IntentActivity"
+212-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:211:13-54
+213            android:exported="true"
+213-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:212:13-36
+214            android:theme="@style/Theme.Invisible" >
+214-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:213:13-51
+215            <intent-filter>
+215-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:214:13-218:29
+216                <action android:name="android.intent.action.SEND" />
+216-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:215:17-69
+216-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:215:25-66
+217
+218                <category android:name="android.intent.category.DEFAULT" />
+218-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+218-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+219
+220                <data android:mimeType="text/plain" />
+220-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+220-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:23-52
+221            </intent-filter>
+222            <intent-filter>
+222-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:219:13-233:29
+223                <action android:name="android.intent.action.VIEW" />
+223-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+223-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+224
+225                <category android:name="android.intent.category.DEFAULT" />
+225-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+225-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+226                <category android:name="android.intent.category.BROWSABLE" />
+226-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+226-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+227
+228                <data
+228-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+229                    android:host="hitomi.la"
+229-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+230                    android:pathPattern="/..*/..*"
+230-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+231                    android:scheme="https" />
+231-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+232                <data
+232-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+233                    android:host="www.hitomi.la"
+233-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+234                    android:pathPattern="/..*/..*"
+234-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+235                    android:scheme="https" />
+235-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+236            </intent-filter>
+237            <intent-filter>
+237-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:234:13-248:29
+238                <action android:name="android.intent.action.VIEW" />
+238-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+238-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+239
+240                <category android:name="android.intent.category.DEFAULT" />
+240-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+240-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+241                <category android:name="android.intent.category.BROWSABLE" />
+241-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+241-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+242
+243                <data
+243-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+244                    android:host="nhentai.net"
+244-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+245                    android:pathPrefix="/g/"
+245-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:242:21-45
+246                    android:scheme="https" />
+246-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+247                <data
+247-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+248                    android:host="www.nhentai.net"
+248-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+249                    android:pathPrefix="/g/"
+249-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:242:21-45
+250                    android:scheme="https" />
+250-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+251            </intent-filter>
+252            <intent-filter>
+252-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:249:13-259:29
+253                <action android:name="android.intent.action.VIEW" />
+253-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+253-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+254
+255                <category android:name="android.intent.category.DEFAULT" />
+255-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+255-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+256                <category android:name="android.intent.category.BROWSABLE" />
+256-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+256-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+257
+258                <data
+258-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+259                    android:host="www.tsumino.com"
+259-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+260                    android:pathPrefix="/entry/"
+260-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:242:21-45
+261                    android:scheme="https" />
+261-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+262            </intent-filter>
+263            <intent-filter>
+263-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:260:13-270:29
+264                <action android:name="android.intent.action.VIEW" />
+264-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+264-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+265
+266                <category android:name="android.intent.category.DEFAULT" />
+266-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+266-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+267                <category android:name="android.intent.category.BROWSABLE" />
+267-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+267-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+268
+269                <data
+269-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+270                    android:host="asmhentai.com"
+270-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+271                    android:pathPrefix="/g"
+271-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:242:21-45
+272                    android:scheme="https" />
+272-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+273            </intent-filter>
+274            <intent-filter>
+274-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:271:13-281:29
+275                <action android:name="android.intent.action.VIEW" />
+275-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+275-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+276
+277                <category android:name="android.intent.category.DEFAULT" />
+277-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+277-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+278                <category android:name="android.intent.category.BROWSABLE" />
+278-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+278-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+279
+280                <data
+280-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+281                    android:host="comics.asmhentai.com"
+281-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+282                    android:pathPrefix="/g"
+282-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:242:21-45
+283                    android:scheme="https" />
+283-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+284            </intent-filter>
+285            <intent-filter>
+285-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:282:13-292:29
+286                <action android:name="android.intent.action.VIEW" />
+286-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+286-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+287
+288                <category android:name="android.intent.category.DEFAULT" />
+288-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+288-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+289                <category android:name="android.intent.category.BROWSABLE" />
+289-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+289-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+290
+291                <data
+291-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+292                    android:host="pururin.to"
+292-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+293                    android:pathPrefix="/gallery"
+293-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:242:21-45
+294                    android:scheme="https" />
+294-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+295            </intent-filter>
+296            <intent-filter>
+296-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:293:13-303:29
+297                <action android:name="android.intent.action.VIEW" />
+297-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+297-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+298
+299                <category android:name="android.intent.category.DEFAULT" />
+299-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+299-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+300                <category android:name="android.intent.category.BROWSABLE" />
+300-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+300-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+301
+302                <data
+302-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+303                    android:host="e-hentai.org"
+303-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+304                    android:pathPrefix="/g/"
+304-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:242:21-45
+305                    android:scheme="https" />
+305-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+306            </intent-filter>
+307            <intent-filter>
+307-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:304:13-314:29
+308                <action android:name="android.intent.action.VIEW" />
+308-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+308-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+309
+310                <category android:name="android.intent.category.DEFAULT" />
+310-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+310-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+311                <category android:name="android.intent.category.BROWSABLE" />
+311-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+311-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+312
+313                <data
+313-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+314                    android:host="exhentai.org"
+314-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+315                    android:pathPrefix="/g/"
+315-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:242:21-45
+316                    android:scheme="https" />
+316-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+317            </intent-filter>
+318            <intent-filter>
+318-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:315:13-335:29
+319                <action android:name="android.intent.action.VIEW" />
+319-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+319-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+320
+321                <category android:name="android.intent.category.DEFAULT" />
+321-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+321-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+322                <category android:name="android.intent.category.BROWSABLE" />
+322-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+322-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+323
+324                <data
+324-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+325                    android:host="8muses.com"
+325-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+326                    android:pathPrefix="/comics/album/"
+326-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:242:21-45
+327                    android:scheme="https" />
+327-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+328                <data
+328-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+329                    android:host="www.8muses.com"
+329-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+330                    android:pathPrefix="/comics/album/"
+330-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:242:21-45
+331                    android:scheme="https" />
+331-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+332                <data
+332-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+333                    android:host="comics.8muses.com"
+333-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+334                    android:pathPrefix="/comics/album/"
+334-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:242:21-45
+335                    android:scheme="https" />
+335-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+336            </intent-filter>
+337            <intent-filter>
+337-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:336:13-346:29
+338                <action android:name="android.intent.action.VIEW" />
+338-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+338-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+339
+340                <category android:name="android.intent.category.DEFAULT" />
+340-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+340-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+341                <category android:name="android.intent.category.BROWSABLE" />
+341-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+341-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+342
+343                <data
+343-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+344                    android:host="doujins.com"
+344-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+345                    android:pathPattern="..*/..*"
+345-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+346                    android:scheme="https" />
+346-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+347            </intent-filter>
+348            <intent-filter>
+348-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:347:13-369:29
+349                <action android:name="android.intent.action.VIEW" />
+349-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+349-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+350
+351                <category android:name="android.intent.category.DEFAULT" />
+351-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+351-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+352                <category android:name="android.intent.category.BROWSABLE" />
+352-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+352-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+353
+354                <data
+354-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+355                    android:host="luscious.net"
+355-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+356                    android:pathPattern="..*/..*"
+356-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+357                    android:scheme="https" />
+357-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+358                <data
+358-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+359                    android:host="www.luscious.net"
+359-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+360                    android:pathPattern="..*/..*"
+360-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+361                    android:scheme="https" />
+361-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+362                <data
+362-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+363                    android:host="members.luscious.net"
+363-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+364                    android:pathPattern="..*/..*"
+364-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+365                    android:scheme="https" />
+365-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+366                <data
+366-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+367                    android:host="www.members.luscious.net"
+367-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+368                    android:pathPattern="..*/..*"
+368-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+369                    android:scheme="https" />
+369-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+370            </intent-filter>
+371            <intent-filter>
+371-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:370:13-392:29
+372                <action android:name="android.intent.action.VIEW" />
+372-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+372-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+373
+374                <category android:name="android.intent.category.DEFAULT" />
+374-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+374-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+375                <category android:name="android.intent.category.BROWSABLE" />
+375-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+375-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+376
+377                <data
+377-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+378                    android:host="porncomixonline.net"
+378-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+379                    android:pathPattern="..*/.*"
+379-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+380                    android:scheme="https" />
+380-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+381                <data
+381-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+382                    android:host="porncomixonline.com"
+382-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+383                    android:pathPattern="..*/.*"
+383-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+384                    android:scheme="https" />
+384-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+385                <data
+385-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+386                    android:host="www.porncomixonline.net"
+386-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+387                    android:pathPattern="..*/.*"
+387-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+388                    android:scheme="https" />
+388-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+389                <data
+389-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+390                    android:host="www.porncomixonline.com"
+390-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+391                    android:pathPattern="..*/.*"
+391-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+392                    android:scheme="https" />
+392-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+393            </intent-filter>
+394            <intent-filter>
+394-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:393:13-403:29
+395                <action android:name="android.intent.action.VIEW" />
+395-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+395-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+396
+397                <category android:name="android.intent.category.DEFAULT" />
+397-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+397-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+398                <category android:name="android.intent.category.BROWSABLE" />
+398-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+398-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+399
+400                <data
+400-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+401                    android:host="www.hbrowse.com"
+401-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+402                    android:pathPattern="/..*/..*"
+402-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+403                    android:scheme="https" />
+403-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+404            </intent-filter>
+405            <intent-filter>
+405-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:404:13-422:29
+406                <action android:name="android.intent.action.VIEW" />
+406-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+406-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+407
+408                <category android:name="android.intent.category.DEFAULT" />
+408-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+408-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+409                <category android:name="android.intent.category.BROWSABLE" />
+409-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+409-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+410
+411                <data
+411-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+412                    android:host="hentai2read.com"
+412-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+413                    android:pathPattern="/..*/"
+413-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+414                    android:scheme="https" />
+414-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+415                <data
+415-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+416                    android:host="hentai2read.com"
+416-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+417                    android:pathPattern="/..*/..*"
+417-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+418                    android:scheme="https" />
+418-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+419                <data
+419-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+420                    android:host="hentai2read.com"
+420-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+421                    android:pathPattern="/..*/..*/..*"
+421-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+422                    android:scheme="https" />
+422-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+423            </intent-filter>
+424            <intent-filter>
+424-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:423:13-433:29
+425                <action android:name="android.intent.action.VIEW" />
+425-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+425-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+426
+427                <category android:name="android.intent.category.DEFAULT" />
+427-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+427-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+428                <category android:name="android.intent.category.BROWSABLE" />
+428-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+428-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+429
+430                <data
+430-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+431                    android:host="hentaifox.com"
+431-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+432                    android:pathPattern="/gallery/..*/"
+432-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+433                    android:scheme="https" />
+433-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+434            </intent-filter>
+435            <intent-filter>
+435-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:434:13-444:29
+436                <action android:name="android.intent.action.VIEW" />
+436-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+436-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+437
+438                <category android:name="android.intent.category.DEFAULT" />
+438-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+438-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+439                <category android:name="android.intent.category.BROWSABLE" />
+439-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+439-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+440
+441                <data
+441-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+442                    android:host="myreadingmanga.info"
+442-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+443                    android:pathPattern="/..*/"
+443-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+444                    android:scheme="https" />
+444-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+445            </intent-filter>
+446            <intent-filter>
+446-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:445:13-455:29
+447                <action android:name="android.intent.action.VIEW" />
+447-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+447-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+448
+449                <category android:name="android.intent.category.DEFAULT" />
+449-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+449-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+450                <category android:name="android.intent.category.BROWSABLE" />
+450-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+450-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+451
+452                <data
+452-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+453                    android:host="manhwahentai.me"
+453-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+454                    android:pathPattern="/..*/..*"
+454-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+455                    android:scheme="https" />
+455-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+456            </intent-filter>
+457            <intent-filter>
+457-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:456:13-466:29
+458                <action android:name="android.intent.action.VIEW" />
+458-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+458-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+459
+460                <category android:name="android.intent.category.DEFAULT" />
+460-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+460-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+461                <category android:name="android.intent.category.BROWSABLE" />
+461-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+461-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+462
+463                <data
+463-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+464                    android:host="imhentai.com"
+464-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+465                    android:pathPattern="/gallery/..*"
+465-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+466                    android:scheme="https" />
+466-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+467            </intent-filter>
+468            <intent-filter>
+468-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:467:13-477:29
+469                <action android:name="android.intent.action.VIEW" />
+469-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+469-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+470
+471                <category android:name="android.intent.category.DEFAULT" />
+471-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+471-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+472                <category android:name="android.intent.category.BROWSABLE" />
+472-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+472-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+473
+474                <data
+474-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+475                    android:host="toonily.com"
+475-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+476                    android:pathPattern="/..*/..*"
+476-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+477                    android:scheme="https" />
+477-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+478            </intent-filter>
+479            <intent-filter>
+479-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:478:13-488:29
+480                <action android:name="android.intent.action.VIEW" />
+480-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+480-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+481
+482                <category android:name="android.intent.category.DEFAULT" />
+482-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+482-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+483                <category android:name="android.intent.category.BROWSABLE" />
+483-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+483-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+484
+485                <data
+485-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+486                    android:host="allporncomic.com"
+486-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+487                    android:pathPattern="/porncomic/..*/"
+487-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+488                    android:scheme="https" />
+488-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+489            </intent-filter>
+490            <intent-filter>
+490-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:489:13-519:29
+491                <action android:name="android.intent.action.VIEW" />
+491-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+491-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+492
+493                <category android:name="android.intent.category.DEFAULT" />
+493-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+493-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+494                <category android:name="android.intent.category.BROWSABLE" />
+494-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+494-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+495
+496                <data
+496-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+497                    android:host="pixiv.net"
+497-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+498                    android:pathPattern="/..*/artworks/..*"
+498-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+499                    android:scheme="https" />
+499-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+500                <data
+500-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+501                    android:host="pixiv.net"
+501-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+502                    android:pathPattern="/..*/user/..*/series/..*"
+502-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+503                    android:scheme="https" />
+503-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+504                <data
+504-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+505                    android:host="pixiv.net"
+505-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+506                    android:pathPattern="/..*/users/..*"
+506-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+507                    android:scheme="https" />
+507-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+508                <data
+508-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+509                    android:host="www.pixiv.net"
+509-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+510                    android:pathPattern="/..*/artworks/..*"
+510-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+511                    android:scheme="https" />
+511-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+512                <data
+512-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+513                    android:host="www.pixiv.net"
+513-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+514                    android:pathPattern="/..*/user/..*/series/..*"
+514-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+515                    android:scheme="https" />
+515-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+516                <data
+516-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+517                    android:host="www.pixiv.net"
+517-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+518                    android:pathPattern="/..*/users/..*"
+518-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+519                    android:scheme="https" />
+519-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+520            </intent-filter>
+521            <intent-filter>
+521-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:520:13-534:29
+522                <action android:name="android.intent.action.VIEW" />
+522-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+522-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+523
+524                <category android:name="android.intent.category.DEFAULT" />
+524-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+524-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+525                <category android:name="android.intent.category.BROWSABLE" />
+525-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+525-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+526
+527                <data
+527-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+528                    android:host="manhwa18.com"
+528-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+529                    android:pathPattern="/manga/..*"
+529-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+530                    android:scheme="https" />
+530-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+531                <data
+531-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+532                    android:host="manhwa18.com"
+532-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+533                    android:pathPattern="/manga/..*/..*"
+533-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+534                    android:scheme="https" />
+534-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+535            </intent-filter>
+536            <intent-filter>
+536-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:535:13-545:29
+537                <action android:name="android.intent.action.VIEW" />
+537-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+537-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+538
+539                <category android:name="android.intent.category.DEFAULT" />
+539-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+539-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+540                <category android:name="android.intent.category.BROWSABLE" />
+540-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+540-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+541
+542                <data
+542-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+543                    android:host="multporn.net"
+543-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+544                    android:pathPattern="/..*/..*"
+544-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+545                    android:scheme="https" />
+545-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+546            </intent-filter>
+547            <intent-filter>
+547-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:546:13-556:29
+548                <action android:name="android.intent.action.VIEW" />
+548-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+548-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+549
+550                <category android:name="android.intent.category.DEFAULT" />
+550-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+550-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+551                <category android:name="android.intent.category.BROWSABLE" />
+551-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+551-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+552
+553                <data
+553-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+554                    android:host="www.simply-hentai.com"
+554-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+555                    android:pathPattern="/..*/..*"
+555-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+556                    android:scheme="https" />
+556-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+557            </intent-filter>
+558            <intent-filter>
+558-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:557:13-567:29
+559                <action android:name="android.intent.action.VIEW" />
+559-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:17-69
+559-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:220:25-66
+560
+561                <category android:name="android.intent.category.DEFAULT" />
+561-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:17-76
+561-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:216:27-73
+562                <category android:name="android.intent.category.BROWSABLE" />
+562-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:17-78
+562-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:223:27-75
+563
+564                <data
+564-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:217:17-55
+565                    android:host="hdporncomics.com"
+565-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:226:21-45
+566                    android:pathPattern="/..*/"
+566-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:227:21-51
+567                    android:scheme="https" />
+567-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:228:21-43
+568            </intent-filter>
+569        </activity>
+570        <activity
+570-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:570:9-578:20
+571            android:name="me.devsaki.hentoid.activities.ReaderActivity"
+571-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:571:13-54
+572            android:label="Image Viewer"
+572-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:572:13-41
+573            android:launchMode="singleTask"
+573-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:573:13-44
+574            android:theme="@style/Theme.Light.Monochrome" >
+574-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:574:13-58
+575            <meta-data
+575-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:146:13-148:63
+576                android:name="android.support.PARENT_ACTIVITY"
+576-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:147:17-63
+577                android:value=".activities.LibraryActivity" />
+577-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:148:17-60
+578        </activity>
+579
+580        <!-- Services -->
+581
+582        <service android:name="me.devsaki.hentoid.services.UpdateCheckService" />
+582-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:582:9-64
+582-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:582:18-61
+583        <service android:name="me.devsaki.hentoid.services.API29MigrationService" />
+583-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:584:9-67
+583-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:584:18-64
+584
+585        <!-- Receivers -->
+586
+587        <receiver android:name="me.devsaki.hentoid.receiver.DownloadNotificationDeleteReceiver" />
+587-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:588:9-81
+587-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:588:19-78
+588        <receiver android:name="me.devsaki.hentoid.receiver.ArchiveNotificationSuccessReceiver" />
+588-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:590:9-81
+588-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:590:19-78
+589        <receiver android:name="me.devsaki.hentoid.receiver.DownloadNotificationPauseReceiver" />
+589-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:592:9-80
+589-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:592:19-77
+590        <receiver android:name="me.devsaki.hentoid.receiver.DuplicateNotificationStopReceiver" />
+590-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:594:9-80
+590-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:594:19-77
+591        <receiver android:name="me.devsaki.hentoid.receiver.AppUpdateDownloadReceiver" />
+591-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:596:9-72
+591-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:596:19-69
+592
+593        <!-- Providers -->
+594
+595        <provider
+596            android:name="androidx.core.content.FileProvider"
+596-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:601:13-62
+597            android:authorities="me.devsaki.hentoid.debug.provider.FileProvider"
+597-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:602:13-73
+598            android:enabled="true"
+598-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:603:13-35
+599            android:exported="false"
+599-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:604:13-37
+600            android:grantUriPermissions="true" >
+600-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:605:13-47
+601            <meta-data
+601-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:606:13-608:54
+602                android:name="android.support.FILE_PROVIDER_PATHS"
+602-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:607:17-67
+603                android:resource="@xml/file_paths" />
+603-->/home/hrdq/Hentoid/Hentoid/app/src/main/AndroidManifest.xml:608:17-51
+604        </provider>
+605
+606        <activity android:name="com.mikepenz.aboutlibraries.ui.LibsActivity" />
+606-->[com.mikepenz:aboutlibraries:8.9.4] /home/hrdq/.gradle/caches/transforms-3/72e94ca05c6767f5089c99dc60b4d18e/transformed/aboutlibraries-8.9.4/AndroidManifest.xml:10:9-80
+606-->[com.mikepenz:aboutlibraries:8.9.4] /home/hrdq/.gradle/caches/transforms-3/72e94ca05c6767f5089c99dc60b4d18e/transformed/aboutlibraries-8.9.4/AndroidManifest.xml:10:19-77
+607
+608        <meta-data
+608-->[com.github.bumptech.glide:okhttp3-integration:4.14.2] /home/hrdq/.gradle/caches/transforms-3/50bccf4dcbb666a24861dda62c4055df/transformed/okhttp3-integration-4.14.2/AndroidManifest.xml:10:9-12:43
+609            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+609-->[com.github.bumptech.glide:okhttp3-integration:4.14.2] /home/hrdq/.gradle/caches/transforms-3/50bccf4dcbb666a24861dda62c4055df/transformed/okhttp3-integration-4.14.2/AndroidManifest.xml:11:13-84
+610            android:value="GlideModule" />
+610-->[com.github.bumptech.glide:okhttp3-integration:4.14.2] /home/hrdq/.gradle/caches/transforms-3/50bccf4dcbb666a24861dda62c4055df/transformed/okhttp3-integration-4.14.2/AndroidManifest.xml:12:13-40
+611        <meta-data
+611-->[com.github.zjupure:webpdecoder:2.3.4.14.2] /home/hrdq/.gradle/caches/transforms-3/ed5873b740f431c41cd259c5bd9e238f/transformed/webpdecoder-2.3.4.14.2/AndroidManifest.xml:10:9-12:43
+612            android:name="com.bumptech.glide.integration.webp.WebpGlideModule"
+612-->[com.github.zjupure:webpdecoder:2.3.4.14.2] /home/hrdq/.gradle/caches/transforms-3/ed5873b740f431c41cd259c5bd9e238f/transformed/webpdecoder-2.3.4.14.2/AndroidManifest.xml:11:13-79
+613            android:value="GlideModule" />
+613-->[com.github.zjupure:webpdecoder:2.3.4.14.2] /home/hrdq/.gradle/caches/transforms-3/ed5873b740f431c41cd259c5bd9e238f/transformed/webpdecoder-2.3.4.14.2/AndroidManifest.xml:12:13-40
+614
+615        <receiver
+615-->[com.google.android.gms:play-services-measurement:21.1.0] /home/hrdq/.gradle/caches/transforms-3/ee1a9e227cd812ee2e50a75ba2a2dcea/transformed/play-services-measurement-21.1.0/AndroidManifest.xml:29:9-33:20
+616            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+616-->[com.google.android.gms:play-services-measurement:21.1.0] /home/hrdq/.gradle/caches/transforms-3/ee1a9e227cd812ee2e50a75ba2a2dcea/transformed/play-services-measurement-21.1.0/AndroidManifest.xml:30:13-85
+617            android:enabled="true"
+617-->[com.google.android.gms:play-services-measurement:21.1.0] /home/hrdq/.gradle/caches/transforms-3/ee1a9e227cd812ee2e50a75ba2a2dcea/transformed/play-services-measurement-21.1.0/AndroidManifest.xml:31:13-35
+618            android:exported="false" >
+618-->[com.google.android.gms:play-services-measurement:21.1.0] /home/hrdq/.gradle/caches/transforms-3/ee1a9e227cd812ee2e50a75ba2a2dcea/transformed/play-services-measurement-21.1.0/AndroidManifest.xml:32:13-37
+619        </receiver>
+620
+621        <service
+621-->[com.google.android.gms:play-services-measurement:21.1.0] /home/hrdq/.gradle/caches/transforms-3/ee1a9e227cd812ee2e50a75ba2a2dcea/transformed/play-services-measurement-21.1.0/AndroidManifest.xml:35:9-38:40
+622            android:name="com.google.android.gms.measurement.AppMeasurementService"
+622-->[com.google.android.gms:play-services-measurement:21.1.0] /home/hrdq/.gradle/caches/transforms-3/ee1a9e227cd812ee2e50a75ba2a2dcea/transformed/play-services-measurement-21.1.0/AndroidManifest.xml:36:13-84
+623            android:enabled="true"
+623-->[com.google.android.gms:play-services-measurement:21.1.0] /home/hrdq/.gradle/caches/transforms-3/ee1a9e227cd812ee2e50a75ba2a2dcea/transformed/play-services-measurement-21.1.0/AndroidManifest.xml:37:13-35
+624            android:exported="false" />
+624-->[com.google.android.gms:play-services-measurement:21.1.0] /home/hrdq/.gradle/caches/transforms-3/ee1a9e227cd812ee2e50a75ba2a2dcea/transformed/play-services-measurement-21.1.0/AndroidManifest.xml:38:13-37
+625        <service
+625-->[com.google.android.gms:play-services-measurement:21.1.0] /home/hrdq/.gradle/caches/transforms-3/ee1a9e227cd812ee2e50a75ba2a2dcea/transformed/play-services-measurement-21.1.0/AndroidManifest.xml:39:9-43:72
+626            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+626-->[com.google.android.gms:play-services-measurement:21.1.0] /home/hrdq/.gradle/caches/transforms-3/ee1a9e227cd812ee2e50a75ba2a2dcea/transformed/play-services-measurement-21.1.0/AndroidManifest.xml:40:13-87
+627            android:enabled="true"
+627-->[com.google.android.gms:play-services-measurement:21.1.0] /home/hrdq/.gradle/caches/transforms-3/ee1a9e227cd812ee2e50a75ba2a2dcea/transformed/play-services-measurement-21.1.0/AndroidManifest.xml:41:13-35
+628            android:exported="false"
+628-->[com.google.android.gms:play-services-measurement:21.1.0] /home/hrdq/.gradle/caches/transforms-3/ee1a9e227cd812ee2e50a75ba2a2dcea/transformed/play-services-measurement-21.1.0/AndroidManifest.xml:42:13-37
+629            android:permission="android.permission.BIND_JOB_SERVICE" />
+629-->[com.google.android.gms:play-services-measurement:21.1.0] /home/hrdq/.gradle/caches/transforms-3/ee1a9e227cd812ee2e50a75ba2a2dcea/transformed/play-services-measurement-21.1.0/AndroidManifest.xml:43:13-69
+630        <service
+630-->[com.google.android.gms:play-services-measurement-api:21.1.0] /home/hrdq/.gradle/caches/transforms-3/b6ed8fe63a9f7a18861f361632b94bc0/transformed/play-services-measurement-api-21.1.0/AndroidManifest.xml:28:9-34:19
+631            android:name="com.google.firebase.components.ComponentDiscoveryService"
+631-->[com.google.android.gms:play-services-measurement-api:21.1.0] /home/hrdq/.gradle/caches/transforms-3/b6ed8fe63a9f7a18861f361632b94bc0/transformed/play-services-measurement-api-21.1.0/AndroidManifest.xml:29:13-84
+632            android:directBootAware="true"
+632-->[com.google.firebase:firebase-common:20.1.1] /home/hrdq/.gradle/caches/transforms-3/65ffc8324040408145cc4added3070b8/transformed/firebase-common-20.1.1/AndroidManifest.xml:35:13-43
+633            android:exported="false" >
+633-->[com.google.android.gms:play-services-measurement-api:21.1.0] /home/hrdq/.gradle/caches/transforms-3/b6ed8fe63a9f7a18861f361632b94bc0/transformed/play-services-measurement-api-21.1.0/AndroidManifest.xml:30:13-37
+634            <meta-data
+634-->[com.google.android.gms:play-services-measurement-api:21.1.0] /home/hrdq/.gradle/caches/transforms-3/b6ed8fe63a9f7a18861f361632b94bc0/transformed/play-services-measurement-api-21.1.0/AndroidManifest.xml:31:13-33:85
+635                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+635-->[com.google.android.gms:play-services-measurement-api:21.1.0] /home/hrdq/.gradle/caches/transforms-3/b6ed8fe63a9f7a18861f361632b94bc0/transformed/play-services-measurement-api-21.1.0/AndroidManifest.xml:32:17-139
+636                android:value="com.google.firebase.components.ComponentRegistrar" />
+636-->[com.google.android.gms:play-services-measurement-api:21.1.0] /home/hrdq/.gradle/caches/transforms-3/b6ed8fe63a9f7a18861f361632b94bc0/transformed/play-services-measurement-api-21.1.0/AndroidManifest.xml:33:17-82
+637            <meta-data
+637-->[com.google.firebase:firebase-crashlytics:18.2.12] /home/hrdq/.gradle/caches/transforms-3/a8d2b314595c3956b1dfe303d3b19bf0/transformed/firebase-crashlytics-18.2.12/AndroidManifest.xml:18:13-20:85
+638                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+638-->[com.google.firebase:firebase-crashlytics:18.2.12] /home/hrdq/.gradle/caches/transforms-3/a8d2b314595c3956b1dfe303d3b19bf0/transformed/firebase-crashlytics-18.2.12/AndroidManifest.xml:19:17-115
+639                android:value="com.google.firebase.components.ComponentRegistrar" />
+639-->[com.google.firebase:firebase-crashlytics:18.2.12] /home/hrdq/.gradle/caches/transforms-3/a8d2b314595c3956b1dfe303d3b19bf0/transformed/firebase-crashlytics-18.2.12/AndroidManifest.xml:20:17-82
+640            <meta-data
+640-->[com.google.firebase:firebase-installations:17.0.1] /home/hrdq/.gradle/caches/transforms-3/051178526dc41451e9333dca9958328c/transformed/firebase-installations-17.0.1/AndroidManifest.xml:18:13-20:85
+641                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+641-->[com.google.firebase:firebase-installations:17.0.1] /home/hrdq/.gradle/caches/transforms-3/051178526dc41451e9333dca9958328c/transformed/firebase-installations-17.0.1/AndroidManifest.xml:19:17-127
+642                android:value="com.google.firebase.components.ComponentRegistrar" />
+642-->[com.google.firebase:firebase-installations:17.0.1] /home/hrdq/.gradle/caches/transforms-3/051178526dc41451e9333dca9958328c/transformed/firebase-installations-17.0.1/AndroidManifest.xml:20:17-82
+643        </service>
+644
+645        <provider
+645-->[com.google.firebase:firebase-common:20.1.1] /home/hrdq/.gradle/caches/transforms-3/65ffc8324040408145cc4added3070b8/transformed/firebase-common-20.1.1/AndroidManifest.xml:26:9-31:39
+646            android:name="com.google.firebase.provider.FirebaseInitProvider"
+646-->[com.google.firebase:firebase-common:20.1.1] /home/hrdq/.gradle/caches/transforms-3/65ffc8324040408145cc4added3070b8/transformed/firebase-common-20.1.1/AndroidManifest.xml:27:13-77
+647            android:authorities="me.devsaki.hentoid.debug.firebaseinitprovider"
+647-->[com.google.firebase:firebase-common:20.1.1] /home/hrdq/.gradle/caches/transforms-3/65ffc8324040408145cc4added3070b8/transformed/firebase-common-20.1.1/AndroidManifest.xml:28:13-72
+648            android:directBootAware="true"
+648-->[com.google.firebase:firebase-common:20.1.1] /home/hrdq/.gradle/caches/transforms-3/65ffc8324040408145cc4added3070b8/transformed/firebase-common-20.1.1/AndroidManifest.xml:29:13-43
+649            android:exported="false"
+649-->[com.google.firebase:firebase-common:20.1.1] /home/hrdq/.gradle/caches/transforms-3/65ffc8324040408145cc4added3070b8/transformed/firebase-common-20.1.1/AndroidManifest.xml:30:13-37
+650            android:initOrder="100" />
+650-->[com.google.firebase:firebase-common:20.1.1] /home/hrdq/.gradle/caches/transforms-3/65ffc8324040408145cc4added3070b8/transformed/firebase-common-20.1.1/AndroidManifest.xml:31:13-36
+651
+652        <meta-data
+652-->[com.google.android.gms:play-services-basement:18.0.0] /home/hrdq/.gradle/caches/transforms-3/0518f1b58febc718246f9125be27eb78/transformed/play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+653            android:name="com.google.android.gms.version"
+653-->[com.google.android.gms:play-services-basement:18.0.0] /home/hrdq/.gradle/caches/transforms-3/0518f1b58febc718246f9125be27eb78/transformed/play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+654            android:value="@integer/google_play_services_version" />
+654-->[com.google.android.gms:play-services-basement:18.0.0] /home/hrdq/.gradle/caches/transforms-3/0518f1b58febc718246f9125be27eb78/transformed/play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+655
+656        <uses-library
+656-->[androidx.window:window:1.0.0] /home/hrdq/.gradle/caches/transforms-3/9162b28cb03553369a738919c8113672/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+657            android:name="androidx.window.extensions"
+657-->[androidx.window:window:1.0.0] /home/hrdq/.gradle/caches/transforms-3/9162b28cb03553369a738919c8113672/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+658            android:required="false" />
+658-->[androidx.window:window:1.0.0] /home/hrdq/.gradle/caches/transforms-3/9162b28cb03553369a738919c8113672/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+659        <uses-library
+659-->[androidx.window:window:1.0.0] /home/hrdq/.gradle/caches/transforms-3/9162b28cb03553369a738919c8113672/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+660            android:name="androidx.window.sidecar"
+660-->[androidx.window:window:1.0.0] /home/hrdq/.gradle/caches/transforms-3/9162b28cb03553369a738919c8113672/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+661            android:required="false" />
+661-->[androidx.window:window:1.0.0] /home/hrdq/.gradle/caches/transforms-3/9162b28cb03553369a738919c8113672/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+662
+663        <provider
+663-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:31:9-39:20
+664            android:name="androidx.startup.InitializationProvider"
+664-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:32:13-67
+665            android:authorities="me.devsaki.hentoid.debug.androidx-startup"
+665-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:33:13-68
+666            android:exported="false" >
+666-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:34:13-37
+667            <meta-data
+667-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:36:13-38:52
+668                android:name="androidx.work.WorkManagerInitializer"
+668-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:37:17-68
+669                android:value="androidx.startup" />
+669-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:38:17-49
+670            <meta-data
+670-->[androidx.emoji2:emoji2:1.2.0] /home/hrdq/.gradle/caches/transforms-3/3f2523fcf876f5de7c698d59ee2723ac/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+671                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+671-->[androidx.emoji2:emoji2:1.2.0] /home/hrdq/.gradle/caches/transforms-3/3f2523fcf876f5de7c698d59ee2723ac/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+672                android:value="androidx.startup" />
+672-->[androidx.emoji2:emoji2:1.2.0] /home/hrdq/.gradle/caches/transforms-3/3f2523fcf876f5de7c698d59ee2723ac/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+673            <meta-data
+673-->[androidx.lifecycle:lifecycle-process:2.5.1] /home/hrdq/.gradle/caches/transforms-3/d77a3632c830bc18c516fb6e2d8e32d3/transformed/lifecycle-process-2.5.1/AndroidManifest.xml:31:13-33:52
+674                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+674-->[androidx.lifecycle:lifecycle-process:2.5.1] /home/hrdq/.gradle/caches/transforms-3/d77a3632c830bc18c516fb6e2d8e32d3/transformed/lifecycle-process-2.5.1/AndroidManifest.xml:32:17-78
+675                android:value="androidx.startup" />
+675-->[androidx.lifecycle:lifecycle-process:2.5.1] /home/hrdq/.gradle/caches/transforms-3/d77a3632c830bc18c516fb6e2d8e32d3/transformed/lifecycle-process-2.5.1/AndroidManifest.xml:33:17-49
+676        </provider>
+677
+678        <service
+678-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
+679            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+679-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
+680            android:directBootAware="false"
+680-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
+681            android:enabled="@bool/enable_system_alarm_service_default"
+681-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
+682            android:exported="false" />
+682-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
+683        <service
+683-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
+684            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+684-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
+685            android:directBootAware="false"
+685-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
+686            android:enabled="@bool/enable_system_job_service_default"
+686-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
+687            android:exported="true"
+687-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
+688            android:permission="android.permission.BIND_JOB_SERVICE" />
+688-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
+689        <service
+689-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
+690            android:name="androidx.work.impl.foreground.SystemForegroundService"
+690-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
+691            android:directBootAware="false"
+691-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
+692            android:enabled="@bool/enable_system_foreground_service_default"
+692-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
+693            android:exported="false" />
+693-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
+694
+695        <receiver
+695-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
+696            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+696-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
+697            android:directBootAware="false"
+697-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
+698            android:enabled="true"
+698-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
+699            android:exported="false" />
+699-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
+700        <receiver
+700-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
+701            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+701-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
+702            android:directBootAware="false"
+702-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
+703            android:enabled="false"
+703-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
+704            android:exported="false" >
+704-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
+705            <intent-filter>
+705-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
+706                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+706-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
+706-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
+707                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+707-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
+707-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
+708            </intent-filter>
+709        </receiver>
+710        <receiver
+710-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
+711            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+711-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
+712            android:directBootAware="false"
+712-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
+713            android:enabled="false"
+713-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
+714            android:exported="false" >
+714-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
+715            <intent-filter>
+715-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
+716                <action android:name="android.intent.action.BATTERY_OKAY" />
+716-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
+716-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
+717                <action android:name="android.intent.action.BATTERY_LOW" />
+717-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
+717-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
+718            </intent-filter>
+719        </receiver>
+720        <receiver
+720-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
+721            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+721-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
+722            android:directBootAware="false"
+722-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
+723            android:enabled="false"
+723-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
+724            android:exported="false" >
+724-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
+725            <intent-filter>
+725-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
+726                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+726-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
+726-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
+727                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+727-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
+727-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
+728            </intent-filter>
+729        </receiver>
+730        <receiver
+730-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
+731            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+731-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
+732            android:directBootAware="false"
+732-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
+733            android:enabled="false"
+733-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
+734            android:exported="false" >
+734-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
+735            <intent-filter>
+735-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
+736                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+736-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
+736-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
+737            </intent-filter>
+738        </receiver>
+739        <receiver
+739-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
+740            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+740-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
+741            android:directBootAware="false"
+741-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
+742            android:enabled="false"
+742-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
+743            android:exported="false" >
+743-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
+744            <intent-filter>
+744-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
+745                <action android:name="android.intent.action.BOOT_COMPLETED" />
+745-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:17-79
+745-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:25-76
+746                <action android:name="android.intent.action.TIME_SET" />
+746-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
+746-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
+747                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+747-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
+747-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
+748            </intent-filter>
+749        </receiver>
+750        <receiver
+750-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
+751            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+751-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
+752            android:directBootAware="false"
+752-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
+753            android:enabled="@bool/enable_system_alarm_service_default"
+753-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
+754            android:exported="false" >
+754-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
+755            <intent-filter>
+755-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
+756                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+756-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
+756-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
+757            </intent-filter>
+758        </receiver>
+759        <receiver
+759-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
+760            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+760-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
+761            android:directBootAware="false"
+761-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
+762            android:enabled="true"
+762-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
+763            android:exported="true"
+763-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
+764            android:permission="android.permission.DUMP" >
+764-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
+765            <intent-filter>
+765-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
+766                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+766-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
+766-->[androidx.work:work-runtime:2.7.1] /home/hrdq/.gradle/caches/transforms-3/68c4f4d4b8ba73ee5261f1bcfeed96e6/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
+767            </intent-filter>
+768        </receiver>
+769
+770        <service
+770-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /home/hrdq/.gradle/caches/transforms-3/31b9fec911704b8e66d8042285590475/transformed/transport-backend-cct-3.1.7/AndroidManifest.xml:29:9-35:19
+771            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+771-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /home/hrdq/.gradle/caches/transforms-3/31b9fec911704b8e66d8042285590475/transformed/transport-backend-cct-3.1.7/AndroidManifest.xml:30:13-103
+772            android:exported="false" >
+772-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /home/hrdq/.gradle/caches/transforms-3/31b9fec911704b8e66d8042285590475/transformed/transport-backend-cct-3.1.7/AndroidManifest.xml:31:13-37
+773            <meta-data
+773-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /home/hrdq/.gradle/caches/transforms-3/31b9fec911704b8e66d8042285590475/transformed/transport-backend-cct-3.1.7/AndroidManifest.xml:32:13-34:39
+774                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+774-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /home/hrdq/.gradle/caches/transforms-3/31b9fec911704b8e66d8042285590475/transformed/transport-backend-cct-3.1.7/AndroidManifest.xml:33:17-94
+775                android:value="cct" />
+775-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /home/hrdq/.gradle/caches/transforms-3/31b9fec911704b8e66d8042285590475/transformed/transport-backend-cct-3.1.7/AndroidManifest.xml:34:17-36
+776        </service>
+777        <service
+777-->[com.google.android.datatransport:transport-runtime:3.1.7] /home/hrdq/.gradle/caches/transforms-3/60d6ad157359803408c5c55d6db4438e/transformed/transport-runtime-3.1.7/AndroidManifest.xml:26:9-30:19
+778            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+778-->[com.google.android.datatransport:transport-runtime:3.1.7] /home/hrdq/.gradle/caches/transforms-3/60d6ad157359803408c5c55d6db4438e/transformed/transport-runtime-3.1.7/AndroidManifest.xml:27:13-117
+779            android:exported="false"
+779-->[com.google.android.datatransport:transport-runtime:3.1.7] /home/hrdq/.gradle/caches/transforms-3/60d6ad157359803408c5c55d6db4438e/transformed/transport-runtime-3.1.7/AndroidManifest.xml:28:13-37
+780            android:permission="android.permission.BIND_JOB_SERVICE" >
+780-->[com.google.android.datatransport:transport-runtime:3.1.7] /home/hrdq/.gradle/caches/transforms-3/60d6ad157359803408c5c55d6db4438e/transformed/transport-runtime-3.1.7/AndroidManifest.xml:29:13-69
+781        </service>
+782
+783        <receiver
+783-->[com.google.android.datatransport:transport-runtime:3.1.7] /home/hrdq/.gradle/caches/transforms-3/60d6ad157359803408c5c55d6db4438e/transformed/transport-runtime-3.1.7/AndroidManifest.xml:32:9-34:40
+784            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+784-->[com.google.android.datatransport:transport-runtime:3.1.7] /home/hrdq/.gradle/caches/transforms-3/60d6ad157359803408c5c55d6db4438e/transformed/transport-runtime-3.1.7/AndroidManifest.xml:33:13-132
+785            android:exported="false" />
+785-->[com.google.android.datatransport:transport-runtime:3.1.7] /home/hrdq/.gradle/caches/transforms-3/60d6ad157359803408c5c55d6db4438e/transformed/transport-runtime-3.1.7/AndroidManifest.xml:34:13-37
+786
+787        <service
+787-->[androidx.room:room-runtime:2.2.5] /home/hrdq/.gradle/caches/transforms-3/5ee1ba6e8ac6aabf49554994e93b5871/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+788            android:name="androidx.room.MultiInstanceInvalidationService"
+788-->[androidx.room:room-runtime:2.2.5] /home/hrdq/.gradle/caches/transforms-3/5ee1ba6e8ac6aabf49554994e93b5871/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+789            android:directBootAware="true"
+789-->[androidx.room:room-runtime:2.2.5] /home/hrdq/.gradle/caches/transforms-3/5ee1ba6e8ac6aabf49554994e93b5871/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+790            android:exported="false" />
+790-->[androidx.room:room-runtime:2.2.5] /home/hrdq/.gradle/caches/transforms-3/5ee1ba6e8ac6aabf49554994e93b5871/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+791    </application>
+792
+793</manifest>

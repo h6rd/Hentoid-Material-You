@@ -93,7 +93,6 @@ class PermissionIntroFragment :
             ) -> {
                 parentActivity.nextStep()
             }
-
             else -> {
                 requestPermissionLauncher.launch(Manifest.permission.WRITE_EXTERNAL_STORAGE)
             }

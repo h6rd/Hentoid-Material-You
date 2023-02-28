@@ -7,7 +7,6 @@ import static me.devsaki.hentoid.events.CommunicationEvent.EV_CLOSED;
 import static me.devsaki.hentoid.events.CommunicationEvent.EV_DISABLE;
 import static me.devsaki.hentoid.events.CommunicationEvent.EV_ENABLE;
 import static me.devsaki.hentoid.events.CommunicationEvent.EV_SEARCH;
-import static me.devsaki.hentoid.events.CommunicationEvent.EV_UPDATE_EDIT_MODE;
 import static me.devsaki.hentoid.events.CommunicationEvent.EV_UPDATE_TOOLBAR;
 import static me.devsaki.hentoid.events.CommunicationEvent.RC_CONTENTS;
 import static me.devsaki.hentoid.events.CommunicationEvent.RC_DRAWER;
@@ -19,6 +18,7 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -73,7 +73,6 @@ import me.devsaki.hentoid.database.domains.Content;
 import me.devsaki.hentoid.database.domains.Group;
 import me.devsaki.hentoid.database.domains.SearchRecord;
 import me.devsaki.hentoid.enums.Grouping;
-import me.devsaki.hentoid.enums.StorageLocation;
 import me.devsaki.hentoid.events.AppUpdatedEvent;
 import me.devsaki.hentoid.events.CommunicationEvent;
 import me.devsaki.hentoid.events.ProcessEvent;
@@ -237,7 +236,6 @@ public class LibraryActivity extends BaseActivity {
 
     public void setEditMode(boolean editMode) {
         this.editMode = editMode;
-        signalFragment(1, EV_UPDATE_EDIT_MODE, "");
         updateToolbar();
     }
 
@@ -370,8 +368,8 @@ public class LibraryActivity extends BaseActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        final long previouslyViewedContent = Preferences.getReaderCurrentContent();
-        final int previouslyViewedPage = Preferences.getReaderCurrentPageNum();
+        final long previouslyViewedContent = Preferences.getViewerCurrentContent();
+        final int previouslyViewedPage = Preferences.getViewerCurrentPageNum();
         if (previouslyViewedContent > -1 && previouslyViewedPage > -1 && !ReaderActivity.isRunning()) {
             Snackbar snackbar = Snackbar.make(viewPager, R.string.resume_closed, BaseTransientBottomBar.LENGTH_LONG);
             snackbar.setAction(R.string.resume, v -> {
@@ -387,8 +385,8 @@ public class LibraryActivity extends BaseActivity {
             });
             snackbar.show();
             // Only show that once
-            Preferences.setReaderCurrentContent(-1);
-            Preferences.setReaderCurrentPageNum(-1);
+            Preferences.setViewerCurrentContent(-1);
+            Preferences.setViewerCurrentPageNum(-1);
         }
     }
 
@@ -442,20 +440,15 @@ public class LibraryActivity extends BaseActivity {
             alertTxt.setVisibility(View.VISIBLE);
             alertIcon.setVisibility(View.GONE);
             alertFixBtn.setVisibility(View.GONE);
-        } else if (!PermissionHelper.checkExternalStorageReadWritePermission(this)) { // Warn about permissions being lost
-            alertTxt.setText(R.string.alert_permissions_lost);
-            alertTxt.setVisibility(View.VISIBLE);
-            alertIcon.setVisibility(View.VISIBLE);
+        } else if (!PermissionHelper.checkExternalStorageReadWritePermission(this) &&
+                Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) { // Warn about permissions being lost
+            alertTxt.setText(R.string.permissions_lost);
             alertFixBtn.setOnClickListener(v -> fixPermissions());
-            alertFixBtn.setVisibility(View.VISIBLE);
-        } else if (!PermissionHelper.checkNotificationPermission(this)) { // Warn about notiftications not being enabled
-            alertTxt.setText(R.string.alert_notifications);
             alertTxt.setVisibility(View.VISIBLE);
             alertIcon.setVisibility(View.VISIBLE);
-            alertFixBtn.setOnClickListener(v -> fixNotifications());
             alertFixBtn.setVisibility(View.VISIBLE);
         } else if (isLowOnSpace()) { // Display low space alert
-            alertTxt.setText(R.string.alert_low_memory);
+            alertTxt.setText(R.string.low_memory);
             alertTxt.setVisibility(View.VISIBLE);
             alertIcon.setVisibility(View.VISIBLE);
             alertFixBtn.setVisibility(View.GONE);
@@ -635,13 +628,13 @@ public class LibraryActivity extends BaseActivity {
                     .setAutoDismiss(true);
 
             for (int i = searchRecords.size() - 1; i >= 0; i--)
-                powerMenuBuilder.addItem(new PowerMenuItem(searchRecords.get(i).getLabel(), false, R.drawable.ic_clock, null, null, searchRecords.get(i)));
+                powerMenuBuilder.addItem(new PowerMenuItem(searchRecords.get(i).getLabel(), R.drawable.ic_clock, false, searchRecords.get(i)));
             powerMenuBuilder.addItem(new PowerMenuItem(getResources().getString(R.string.clear_search_history), false));
 
             searchHistory = powerMenuBuilder.build();
             searchHistory.setOnMenuItemClickListener((position, item) -> {
-                if (item.tag != null) { // Tap on search record
-                    SearchRecord record = (SearchRecord) item.tag;
+                if (item.getTag() != null) { // Tap on search record
+                    SearchRecord record = (SearchRecord) item.getTag();
                     Uri searchUri = Uri.parse(record.getSearchString());
                     String targetQuery = searchUri.getPath();
                     if (!targetQuery.isEmpty())
@@ -737,7 +730,7 @@ public class LibraryActivity extends BaseActivity {
                 finish();
                 startActivity(intent);
                 break;
-            case Preferences.Key.PRIMARY_STORAGE_URI:
+            case Preferences.Key.SD_STORAGE_URI:
             case Preferences.Key.EXTERNAL_LIBRARY_URI:
                 updateDisplay(Grouping.FLAT.getId());
                 viewModel.setGrouping(Grouping.FLAT.getId());
@@ -813,17 +806,8 @@ public class LibraryActivity extends BaseActivity {
             updateAlertBanner();
     }
 
-    private void fixNotifications() {
-        if (PermissionHelper.requestNotificationPermission(this, PermissionHelper.RQST_NOTIFICATION_PERMISSION))
-            updateAlertBanner();
-    }
-
     private boolean isLowOnSpace() {
-        return isLowOnSpace(StorageLocation.PRIMARY_1) || isLowOnSpace(StorageLocation.PRIMARY_2);
-    }
-
-    private boolean isLowOnSpace(StorageLocation location) {
-        DocumentFile rootFolder = FileHelper.getDocumentFromTreeUriString(this, Preferences.getStorageUri(location));
+        DocumentFile rootFolder = FileHelper.getFolderFromTreeUriString(this, Preferences.getStorageUri());
         if (null == rootFolder) return false;
 
         double freeSpaceRatio = new FileHelper.MemoryUsageFigures(this, rootFolder).getFreeUsageRatio100();
@@ -833,21 +817,14 @@ public class LibraryActivity extends BaseActivity {
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
                                            @NonNull int[] grantResults) {
+        if (requestCode != PermissionHelper.RQST_STORAGE_PERMISSION) return;
+        if (permissions.length < 2) return;
         if (grantResults.length == 0) return;
-        if (PermissionHelper.RQST_STORAGE_PERMISSION == requestCode) {
-            if (permissions.length < 2) return;
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                alertTxt.setVisibility(View.GONE);
-                alertIcon.setVisibility(View.GONE);
-                alertFixBtn.setVisibility(View.GONE);
-            } // Don't show rationales here; the alert still displayed on screen should be enough
-        } else if (PermissionHelper.RQST_NOTIFICATION_PERMISSION == requestCode) {
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                alertTxt.setVisibility(View.GONE);
-                alertIcon.setVisibility(View.GONE);
-                alertFixBtn.setVisibility(View.GONE);
-            } // Don't show rationales here; the alert still displayed on screen should be enough
-        }
+        if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            alertTxt.setVisibility(View.GONE);
+            alertIcon.setVisibility(View.GONE);
+            alertFixBtn.setVisibility(View.GONE);
+        } // Don't show rationales here; the alert still displayed on screen should be enough
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 
@@ -867,16 +844,17 @@ public class LibraryActivity extends BaseActivity {
         if (isGroupDisplayed()) return;
 
         enableFragment(0);
-        setEditMode(false);
         viewModel.searchGroup();
         viewPager.setCurrentItem(0);
         if (titles.containsKey(0)) toolbar.setTitle(titles.get(0));
+        //toolbar.setNavigationIcon(R.drawable.ic_drawer);
     }
 
     public void showBooksInGroup(Group group) {
         enableFragment(1);
         viewModel.setGroup(group, true);
         viewPager.setCurrentItem(1);
+        //toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
     }
 
     public boolean isFilterActive() {
@@ -1006,19 +984,6 @@ public class LibraryActivity extends BaseActivity {
         // Filter on delete complete event
         if (R.id.delete_service_delete != event.processId) return;
         if (ProcessEvent.EventType.COMPLETE != event.eventType) return;
-        processEvent(event);
-    }
-
-    @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
-    public void onProcessStickyEvent(ProcessEvent event) {
-        // Filter on delete complete event
-        if (R.id.delete_service_delete != event.processId) return;
-        if (ProcessEvent.EventType.COMPLETE != event.eventType) return;
-        EventBus.getDefault().removeStickyEvent(event);
-        processEvent(event);
-    }
-
-    private void processEvent(ProcessEvent event) {
         String msg = "";
         int nbGroups = event.elementsOKOther;
         int nbContent = event.elementsOK;

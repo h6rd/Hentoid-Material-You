@@ -15,7 +15,6 @@ import com.annimon.stream.Stream;
 import com.annimon.stream.function.Consumer;
 
 import org.apache.commons.lang3.tuple.ImmutablePair;
-import org.apache.commons.lang3.tuple.Pair;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -61,8 +60,6 @@ public class ObjectBoxDAO implements CollectionDAO {
 
     private final ObjectBoxDB db;
 
-    // Used for testing purposes
-    @SuppressWarnings("unused")
     ObjectBoxDAO(ObjectBoxDB db) {
         this.db = db;
     }
@@ -81,34 +78,35 @@ public class ObjectBoxDAO implements CollectionDAO {
         db.closeThreadResources();
     }
 
-    public void cleanupOrphanAttributes() {
-        db.cleanupOrphanAttributes();
-    }
-
     @Override
     public long getDbSizeBytes() {
         return db.getDbSizeBytes();
     }
 
-    public Set<Long> selectStoredFavContentIds(boolean bookFavs, boolean groupFavs) {
-        return db.selectStoredContentFavIds(bookFavs, groupFavs);
+    @Override
+    public List<Long> selectStoredContentIds(boolean nonFavouritesOnly, boolean includeQueued, int orderField, boolean orderDesc) {
+        return Helper.getListFromPrimitiveArray(db.selectStoredContentQ(nonFavouritesOnly, includeQueued, orderField, orderDesc).build().findIds());
+    }
+
+    @Override
+    public long countStoredContent(boolean nonFavouritesOnly, boolean includeQueued) {
+        return db.selectStoredContentQ(nonFavouritesOnly, includeQueued, -1, false).build().count();
     }
 
     @Override
     public long countContentWithUnhashedCovers() {
-        return DBHelper.safeCount(db.selectNonHashedContentQ());
+        return db.selectNonHashedContent().count();
     }
 
     @Override
     public List<Content> selectContentWithUnhashedCovers() {
-        return DBHelper.safeFind(db.selectNonHashedContentQ());
+        return db.selectNonHashedContent().find();
     }
 
     @Override
-    public void streamStoredContent(boolean includeQueued, int orderField, boolean orderDesc, Consumer<Content> consumer) {
-        try (Query<Content> query = db.selectStoredContentQ(includeQueued, orderField, orderDesc).build()) {
-            query.forEach(consumer::accept);
-        }
+    public void streamStoredContent(boolean nonFavouritesOnly, boolean includeQueued, int orderField, boolean orderDesc, Consumer<Content> consumer) {
+        Query<Content> query = db.selectStoredContentQ(nonFavouritesOnly, includeQueued, orderField, orderDesc).build();
+        query.forEach(consumer::accept);
     }
 
     @Override
@@ -190,7 +188,7 @@ public class ObjectBoxDAO implements CollectionDAO {
     }
 
     public List<Content> selectErrorContent() {
-        return DBHelper.safeFind(db.selectErrorContentQ());
+        return db.selectErrorContentQ().find();
     }
 
     public LiveData<Integer> countAllBooksLive() {
@@ -338,13 +336,7 @@ public class ObjectBoxDAO implements CollectionDAO {
     }
 
     public long insertContent(@NonNull final Content content) {
-        Pair<Long, Set<Attribute>> result = db.insertContentAndAttributes(content);
-        // Attach new attributes to existing groups, if any
-        for (Attribute a : result.getRight()) {
-            Group g = selectGroupByName(Grouping.ARTIST.getId(), a.getName());
-            if (g != null) insertGroupItem(new GroupItem(result.getLeft(), g, -1));
-        }
-        return result.getLeft();
+        return db.insertContent(content);
     }
 
     public long insertContentCore(@NonNull final Content content) {
@@ -394,7 +386,7 @@ public class ObjectBoxDAO implements CollectionDAO {
         if (null == c) return;
 
         c.setDownloadParams("");
-        db.insertContentCore(c);
+        db.insertContent(c);
 
         List<ImageFile> imgs = c.getImageFiles();
         if (null == imgs) return;
@@ -407,12 +399,17 @@ public class ObjectBoxDAO implements CollectionDAO {
         db.shuffleContentIds();
     }
 
-    public long countAllInternalBooks(@NonNull String rootPath, boolean favsOnly) {
-        return DBHelper.safeCount(db.selectAllInternalBooksQ(rootPath, favsOnly, true));
+    @Override
+    public long countAllExternalBooks() {
+        return db.selectAllExternalBooksQ().count();
+    }
+
+    public long countAllInternalBooks(boolean favsOnly) {
+        return db.selectAllInternalBooksQ(favsOnly, true).count();
     }
 
     public long countAllQueueBooks() {
-        return DBHelper.safeFindIds(db.selectAllQueueBooksQ()).length; // Count doesn't work here because selectAllQueueBooksQ uses a filter
+        return db.selectAllQueueBooksQ().count();
     }
 
     public LiveData<Integer> countAllQueueBooksLive() {
@@ -426,15 +423,15 @@ public class ObjectBoxDAO implements CollectionDAO {
         return result;
     }
 
-    public void streamAllInternalBooks(@NonNull String rootPath, boolean favsOnly, Consumer<Content> consumer) {
-        try (Query<Content> query = db.selectAllInternalBooksQ(rootPath, favsOnly, true)) {
-            query.forEach(consumer::accept);
-        }
+    public void streamAllInternalBooks(boolean favsOnly, Consumer<Content> consumer) {
+        Query<Content> query = db.selectAllInternalBooksQ(favsOnly, true);
+        query.forEach(consumer::accept);
     }
 
     @Override
     public void deleteAllExternalBooks() {
-        db.deleteContentById(DBHelper.safeFindIds(db.selectAllExternalBooksQ()));
+        db.deleteContentById(db.selectAllExternalBooksQ().findIds());
+        db.cleanupOrphanAttributes();
     }
 
     @Override
@@ -444,17 +441,12 @@ public class ObjectBoxDAO implements CollectionDAO {
 
     @Override
     public List<Group> selectGroups(int grouping) {
-        return DBHelper.safeFind(db.selectGroupsQ(grouping, null, 0, false, -1, false, -1));
+        return db.selectGroupsQ(grouping, null, 0, false, -1, false, -1).find();
     }
 
     @Override
     public List<Group> selectGroups(int grouping, int subType) {
-        return DBHelper.safeFind(db.selectGroupsQ(grouping, null, 0, false, subType, false, -1));
-    }
-
-    @Override
-    public List<Group> selectEditedGroups(int grouping) {
-        return db.selectEditedGroups(grouping);
+        return db.selectGroupsQ(grouping, null, 0, false, subType, false, -1).find();
     }
 
     @Override
@@ -575,22 +567,22 @@ public class ObjectBoxDAO implements CollectionDAO {
 
     public void deleteAllGroups(Grouping grouping) {
         db.deleteGroupItemsByGrouping(grouping.getId());
-        DBHelper.safeRemove(db.selectGroupsByGroupingQ(grouping.getId()));
+        db.selectGroupsByGroupingQ(grouping.getId()).remove();
     }
 
     public void flagAllGroups(Grouping grouping) {
-        db.flagGroupsForDeletion(DBHelper.safeFind(db.selectGroupsByGroupingQ(grouping.getId())));
+        db.flagGroupsForDeletion(db.selectGroupsByGroupingQ(grouping.getId()).find());
     }
 
     public void deleteAllFlaggedGroups() {
-        try (Query<Group> flaggedGroups = db.selectFlaggedGroupsQ()) {
-            // Delete related GroupItems first
-            List<Group> groups = flaggedGroups.find();
-            for (Group g : groups) db.deleteGroupItemsByGroup(g.id);
+        Query<Group> flaggedGroups = db.selectFlaggedGroupsQ();
 
-            // Actually delete the Group
-            flaggedGroups.remove();
-        }
+        // Delete related GroupItems first
+        List<Group> groups = flaggedGroups.find();
+        for (Group g : groups) db.deleteGroupItemsByGroup(g.id);
+
+        // Actually delete the Group
+        flaggedGroups.remove();
     }
 
     public long insertGroupItem(GroupItem item) {
@@ -600,15 +592,8 @@ public class ObjectBoxDAO implements CollectionDAO {
 
         // If target group doesn't have a cover, get the corresponding Content's
         ToOne<Content> groupCoverContent = item.group.getTarget().coverContent;
-        if (!groupCoverContent.isResolvedAndNotNull()) {
-            Content c;
-            if (!item.content.isResolvedAndNotNull()) {
-                c = selectContent(item.getContentId());
-            } else {
-                c = item.content.getTarget();
-            }
-            groupCoverContent.setAndPutTarget(c);
-        }
+        if (!groupCoverContent.isResolvedAndNotNull())
+            groupCoverContent.setAndPutTarget(item.content.getTarget());
 
         return db.insertGroupItem(item);
     }
@@ -635,38 +620,44 @@ public class ObjectBoxDAO implements CollectionDAO {
         db.deleteGroupItems(Helper.getPrimitiveArrayFromList(groupItemIds));
     }
 
-    public void flagAllInternalBooks(@NonNull String rootPath, boolean includePlaceholders) {
-        db.flagContentsForDeletion(DBHelper.safeFind(db.selectAllInternalBooksQ(rootPath, false, includePlaceholders)), true);
+
+    public List<Content> selectAllQueueBooks() {
+        return db.selectAllQueueBooksQ().find();
     }
 
-    public void flagAllExternalBooks() {
-        db.flagContentsForDeletion(DBHelper.safeFind(db.selectAllExternalBooksQ()), true);
+    public void flagAllInternalBooks(boolean includePlaceholders) {
+        db.flagContentsForDeletion(db.selectAllInternalBooksQ(false, includePlaceholders).find(), true);
     }
 
-    public void deleteAllInternalBooks(@NonNull String rootPath, boolean resetRemainingImagesStatus) {
-        db.deleteContentById(DBHelper.safeFindIds(db.selectAllInternalBooksQ(rootPath, false)));
-        if (resetRemainingImagesStatus) resetRemainingImagesStatus(rootPath);
+    public void deleteAllInternalBooks(boolean resetRemainingImagesStatus) {
+        db.deleteContentById(db.selectAllInternalBooksQ(false, true).findIds());
+
+        // Switch status of all remaining images (i.e. from queued books) to SAVED, as we cannot guarantee the files are still there
+        if (resetRemainingImagesStatus) {
+            long[] remainingContentIds = db.selectAllQueueBooksQ().findIds();
+            for (long contentId : remainingContentIds)
+                db.updateImageContentStatus(contentId, null, StatusContent.SAVED);
+        }
     }
 
-    public void deleteAllFlaggedBooks(boolean resetRemainingImagesStatus, @Nullable String pathRoot) {
-        db.deleteContentById(DBHelper.safeFindIds(db.selectAllFlaggedBooksQ()));
-        if (resetRemainingImagesStatus && pathRoot != null) resetRemainingImagesStatus(pathRoot);
-    }
+    public void deleteAllFlaggedBooks(boolean resetRemainingImagesStatus) {
+        db.deleteContentById(db.selectAllFlaggedBooksQ().findIds());
 
-    // Switch status of all remaining images (i.e. from queued books) to SAVED, as we cannot guarantee the files are still there
-    private void resetRemainingImagesStatus(@NonNull String rootPath) {
-        long[] remainingContentIds = DBHelper.safeFindIds(db.selectAllQueueBooksQ(rootPath));
-        for (long contentId : remainingContentIds)
-            db.updateImageContentStatus(contentId, null, StatusContent.SAVED);
+        // Switch status of all remaining images (i.e. from queued books) to SAVED, as we cannot guarantee the files are still there
+        if (resetRemainingImagesStatus) {
+            long[] remainingContentIds = db.selectAllQueueBooksQ().findIds();
+            for (long contentId : remainingContentIds)
+                db.updateImageContentStatus(contentId, null, StatusContent.SAVED);
+        }
     }
 
     public void flagAllErrorBooksWithJson() {
-        db.flagContentsForDeletion(DBHelper.safeFind(db.selectAllErrorJsonBooksQ()), true);
+        db.flagContentsForDeletion(db.selectAllErrorJsonBooksQ().find(), true);
     }
 
     public void deleteAllQueuedBooks() {
         Timber.i("Cleaning up queue");
-        db.deleteContentById(DBHelper.safeFindIds(db.selectAllQueueBooksQ()));
+        db.deleteContentById(db.selectAllQueueBooksQ().findIds());
         db.deleteQueueRecords();
     }
 
@@ -703,7 +694,7 @@ public class ObjectBoxDAO implements CollectionDAO {
             Content content = db.selectContentById(contentId);
             if (content != null) {
                 content.computeSize();
-                db.insertContentCore(content);
+                db.insertContent(content);
             }
         }
     }
@@ -723,7 +714,7 @@ public class ObjectBoxDAO implements CollectionDAO {
 
     @Override
     public List<ImageFile> selectDownloadedImagesFromContent(long id) {
-        return DBHelper.safeFind(db.selectDownloadedImagesFromContentQ(id));
+        return db.selectDownloadedImagesFromContentQ(id).find();
     }
 
     public Map<StatusContent, ImmutablePair<Integer, Long>> countProcessedImagesById(long contentId) {
@@ -731,26 +722,21 @@ public class ObjectBoxDAO implements CollectionDAO {
     }
 
     public Map<Site, ImmutablePair<Integer, Long>> selectPrimaryMemoryUsagePerSource() {
-        return db.selectPrimaryMemoryUsagePerSource("");
-    }
-
-    public Map<Site, ImmutablePair<Integer, Long>> selectPrimaryMemoryUsagePerSource(@NonNull String rootPath) {
-        return db.selectPrimaryMemoryUsagePerSource(rootPath);
+        return db.selectPrimaryMemoryUsagePerSource();
     }
 
     public Map<Site, ImmutablePair<Integer, Long>> selectExternalMemoryUsagePerSource() {
         return db.selectExternalMemoryUsagePerSource();
     }
 
-    public void addContentToQueue(@NonNull final Content content, StatusContent targetImageStatus, int position, long replacedContentId, @Nullable String replacementTitle, boolean isQueueActive) {
+    public void addContentToQueue(@NonNull final Content content, StatusContent targetImageStatus, int position, long replacedContentId, boolean isQueueActive) {
         if (targetImageStatus != null)
             db.updateImageContentStatus(content.getId(), null, targetImageStatus);
 
         content.setStatus(StatusContent.PAUSED);
         content.setIsBeingDeleted(false); // Remove any UI animation
         if (replacedContentId > -1) content.setContentIdToReplace(replacedContentId);
-        if (replacementTitle != null) content.setReplacementTitle(replacementTitle);
-        insertContent(content);
+        db.insertContent(content);
 
         if (!db.isContentInQueue(content)) {
             int targetPosition;
@@ -764,7 +750,7 @@ public class ObjectBoxDAO implements CollectionDAO {
     }
 
     private void insertQueueAndRenumber(long contentId, int order) {
-        List<QueueRecord> queue = DBHelper.safeFind(db.selectQueueRecordsQ(null));
+        List<QueueRecord> queue = db.selectQueueRecordsQ(null).find();
         QueueRecord newRecord = new QueueRecord(contentId, order);
 
         // Put in the right place
@@ -847,7 +833,7 @@ public class ObjectBoxDAO implements CollectionDAO {
 
     @Override
     public List<QueueRecord> selectQueue() {
-        return DBHelper.safeFind(db.selectQueueRecordsQ(null));
+        return db.selectQueueRecordsQ(null).find();
     }
 
     public void updateQueue(@NonNull List<QueueRecord> queue) {
@@ -877,19 +863,19 @@ public class ObjectBoxDAO implements CollectionDAO {
     // BOOKMARKS
 
     public long countAllBookmarks() {
-        return DBHelper.safeCount(db.selectBookmarksQ(null));
+        return db.selectBookmarksQ(null).count();
     }
 
     public List<SiteBookmark> selectAllBookmarks() {
-        return DBHelper.safeFind(db.selectBookmarksQ(null));
+        return db.selectBookmarksQ(null).find();
     }
 
     public void deleteAllBookmarks() {
-        DBHelper.safeRemove(db.selectBookmarksQ(null));
+        db.selectBookmarksQ(null).remove();
     }
 
     public List<SiteBookmark> selectBookmarks(@NonNull Site s) {
-        return DBHelper.safeFind(db.selectBookmarksQ(s));
+        return db.selectBookmarksQ(s).find();
     }
 
     @Override
@@ -921,7 +907,7 @@ public class ObjectBoxDAO implements CollectionDAO {
     }
 
     private List<SearchRecord> selectSearchRecords() {
-        return DBHelper.safeFind(db.selectSearchRecordsQ());
+        return db.selectSearchRecordsQ().find();
     }
 
     public void insertSearchRecord(@NonNull SearchRecord record, int limit) {
@@ -937,7 +923,7 @@ public class ObjectBoxDAO implements CollectionDAO {
     }
 
     public void deleteAllSearchRecords() {
-        DBHelper.safeRemove(db.selectSearchRecordsQ());
+        db.selectSearchRecordsQ().remove();
     }
 
 
@@ -953,7 +939,8 @@ public class ObjectBoxDAO implements CollectionDAO {
     }
 
     public List<RenamingRule> selectRenamingRules(@NonNull AttributeType type, String nameFilter) {
-        return DBHelper.safeFind(db.selectRenamingRulesQ(type, StringHelper.protect(nameFilter)));
+        Query<RenamingRule> query = db.selectRenamingRulesQ(type, StringHelper.protect(nameFilter));
+        return query.find();
     }
 
     public long insertRenamingRule(@NonNull RenamingRule rule) {
@@ -968,8 +955,26 @@ public class ObjectBoxDAO implements CollectionDAO {
         db.deleteRenamingRules(Helper.getPrimitiveArrayFromList(ids));
     }
 
+    public void deleteAllRenamingRules() {
+        db.deleteAllRenamingRules();
+    }
+
 
     // ONE-TIME USE QUERIES (MIGRATION & CLEANUP)
+
+    // API29 migration query
+    @Override
+    public Single<List<Long>> selectOldStoredBookIds() {
+        return Single.fromCallable(() -> Helper.getListFromPrimitiveArray(db.selectOldStoredContentQ().findIds()))
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread());
+    }
+
+    // API29 migration query
+    @Override
+    public long countOldStoredContent() {
+        return db.selectOldStoredContentQ().count();
+    }
 
     @Override
     public long[] selectContentIdsWithUpdatableJson() {

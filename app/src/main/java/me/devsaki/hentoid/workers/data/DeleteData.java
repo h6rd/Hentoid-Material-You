@@ -22,8 +22,7 @@ public class DeleteData {
     private static final String KEY_QUEUE_IDS = "queueIds";
     private static final String KEY_DELETE_ALL_QUEUE_RECORDS = "deleteAllQueueRecords";
     private static final String KEY_DELETE_GROUPS_ONLY = "deleteGroupsOnly";
-    private static final String KEY_DELETE_ALL_CONTENT_EXCEPT_FAVS_B = "deleteAllContentExceptFavsB";
-    private static final String KEY_DELETE_ALL_CONTENT_EXCEPT_FAVS_G = "deleteAllContentExceptFavsG";
+    private static final String KEY_DELETE_ALL_CONTENT_EXCEPT_FAVS = "deleteAllContentExceptFavs";
 
     private DeleteData() {
         throw new UnsupportedOperationException();
@@ -61,12 +60,8 @@ public class DeleteData {
             builder.putBoolean(KEY_DELETE_GROUPS_ONLY, value);
         }
 
-        public void setDeleteAllContentExceptFavsBooks(boolean value) {
-            builder.putBoolean(KEY_DELETE_ALL_CONTENT_EXCEPT_FAVS_B, value);
-        }
-
-        public void setDeleteAllContentExceptFavsGroups(boolean value) {
-            builder.putBoolean(KEY_DELETE_ALL_CONTENT_EXCEPT_FAVS_G, value);
+        public void setDeleteAllContentExceptFavs(boolean value) {
+            builder.putBoolean(KEY_DELETE_ALL_CONTENT_EXCEPT_FAVS, value);
         }
 
         public Data getData() {
@@ -118,12 +113,8 @@ public class DeleteData {
             return data.getBoolean(KEY_DELETE_GROUPS_ONLY, false);
         }
 
-        public boolean isDeleteAllContentExceptFavsBooks() {
-            return data.getBoolean(KEY_DELETE_ALL_CONTENT_EXCEPT_FAVS_B, false);
-        }
-
-        public boolean isDeleteAllContentExceptFavsGroups() {
-            return data.getBoolean(KEY_DELETE_ALL_CONTENT_EXCEPT_FAVS_G, false);
+        public boolean isDeleteAllContentExceptFavs() {
+            return data.getBoolean(KEY_DELETE_ALL_CONTENT_EXCEPT_FAVS, false);
         }
     }
 }

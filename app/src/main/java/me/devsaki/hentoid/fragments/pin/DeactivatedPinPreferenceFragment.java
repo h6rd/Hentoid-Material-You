@@ -1,7 +1,5 @@
 package me.devsaki.hentoid.fragments.pin;
 
-import static androidx.core.view.ViewCompat.requireViewById;
-
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,16 +10,18 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
-import com.google.android.material.materialswitch.MaterialSwitch;
 import com.google.android.material.snackbar.BaseTransientBottomBar;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.switchmaterial.SwitchMaterial;
 
-import me.devsaki.hentoid.R;
 import me.devsaki.hentoid.core.HentoidApp;
+import me.devsaki.hentoid.R;
+
+import static androidx.core.view.ViewCompat.requireViewById;
 
 public final class DeactivatedPinPreferenceFragment extends Fragment implements ActivatePinDialogFragment.Parent {
 
-    private MaterialSwitch onSwitch;
+    private SwitchMaterial onSwitch;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

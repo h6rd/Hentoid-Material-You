@@ -87,15 +87,10 @@ import me.devsaki.hentoid.viewmodels.ViewModelFactory;
 import me.devsaki.hentoid.widget.AutofitGridLayoutManager;
 import me.devsaki.hentoid.widget.FastAdapterPreClickSelectHelper;
 import me.zhanghai.android.fastscroll.FastScrollerBuilder;
-import me.zhanghai.android.fastscroll.PopupTextProvider;
 import timber.log.Timber;
 
 @SuppressLint("NonConstantResourceId")
-public class LibraryGroupsFragment extends Fragment implements
-        RatingDialogFragment.Parent,
-        PopupTextProvider,
-        ItemTouchCallback,
-        SimpleSwipeCallback.ItemSwipeCallback {
+public class LibraryGroupsFragment extends Fragment implements ItemTouchCallback, SimpleSwipeCallback.ItemSwipeCallback, RatingDialogFragment.Parent {
 
     // ======== COMMUNICATION
     private OnBackPressedCallback callback;
@@ -233,9 +228,7 @@ public class LibraryGroupsFragment extends Fragment implements
         else
             llm = new AutofitGridLayoutManager(requireContext(), (int) getResources().getDimension(R.dimen.card_grid_width));
         recyclerView.setLayoutManager(llm);
-        new FastScrollerBuilder(recyclerView)
-                .setPopupTextProvider(this)
-                .build();
+        new FastScrollerBuilder(recyclerView).build();
 
         // Pager
         setPagingMethod();
@@ -396,38 +389,30 @@ public class LibraryGroupsFragment extends Fragment implements
 
                 if (!Preferences.getGroupingDisplay().canDeleteGroups()) {
                     // Delete books only
-                    powerMenuBuilder.addItem(new PowerMenuItem(
-                            getResources().getQuantityString(R.plurals.group_delete_selected_book, selectedContent.size(), selectedContent.size()),
-                            false,
-                            R.drawable.ic_action_delete,
-                            null,
-                            null,
-                            0));
+                    powerMenuBuilder.addItem(new PowerMenuItem(getResources().getQuantityString(R.plurals.group_delete_selected_book, selectedContent.size(), selectedContent.size()), R.drawable.ic_action_delete, 0));
                 } else {
                     // Delete group only
                     if (Preferences.getGroupingDisplay().canReorderGroups())
-                        powerMenuBuilder.addItem(new PowerMenuItem(getResources().getQuantityString(R.plurals.group_delete_selected_group, selectedGroups.size()), false, R.drawable.ic_folder_delete, null, null, 1));
+                        powerMenuBuilder.addItem(new PowerMenuItem(getResources().getQuantityString(R.plurals.group_delete_selected_group, selectedGroups.size()), R.drawable.ic_folder_delete, 1));
                     if (!selectedContent.isEmpty()) // Delete groups and books
-                        powerMenuBuilder.addItem(new PowerMenuItem(getResources().getQuantityString(R.plurals.group_delete_selected_group_books, selectedGroups.size()), false, R.drawable.ic_action_delete, null, null, 2));
+                        powerMenuBuilder.addItem(new PowerMenuItem(getResources().getQuantityString(R.plurals.group_delete_selected_group_books, selectedGroups.size()), R.drawable.ic_action_delete, 2));
                 }
-                powerMenuBuilder.addItem(new PowerMenuItem(getResources().getString(R.string.cancel), false, R.drawable.ic_close, null, null, 99));
+                powerMenuBuilder.addItem(new PowerMenuItem(getResources().getString(R.string.cancel), R.drawable.ic_close, 99));
                 PowerMenu powerMenu = powerMenuBuilder.build();
 
                 final List<Group> finalGroups = Collections.unmodifiableList(selectedGroups);
                 final List<Content> finalContent = Collections.unmodifiableList(selectedContent);
 
                 powerMenu.setOnMenuItemClickListener((position, item) -> {
-                    if (item.tag != null) {
-                        int tag = (Integer) item.tag;
-                        if (0 == tag) { // Delete books only
-                            viewModel.deleteItems(finalContent, Collections.emptyList(), false, null);
-                        } else if (1 == tag) { // Delete group only
-                            viewModel.deleteItems(Collections.emptyList(), finalGroups, true, null);
-                        } else if (2 == tag) { // Delete groups and books
-                            viewModel.deleteItems(finalContent, finalGroups, false, null);
-                        } else {
-                            leaveSelectionMode(); // Cancel button
-                        }
+                    int tag = (Integer) item.getTag();
+                    if (0 == tag) { // Delete books only
+                        viewModel.deleteItems(finalContent, Collections.emptyList(), false, null);
+                    } else if (1 == tag) { // Delete group only
+                        viewModel.deleteItems(Collections.emptyList(), finalGroups, true, null);
+                    } else if (2 == tag) { // Delete groups and books
+                        viewModel.deleteItems(finalContent, finalGroups, false, null);
+                    } else {
+                        leaveSelectionMode(); // Cancel button
                     }
                 });
 
@@ -452,8 +437,8 @@ public class LibraryGroupsFragment extends Fragment implements
         }
     }
 
-    @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
-    public void onProcessStickyEvent(ProcessEvent event) {
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onProcessEvent(ProcessEvent event) {
         // Filter on delete complete event
         if (R.id.delete_service_delete != event.processId) return;
         if (ProcessEvent.EventType.COMPLETE != event.eventType) return;
@@ -810,26 +795,5 @@ public class LibraryGroupsFragment extends Fragment implements
         Set<Integer> selection = selectExtension.getSelections();
         if (!selection.isEmpty()) selectExtension.deselect(selection);
         activity.get().getSelectionToolbar().setVisibility(View.GONE);
-    }
-
-    @NonNull
-    @Override
-    public CharSequence getPopupText(int position) {
-        if (null == itemAdapter) return "";
-        Group g = itemAdapter.getAdapterItem(position).getGroup();
-        if (null == g) return "";
-
-        switch (Preferences.getGroupSortField()) {
-            case (Preferences.Constant.ORDER_FIELD_TITLE):
-                return (g.getName().isEmpty()) ? "" : (g.getName().charAt(0) + "").toUpperCase();
-            case (Preferences.Constant.ORDER_FIELD_CHILDREN): {
-                return Integer.toString(g.getContentIds().size());
-            }
-            case (Preferences.Constant.ORDER_FIELD_DOWNLOAD_PROCESSING_DATE): // too expensive to process here
-            case (Preferences.Constant.ORDER_FIELD_NONE):
-            case (Preferences.Constant.ORDER_FIELD_CUSTOM):
-            default:
-                return "";
-        }
     }
 }

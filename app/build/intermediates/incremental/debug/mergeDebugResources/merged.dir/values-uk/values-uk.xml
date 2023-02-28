@@ -1,0 +1,1323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools" xmlns:ns2="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="duplicate_use_sensitivities">
+        <item>Слабка</item>
+        <item>Звичайна</item>
+        <item>Сильна</item>
+    </string-array>
+    <string-array name="page_delete_choices">
+        <item>Запитати мене знову наступного разу</item>
+        <item>Більше не питати для цієї книги</item>
+        <item>Більше не питати на час цієї сесії</item>
+    </string-array>
+    <string-array name="splash_quotes" ns1:ignore="InconsistentArrays">
+        <item>мистецтво у додатку</item>
+        <item>знову <i>ці</i> книги\?</item>
+        <item>додаток для тренування руки</item>
+        <item>п\'ятихвилинна вправа для руки</item>
+        <item>найкращий друг твоєї руки</item>
+        <item>додаток вмик, штани вимк</item>
+        <item>стеж за околицями, аноне</item>
+        <item>будь ласка, будь ніжний, сенпаю~~</item>
+        <item>поміняй партнера</item>
+        <item>день рук</item>
+        <item>цілься</item>
+        <item>точне попадання</item>
+        <item>сасіська</item>
+        <item>21 палець</item>
+        <item>стриб-стриб :3</item>
+        <item>ПОЗАДУ ТЕБЕ</item>
+        <item>БАКА НЕ ШЛЬОПАЙ МЕНЕ</item>
+        <item>Завантажуємо Збоченця</item>
+        <item>Татко....</item>
+        <item>і вгору, і вниз…</item>
+        <item>ОСЬ ЦЕ КОВБАСА</item>
+        <item>Ти серйозно дрочиш один\?</item>
+        <item>Запроси друзів ;3</item>
+        <item>Попроси дівчину- а, стоп…</item>
+        <item>Мила дівчинка, стоп ЦЕ Ж ТРАП</item>
+        <item>Стріляй далеко</item>
+        <item>Еректус</item>
+        <item>мила паличка, аноне</item>
+        <item>милий, час крутити ковбаску</item>
+        <item>Ковбаска <b>*БРРРРРРР*</b></item>
+        <item>Стрибаючі диньки</item>
+        <item>Солено, але смачно</item>
+        <item>Є дірка – є і спосіб</item>
+        <item>входь у мене повністю</item>
+        <item>а\? це що, член\?</item>
+        <item>Фууу, прибери це</item>
+        <item>тей ще додаточек</item>
+        <item>використовуй мастило, брате</item>
+        <item>https://youtu.be/dQw4w9WgXcQ</item>
+        <item>книги мої книги</item>
+        <item>Стоп, не манґа\?</item>
+        <item>Диявольськи спокусливо</item>
+        <item>Я думав, ми будемо їсти молюсків на пару</item>
+        <item>Сподіваюся, ви приготувалися до незабутнього обіду</item>
+    </string-array>
+    <plurals name="add_to_queue">
+        <item quantity="one"><ns2:g example="1" id="processed">%1$d</ns2:g> елемент із <ns2:g example="10" id="total">%2$d</ns2:g> додано до черги</item>
+        <item quantity="few"><ns2:g example="2" id="processed">%1$d</ns2:g> елементи з <ns2:g example="10" id="total">%2$d</ns2:g> додано до черги</item>
+        <item quantity="many"><ns2:g example="5" id="processed">%1$d</ns2:g> елементів із <ns2:g example="10" id="total">%2$d</ns2:g> додано до черги</item>
+    </plurals>
+    <plurals name="archive_success">
+        <item quantity="one"><ns2:g example="1" id="count">%d</ns2:g> книга заархівована в Завантаженнях</item>
+        <item quantity="few"><ns2:g example="2" id="count">%d</ns2:g> книги заархівовані в Завантаженнях</item>
+        <item quantity="many"><ns2:g example="5" id="count">%d</ns2:g> книг заархівовані в Завантаженнях</item>
+    </plurals>
+    <plurals name="ask_archive_multiple">
+        <item quantity="one">Заархівувати <ns2:g example="1" id="count">%d</ns2:g> вибраний елемент\?</item>
+        <item quantity="few">Заархівувати <ns2:g example="2" id="count">%d</ns2:g> вибраних елементи\?</item>
+        <item quantity="many">Заархівувати <ns2:g example="5" id="count">%d</ns2:g> вибраних елементів\?</item>
+    </plurals>
+    <plurals name="ask_cancel_multiple" ns1:ignore="ImpliedQuantity">
+        <item quantity="one">Скасувати вибраний елемент\?</item>
+        <item quantity="few">Скасувати вибрані елементи\?</item>
+        <item quantity="many">Скасувати вибрані елементи\?</item>
+    </plurals>
+    <plurals name="ask_delete_multiple">
+        <item quantity="one">Видалити <ns2:g example="1" id="count">%d</ns2:g> вибраний елемент\?</item>
+        <item quantity="few">Видалити <ns2:g example="2" id="count">%d</ns2:g> вибраних елементи\?</item>
+        <item quantity="many">Видалити <ns2:g example="5" id="count">%d</ns2:g> вибраних елементів\?</item>
+    </plurals>
+    <plurals name="book" ns1:ignore="ImpliedQuantity">
+        <item quantity="one">книга</item>
+        <item quantity="few">книги</item>
+        <item quantity="many">книг</item>
+    </plurals>
+    <plurals name="book_progress">
+        <item quantity="one"><ns2:g example="1" id="number">%1$d</ns2:g> книга з <ns2:g example="42" id="total">%2$d</ns2:g></item>
+        <item quantity="few"><ns2:g example="2" id="number">%1$d</ns2:g> книги з <ns2:g example="42" id="total">%2$d</ns2:g></item>
+        <item quantity="many"><ns2:g example="5" id="number">%1$d</ns2:g> книг із <ns2:g example="42" id="total">%2$d</ns2:g></item>
+    </plurals>
+    <plurals name="confirm_cancel_all_errors">
+        <item quantity="one">Скасувати <ns2:g example="1" id="count">%d</ns2:g> книгу з помилками\?</item>
+        <item quantity="few">Скасувати <ns2:g example="2" id="count">%d</ns2:g> книги з помилками\?</item>
+        <item quantity="many">Скасувати <ns2:g example="5" id="count">%d</ns2:g> книг із помилками\?</item>
+    </plurals>
+    <plurals name="confirm_redownload_all">
+        <item quantity="one">Завантажити <ns2:g example="1" id="count">%d</ns2:g> елемент знову\?</item>
+        <item quantity="few">Завантажити <ns2:g example="2" id="count">%d</ns2:g> елементи знову\?</item>
+        <item quantity="many">Завантажити <ns2:g example="5" id="count">%d</ns2:g> елементів знову\?</item>
+    </plurals>
+    <plurals name="delete_success_books">
+        <item quantity="one"><ns2:g example="1" id="count">%d</ns2:g> книга</item>
+        <item quantity="few"><ns2:g example="2" id="count">%d</ns2:g> книги</item>
+        <item quantity="many"><ns2:g example="5" id="count">%d</ns2:g> книг</item>
+    </plurals>
+    <plurals name="delete_success_groups">
+        <item quantity="one"><ns2:g example="1" id="count">%d</ns2:g> група</item>
+        <item quantity="few"><ns2:g example="2" id="count">%d</ns2:g> групи</item>
+        <item quantity="many"><ns2:g example="5" id="count">%d</ns2:g> груп</item>
+    </plurals>
+    <plurals name="download_completed">
+        <item quantity="one"><ns2:g example="1" id="number">%d</ns2:g> завантаження завершено</item>
+        <item quantity="few"><ns2:g example="2" id="number">%d</ns2:g> завантаження завершено</item>
+        <item quantity="many"><ns2:g example="5" id="number">%d</ns2:g> завантаження завершено</item>
+    </plurals>
+    <plurals name="download_confirm" ns1:ignore="ImpliedQuantity">
+        <item quantity="one">Завантажити вибране\?</item>
+        <item quantity="few">Завантажити вибране\?</item>
+        <item quantity="many">Завантажити вибране\?</item>
+    </plurals>
+    <plurals name="download_non_streamed_content">
+        <item quantity="one"><ns2:g example="1" id="count">%d</ns2:g> книга вже завантажена\nЦі книги будуть пропущені.</item>
+        <item quantity="few"><ns2:g example="2" id="count">%d</ns2:g> книги вже завантажені\nЦі книги будуть пропущені.</item>
+        <item quantity="many"><ns2:g example="5" id="count">%d</ns2:g> книг вже завантажено\nЦі книги будуть пропущені.</item>
+    </plurals>
+    <plurals name="duplicate_count">
+        <item quantity="one"><ns2:g example="1" id="number">%d</ns2:g> дублікат</item>
+        <item quantity="few"><ns2:g example="2" id="number">%d</ns2:g> дублікати</item>
+        <item quantity="many"><ns2:g example="5" id="number">%d</ns2:g> дублікатів</item>
+    </plurals>
+    <plurals name="duplicate_detail_title">
+        <item quantity="one"><ns2:g example="1" id="number">%d</ns2:g> дублікат</item>
+        <item quantity="few"><ns2:g example="2" id="number">%d</ns2:g> дублікати</item>
+        <item quantity="many"><ns2:g example="5" id="number">%d</ns2:g> дублікатів</item>
+    </plurals>
+    <plurals name="duplicate_notif_complete_desc">
+        <item quantity="one"><ns2:g example="1" id="number">%d</ns2:g> дублікат успішно визначено</item>
+        <item quantity="few"><ns2:g example="2" id="number">%d</ns2:g> дублікати успішно визначено</item>
+        <item quantity="many"><ns2:g example="5" id="number">%d</ns2:g> дублікатів успішно визначено</item>
+    </plurals>
+    <plurals name="export_file_bookmarks">
+        <item quantity="one">Експорт закладок (<ns2:g example="1" id="number">%d</ns2:g> елемент)</item>
+        <item quantity="few">Експорт закладок (<ns2:g example="2" id="number">%d</ns2:g> елементи)</item>
+        <item quantity="many">Експорт закладок (<ns2:g example="5" id="number">%d</ns2:g> елементів)</item>
+    </plurals>
+    <plurals name="export_file_library">
+        <item quantity="one">Експорт бібліотеки (<ns2:g example="1" id="number">%d</ns2:g> книга)</item>
+        <item quantity="few">Експорт бібліотеки (<ns2:g example="2" id="number">%d</ns2:g> книги)</item>
+        <item quantity="many">Експорт бібліотеки (<ns2:g example="5" id="number">%d</ns2:g> книг)</item>
+    </plurals>
+    <plurals name="export_file_queue">
+        <item quantity="one">Експорт черги (<ns2:g example="1" id="number">%d</ns2:g> книга)</item>
+        <item quantity="few">Експорт черги (<ns2:g example="2" id="number">%d</ns2:g> книги)</item>
+        <item quantity="many">Експорт черги (<ns2:g example="5" id="number">%d</ns2:g> книг)</item>
+    </plurals>
+    <plurals name="external_not_removed">
+        <item quantity="one"><ns2:g example="1" id="count">%d</ns2:g> книга з зовнішньої бібліотеки не буде видалена</item>
+        <item quantity="few"><ns2:g example="2" id="count">%d</ns2:g> книги з зовнішньої бібліотеки не будуть видалені</item>
+        <item quantity="many"><ns2:g example="5" id="count">%d</ns2:g> книг із зовнішньої бібліотеки не будуть видалені</item>
+    </plurals>
+    <plurals name="file" ns1:ignore="ImpliedQuantity">
+        <item quantity="one">файл</item>
+        <item quantity="few">файли</item>
+        <item quantity="many">файлів</item>
+    </plurals>
+    <plurals name="group_delete_selected_book">
+        <item quantity="one">Видалити <ns2:g example="1" id="count">%d</ns2:g> книгу</item>
+        <item quantity="few">Видалити <ns2:g example="2" id="count">%d</ns2:g> книги</item>
+        <item quantity="many">Видалити <ns2:g example="5" id="count">%d</ns2:g> книг</item>
+    </plurals>
+    <plurals name="group_delete_selected_group" ns1:ignore="ImpliedQuantity">
+        <item quantity="one">Видалити лише виділене</item>
+        <item quantity="few">Видалити лише виділене</item>
+        <item quantity="many">Видалити лише виділене</item>
+    </plurals>
+    <plurals name="group_delete_selected_group_books" ns1:ignore="ImpliedQuantity">
+        <item quantity="one">Видалити групи та книги</item>
+        <item quantity="few">Видалити групи та книги</item>
+        <item quantity="many">Видалити групи та книги</item>
+    </plurals>
+    <plurals name="group_progress">
+        <item quantity="one"><ns2:g example="1" id="number">%1$d</ns2:g> група з <ns2:g example="42" id="total">%2$d</ns2:g></item>
+        <item quantity="few"><ns2:g example="2" id="number">%1$d</ns2:g> групи з <ns2:g example="42" id="total">%2$d</ns2:g></item>
+        <item quantity="many"><ns2:g example="5" id="number">%1$d</ns2:g> груп із <ns2:g example="42" id="total">%2$d</ns2:g></item>
+    </plurals>
+    <plurals name="import_complete_details_failure">
+        <item quantity="one">Не вдалося імпортувати: <ns2:g example="1" id="number">%s</ns2:g></item>
+        <item quantity="few">Не вдалося імпортувати: <ns2:g example="2" id="number">%s</ns2:g></item>
+        <item quantity="many">Не вдалося імпортувати: <ns2:g example="5" id="number">%s</ns2:g></item>
+    </plurals>
+    <plurals name="import_complete_details_success">
+        <item quantity="one">Успішно імпортовано: <ns2:g example="1" id="number">%s</ns2:g></item>
+        <item quantity="few">Успішно імпортовано: <ns2:g example="2" id="number">%s</ns2:g></item>
+        <item quantity="many">Успішно імпортовано: <ns2:g example="5" id="number">%s</ns2:g></item>
+    </plurals>
+    <plurals name="import_downloads_found">
+        <item quantity="one"><ns2:g example="1" id="downloads">%d</ns2:g> завантаження оброблено</item>
+        <item quantity="few"><ns2:g example="2" id="downloads">%d</ns2:g> завантаження оброблено</item>
+        <item quantity="many"><ns2:g example="2" id="downloads">%d</ns2:g> завантажень оброблено</item>
+    </plurals>
+    <plurals name="import_file_bookmarks">
+        <item quantity="one">Імпорт закладок (<ns2:g example="1" id="number">%d</ns2:g> елемент)</item>
+        <item quantity="few">Імпорт закладок (<ns2:g example="2" id="number">%d</ns2:g> елементи)</item>
+        <item quantity="many">Імпорт закладок (<ns2:g example="5" id="number">%d</ns2:g> елементів)</item>
+    </plurals>
+    <plurals name="import_file_groups">
+        <item quantity="one">Імпорт груп користувача (<ns2:g example="1" id="number">%d</ns2:g> група)</item>
+        <item quantity="few">Імпорт груп користувача (<ns2:g example="2" id="number">%d</ns2:g> групи)</item>
+        <item quantity="many">Імпорт груп користувача (<ns2:g example="5" id="number">%d</ns2:g> груп)</item>
+    </plurals>
+    <plurals name="import_file_library">
+        <item quantity="one">Імпорт бібліотеки (<ns2:g example="1" id="number">%d</ns2:g> книга)</item>
+        <item quantity="few">Імпорт бібліотеки (<ns2:g example="2" id="number">%d</ns2:g> книги)</item>
+        <item quantity="many">Імпорт бібліотеки (<ns2:g example="5" id="number">%d</ns2:g> книг)</item>
+    </plurals>
+    <plurals name="import_file_queue">
+        <item quantity="one">Імпорт черги (<ns2:g example="1" id="number">%d</ns2:g> книга)</item>
+        <item quantity="few">Імпорт черги (<ns2:g example="2" id="number">%d</ns2:g> книги)</item>
+        <item quantity="many">Імпорт черги (<ns2:g example="5" id="number">%d</ns2:g> книг)</item>
+    </plurals>
+    <plurals name="import_result">
+        <item quantity="one"><ns2:g example="1" id="number">%1$d</ns2:g> елемент із <ns2:g example="2" id="number">%2$d</ns2:g> успішно імпортован</item>
+        <item quantity="few"><ns2:g example="2" id="number">%1$d</ns2:g> елементи з <ns2:g example="2" id="number">%2$d</ns2:g> успішно імпортовані</item>
+        <item quantity="many"><ns2:g example="5" id="number">%1$d</ns2:g> елементів із <ns2:g example="2" id="number">%2$d</ns2:g> успішно імпортовано</item>
+        <item quantity="other"><ns2:g example="5" id="number">%1$d</ns2:g> елементів із <ns2:g example="2" id="number">%2$d</ns2:g> успішно імпортовано</item>
+    </plurals>
+    <plurals name="import_result_bookmarks">
+        <item quantity="one"><ns2:g example="1" id="number">%d</ns2:g> закладка успішно імпортована</item>
+        <item quantity="few"><ns2:g example="2" id="number">%d</ns2:g> закладки успішно імпортовані</item>
+        <item quantity="many"><ns2:g example="5" id="number">%d</ns2:g> закладок успішно імпортовано</item>
+    </plurals>
+    <plurals name="import_result_books">
+        <item quantity="one"><ns2:g example="1" id="number">%d</ns2:g> книга успішно імпортована</item>
+        <item quantity="few"><ns2:g example="2" id="number">%d</ns2:g> книги успішно імпортовані</item>
+        <item quantity="many"><ns2:g example="5" id="number">%d</ns2:g> книг успішно імпортовано</item>
+    </plurals>
+    <plurals name="item" ns1:ignore="ImpliedQuantity">
+        <item quantity="one">елемент</item>
+        <item quantity="few">елементи</item>
+        <item quantity="many">елементів</item>
+        <item quantity="other">елементів</item>
+    </plurals>
+    <plurals name="items_selected">
+        <item quantity="one">Вибрано <ns2:g example="1" id="count">%d</ns2:g> елемент</item>
+        <item quantity="few">Вибрано <ns2:g example="2" id="count">%d</ns2:g> елементи</item>
+        <item quantity="many">Вибрано <ns2:g example="5" id="count">%d</ns2:g> елементів</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d нове сповіщення</item>
+    <item quantity="few">%d нові сповіщення</item>
+    <item quantity="many">%d нових сповіщень</item>
+    <item quantity="other">%d нового сповіщення</item>
+  </plurals>
+    <plurals name="notif_archive_complete_details">
+        <item quantity="one"><ns2:g example="1" id="count">%d</ns2:g> книга успішно заархівована</item>
+        <item quantity="few"><ns2:g example="2" id="count">%d</ns2:g> книги успішно заархівовані</item>
+        <item quantity="many"><ns2:g example="5" id="count">%d</ns2:g> книг успішно заархівовані</item>
+    </plurals>
+    <plurals name="notif_delete_complete_details">
+        <item quantity="one">Видалено: <ns2:g example="1" id="number">%d</ns2:g></item>
+        <item quantity="few">Видалено: <ns2:g example="1" id="number">%d</ns2:g></item>
+        <item quantity="many">Видалено: <ns2:g example="1" id="number">%d</ns2:g></item>
+    </plurals>
+    <plurals name="number_of_book_search_results">
+        <item quantity="one"><ns2:g example="1" id="number">%1$d</ns2:g> результат із <ns2:g example="7" id="total">%2$d</ns2:g></item>
+        <item quantity="few"><ns2:g example="2" id="number">%1$d</ns2:g> результати з <ns2:g example="7" id="total">%2$d</ns2:g></item>
+        <item quantity="many"><ns2:g example="5" id="number">%1$d</ns2:g> результатів із <ns2:g example="7" id="total">%2$d</ns2:g></item>
+    </plurals>
+    <plurals name="number_of_items">
+        <item quantity="one"><ns2:g example="1" id="count">%d</ns2:g> елемент</item>
+        <item quantity="few"><ns2:g example="2" id="count">%d</ns2:g> елементи</item>
+        <item quantity="many"><ns2:g example="5" id="count">%d</ns2:g> елементів</item>
+    </plurals>
+    <plurals name="page" ns1:ignore="ImpliedQuantity">
+        <item quantity="one">сторінка</item>
+        <item quantity="few">сторінки</item>
+        <item quantity="many">сторінок</item>
+    </plurals>
+    <plurals name="pref_ask_delete_all_except_favs">
+        <item quantity="one">Видалити <ns2:g example="1" id="count">%d</ns2:g> книгу\?</item>
+        <item quantity="few">Видалити <ns2:g example="2" id="count">%d</ns2:g> книги\?</item>
+        <item quantity="many">Видалити <ns2:g example="5" id="count">%d</ns2:g> книг\?</item>
+    </plurals>
+    <plurals name="queue_bottom_bar_errors">
+        <item quantity="one">(<ns2:g example="1" id="errors">%d</ns2:g> помилка)</item>
+        <item quantity="few">(<ns2:g example="2" id="errors">%d</ns2:g> помилки)</item>
+        <item quantity="many">(<ns2:g example="5" id="errors">%d</ns2:g> помилок)</item>
+    </plurals>
+    <plurals name="redownload_confirm" ns1:ignore="ImpliedQuantity">
+        <item quantity="one">Завантажити вибране знову\?</item>
+        <item quantity="few">Завантажити вибране знову\?</item>
+        <item quantity="many">Завантажити вибране знову\?</item>
+    </plurals>
+    <plurals name="redownload_external_content">
+        <item quantity="one"><ns2:g example="1" id="count">%d</ns2:g> книга знаходиться у зовнішній бібліотеці й не може бути завантажена знову\nЦі книги будуть пропущені.</item>
+        <item quantity="few"><ns2:g example="2" id="count">%d</ns2:g> книги знаходяться у зовнішній бібліотеці й не можуть бути завантажени знову\nЦі книги будуть пропущені.</item>
+        <item quantity="many"><ns2:g example="5" id="count">%d</ns2:g> книги знаходяться у зовнішній бібліотеці й не можуть бути завантажени знову\nЦі книги будуть пропущені.</item>
+    </plurals>
+    <plurals name="redownloaded_scratch">
+        <item quantity="one"><ns2:g example="1" id="number">%1$d</ns2:g> елемент із <ns2:g example="42" id="total">%2$d</ns2:g> буде завантажено знову</item>
+        <item quantity="few"><ns2:g example="2" id="number">%1$d</ns2:g> елементи з <ns2:g example="42" id="total">%2$d</ns2:g> будуть завантажені знову</item>
+        <item quantity="many"><ns2:g example="5" id="number">%1$d</ns2:g> елементів із <ns2:g example="42" id="total">%2$d</ns2:g> будуть завантажені знову</item>
+    </plurals>
+    <plurals name="search_button">
+        <item quantity="one">Знайдено <ns2:g example="1" id="count">%s</ns2:g> результат</item>
+        <item quantity="few">Знайдено <ns2:g example="2" id="count">%s</ns2:g> результати</item>
+        <item quantity="many">Знайдено <ns2:g example="5" id="count">%s</ns2:g> результатів</item>
+    </plurals>
+    <plurals name="stream_confirm" ns1:ignore="ImpliedQuantity">
+        <item quantity="one">Стріміти вибране\?</item>
+        <item quantity="few">Стріміти вибране\?</item>
+        <item quantity="many">Стріміти вибране\?</item>
+    </plurals>
+    <plurals name="stream_external_streamed_content">
+        <item quantity="one"><ns2:g example="1" id="count">%d</ns2:g> книга вже стріміться або знаходиться у зовнішній бібліотеці\nЦі книги будуть пропущені.</item>
+        <item quantity="few"><ns2:g example="2" id="count">%d</ns2:g> книги вже стрімляться або знаходяться у зовнішній бібліотеці\nЦі книги будуть пропущені.</item>
+        <item quantity="many"><ns2:g example="5" id="count">%d</ns2:g> книг вже стрімляться або знаходяться у зовнішній бібліотеці\nЦі книги будуть пропущені.</item>
+    </plurals>
+    <plurals name="work_pages_library">
+        <item quantity="one"><ns2:g example="21" id="pages_count">%1$d</ns2:g> сторінка / <ns2:g example="3.88" id="size_mb">%2$.1f</ns2:g> МБ</item>
+        <item quantity="few"><ns2:g example="32" id="pages_count">%1$d</ns2:g> сторінки / <ns2:g example="3.88" id="size_mb">%2$.1f</ns2:g> МБ</item>
+        <item quantity="many"><ns2:g example="45" id="pages_count">%1$d</ns2:g> сторінок / <ns2:g example="3.88" id="size_mb">%2$.1f</ns2:g> МБ</item>
+    </plurals>
+    <plurals name="work_pages_missing">
+        <item quantity="one">(<ns2:g example="1" id="number">%d</ns2:g> пропущено)</item>
+        <item quantity="few">(<ns2:g example="2" id="number">%d</ns2:g> пропущено)</item>
+        <item quantity="many">(<ns2:g example="5" id="number">%d</ns2:g> пропущено)</item>
+    </plurals>
+    <string name="_default">за замовчуванням</string>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Перейти на головну"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Перейти вгору"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Більше опцій"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Готово"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Показати всі"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Вибрати програму"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"ЗНИЖКА"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"УВІМК."</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"пробіл"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Введіть пошуковий запит…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Очистити запит"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Пошуковий запит"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Пошук"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Наіслати запит"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Голосовий пошук"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Поділитися:"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Поділитися через додаток <ns2:g id="APPLICATION_NAME">%s</ns2:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Згорнути"</string>
+    <string name="about1"><b>Hentoid</b> — це додаток для завантаження додзінсі і хентай-манґи. Hentoid спочатку був створений <b>Сесаром Арасакі</b>.</string>
+    <string name="about_app_version">Версія Hentoid: <ns2:g example="1.15.20" id="ver_name">%1$s</ns2:g> (<ns2:g example="130" id="ver_code">%2$d</ns2:g>)</string>
+    <string name="about_chrome_unavailable">WebView недоступно</string>
+    <string name="about_chrome_updating">WebView зараз оновлюється</string>
+    <string name="about_chrome_version">Версія Chrome: <ns2:g example="98" id="chrome_ver">%1$d</ns2:g></string>
+    <string name="about_licenses">Показати ліцензії</string>
+    <string name="alert_black">Цей сайт зараз недоступний. Додаток не може нічого з цим зробити. Будь ласка, спробуйте пізніше.</string>
+    <string name="alert_fix_available">Виправлення доступне в останній версії програми. Будь ласка, інсталюйте оновлення.</string>
+    <string name="alert_grey">Цей сайт зараз працює нестабільно. Додаток не може нічого з цим зробити. Будь ласка, спробуйте пізніше.</string>
+    <string name="alert_orange">Зверніть увагу, що завантаження можуть не працювати на цьому сайті.</string>
+    <string name="alert_red">Кнопка завантаження наразі не працює на цьому сайті.</string>
+    <string name="alert_unwanted_tags">У цієї книги є наступні заблоковані теґи: <ns2:g example="bad" id="tag">%s</ns2:g></string>
+    <string name="alert_wip">Команда розробників Hentoid працює над виправленням. Ми повідомимо вас, коли нова версія додатка буде доступна.</string>
+    <string name="already_downloaded">Вже завантажено</string>
+    <string name="already_queued">Вже у черзі</string>
+    <string name="api29_migration_allow_write">Будь ласка, підтвердіть дозвіл на запис</string>
+    <string name="api29_migration_location">Розташування папки Hentoid\n<ns2:g example="/storage/emulated/0/Hentoid" id="path">%s</ns2:g></string>
+    <string name="api29_migration_select_folder">Будь ласка, виберіть існуючу папку Hentoid. Її розташування показано на екрані.</string>
+    <string name="api29_migration_step1">Папка Hentoid</string>
+    <string name="api29_migration_step1_external">Зовнішня папка</string>
+    <string name="api29_migration_step1_select">Вибрати папку Hentoid</string>
+    <string name="api29_migration_step1_select_external">Вибрати зовнішню папку</string>
+    <string name="api29_migration_step2">Сканую папки сайтів</string>
+    <string name="api29_migration_step3">Сканування бібліотеки (<ns2:g example="1" id="number">%1$d</ns2:g>/<ns2:g example="7" id="total">%2$d</ns2:g>)</string>
+    <string name="api29_migration_step3_init">Сканую бібліотеку…</string>
+    <string name="api29_migration_step4_init">Імпорт черги…</string>
+    <string name="api29_migration_subtitle">Hentoid оновлює вашу колекцію.\nЦе може зайняти кілька хвилин.</string>
+    <string name="api29_migration_title">Hentoid v12\nОновлення керування файлами</string>
+    <string name="app_intro">Ласкаво просимо</string>
+    <string name="app_lock_disabled">Блокування вимкнено</string>
+    <string name="app_lock_enable">Блокування увімкнено</string>
+    <string name="app_lock_pin">Введіть код-пароль</string>
+    <string name="app_settings">Налаштування додатка</string>
+    <string name="apply_final">Застосувати</string>
+    <string name="archive_progress">Архівую книги</string>
+    <string name="archive_progress_subtitle">Готово: <ns2:g example="42" id="count">%s</ns2:g></string>
+    <string name="ask_clear_chapters">Видалити всі глави?</string>
+    <string name="audio_plug1">ямете~~♡</string>
+    <string name="audio_plug2">стій, це… не та дірка~</string>
+    <string name="audio_plug3">ах~</string>
+    <string name="audio_plug4">фууу ♡ ♡</string>
+    <string name="audio_plug5">не сюди~~♡</string>
+    <string name="audio_plug6">поганий, поганий хлопчик~~</string>
+    <string name="audio_plug7">так… тісно…♡</string>
+    <string name="blocked_tag">Знайдено заблокований теґ (<ns2:g example="bad" id="tag">%s</ns2:g>)\nЗавантаження скасовано</string>
+    <string name="blocked_tag_queued">Знайдено заблокований теґ (<ns2:g example="bad" id="tag">%s</ns2:g>)\nДодано в чергу як помилка</string>
+    <string name="book_edit_title">Редагувати назву книги</string>
+    <string name="book_favourite_success">Книга додана до обраного</string>
+    <string name="book_launchcode">ID: <ns2:g example="4567" id="launchcode">\'%s\'</ns2:g></string>
+    <string name="book_list_loading_failed">Неможливо завантажити список книг</string>
+    <string name="book_prefs">Налаштування книги</string>
+    <string name="book_settings">Налаштування книги</string>
+    <string name="book_unfavourite_success">Книга видалена з обраного</string>
+    <string name="bookmark_copy_url">Скопіювати адресу закладки</string>
+    <string name="bookmark_current">Додати в закладки</string>
+    <string name="bookmark_homepage">Домашня сторінка</string>
+    <string name="bookmark_toggle_welcome">Зробити адресу закладки домашньою сторінкою</string>
+    <string name="bottomsheet_action_expand_halfway">Розгорнути нижню половину</string>
+    <string name="cancel">Скасувати</string>
+    <string name="cancel_all">Скасувати все</string>
+    <string name="cancel_all_errors">Скасувати всі помилки</string>
+    <string name="cancel_queue_progress">Скасовую елементи черги</string>
+    <string name="category_any">Будь-яке</string>
+    <string name="category_artist">Художник</string>
+    <string name="category_category">Категорія</string>
+    <string name="category_character">Персонаж</string>
+    <string name="category_circle">Коло</string>
+    <string name="category_language">Мова</string>
+    <string name="category_publisher">Видавець</string>
+    <string name="category_series">Сеттинг</string>
+    <string name="category_source">Джерело</string>
+    <string name="category_tag">Теґ</string>
+    <string name="category_translator">Перекладач</string>
+    <string name="category_uploader">Завантажувач</string>
+    <string name="changelog">Що нового\?</string>
+    <string name="chapter_move_failed">Не вдалося перемістити главу</string>
+    <string name="chapter_toggle_failed">Не вдалося відкрити главу на сторінці <ns2:g example="2" id="number">%d</ns2:g></string>
+    <string name="chapters_remove_failed">Не вдалося видалити глави</string>
+    <string name="character_counter_content_description">Введено символів: %1$d з %2$d</string>
+    <string name="character_counter_overflowed_content_description">Перевищено ліміт символів: %1$d з %2$d</string>
+    <string name="checking_file">Перевіряю файл…</string>
+    <string name="checking_updates">Перевірка оновлень</string>
+    <string name="clear_rating">Очистити рейтинг</string>
+    <string name="clear_search_history">Очистити історію пошуку</string>
+    <string name="clear_text_end_icon_content_description">Видалити текст</string>
+    <string name="close_drawer">Закрити меню</string>
+    <string name="common_google_play_services_unknown_issue">У додатку %1$s виникла проблема із сервісами Google Play. Повторіть спробу.</string>
+    <string name="confirm">Підтвердити</string>
+    <string name="confirm_cancel_all">Скасувати все у черзі\?</string>
+    <string name="content_not_found">Помилка — контент не виявлено</string>
+    <string name="content_removal_failed">Не вдалося видалити контент</string>
+    <string name="contents_detected">Hentoid виявив існуючу бібліотеку.\nЧи хочете ви імпортувати її\?</string>
+    <string msgid="6083905920877235314" name="copy">"Скопіювати"</string>
+    <string name="copy_download_folder_fail">Не вдалося скопіювати в Завантаження</string>
+    <string name="copy_download_folder_success">Скопійовано в Завантаження</string>
+    <string name="delete_progress">Видаляю книги</string>
+    <string name="delete_success">успішно видалено</string>
+    <string name="delete_title">Видалити все, окрім обраних</string>
+    <string name="dialog_prompt">Виберіть папку</string>
+    <string name="disabled_generic">Відключено</string>
+    <string name="display">Показати</string>
+    <string name="display_artists">Художники</string>
+    <string name="display_groups">Групи</string>
+    <string name="display_groups_title">Показати групи</string>
+    <string name="doh_warning">Деякі сайти погано працюють з DNS через HTTPS. Скористайтеся стороннім додатком для DNS, якщо ви маєте проблеми при навігації (наприклад: порожні сторінки або помилки під час авторизації)</string>
+    <string name="download_canceled">Завантаження скасовано — книга не доступна в мережі</string>
+    <string name="download_cancelled">Завантаження скасовано</string>
+    <string name="download_complete">Завантаження завершено</string>
+    <string name="download_error">Завантаження завершено, але з помилками</string>
+    <string name="download_missing_webview">Завантаження скасовано — WebView недоступно</string>
+    <string name="download_notif_failed">Завантаження не вдалося</string>
+    <string name="download_notif_failed_details">Неможливо завантажити <ns2:g example="Крута хентай-манґа" id="book_name">%1$s</ns2:g>: не вдалося створити папку <ns2:g example="/storage/emulated/0/Hentoid/nhentai/coolhmanga" id="path">%2$s</ns2:g>. Будь ласка, перевірте папку Hentoid та повторіть завантаження за допомогою кнопки \'!\'.</string>
+    <string name="download_notif_speed"><ns2:g example="3.88" id="size_dled">%1$d</ns2:g><ns2:g example="/14.56" id="formatted_estimated_total">%2$s</ns2:g> МБ, <ns2:g example="102.4" id="speed_kbps">%3$d</ns2:g> Кб/c</string>
+    <string name="download_retries_active_title">При невдалих спробах завантаження воно буде здійснено знову</string>
+    <string name="download_retries_screen_title">Автоматично намагатись повторно завантажувати</string>
+    <string name="download_size_wifi_title">Пропускати великі завантаження на мобільній мережі</string>
+    <string name="download_updating_webview">Завантаження скасовано — WebView оновлюється</string>
+    <string name="downloader_title">Завантажувач</string>
+    <string name="downloading_update">Завантажується оновлення</string>
+    <string name="downloads_empty_library">Ну давай, скачай щось.</string>
+    <string name="downloads_loading">Завантажую~</string>
+    <string name="drag_help">Перемістити елемент</string>
+    <string name="duplicate_alert">Увага: дублікат!</string>
+    <string name="duplicate_alert_always_download">Завжди завантажувати і більше не питати</string>
+    <string name="duplicate_alert_download_book">Завантажити книгу</string>
+    <string name="duplicate_alert_download_pages">Завантажити додаткові сторінки</string>
+    <string name="duplicate_alert_never_extra_on_dupes">Ніколи більше не додавати сторінки з потенційних дублікатів</string>
+    <string name="duplicate_alert_replace_existing">Замінити книгу</string>
+    <string name="duplicate_alert_similarity">Схожість: <ns2:g example="50%" id="similarity_percentage">%.0f%%</ns2:g></string>
+    <string name="duplicate_alert_subtitle_book">Книга, яку ви збираєтеся завантажити, може бути дублікатом книги, яка вже є в вас.</string>
+    <string name="duplicate_alert_subtitle_pages">Книга, сторінки якої ви маєте намір завантажити, може бути не тією, яка є в вас.</string>
+    <string name="duplicate_artist_score">Художник: <ns2:g example="50%" id="similarity_percentage">%.0f%%</ns2:g></string>
+    <string name="duplicate_artist_score_nodata">Художник: немає даних</string>
+    <string name="duplicate_cover_score">Обкладинка: <ns2:g example="50%" id="similarity_percentage">%.0f%%</ns2:g></string>
+    <string name="duplicate_cover_score_nodata">Обкладинка: немає даних</string>
+    <string name="duplicate_delete">Видалити</string>
+    <string name="duplicate_empty_first_use">Нема чого показувати, почніть новий пошук</string>
+    <string name="duplicate_empty_no_result">Дублікатів не визначено</string>
+    <string name="duplicate_find">Визначаю дублікати</string>
+    <string name="duplicate_find_action">Розпочати пошук</string>
+    <string name="duplicate_ignore_chapters">Ігнорувати глави та сіквели</string>
+    <string name="duplicate_index_covers">Індексую обкладинки</string>
+    <string name="duplicate_keep">Залишити</string>
+    <string name="duplicate_notif_complete_title">Визначення дублікатів завершено</string>
+    <string name="duplicate_notif_start">Починаю визначення дублікатів</string>
+    <string name="duplicate_processing">Йде визначення дублікатів</string>
+    <string name="duplicate_title_score">Назва: <ns2:g example="50%" id="similarity_percentage">%.0f%%</ns2:g></string>
+    <string name="duplicate_title_score_nodata">Назва: немає даних</string>
+    <string name="duplicate_use_artist">Художник</string>
+    <string name="duplicate_use_cover">Обкладинка</string>
+    <string name="duplicate_use_same_language">Лише тей же мовою</string>
+    <string name="duplicate_use_sensitivity">Чутливість</string>
+    <string name="duplicate_use_title">Назва</string>
+    <string name="duplicate_wait_index">Зачекайте, будь ласка — йде індексування</string>
+    <string name="empty">порожньо</string>
+    <string name="err_no_content">Книга ще не існує</string>
+    <string name="err_stats_help">Показати докладну статистику про помилки</string>
+    <string name="err_stats_title">Статистика помилок</string>
+    <string name="error_browser">Помилка відкриття лінку: браузер не виявлено</string>
+    <string name="error_creating_folder">Помилка створення папки.</string>
+    <string name="error_icon_content_description">Помилка</string>
+    <string name="error_missing_webview">WebView недоступно, неможливо відкрити вбудований браузер зараз</string>
+    <string name="error_open">Помилка відкриття файлу: не знайдено відповідного додатка</string>
+    <string name="error_updating_webview">WebView зараз оновлюється, поки неможливо відкрити вбудований браузер</string>
+    <string name="error_write_permission">У вас немає прав на запис у цій папці, спробуйте іншу.</string>
+    <string name="errors_empty">Помилок при завантаженні не виявлено</string>
+    <string name="errortype_account">Немає акаунта або недостатньо дозволів</string>
+    <string name="errortype_blocked">Книга позначена заблокованим теґом</string>
+    <string name="errortype_captcha">Капча</string>
+    <string name="errortype_img_processing">Обробка зображення</string>
+    <string name="errortype_import">Не виявлено локального файлу після імпорту</string>
+    <string name="errortype_io">Обмін даними</string>
+    <string name="errortype_networking">Мережа</string>
+    <string name="errortype_parsing">Обробка</string>
+    <string name="errortype_site_limit">Досягнуто ліміт завантажень або пропускної спроможності</string>
+    <string name="errortype_undefined">Невідомо</string>
+    <string name="errortype_wifi">Книга пропущена через обмеження на розмір завантажень по Wi-Fi</string>
+    <string name="exclude">Виключити</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"Додатково"</string>
+    <string name="export_failed">Експорт не вдався</string>
+    <string name="export_favs_only">Експортувати тільки обране</string>
+    <string name="export_groups">Експортувати групи користувача</string>
+    <string name="export_run">ЗАПУСТИТИ ЕКСПОРТ</string>
+    <string name="export_title">Експорт метаданих</string>
+    <string name="export_warning1">Експорт метаданих створить список ваших книг у форматі JSON.\nЦе не спосіб переміщення вашої колекції на компʼютер чи SD-карту.\nНатисніть тут, щоб дізнатися, як це зробити.</string>
+    <string name="export_warning2">Книги експортуються без зображень.\nВам доведеться завантажити їх знову після відновлення, якщо папка зображень відсутня.</string>
+    <string name="exposed_dropdown_menu_content_description">Показати спадне меню</string>
+    <string name="external_help">Знаходиться у зовнішній бібліотеці</string>
+    <string name="fav_help">Додати/видалити з обраного</string>
+    <string name="file_removal_failed">Не вдалося видалити файл</string>
+    <string name="filter_completed">Відображати тільки завершене</string>
+    <string name="filter_not_completed">Відображати не тільки завершене</string>
+    <string name="filter_rating">Фільтрувати за рейтингом</string>
+    <string name="fix_permissions">Виправити</string>
+    <string name="folder_undefined">Помилка — Батьківська папка недоступна</string>
+    <string name="gallery_add_remove_chapters">Додати та видалити глави</string>
+    <string name="gallery_chapter_prefix">Глава</string>
+    <string name="gallery_clear_chapters">Очистити всі глави</string>
+    <string name="gallery_display_chapter">Гл. <ns2:g example="2" id="number">%d</ns2:g></string>
+    <string name="gallery_display_page"><ns2:g example=">" id="startMarker">%1$s</ns2:g>Сторінка <ns2:g example="2" id="number">%2$d</ns2:g><ns2:g example="♥" id="isFavourite">%3$s</ns2:g><ns2:g example="&lt;" id="endMarker">%4$s</ns2:g></string>
+    <string name="gallery_edit_chapters_help">Щоб створити або видалити глави, натисніть на першу сторінку</string>
+    <string name="gallery_help">Галерея книг</string>
+    <string name="gallery_no_chapter">Немає глав</string>
+    <string name="gallery_title">Галерея</string>
+    <string name="generic_progress"><ns2:g example="7" id="number">%1$d</ns2:g>/<ns2:g example="42" id="total">%2$d</ns2:g> <ns2:g example="книг" id="type">%3$s</ns2:g></string>
+    <string name="get_latest">Доступна нова версія (<ns2:g example="1.18.1" id="version">%1$s</ns2:g>)</string>
+    <string name="goto_app_prefs">Налаштування додатка</string>
+    <string name="goto_page">Перейти до сторінки…</string>
+    <string name="group_30">За цей місяць</string>
+    <string name="group_60">За останні 60 днів</string>
+    <string name="group_7">На тижні</string>
+    <string name="group_change">Перемістити до групи користувача</string>
+    <string name="group_delete_nothing">Нема чого видаляти — увімкніть опцію \"Дозволити видаляти зовнішній контент\"</string>
+    <string name="group_edit_name">Редагувати назву групи</string>
+    <string name="group_existing">Існуюча група</string>
+    <string name="group_long">Давно</string>
+    <string name="group_make_cover">Встановити як обкладинку групи</string>
+    <string name="group_make_cover_ask">Встановити обкладинку цієї книги як обкладинку групи\?</string>
+    <string name="group_name_empty">Назва групи не може бути порожньою!</string>
+    <string name="group_name_exists">Група з такою назвою вже існує.</string>
+    <string name="group_new">Створити нову</string>
+    <string name="group_new_name">Назва нової групи користувача</string>
+    <string name="group_no_group">Без групи</string>
+    <string name="group_not_selected">Не вибрана група!</string>
+    <string name="group_remove">Відʼєднати від цієї групи</string>
+    <string name="group_rename_forbidden">Заборонено перейменовувати цю групу!</string>
+    <string name="group_today">Сьогодні</string>
+    <string name="group_year">За останній рік</string>
+    <string name="groups">Групи</string>
+    <string name="groups_by_artist">За художниками</string>
+    <string name="groups_by_dl_date">За датою завантаження</string>
+    <string name="groups_custom">Свої групи</string>
+    <string name="groups_flat">Всі книги</string>
+    <string name="help_page_slider">Ви можете проводити пальцем за номерами сторінок</string>
+    <string name="help_search">Шукайте за чому завгодно: назвою, художнику, теґам\nі навіть ID книги!</string>
+    <string name="help_swipe_cancel">Ви можете скасовувати завантаження свайпом вліво</string>
+    <string name="help_web_download">Ви зайшли на сторінку книги. Саме час завантажити її за допомогою кнопки внизу!</string>
+    <string name="help_web_exh_account">Будь ласка, створіть або використовуйте існуючий акаунт exHentai.</string>
+    <string name="help_web_incomplete_exh_credentials">Авторизація не завершена, будь ласка, повторіть спробу входу. Якщо проблема зберігається, спробуйте відвідати сайт з іншої країни або створіть новий акаунт.</string>
+    <string name="help_web_invalid_exh_credentials">Неправильні дані, будь ласка, повторіть спробу входу</string>
+    <string name="icon_content_description">Значок вікна</string>
+    <string name="image_extracting">Витягую зображення…</string>
+    <string name="image_not_found">Зображення не знайдено</string>
+    <string name="image_streaming">Стрімлю зображення…</string>
+    <string name="import_app_folder">Ви не можете вибрати папку додатка як зовнішню — будь ласка, виберіть іншу</string>
+    <string name="import_canceled">Імпорт скасовано</string>
+    <string name="import_complete">Імпорт завершено</string>
+    <string name="import_create_fail">Не вдалося створити папку Hentoid — будь ласка, виберіть інше розташування</string>
+    <string name="import_download_folder">Ви не маєте вибирати папку з усіма завантаженнями цього пристрою — будь ласка, створіть чи виберіть іншу</string>
+    <string name="import_downloads">Імпортувати завантаження</string>
+    <string name="import_downloads_title">Імпорт завантажень</string>
+    <string name="import_file_invalid">Неможливо обробити файл <ns2:g example="metadata.json" id="filename">%s</ns2:g></string>
+    <string name="import_invalid">Неможливо використувати цю папку — будь ласка, виберіть іншу</string>
+    <string name="import_invalid_uri">Папка не розпізнана — будь ласка, виберіть її знову</string>
+    <string name="import_mode_add">Додати імпортовані елементи</string>
+    <string name="import_mode_replace">Замінити імпортованими елементами</string>
+    <string name="import_other">Імпорт зупинено</string>
+    <string name="import_run">ЗАПУСТИТИ ІМПОРТ</string>
+    <string name="import_select_file">Вибір файлу для імпорту</string>
+    <string name="import_settings_success">Успішно імпортовано</string>
+    <string name="import_settings_title">Імпорт налаштувань</string>
+    <string name="import_title">Імпорт метаданих</string>
+    <string name="import_unexpected">Імпорт був несподівано зупинено</string>
+    <string name="importing_downloads">Импортирую загрузки…</string>
+    <string name="importing_library">Імпорт бібліотеки</string>
+    <string name="importing_metadata">Імпортую метадані…</string>
+    <string name="information_help">Інформація</string>
+    <string name="invert_queue">Інвертувати порядок</string>
+    <string name="item_view_role_description">Вкладка</string>
+    <string name="lang_cs">чеська</string>
+    <string name="lang_de">німецька</string>
+    <string name="lang_en">англійська</string>
+    <string name="lang_es">іспанська</string>
+    <string name="lang_fr">французька</string>
+    <string name="lang_hu">угорська</string>
+    <string name="lang_id">індонезійська</string>
+    <string name="lang_it">італійська</string>
+    <string name="lang_ja">японська</string>
+    <string name="lang_ko">корейська</string>
+    <string name="lang_pl">польська</string>
+    <string name="lang_pt">португальска</string>
+    <string name="lang_ru">російська</string>
+    <string name="lang_th">тайська</string>
+    <string name="lang_tr">турецька</string>
+    <string name="lang_vi">вʼєтнамська</string>
+    <string name="lang_zh">китайська</string>
+    <string name="launchcode_present">У вас вже є ця книга. Шукати в інших джерелах\?</string>
+    <string name="library_filter_favourite_help">Відображення обраних книг</string>
+    <string name="library_filters_title">Фільтри</string>
+    <string name="library_imports_title">Імпорт бібліотеки</string>
+    <string name="library_metrics_storage"><ns2:g example="3.88" id="size_mb">%.0f</ns2:g> МБ</string>
+    <string name="library_search_hint">Назва, художник, теґ чи ID книги</string>
+    <string name="loading_archive">Завантаження: <ns2:g example="1" id="number">%1$d</ns2:g> из <ns2:g example="42" id="total">%2$d</ns2:g></string>
+    <string name="loading_image">Завантаження зображення: <ns2:g example="50%" id="percentage">%d%%</ns2:g></string>
+    <string name="log_api29_migration">Міграція бібліотеки з Hentoid 1.11</string>
+    <string name="log_cleanup">Очищення основної бібліотеки</string>
+    <string name="log_import">Оновлення/імпорт основной бібліотеки</string>
+    <string name="log_import_external">Оновлення/імпорт зовнішнеї бібліотеки</string>
+    <string name="logs_open">Відкрити лог</string>
+    <string name="logs_share">Поділитися логом</string>
+    <string name="logs_title">Останні логи</string>
+    <string name="low_memory">Закінчується пам\'ять на пристрої!</string>
+    <string name="malformed_url">Помилка — Неправильний URL</string>
+    <string name="masterdata_no_result">Немає результатів :(</string>
+    <string name="material_clock_toggle_content_description">Виберіть ДП чи ПП</string>
+    <string name="material_hour_selection">Вибрати годину</string>
+    <string name="material_hour_suffix">%1$s год</string>
+    <string name="material_minute_selection">Виберіть хвилини</string>
+    <string name="material_minute_suffix">%1$s хв</string>
+    <string name="material_timepicker_am">дп</string>
+    <string name="material_timepicker_clock_mode_description">Перейти в режим годинника, щоб ввести час.</string>
+    <string name="material_timepicker_hour">Година</string>
+    <string name="material_timepicker_minute">Хвилина</string>
+    <string name="material_timepicker_pm">пп</string>
+    <string name="material_timepicker_select_time">Виберіть час</string>
+    <string name="material_timepicker_text_input_mode_description">Перейти в текстовий режим, щоб ввести час.</string>
+    <string name="memory_database">База даних: <ns2:g example="1.52 МБ" id="size_mb">%1$s</ns2:g> (заповнено на <ns2:g example="40%" id="percentage">%2$.1f%%</ns2:g>)</string>
+    <string name="memory_details">Подробиці (основне сховище)</string>
+    <string name="memory_details_books">Книги</string>
+    <string name="memory_details_size">Розмір</string>
+    <string name="memory_details_source">Джерело</string>
+    <string name="memory_free">Вільно: <ns2:g example="50 МБ" id="total">%s</ns2:g></string>
+    <string name="memory_hentoid_ext">Hentoid (зовнішнє сховище): <ns2:g example="3 МБ" id="total">%s</ns2:g></string>
+    <string name="memory_hentoid_main">Hentoid (основне сховище): <ns2:g example="2 МБ" id="total">%s</ns2:g></string>
+    <string name="memory_title">Використання памʼяті</string>
+    <string name="memory_total">Всього: <ns2:g example="100 МБ" id="total">%s</ns2:g></string>
+    <string name="menu_archive">В архів</string>
+    <string name="menu_archive_help">Заархівувати книгу в ZIP</string>
+    <string name="menu_change_group">Перемістити до групи</string>
+    <string name="menu_completed_single">Завершено</string>
+    <string name="menu_delete_single">Видалити</string>
+    <string name="menu_download_streamed">Завантажити</string>
+    <string name="menu_edit_cancel">Скасувати редагування</string>
+    <string name="menu_edit_chapters">Редагувати глави</string>
+    <string name="menu_edit_confirm">Підтвердити редагування</string>
+    <string name="menu_edit_name">Перейменувати</string>
+    <string name="menu_edit_order">Пересортувати</string>
+    <string name="menu_edit_warning_custom">Нове користувальницьке сортування замінить попереднє.</string>
+    <string name="menu_fav">Показати обране</string>
+    <string name="menu_group_new">Нова група</string>
+    <string name="menu_mark_fav">Обране</string>
+    <string name="menu_open_folder">Відкрити батьківську папку</string>
+    <string name="menu_redownload">Завантажити знову</string>
+    <string name="menu_redownload_scratch">Завантажити з нуля</string>
+    <string name="menu_reset_read">Позначити непрочитаним</string>
+    <string name="menu_search">Пошук</string>
+    <string name="menu_select_all">Вибрати все</string>
+    <string name="menu_share">Поділитися</string>
+    <string name="menu_share_help">Поділитися лінком на книгу та її назвою через сторонній додаток</string>
+    <string name="menu_share_title">Лінк на книгу</string>
+    <string name="menu_sort_filter">Сортувати книги</string>
+    <string name="menu_stream">Передавати потоком</string>
+    <string name="merge_delete_after_merging">Видалити ці книги після поєднання</string>
+    <string name="merge_merge">Поєднати</string>
+    <string name="merge_progress">Поєднаю книги…</string>
+    <string name="merge_split">Розділити</string>
+    <string name="merge_success">Успішно поєднано</string>
+    <string name="missing_web_view">Hentoid не виявив вбудований спеціальний браузер Android.\nБез нього неможливо ходити по сайтах, завантажувати книги, так само як і робити багато чого, що пов\'язано з інтернетом.\n\nШвидше за все, він насправді встановлений у вас, просто відключений: будь ласка, перейдіть в <b>Налаштування</b> > <b>Додатки</b> > <b>Відключені</b> та включіть <b>Android System WebView</b>.\n\nЯкщо ви не можете знайти такий додаток, будь ласка, встановіть його з вашого <b><a href="https://play.google.com/store/apps/details?id=com.google.android.webview">магазину додатків</a></b>.</string>
+    <string name="missing_web_view_library">Назад до бібліотеки</string>
+    <string name="missing_web_view_title">WebView не встановлено або відключено</string>
+    <string name="move_bottom">В кінець</string>
+    <string name="move_top">В початок</string>
+    <string name="mtrl_badge_numberless_content_description">Нове сповіщення</string>
+    <string name="mtrl_chip_close_icon_content_description">Видалити %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns1:ignore="PluralsCandidate">Нових сповіщень більше ніж %1$d</string>
+    <string name="mtrl_picker_a11y_next_month">Перейти до наступного місяця</string>
+    <string name="mtrl_picker_a11y_prev_month">Перейти до попереднього місяця</string>
+    <string name="mtrl_picker_announce_current_selection">Поточний вибір: %1$s</string>
+    <string name="mtrl_picker_cancel">Скасувати</string>
+    <string name="mtrl_picker_confirm">OK</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Виберіть дату</string>
+    <string name="mtrl_picker_date_header_unselected">Вибрана дата</string>
+    <string name="mtrl_picker_day_of_week_column_header">Стовпець із днями: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Недійсний формат.</string>
+    <string name="mtrl_picker_invalid_format_example">Приклад: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Використовувати: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Недійсний діапазон.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Перейти до %1$s року</string>
+    <string name="mtrl_picker_out_of_range">За межами діапазону: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Дата початку – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – дата завершення</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Виберіть діапазон дат</string>
+    <string name="mtrl_picker_range_header_unselected">Дата початку – дата завершення</string>
+    <string name="mtrl_picker_save">Зберегти</string>
+    <string name="mtrl_picker_text_input_date_hint">Дата</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Дата завершення</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Дата початку</string>
+    <string name="mtrl_picker_text_input_day_abbr">д</string>
+    <string name="mtrl_picker_text_input_month_abbr">м</string>
+    <string name="mtrl_picker_text_input_year_abbr">р</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Перейти в режим введення в календарі</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Натисніть, щоб вибрати день</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Перейти в режим введення тексту</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Натисніть, щоб вибрати рік</string>
+    <string name="mtrl_timepicker_cancel">Скасувати</string>
+    <string name="mtrl_timepicker_confirm">OK</string>
+    <string name="new_group_name">Назва нової групи\?</string>
+    <string name="new_title">Нова назва</string>
+    <string name="next_book_help">Наступна книга</string>
+    <string name="no">Ні</string>
+    <string name="no_artist_group_name">[без художника]</string>
+    <string name="no_error_detected">Немає помилок</string>
+    <string name="no_images">Неможливо завантажити книгу: Не знайдено жодного зображення</string>
+    <string name="none">Ніяк</string>
+    <string msgid="6573031135582639649" name="not_set">"Не налаштовано"</string>
+    <string name="notif_archive_complete">Архівування завершено</string>
+    <string name="notif_archive_fail">Архівація не вдалася</string>
+    <string name="notif_archive_fail_details">Не вдалося архівувати принаймні одну книгу</string>
+    <string name="notif_archive_title">Архівування контенту</string>
+    <string name="notif_delete_complete">Видалення завершено</string>
+    <string name="notif_delete_fail">Видалення не вдалося</string>
+    <string name="notif_delete_fail_details">Не вдалося видалити принаймні одну книгу</string>
+    <string name="notif_delete_title">Видалення контенту</string>
+    <string name="notification_action_dl_revive">Натисніть, щоб відновити завантаження</string>
+    <string name="notification_user_action_needed">Необхідна дія користувача</string>
+    <string name="notification_user_action_title">Користувальницькі дії</string>
+    <string name="object_artist">художника</string>
+    <string name="object_category">категорію</string>
+    <string name="object_character">персонажа</string>
+    <string name="object_circle">коло</string>
+    <string name="object_language">мову</string>
+    <string name="object_publisher">видавця</string>
+    <string name="object_series">сеттинг</string>
+    <string name="object_source">джерело</string>
+    <string name="object_tag">теґ</string>
+    <string name="object_translator">перекладача</string>
+    <string name="object_uploader">завантажувача</string>
+    <string name="off">Вимк.</string>
+    <string name="ok">ОК</string>
+    <string name="on">Вмик.</string>
+    <string name="open_drawer">Відкрити меню</string>
+    <string name="open_folder">Відкрити папку</string>
+    <string name="open_settings">Налаштування</string>
+    <string name="page_copy_help">Скопіювати сторінку в Завантаження</string>
+    <string name="page_delete_help">Видалити сторінку</string>
+    <string name="page_fav_help">Додати/видалити сторінку з обраних</string>
+    <string name="page_favourite_success">Сторінка додана до обраного</string>
+    <string name="page_removal_failed">Не вдалося видалити сторінку</string>
+    <string name="page_share_help">Поділитися сторінкою зі стороннім додатком</string>
+    <string name="page_unfavourite_success">Сторінка видалена з обраного</string>
+    <string name="password_toggle_content_description">Показувати пароль</string>
+    <string name="pause">Призупинити</string>
+    <string name="paused_dl_folder_credentials">Завантаження неможливе — Немає доступу до папки завантажень. Виберіть її знову в налаштуваннях додатка</string>
+    <string name="paused_dl_folder_not_found">Завантаження неможливе — Папки завантажень не знайдено. Виберіть її в налаштуваннях додатка</string>
+    <string name="paused_dl_stale_online_credentials">Завантаження неможливе — Застаріли Cookie або авторизація. Оновіть їх через повідомлення</string>
+    <string name="paused_no_dl_folder">Завантаження неможливе — Немає папки завантажень. Виберіть її в налаштуваннях додатка</string>
+    <string name="paused_no_internet">Завантаження неможливе — Немає мережі</string>
+    <string name="paused_no_storage">Завантаження неможливе — Пам\'ять майже заповнена (залишилося <ns2:g example="0 б." id="size_left_bytes">%s</ns2:g>). Звільніть місце або змініть папку для завантаження</string>
+    <string name="paused_no_wifi">Завантаження неможливе — Немає підключення до Wi-Fi</string>
+    <string name="permissioncomplaint_snackbar">Ви маєте надати дозволи перед тим, як продовжити</string>
+    <string name="permissioncomplaint_snackbar_manual">Ви маєте вручну надати дозволи перед тим, як продовжити</string>
+    <string name="permissions_lost">Дозволи на роботу з файлами були втрачені</string>
+    <string name="personalDataStatement1"><b>ЗАЯВА ПРО КОНФІДЕНЦІЙНІСТЬ ПЕРСОНАЛЬНИХ ДАНИХ</b>\n\nHentoid — це безкоштовне програмне забезпечення з відкритим кодом, розроблене спільнотою Hentoid (приєднуйтесь до нас у Discord за лінком нижче)</string>
+    <string name="personalDataStatement2">Hentoid збирає наступні персональні дані і ділиться ними з Google для обробки за допомогою бібліотеки Firebase:\n - Ідентифікатор сесії\n - IP-адреса</string>
+    <string name="personalDataStatement3">Вищезазначені дані видаляються як з діючої, так і з запасної систем Firebase протягом 180 днів (подробиці доступні на https://firebase.google.com/support/privacy/)\n\nНіякі інші персональні дані не збираються і не передаються третім особам.</string>
+    <string name="pin_current">Введіть поточний код-пароль</string>
+    <string name="pin_explanation">Блокування кодом-паролем запобігає використанню цього додатка без попередньої авторизації за допомогою 4-значного PIN-коду</string>
+    <string name="pin_lock_on_restore">Блокувати при\nповторному відкритті</string>
+    <string name="pin_new">Введіть новий код-пароль</string>
+    <string name="pin_new_confirm">Підтвердіть новий код-пароль</string>
+    <string name="pin_reset">Змінити код-пароль</string>
+    <string name="pin_reset_success">Код-пароль змінено</string>
+    <string name="please_wait">Будь ласка, зачекайте…</string>
+    <string name="power_plug1">мені так приємно там~~</string>
+    <string name="power_plug2">глибше~~~♡</string>
+    <string name="power_plug3">ікуууу~~</string>
+    <string name="power_plug4">а-ах ♡</string>
+    <string name="power_plug5">ооох~</string>
+    <string name="power_plug6">ще ♡</string>
+    <string name="pref_analytics_preference_summary_off">Збір аналітики вимкнено.\nУвімкніть його, щоб ми могли покращувати додаток, відстежуючи збої та помилки в ньому</string>
+    <string name="pref_analytics_preference_summary_on">Збір аналітики увімкнено.\nДякуємо, що допомагаєте нам покращити Hentoid!</string>
+    <string name="pref_analytics_preference_title">Аналітика Firebase</string>
+    <string name="pref_app_preview_summary_off">У списку останніх додатків не відображається, що відкрито в додатку\nУвімкніть, якщо хочете робити скріншоти додатка</string>
+    <string name="pref_app_preview_summary_on">Вміст екрана не ховається у списку нещодавніх додатків</string>
+    <string name="pref_app_preview_title">Перегляд у списку нещодавніх додатків</string>
+    <string name="pref_attribute_list_order_entries_1">За алфавітом</string>
+    <string name="pref_attribute_list_order_entries_2">Спочатку найбільш використовувані</string>
+    <string name="pref_attributes_list_count_off">Кількість доступних книг не відображається</string>
+    <string name="pref_attributes_list_count_on">Кількість доступних книг відображається поруч із кожною характеристикою</string>
+    <string name="pref_attributes_list_count_title">Відображати кількість доступних книг</string>
+    <string name="pref_attributes_list_order_title">Спосіб сортування метаданих</string>
+    <string name="pref_browser_augmented_off">Використовується стандартна поведінка</string>
+    <string name="pref_browser_augmented_on">Реклама видаляється, а обробка відбувається швидше</string>
+    <string name="pref_browser_augmented_title">Поліпшення якості життя</string>
+    <string name="pref_browser_behaviour">Поведінка</string>
+    <string name="pref_browser_clear_cookies">Очистити cookies браузера</string>
+    <string name="pref_browser_clear_cookies_ko">Нічого видаляти</string>
+    <string name="pref_browser_clear_cookies_missing_webview">WebView недоступно, неможливо видалити cookies зараз</string>
+    <string name="pref_browser_clear_cookies_ok">Cookies видалені успішно</string>
+    <string name="pref_browser_clear_cookies_updating_webview">WebView зараз оновлюється, поки неможливо видалити cookies</string>
+    <string name="pref_browser_dl_action_title">Завантаження</string>
+    <string name="pref_browser_dns_entries_1">Ніякий</string>
+    <string name="pref_browser_dns_title">DNS через HTTPS</string>
+    <string name="pref_browser_duplicate_ask_off">Ні: завжди завантажувати</string>
+    <string name="pref_browser_duplicate_ask_on">Так: запитувати перед завантаженням</string>
+    <string name="pref_browser_duplicate_ask_title">Перевірка на дублікати</string>
+    <string name="pref_browser_duplicate_try_pages_off">Шукати додаткові сторінки лише на оригіналі</string>
+    <string name="pref_browser_duplicate_try_pages_on">Шукати додаткові сторінки на потенційних дублікатах</string>
+    <string name="pref_browser_duplicate_try_pages_title">Намагатися знайти додаткові сторінки на потенційних дублікатах\?</string>
+    <string name="pref_browser_initial_zoom_summary">Рівень масштабу під час завантаження сторінки\nЗараз: <ns2:g example="20%" id="percentage">%s%%</ns2:g></string>
+    <string name="pref_browser_initial_zoom_title">Масштаб за замовчуванням</string>
+    <string name="pref_browser_mark_downloaded_off">Вже завантажені книги не виділяються</string>
+    <string name="pref_browser_mark_downloaded_on">Вже завантажені книги виділяються\nУвага: працює не на всіх сайтах</string>
+    <string name="pref_browser_mark_downloaded_title">Помічати завантажені книги</string>
+    <string name="pref_browser_nhentai_invisible_blacklist_off">Відображаються з розмиттям</string>
+    <string name="pref_browser_nhentai_invisible_blacklist_on">Не відображаються</string>
+    <string name="pref_browser_nhentai_invisible_blacklist_title">Заблоковані на книги nhentai відображаються…</string>
+    <string name="pref_browser_override_overview_summary_off">Внизу ви можете виставити бажаний рівень масштабу за замовчуванням</string>
+    <string name="pref_browser_override_overview_summary_on">Скористайтеся налаштуванням внизу для визначення бажаного рівня масштабу за замовчуванням\nПримітка: Працює лише на hitomi та e-hentai</string>
+    <string name="pref_browser_override_overview_title">Вимкнути огляд сторінки</string>
+    <string name="pref_browser_quick_dl_summary">Не відкриваючи книгу, натисніть на неї, щоб завантажити</string>
+    <string name="pref_browser_quick_dl_threshold_entries_1">500 мс</string>
+    <string name="pref_browser_quick_dl_threshold_entries_2">1 с</string>
+    <string name="pref_browser_quick_dl_threshold_entries_3">1.5 с (за замовчуванням)</string>
+    <string name="pref_browser_quick_dl_threshold_entries_4">2 с</string>
+    <string name="pref_browser_quick_dl_threshold_entries_5">3 с</string>
+    <string name="pref_browser_quick_dl_threshold_summary">Не відпускайте палець протягом цього часу після натискання, щоб почати швидке завантаження\nЗараз: <ns2:g example="1 с" id="time">%s</ns2:g></string>
+    <string name="pref_browser_quick_dl_threshold_title">Поріг довгого натискання для швидкого завантаження</string>
+    <string name="pref_browser_quick_dl_title">Швидке завантаження</string>
+    <string name="pref_browser_resume_last_off">Сайти відкриватимуться зі своїх головних сторінок</string>
+    <string name="pref_browser_resume_last_on">Сайти відкриватимуться з останньої сторінки, яка була відкрита на них</string>
+    <string name="pref_browser_resume_last_title">Відновлювати останню сторінку</string>
+    <string name="pref_browser_visuals">Зовнішній вигляд</string>
+    <string name="pref_cat_advanced">Додатково</string>
+    <string name="pref_cat_downloads_folder">Бібліотека Hentoid</string>
+    <string name="pref_cat_external">Зовнішня бібліотека</string>
+    <string name="pref_cat_language">Мова інтерфейсу</string>
+    <string name="pref_cat_library">Бібліотека</string>
+    <string name="pref_cat_search">Розширений пошук</string>
+    <string name="pref_cat_theme">Тема додатка</string>
+    <string name="pref_check_updates_manual_checking">Перевіряю оновлення…</string>
+    <string name="pref_check_updates_manual_no_connection">Не вдалося перевірити оновлення. Перевірте з\'єднання або спробуйте пізніше</string>
+    <string name="pref_check_updates_manual_no_new">Оновлень не знайдено — Ви вже використовуєте останню версію</string>
+    <string name="pref_check_updates_manual_summary">Зробити перевірку прямо зараз</string>
+    <string name="pref_check_updates_manual_title">Перевірити оновлення вручну</string>
+    <string name="pref_check_updates_summary_off">Ви також можете увімкнути автоматичну перевірку оновлень по мобільній мережі</string>
+    <string name="pref_check_updates_summary_on">Це не вимикає можливість ручної перевірки оновлень</string>
+    <string name="pref_check_updates_title">Автоматичні оновлення</string>
+    <string name="pref_color_theme_summary">Поточна тема: <ns2:g example="Темно-червона" id="theme_name">%s</ns2:g></string>
+    <string name="pref_color_theme_title">Схема кольорів</string>
+    <string name="pref_delete_all_except_favs_summary">Очистити бібліотеку і залишити лише обрані книги\nУвага: не відноситься до зовнішньої бібліотеки</string>
+    <string name="pref_delete_all_except_favs_title">Видалити всі книги, крім обраних</string>
+    <string name="pref_dl_blocked_tags_behaviour_entries_1">Не додавати в чергу</string>
+    <string name="pref_dl_blocked_tags_behaviour_entries_2">Додавати у чергу як невдалі завантаження</string>
+    <string name="pref_dl_blocked_tags_behaviour_title">Погані теґи має…</string>
+    <string name="pref_dl_blocked_tags_summary">Книги з певними теґами не завантажуватимуться\nПідказка: теґи розділяються комами</string>
+    <string name="pref_dl_blocked_tags_title">Заблоковані теґи</string>
+    <string name="pref_dl_pages_wifi_threshold_entries_1">Без обмеження на кількість сторінок</string>
+    <string name="pref_dl_pages_wifi_threshold_entries_2">60 сторінок</string>
+    <string name="pref_dl_pages_wifi_threshold_entries_3">120 сторінок</string>
+    <string name="pref_dl_pages_wifi_threshold_entries_4">200 сторінок</string>
+    <string name="pref_dl_pages_wifi_threshold_entries_5">500 сторінок</string>
+    <string name="pref_dl_pages_wifi_threshold_title">Обмеження на кількість сторінок у завантаженнях</string>
+    <string name="pref_dl_retries_mem_limit_entries_4">Ніякий</string>
+    <string name="pref_dl_retries_mem_limit_title">Обмеження використання пам\'яті</string>
+    <string name="pref_dl_retries_number_title">Кількість повторних спроб</string>
+    <string name="pref_dl_retries_off">Невдалі завантаження будуть позначені як помилки</string>
+    <string name="pref_dl_retries_on">Невдалі завантаження відбуватимуться повторно</string>
+    <string name="pref_dl_size_wifi_off">Усі завантаження будуть оброблені</string>
+    <string name="pref_dl_size_wifi_on">Великі завантаження будуть пропущені, якщо відсутнє підключення до Wi-Fi</string>
+    <string name="pref_dl_size_wifi_threshold_entries_1">Без обмеження на розмір</string>
+    <string name="pref_dl_size_wifi_threshold_entries_2">20 МБ</string>
+    <string name="pref_dl_size_wifi_threshold_entries_3">40 МБ</string>
+    <string name="pref_dl_size_wifi_threshold_entries_4">100 МБ</string>
+    <string name="pref_dl_size_wifi_threshold_entries_5">200 МБ</string>
+    <string name="pref_dl_size_wifi_threshold_title">Обмеження на розмір завантажень</string>
+    <string name="pref_dl_threads_quantity_entries_1">Автоматично (за замовчуванням)</string>
+    <string name="pref_dl_threads_quantity_entries_2">2 (повільний інтернет)</string>
+    <string name="pref_dl_threads_quantity_entries_6">10 (швидкий інтернет та продуктивний пристрій)</string>
+    <string name="pref_dl_threads_quantity_summary">Кількість зображень, що завантажуються одночасно\nЗараз: <ns2:g example="5" id="number">%s</ns2:g></string>
+    <string name="pref_dl_threads_quantity_title">Кількість паралельних завантажень</string>
+    <string name="pref_drawer_sources_summary">Вмикайте, вимикайте та реорганізовуйте джерела, що відображаються в лівому меню</string>
+    <string name="pref_drawer_sources_title">Керування джерелами</string>
+    <string name="pref_endless_scroll_summary_off">Включає нескінченне прокручування у списку завантажень\nВимикає поділ на сторінки</string>
+    <string name="pref_endless_scroll_summary_on">Прокручуйте, скільки вашій душі завгодно</string>
+    <string name="pref_endless_scroll_title">Нескінченна прокрутка</string>
+    <string name="pref_external_library_delete_off">Hentoid не може видаляти книги та сторінки у зовнішній бібліотеці</string>
+    <string name="pref_external_library_delete_on">Hentoid може видаляти книги та сторінки у зовнішній бібліотеці</string>
+    <string name="pref_external_library_delete_title">Дозволяти видалення зовнішнього контенту</string>
+    <string name="pref_external_library_detach_summary">Не використовувати зовнішню бібліотеку в Hentoid</string>
+    <string name="pref_external_library_detach_title">Вимкнути зовнішню бібліотеку</string>
+    <string name="pref_external_library_summary_empty">Зовнішні бібліотеки не встановлені</string>
+    <string name="pref_external_library_title">Зовнішня бібліотека</string>
+    <string name="pref_folder_naming_content_entries_2">Назва - ID</string>
+    <string name="pref_folder_naming_content_entries_3">Художник - Назва - ID</string>
+    <string name="pref_folder_naming_content_entries_4">Назва - Художник - ID</string>
+    <string name="pref_folder_naming_content_summary">Спосіб найменування папок:\n<ns2:g example="Назва - ID" id="convention">%s</ns2:g></string>
+    <string name="pref_folder_naming_content_title">Назви папок</string>
+    <string name="pref_folder_trunc_content_entries_1">Не скорочувати</string>
+    <string name="pref_folder_trunc_content_entries_2">60 символів</string>
+    <string name="pref_folder_trunc_content_entries_3">80 символів</string>
+    <string name="pref_folder_trunc_content_entries_4">100 символів</string>
+    <string name="pref_folder_trunc_content_entries_5">120 символів</string>
+    <string name="pref_folder_trunc_summary">Урізання назв папок\nЗараз: <ns2:g example="80 символів" id="chars">%s</ns2:g></string>
+    <string name="pref_folder_trunc_title">Скорочувати назви папок</string>
+    <string name="pref_force_english_summary_off">Використовується мова пристрою, якщо додаток підтримує її</string>
+    <string name="pref_force_english_summary_on">Використовується англійська мова</string>
+    <string name="pref_force_english_title">Примусово використовувати англійську</string>
+    <string name="pref_import_queue_empty_off">Порожні імпортовані книги будуть додані до бібліотеки</string>
+    <string name="pref_import_queue_empty_on">Порожні імпортовані книги будуть додані в чергу як помилки завантаження</string>
+    <string name="pref_import_queue_empty_title">Додавати порожні імпортовані книги в чергу як невдалі завантаження</string>
+    <string name="pref_import_running">Імпортування вже запущено</string>
+    <string name="pref_library_display_entries_1">Список (за замовчуванням)</string>
+    <string name="pref_library_display_entries_2">Сітка</string>
+    <string name="pref_library_display_summary">Вид відображення книг та груп\nПоточний: <ns2:g example="Список" id="display_type">%s</ns2:g></string>
+    <string name="pref_library_display_title">Спосіб відображення</string>
+    <string name="pref_lock_timer_entries_1">Відразу</string>
+    <string name="pref_lock_timer_entries_2">10 с</string>
+    <string name="pref_lock_timer_entries_3">30 с (за замовчуванням)</string>
+    <string name="pref_lock_timer_entries_4">1 хв.</string>
+    <string name="pref_lock_timer_entries_5">2 хв.</string>
+    <string name="pref_memory_alert_entries_1">Не повідомляти</string>
+    <string name="pref_memory_alert_entries_2" ns1:ignore="StringFormatInvalid">коли заповнена на 90%</string>
+    <string name="pref_memory_alert_entries_3" ns1:ignore="StringFormatInvalid">коли заповнена на 95%</string>
+    <string name="pref_memory_alert_entries_4" ns1:ignore="StringFormatInvalid">коли заповнена на 98%</string>
+    <string name="pref_memory_alert_title">Попереджати при майже повному заповненні пам\'яті</string>
+    <string name="pref_memory_usage_summary">Вільне місце: <ns2:g example="13.37%" id="percentage">%.2f%%</ns2:g> (натисніть для подробиць)</string>
+    <string name="pref_memory_usage_title">Використання пам\'яті</string>
+    <string name="pref_misc">Інше</string>
+    <string name="pref_quantity_per_page_summary">Визначає, скільки елементів відображається на одній сторінці у списку завантажень\nЗараз: <ns2:g example="10" id="count">%s</ns2:g> елементів</string>
+    <string name="pref_quantity_per_page_title">Кількість елементів на сторінці</string>
+    <string name="pref_queue_autostart_off">Черга завантаження запуститься лише вручну</string>
+    <string name="pref_queue_autostart_on">Черга завантаження розпочнеться як тільки завантаження завершиться</string>
+    <string name="pref_queue_autostart_title">Автоматично починати чергу завантаження</string>
+    <string name="pref_queue_new_position_entries_1">Вгорі</string>
+    <string name="pref_queue_new_position_entries_2">Внизу</string>
+    <string name="pref_queue_new_position_entries_3">Завжди запитувати</string>
+    <string name="pref_queue_new_position_title">Розташування нових завантажень</string>
+    <string name="pref_queue_wifi_only_off">Черга завантаження розпочнеться незалежно від типу мережі</string>
+    <string name="pref_queue_wifi_only_on">Черга завантаження розпочнеться лише якщо є підключення до Wi-Fi</string>
+    <string name="pref_queue_wifi_only_title">Завантажувати тільки через Wi-Fi</string>
+    <string name="pref_refresh_library_summary">Вручну оновити вміст бібліотеки</string>
+    <string name="pref_refresh_library_title">Оновити бібліотеку</string>
+    <string name="pref_screen_browser">Браузер</string>
+    <string name="pref_screen_downloader">Завантажувач</string>
+    <string name="pref_screen_interface">Інтерфейс та навігація</string>
+    <string name="pref_screen_privacy">Конфіденційність</string>
+    <string name="pref_screen_storage">Сховище</string>
+    <string name="pref_screen_updates">Оновлення</string>
+    <string name="pref_screen_viewer">Читання</string>
+    <string name="pref_screenshot_summary_off">Перегляд у списку недавніх додатків та скріншоти в додатку вимкнено</string>
+    <string name="pref_screenshot_summary_on">Скріншоти дозволені</string>
+    <string name="pref_screenshot_title">Дозволити скріншоти</string>
+    <string name="pref_select_folder_summary">Виберіть, де Hentoid буде зберігати ваші завантаження</string>
+    <string name="pref_select_folder_title">Вибір папки завантажень</string>
+    <string name="pref_top_fab_summary_off">Вимкнена</string>
+    <string name="pref_top_fab_summary_on">Увімкнена</string>
+    <string name="pref_top_fab_title">Кнопка переходу наверх</string>
+    <string name="pref_viewer_auto_rotate">Автоматично повертати зображення</string>
+    <string name="pref_viewer_auto_rotate_summary_off">Зображення не повертаються</string>
+    <string name="pref_viewer_auto_rotate_summary_on">Зображення повертаються так, щоб зайняти якнайбільше місця на екрані</string>
+    <string name="pref_viewer_book_switch">Перемикання книг</string>
+    <string name="pref_viewer_book_switch_volume">Кнопки гучності (довге натискання)</string>
+    <string name="pref_viewer_browse_mode">Режим огляду</string>
+    <string name="pref_viewer_browse_mode_entries_1">Зліва направо</string>
+    <string name="pref_viewer_browse_mode_entries_2">Справа наліво</string>
+    <string name="pref_viewer_browse_mode_entries_3">Зверху вниз</string>
+    <string name="pref_viewer_cap_tap_zoom">Обмежити зум за подвійним або довгим натисканням</string>
+    <string name="pref_viewer_cap_tap_zoom_entries_1">Не обмежувати</string>
+    <string name="pref_viewer_continuous_summary_off">Остання сторінка книги справді остання</string>
+    <string name="pref_viewer_continuous_summary_on">З останньої сторінки книги можна піти на наступну книгу</string>
+    <string name="pref_viewer_continuous_title">Безперервне читання</string>
+    <string name="pref_viewer_controls">Управління</string>
+    <string name="pref_viewer_display_mode">Режим відображення для горизонтального перегляду</string>
+    <string name="pref_viewer_display_mode_entries_1">За розміром екрану (за замовчуванням)</string>
+    <string name="pref_viewer_display_mode_entries_2">Заповнити екран</string>
+    <string name="pref_viewer_display_mode_entries_3">Розтягнути на весь екран</string>
+    <string name="pref_viewer_display_notch">Показувати біля "чубчика"</string>
+    <string name="pref_viewer_display_pagenum">Завжди показувати номер сторінки</string>
+    <string name="pref_viewer_dl_action_entries_1">Завантажувати усі сторінки</string>
+    <string name="pref_viewer_dl_action_entries_2">Передавати сторінки потоком (стріміти)</string>
+    <string name="pref_viewer_gallery_columns">Число стовпців у галереї</string>
+    <string name="pref_viewer_horizontal_reader">Читання по горизонталі</string>
+    <string name="pref_viewer_invert_volume">Інвертувати кнопки гучності</string>
+    <string name="pref_viewer_keep_screen_on">Не вимикати екран</string>
+    <string name="pref_viewer_maintain_horizontal_zoom">Зберігати значення зуму між сторінками</string>
+    <string name="pref_viewer_navigation">Навігація та поведінка</string>
+    <string name="pref_viewer_open_gallery">Завжди відкривати у режимі галереї</string>
+    <string name="pref_viewer_page_turn">Режим перегортання сторінок</string>
+    <string name="pref_viewer_page_turn_keyboard">Стрілки вліво/вправо на клавіатурі</string>
+    <string name="pref_viewer_page_turn_swipe">Свайп</string>
+    <string name="pref_viewer_page_turn_tap">Натискання на край</string>
+    <string name="pref_viewer_page_turn_tap_2x">Подвійне збільшення зони натискання</string>
+    <string name="pref_viewer_page_turn_volume">Кнопки гучності</string>
+    <string name="pref_viewer_ratio_completed_threshold">Вважати книгу прочитаною після відсотка сторінок</string>
+    <string name="pref_viewer_read_threshold">Вважати книгу прочитаною після N сторінок</string>
+    <string name="pref_viewer_read_threshold_entries_1">1 сторінка (за замовчуванням)</string>
+    <string name="pref_viewer_read_threshold_entries_2">2 сторінки</string>
+    <string name="pref_viewer_read_threshold_entries_3">5 сторінок</string>
+    <string name="pref_viewer_read_threshold_entries_4">Всі сторінки</string>
+    <string name="pref_viewer_rendering">Режим відмальовування</string>
+    <string name="pref_viewer_rendering_entries_1">Чітке відмальовування (за замовчуванням)</string>
+    <string name="pref_viewer_rendering_entries_2">Плавне відмальовування</string>
+    <string name="pref_viewer_rendering_no_android5">Плавне відмальовування не доступно на Android 5</string>
+    <string name="pref_viewer_resume_last_left_summary_off">Книги завжди відкриватимуться з першої сторінки</string>
+    <string name="pref_viewer_resume_last_left_summary_on">Раніше відкриті книги відкриватимуться з останньої переглянутої сторінки, крім випадків, коли книга була дочитана</string>
+    <string name="pref_viewer_resume_last_left_title">Відновлювати читання при повторному відкритті книг</string>
+    <string name="pref_viewer_separating_bars">Смуги, що розділяють у вертикальному режимі</string>
+    <string name="pref_viewer_separating_bars_entries_1">Вимк. (за замовчуванням)</string>
+    <string name="pref_viewer_separating_bars_entries_2">Маленькі</string>
+    <string name="pref_viewer_separating_bars_entries_3">Звичайні</string>
+    <string name="pref_viewer_separating_bars_entries_4">Великі</string>
+    <string name="pref_viewer_slideshow_delay">Слайдшоу / Час показу кожної сторінки</string>
+    <string name="pref_viewer_slideshow_delay_entries_1">500 мс</string>
+    <string name="pref_viewer_slideshow_delay_entries_2">1 с</string>
+    <string name="pref_viewer_slideshow_delay_entries_3">2 с (за замовчуванням)</string>
+    <string name="pref_viewer_slideshow_delay_entries_4">4 с</string>
+    <string name="pref_viewer_slideshow_delay_entries_5">8 с</string>
+    <string name="pref_viewer_slideshow_delay_entries_6">16 с</string>
+    <string name="pref_viewer_slideshow_delay_entries_vertical_1">Дуже повільна</string>
+    <string name="pref_viewer_slideshow_delay_entries_vertical_2">Повільна</string>
+    <string name="pref_viewer_slideshow_delay_entries_vertical_3">Звичайна (за замовчуванням)</string>
+    <string name="pref_viewer_slideshow_delay_entries_vertical_4">Швидка</string>
+    <string name="pref_viewer_slideshow_delay_entries_vertical_5">Ще швидше</string>
+    <string name="pref_viewer_slideshow_delay_entries_vertical_6">Дуже швидка</string>
+    <string name="pref_viewer_slideshow_delay_vertical">Слайдшоу / Швидкість вертикального перегортання</string>
+    <string name="pref_viewer_swipe_to_fling">Перегортати кілька сторінок одним свайпом</string>
+    <string name="pref_viewer_tap_transitions">Увімкнути анімацію зміни сторінок</string>
+    <string name="pref_viewer_vertical_reader">Читання по вертикалі</string>
+    <string name="pref_viewer_visuals">Зовнішній вигляд</string>
+    <string name="pref_viewer_zoom">Збільшення</string>
+    <string name="pref_viewer_zoom_holding">Тимчасово збільшувати при утриманні пальця</string>
+    <string name="pref_viewer_zoom_transitions">Увімкнути анімацію зуму</string>
+    <string msgid="6685851473431805375" name="preference_copied">"\"<ns2:g id="SUMMARY">%1$s</ns2:g>\": скопійовано в буфер обміну."</string>
+    <string name="prefs_ask_detach_external_library">Вимкнути зовнішню бібліотеку\?</string>
+    <string name="prefs_external_library_detached">Зовнішня бібліотека вимкнена</string>
+    <string name="press_back_again">Натисніть \'Назад\' двічі, щоб вийти.</string>
+    <string name="previous_book_help">Попередня книга</string>
+    <string name="purge_progress">Знищаю книги</string>
+    <string name="queue_add_bottom">Додати в кінець</string>
+    <string name="queue_add_top">Додати в початок</string>
+    <string name="queue_bottom_bar_processed"><ns2:g example="3" id="processed">%1$s</ns2:g>/<ns2:g example="7" id="total">%2$d</ns2:g> оброблено</string>
+    <string name="queue_bottom_bar_retry">[спроба <ns2:g example="1" id="number">%1$d</ns2:g>/<ns2:g example="42" id="total">%2$d</ns2:g>]</string>
+    <string name="queue_bottom_bar_speed"><ns2:g example="/102.4" id="formatted_speed_kbps">%d</ns2:g> Кб/с</string>
+    <string name="queue_content_size_estimate">приблизно <ns2:g example="13.37" id="size_mbytes">%.1f</ns2:g> МБ</string>
+    <string name="queue_dl">Завантажується: <ns2:g example="Крута хентай-манґа" id="book_name">%s</ns2:g></string>
+    <string name="queue_empty">Чому в мені порожньо\?</string>
+    <string name="queue_errors_tab">Помилки</string>
+    <string name="queue_json_failed">Не вдалося зберегти JSON очереди</string>
+    <string name="queue_json_saved">JSON черги успішно збережено</string>
+    <string name="queue_paused">Черга призупинена</string>
+    <string name="queue_preparing">Підготовка завантаження</string>
+    <string name="queue_queue_tab">В процесі</string>
+    <string name="rating_help">Рейтинг книги</string>
+    <string name="read_log">Читати лог</string>
+    <string name="redownload_action">ЗАВАНТАЖИТИ ЗНОВУ</string>
+    <string name="redownload_all">Завантажити все знову</string>
+    <string name="redownload_dialog_message">Всього зображень у завантаженні: <ns2:g example="10" id="total_imgs">%1$d</ns2:g>\nЗображень без помилок: <ns2:g example="8" id="fine_imgs">%2$d</ns2:g>\nЗображень з помилками: <ns2:g example="2" id="failed_imgs">%3$d</ns2:g></string>
+    <string name="redownload_dialog_title">Спробувати завантажити знову\?</string>
+    <string name="redownload_first_error">Перша помилка: <ns2:g id="errortype">%s</ns2:g></string>
+    <string name="redownload_generating_log_file">Генерую файл логов…</string>
+    <string name="redownload_open_log">Відкрити лог помилок</string>
+    <string name="redownload_queue_progress">Вибрані книги завантажуються знову</string>
+    <string name="redownload_share_log">Поділитися логами помилок</string>
+    <string name="redownloaded_error">Виникла проблема при повторному завантаженні — скасовано</string>
+    <string name="redownloaded_missing_webview">WebView недоступно, неможливо завантажити знову зараз</string>
+    <string name="redownloaded_updating_webview">WebView зараз оновлюється, поки неможливо завантажити знову</string>
+    <string name="refresh_caption">Автоматично оновлювати бібліотеку, скануючи файли і папки знову.</string>
+    <string name="refresh_location_external">Зовнішня бібліотека</string>
+    <string name="refresh_location_internal">Бібліотека Hentoid</string>
+    <string name="refresh_options">Опції очищення</string>
+    <string name="refresh_options_remove">Видалити папки, в яких…</string>
+    <string name="refresh_options_remove_1">Немає JSON-файлу (рекомендується)</string>
+    <string name="refresh_options_remove_2">Немає зображень</string>
+    <string name="refresh_options_remove_or">або</string>
+    <string name="refresh_options_remove_placeholders">Видалити порожні книги (імпортовані тільки метадані)</string>
+    <string name="refresh_options_rename">Перейменувати всі папки відповідно до поточних параметрів назв і максимальної довжини</string>
+    <string name="refresh_title">Оновити бібліотеку</string>
+    <string name="renaming_progress">Перейменовую файли…</string>
+    <string name="restart_needed">Зміни будуть застосовані після перезапуску Hentoid</string>
+    <string name="resume">Відновити</string>
+    <string name="resume_closed">Відновити читання\?</string>
+    <string name="revive_missing_webview">WebView недоступно, неможливо відновити завантаження зараз</string>
+    <string name="revive_updating_webview">WebView зараз оновлюється, поки неможливо відновити завантаження</string>
+    <string name="revive_wait">Будь ласка, не закривайте це вікно, поки ваше завантаження відновлюється</string>
+    <string name="search_bookid_label">Пошук <ns2:g example="4567" id="launchcode">\'%s\'</ns2:g> в…</string>
+    <string name="search_category">Шукаємо <ns2:g example="мову" id="search_category">%s</ns2:g></string>
+    <string name="search_entry_not_found">Тут такого немає, йди, скачай це.</string>
+    <string name="search_location">Розташування</string>
+    <string name="search_location_entries_1">Всі розташування</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Пошук"</string>
+    <string name="search_prompt">Шукати <ns2:g id="search_prompt">%s</ns2:g></string>
+    <string name="search_select_a_filter">Виберіть фільтр</string>
+    <string name="search_type">Вид</string>
+    <string name="search_type_entries_1">Всі види книг</string>
+    <string name="search_type_entries_2">Папка</string>
+    <string name="search_type_entries_3">Стрім</string>
+    <string name="search_type_entries_4">Архів</string>
+    <string name="search_type_entries_5">Пустушка</string>
+    <string name="select_all">Вибрати все</string>
+    <string name="select_file_manager">Виберіть ваш файловий менеджер</string>
+    <string name="select_none">Зняти виділення</string>
+    <string name="send_to">Поділитися через:</string>
+    <string name="service_running">Сервіс вже запущений</string>
+    <string name="slide_01_header">Ласкаво просимо до Hentoid!</string>
+    <string name="slide_01_text">Hentoid — це додаток для завантаження\nдодзінсі та хентай-манґи.</string>
+    <string name="slide_02_header">Дозволи</string>
+    <string name="slide_04_header">Бібліотека</string>
+    <string name="slide_04_skip">Пропустити</string>
+    <string name="slide_04_skip_msg">Якщо ви не пропустите цей крок, ви не зможете нічого завантажити.\nДля завантаження вам потрібно вибрати папку завантажень у налаштуваннях додатка.</string>
+    <string name="slide_04_skip_title">Пропустити\?</string>
+    <string name="slide_04_text">Hentoid потрібна окрема папка для зберігання файлів.</string>
+    <string name="slide_05_header">Тема</string>
+    <string name="slide_05_text">Виберіть тему.</string>
+    <string name="slide_06_header">Джерела</string>
+    <string name="slide_06_subtext">Ви можете змінити цей вибір пізніше в будь-який момент, натиснувши на \'Змінити\' у меню зліва.</string>
+    <string name="slide_06_text">Виберіть джерела для завантажень.</string>
+    <string name="slide_end_header">От і все!</string>
+    <string name="slide_end_text">Все готово!\nНасолоджуйтесь додатком.</string>
+    <string name="slideshow_start">Початок слайдшоу (затримка в <ns2:g example="0.5" id="time">%.1f</ns2:g> с)</string>
+    <string name="slideshow_start_vertical">Початок слайдшоу (<ns2:g example="швидко" id="speed">%s</ns2:g>)</string>
+    <string name="slideshow_stop">Слайдшоу зупинено</string>
+    <string name="sort_artist">За художниками</string>
+    <string name="sort_ascending">За зростаючою</string>
+    <string name="sort_books">За кількістю книг</string>
+    <string name="sort_custom">Своє</string>
+    <string name="sort_descending">За спадною</string>
+    <string name="sort_dl_completion_date">За датою завершення завантаження</string>
+    <string name="sort_dl_date">За датою початку завантаження</string>
+    <string name="sort_invalid">-невірно-</string>
+    <string name="sort_pages">За сторінками</string>
+    <string name="sort_random">Випадково</string>
+    <string name="sort_read_date">За датою читання</string>
+    <string name="sort_reading_progress">За прогресом</string>
+    <string name="sort_reads">За прочитанням</string>
+    <string name="sort_reshuffle">Пересортувати</string>
+    <string name="sort_size">За розміром</string>
+    <string name="sort_title">За назвами</string>
+    <string name="sort_uplodad_date">За датою початку завантаження</string>
+    <string name="split_create_chapters">Створити глави</string>
+    <string name="split_no_chapters">Поки не створено глав :(</string>
+    <string name="split_progress">Розділяю книгу…</string>
+    <string name="split_select_help">Натисніть і утримуйте для вибору\nКожна вибрана глава перетвориться на нову книгу</string>
+    <string name="split_success">Успішно розділено</string>
+    <string name="starting_download">Завантаження почато</string>
+    <string name="starting_import">Імпорт починається…</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="step_complete_download">Майже завантажено</string>
+    <string name="step_fetch_img">Завантаження зображень</string>
+    <string name="step_init">Ініціалізація</string>
+    <string name="step_prepare_download">Підготовка ланцюжка завантажень</string>
+    <string name="step_prepare_folder">Підготовка папки завантажень</string>
+    <string name="step_prepare_img">Підготовка зображень</string>
+    <string name="step_remove_duplicate">Замінюється дублікат</string>
+    <string name="step_save_queue">Збереження черги</string>
+    <string name="step_start_download">Розпочато ланцюжок завантажень!</string>
+    <string name="step_wait_purge">Очищення у процесі…</string>
+    <string name="stop">Зупинити</string>
+    <string name="storage_permission_denied">Відсутній дозвіл на запис — неможливо почати перегляд</string>
+    <string name="stream_canceled">Потокову передачу скасовано — книга не доступна в мережі</string>
+    <string name="stream_missing_webview">Потокову передачу скасовано — WebView недоступно</string>
+    <string name="stream_updating_webview">Потокову передачу скасовано — WebView оновлюється</string>
+    <string name="streamed_help">Книга передається потоком</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns2:g id="CURRENT_ITEMS">%1$s</ns2:g>, <ns2:g id="ADDED_ITEMS">%2$s</ns2:g>"</string>
+    <string name="tag_blocking_screen_title">Блокування теґів</string>
+    <string name="tap_to_download">Натисніть для завантаження</string>
+    <string name="tap_to_install">Натисніть для інсталяції</string>
+    <string name="tap_to_retry">Натисніть, щоб повторити спробу</string>
+    <string name="task_done">Завдання завершено — дивіться логи для подробиць</string>
+    <string name="theme_dark">Темна</string>
+    <string name="theme_deep_red">Темно-червона</string>
+    <string name="theme_light">Світла</string>
+    <string name="title_activity_about">Про Hentoid</string>
+    <string name="title_activity_api29_migration">Перехід на API 29</string>
+    <string name="title_activity_app_lock">Код-пароль</string>
+    <string name="title_activity_downloads">Бібліотека</string>
+    <string name="title_activity_drawer_edit">Меню редагування</string>
+    <string name="title_activity_duplicate_detector">Пошук дублікатів</string>
+    <string name="title_activity_preferences">Налаштування</string>
+    <string name="title_activity_queue">Черга</string>
+    <string name="title_activity_search">Розширений пошук</string>
+    <string name="title_startup">Запуск</string>
+    <string name="title_startup_complete">Запуск завершено</string>
+    <string name="title_startup_progress">Запускається…</string>
+    <string name="tools_cache_app">Очистити кеш додатка</string>
+    <string name="tools_cache_app_success">Кеш додатка успішно очищено</string>
+    <string name="tools_cache_browser">Очистити кеш браузера</string>
+    <string name="tools_cache_browser_missing_webview">WebView недоступно, неможливо очистити кеш зараз</string>
+    <string name="tools_cache_browser_success">Кеш WebView успішно очищено</string>
+    <string name="tools_cache_browser_updating_webview">WebView зараз оновлюється, поки неможливо очистити кеш</string>
+    <string name="tools_duplicate_detector_summary">Пошук та видалення ідентичних копій книг</string>
+    <string name="tools_duplicate_detector_title">Пошук дублікатів</string>
+    <string name="tools_export_library_summary">Експортувати книги з Hentoid в JSON</string>
+    <string name="tools_export_library_title">Експортувати метадані</string>
+    <string name="tools_export_settings_summary">Експортувати налаштування в JSON</string>
+    <string name="tools_export_settings_title">Експортувати налаштування</string>
+    <string name="tools_import_empty_books_entries_1">Не імпортувати</string>
+    <string name="tools_import_empty_books_entries_2">Імпортувати як порожню книгу</string>
+    <string name="tools_import_empty_books_entries_3">Імпортувати для стримінґу, якщо можливо</string>
+    <string name="tools_import_empty_books_entries_4">Додати до черги помилок</string>
+    <string name="tools_import_empty_books_intro">Якщо не виявлено папки із зображеннями…</string>
+    <string name="tools_import_library_summary">Відновити книги в Hentoid з JSON</string>
+    <string name="tools_import_library_title">Імпортувати метадані</string>
+    <string name="tools_import_settings_summary">Відновити налаштування з JSON</string>
+    <string name="tools_import_settings_title">Імпортувати налаштування</string>
+    <string name="tools_latest_logs_summary">Переглянути останні логи додатка</string>
+    <string name="tools_latest_logs_title">Логи додатка</string>
+    <string name="tools_screen_cache">Керування кешем</string>
+    <string name="tools_screen_cat_settings">Налаштування</string>
+    <string name="tools_screen_import_export">Імпорт та експорт</string>
+    <string name="tools_title">Інструменти</string>
+    <string name="torrent_dl_fail">Не вдалося почати стрімінг: <ns2:g id="torrent">%s</ns2:g></string>
+    <string name="u_byte">б.</string>
+    <string name="u_exabyte">ЕБ</string>
+    <string name="u_gigabyte">ГБ</string>
+    <string name="u_kilobyte">КБ</string>
+    <string name="u_megabyte">МБ</string>
+    <string name="u_petabyte">ПБ</string>
+    <string name="u_terabyte">ТБ</string>
+    <string name="unbookmark_current">Видалити з закладок</string>
+    <string name="unsupported_site">Помилка — Сайт не підтримується</string>
+    <string name="update_available">Доступно оновлення!</string>
+    <string name="update_download_failed">Не вдалося завантажити оновлення</string>
+    <string name="update_ready">Оновлення готово!</string>
+    <string name="update_success">Оновлення завершено!</string>
+    <string name="updates_title">Оновлення</string>
+    <string name="use_app_prefs">Використовувати налаштування додатка (<ns2:g example="Зверху вниз" id="app_default">%s</ns2:g>)</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"ВИМКНЕНО"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"УВІМКНЕНО"</string>
+    <string name="view_changelog">Що нового\?</string>
+    <string name="view_changelog_flagged">Що нового\?*</string>
+    <string name="view_queue">Переглянути чергу</string>
+    <string name="view_source_help">Переглянути джерело у браузері</string>
+    <string name="viewer_ask_cover">Встановити цю сторінку як обкладинку книги\?</string>
+    <string name="viewer_ask_delete_page">Видалити цю сторінку\?</string>
+    <string name="viewer_choose_direction">Виберіть напрямок читання</string>
+    <string name="viewer_delete_book">Видалити книгу</string>
+    <string name="viewer_direction_ltr">Зліва направо</string>
+    <string name="viewer_direction_rtl">Справа наліво</string>
+    <string name="viewer_direction_ttb">Зверху вниз</string>
+    <string name="viewer_filter_favourite_help">Показування обраних сторінок</string>
+    <string name="viewer_filter_favourite_off">Показувати лише обрані сторінки</string>
+    <string name="viewer_filter_favourite_on">Показувати всі сторінки</string>
+    <string name="viewer_fix">Виправити помилку завантаження</string>
+    <string name="viewer_img_details"><ns2:g example="800" id="dimen_x">%1$d</ns2:g> x <ns2:g example="600" id="dimen_y">%2$d</ns2:g> (масштаб <ns2:g example="100%" id="scale_percentage">%3$.0f%%</ns2:g>) - <ns2:g example="544.40 КБ" id="file_size">%4$s</ns2:g></string>
+    <string name="viewer_make_cover">Встановити як обкладинку</string>
+    <string name="viewer_order_123">Змінити порядок сторінок</string>
+    <string name="viewer_order_shuffle">Перемішати сторінки</string>
+    <string name="viewer_order_shuffle_help">Перемішування сторінок</string>
+    <string name="viewer_reload_page">Перезавантажити сторінку</string>
+    <string name="viewer_reparse_book">Передодати книгу</string>
+    <string name="viewer_slideshow">Слайдшоу</string>
+    <string name="viewer_slideshow_help">Режим слайдшоу</string>
+    <string name="web_back">Назад</string>
+    <string name="web_bookmarks">Закладки</string>
+    <string name="web_copy_url">Скопіювати адресу</string>
+    <string name="web_download">Завантажити</string>
+    <string name="web_forward">Уперед</string>
+    <string name="web_gallery">Назад до останньої сторінки галереї</string>
+    <string name="web_home">Назад до галереї</string>
+    <string name="web_refresh_stop">Оновити/зупинити</string>
+    <string name="web_storage_permission_denied">Відсутній дозвіл на запис — неможливо використовувати завантажувач</string>
+    <string name="web_unparsable">Цей контент не може бути завантажений. Соррі~</string>
+    <string name="web_url_clipboard">URL скопійовано в буфер обміну</string>
+    <string name="work_artist">Художник: <ns2:g example="hayao miyazaki" id="artist">%s</ns2:g></string>
+    <string name="work_pages_duplicate_dialog_library">Сторінок (в бібліотеці): %d</string>
+    <string name="work_pages_duplicate_dialog_queue">Сторінок (в черзі): %d</string>
+    <string name="work_pages_duplicate_dialog_source">Сторінок (в цьому джерелі): %d</string>
+    <string name="work_pages_queue">Сторінок: %1$s%2$s</string>
+    <string name="work_series">Сеттинг: <ns2:g example="original" id="series">%s</ns2:g></string>
+    <string name="yes">Так</string>
+</resources>

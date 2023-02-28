@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item"
+    android:layout_width="@dimen/card_grid_width"
+    android:layout_height="@dimen/card_grid_height"
+    android:layout_marginTop="@dimen/default_cardview_margin"
+    android:background="@drawable/bg_book_card"
+    android:clickable="true"
+    android:elevation="6dp"
+    android:focusable="true"
+    android:longClickable="true"
+    tools:targetApi="o">
+
+    <ImageView
+        android:id="@+id/ivCover"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/ic_hentoid_trans"
+        tools:tint="@color/light_gray"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@color/black_opacity_25"
+        android:ellipsize="middle"
+        android:maxLines="2"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="?colorSecondary"
+        android:textSize="@dimen/text_subtitle_1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/book_title" />
+
+    <ImageView
+        android:id="@+id/ivFavourite"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp"
+        android:src="@drawable/ic_fav_empty"
+        android:tooltipText="@string/fav_help"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:tint="?colorSecondary"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/iv_rating"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_star_5"
+        android:tooltipText="@string/rating_help"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivFavourite"
+        app:layout_constraintVertical_bias="1.0"
+        app:tint="?colorSecondary"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

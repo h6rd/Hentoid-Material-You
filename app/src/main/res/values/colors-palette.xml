@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- App palette -->
-    <color name="dark_red">#470000</color>
-    <color name="very_dark_red">#3f0000</color>
-    <color name="super_dark_red">#2b0000</color>
-    <color name="taupe">#3e1c1c</color>
-    <color name="taupe_elevated_1">#4b2222</color>
-    <color name="taupe_elevated_2">#592828</color> <!-- Original taupe from v1.7 theme -->
-    <color name="taupe_elevated_3">#672e2e</color>
-    <color name="taupe_elevated_4">#743434</color>
-    <color name="accent_red">#b25959</color>
+    <color name="dark_red">@android:color/system_neutral1_900</color>
+    <color name="very_dark_red">#FFFFFF</color>
+    <color name="super_dark_red">#FFFFFF</color>
+    <color name="taupe">#FFFFFF</color>
+    <color name="taupe_elevated_1">#FFFFFF</color>
+    <color name="taupe_elevated_2">@android:color/system_neutral1_900</color> <!-- Original taupe from v1.7 theme -->
+    <color name="taupe_elevated_3">#FFFFFF</color>
+    <color name="taupe_elevated_4">#FF00E5</color>
+    <color name="accent_red">@android:color/system_accent1_100</color>
     <color name="light_red">#ffebee</color>
-    <color name="very_dark_pink">#6d0721</color>
+    <color name="very_dark_pink">#FFFFFF</color>
 
     <!-- Neutral Colors -->
-    <color name="white">#FFFFFF</color>
-    <color name="black">#000000</color>
-    <color name="cod_gray">#121212</color>
-    <color name="light_gray">#aaaaaa</color>
-    <color name="medium_gray">#888888</color>
-    <color name="dark_gray">#FF444444</color>
-    <color name="black_opacity_12">#1F000000</color>
-    <color name="black_opacity_25">#40000000</color>
-    <color name="black_opacity_50">#80000000</color>
-    <color name="black_opacity_87">#DE000000</color>
-    <color name="white_opacity_25">#40FFFFFF</color>
-    <color name="white_opacity_50">#80FFFFFF</color>
-    <color name="white_opacity_66">#AAFFFFFF</color>
-    <color name="white_opacity_87">#DEFFFFFF</color>
+    <color name="white">@color/accentsys</color>
+    <color name="black">@color/backgroundsys</color>
+    <color name="cod_gray">@color/backgroundsys</color>
+    <color name="light_gray">@color/accentsys</color>
+    <color name="medium_gray">@android:color/system_accent2_400</color>
+    <color name="dark_gray">@color/backgroundsys</color>
+    <color name="black_opacity_12">@color/accentsys</color>
+    <color name="black_opacity_25">@color/backgroundsys</color>
+    <color name="black_opacity_50">@color/backgroundsys</color>
+    <color name="black_opacity_87">@color/backgroundsys</color>
+    <color name="white_opacity_25">@android:color/system_accent2_400</color>
+    <color name="white_opacity_50">#8059FF00</color>
+    <color name="white_opacity_66">@color/accentsys</color>
+    <color name="white_opacity_87">@color/accentsys</color>
 
     <!-- Derived Colors (e.g.; with alpha, etc.) -->
     <color name="transparent">#00000000</color>
-    <color name="item_highlight">#28FFFFFF</color>
+    <color name="item_highlight">@android:color/system_accent2_400</color>
 
     <!-- Alert colors -->
     <color name="orange">@android:color/holo_orange_dark</color>
@@ -39,13 +39,13 @@
 
     <!-- Green (for validation feedback) -->
     <color name="green">#70AD47</color>
-
-    <!-- Frozen title -->
-    <color name="frozen_blue">#8034cceb</color>
+    <color name="accentsys">@android:color/system_accent1_100</color>
+    <color name="accentdisable">@android:color/system_accent2_400</color>
+    <color name="backgroundsys">@android:color/system_neutral1_900</color>
 
     <!-- Attribute type colors -->
     <color name="purple_light">@android:color/holo_purple</color>
     <color name="purple_dark">#8600C4</color>
     <color name="blue">@android:color/holo_blue_dark</color>
-    <color name="bronze">@android:color/holo_orange_light</color>
+    <color name="bronze">@color/backgroundsys</color>
 </resources>

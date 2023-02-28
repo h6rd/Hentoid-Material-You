@@ -1,0 +1,900 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <string name="define_plu_com_squareup_okhttp3__okhttp" translatable="false">owner</string>
+  <string name="library_com_squareup_okhttp3__okhttp_author" translatable="false">Square, Inc.</string>
+  <string name="library_com_squareup_okhttp3__okhttp_libraryName" translatable="false">okhttp</string>
+  <string name="library_com_squareup_okhttp3__okhttp_libraryDescription" translatable="false"><![CDATA[An HTTP and SPDY client for Android and Java applications]]></string>
+  <string name="library_com_squareup_okhttp3__okhttp_libraryVersion" translatable="false">4.9.1</string>
+  <string name="library_com_squareup_okhttp3__okhttp_libraryArtifactId" translatable="false">com.squareup.okhttp3:okhttp:4.9.1</string>
+  <string name="library_com_squareup_okhttp3__okhttp_libraryWebsite" translatable="false">https://square.github.io/okhttp/</string>
+  <string name="library_com_squareup_okhttp3__okhttp_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_squareup_okhttp3__okhttp_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_squareup_okhttp3__okhttp_isOpenSource" translatable="false">true</string>
+  <string name="library_com_squareup_okhttp3__okhttp_repositoryLink" translatable="false">https://github.com/square/okhttp</string>
+  <string name="library_com_squareup_okhttp3__okhttp_owner" translatable="false">Square, Inc.</string>
+  <string name="define_plu_de_hdodenhof__circleimageview" translatable="false">owner</string>
+  <string name="library_de_hdodenhof__circleimageview_author" translatable="false">Henning Dodenhof</string>
+  <string name="library_de_hdodenhof__circleimageview_libraryName" translatable="false">CircleImageView</string>
+  <string name="library_de_hdodenhof__circleimageview_libraryDescription" translatable="false"><![CDATA[A fast circular ImageView for Android]]></string>
+  <string name="library_de_hdodenhof__circleimageview_libraryVersion" translatable="false">3.0.1</string>
+  <string name="library_de_hdodenhof__circleimageview_libraryArtifactId" translatable="false">de.hdodenhof:circleimageview:3.0.1</string>
+  <string name="library_de_hdodenhof__circleimageview_libraryWebsite" translatable="false">https://github.com/hdodenhof/CircleImageView</string>
+  <string name="library_de_hdodenhof__circleimageview_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_de_hdodenhof__circleimageview_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_de_hdodenhof__circleimageview_isOpenSource" translatable="false">true</string>
+  <string name="library_de_hdodenhof__circleimageview_repositoryLink" translatable="false">https://github.com/hdodenhof/CircleImageView</string>
+  <string name="library_de_hdodenhof__circleimageview_owner" translatable="false">Henning Dodenhof</string>
+  <string name="define_plu_com_google_code_findbugs__jsr305" translatable="false"></string>
+  <string name="library_com_google_code_findbugs__jsr305_libraryName" translatable="false">FindBugs-jsr305</string>
+  <string name="library_com_google_code_findbugs__jsr305_libraryDescription" translatable="false"><![CDATA[JSR305 Annotations for Findbugs]]></string>
+  <string name="library_com_google_code_findbugs__jsr305_libraryVersion" translatable="false">3.0.2</string>
+  <string name="library_com_google_code_findbugs__jsr305_libraryArtifactId" translatable="false">com.google.code.findbugs:jsr305:3.0.2</string>
+  <string name="library_com_google_code_findbugs__jsr305_libraryWebsite" translatable="false">http://findbugs.sourceforge.net/</string>
+  <string name="library_com_google_code_findbugs__jsr305_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_google_code_findbugs__jsr305_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_google_code_findbugs__jsr305_isOpenSource" translatable="false">true</string>
+  <string name="library_com_google_code_findbugs__jsr305_repositoryLink" translatable="false">https://code.google.com/p/jsr-305/</string>
+  <string name="define_plu_com_google_firebase__firebase_annotations" translatable="false"></string>
+  <string name="library_com_google_firebase__firebase_annotations_libraryName" translatable="false">firebase-annotations</string>
+  <string name="library_com_google_firebase__firebase_annotations_libraryDescription" translatable="false"><![CDATA[]]></string>
+  <string name="library_com_google_firebase__firebase_annotations_libraryVersion" translatable="false">16.1.0</string>
+  <string name="library_com_google_firebase__firebase_annotations_libraryArtifactId" translatable="false">com.google.firebase:firebase-annotations:16.1.0</string>
+  <string name="library_com_google_firebase__firebase_annotations_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_google_firebase__firebase_annotations_licenseId" translatable="false">Apache_2_0</string>
+  <string name="define_plu_me_zhanghai_android_fastscroll__library" translatable="false">owner</string>
+  <string name="library_me_zhanghai_android_fastscroll__library_author" translatable="false">Hai Zhang</string>
+  <string name="library_me_zhanghai_android_fastscroll__library_libraryName" translatable="false">AndroidFastScroll Library</string>
+  <string name="library_me_zhanghai_android_fastscroll__library_libraryDescription" translatable="false"><![CDATA[Fast scroll for Android RecyclerView and more]]></string>
+  <string name="library_me_zhanghai_android_fastscroll__library_libraryVersion" translatable="false">1.1.8</string>
+  <string name="library_me_zhanghai_android_fastscroll__library_libraryArtifactId" translatable="false">me.zhanghai.android.fastscroll:library:1.1.8</string>
+  <string name="library_me_zhanghai_android_fastscroll__library_libraryWebsite" translatable="false">https://github.com/zhanghai/AndroidFastScroll</string>
+  <string name="library_me_zhanghai_android_fastscroll__library_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_me_zhanghai_android_fastscroll__library_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_me_zhanghai_android_fastscroll__library_isOpenSource" translatable="false">true</string>
+  <string name="library_me_zhanghai_android_fastscroll__library_repositoryLink" translatable="false">https://github.com/zhanghai/AndroidFastScroll</string>
+  <string name="library_me_zhanghai_android_fastscroll__library_owner" translatable="false">Hai Zhang</string>
+  <string name="define_plu_com_github_skydoves__balloon" translatable="false">owner</string>
+  <string name="library_com_github_skydoves__balloon_author" translatable="false">Jaewoong Eum</string>
+  <string name="library_com_github_skydoves__balloon_libraryName" translatable="false">balloon</string>
+  <string name="library_com_github_skydoves__balloon_libraryDescription" translatable="false"><![CDATA[Modernized and sophisticated tooltips, fully customizable with an arrow and animations for Android.]]></string>
+  <string name="library_com_github_skydoves__balloon_libraryVersion" translatable="false">1.4.7</string>
+  <string name="library_com_github_skydoves__balloon_libraryArtifactId" translatable="false">com.github.skydoves:balloon:1.4.7</string>
+  <string name="library_com_github_skydoves__balloon_libraryWebsite" translatable="false">https://github.com/skydoves/balloon</string>
+  <string name="library_com_github_skydoves__balloon_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_skydoves__balloon_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_skydoves__balloon_isOpenSource" translatable="false">true</string>
+  <string name="library_com_github_skydoves__balloon_repositoryLink" translatable="false">https://github.com/skydoves/balloon/tree/main</string>
+  <string name="library_com_github_skydoves__balloon_owner" translatable="false">Jaewoong Eum</string>
+  <string name="define_plu_com_squareup_retrofit2__converter_moshi" translatable="false">owner</string>
+  <string name="library_com_squareup_retrofit2__converter_moshi_author" translatable="false">Square, Inc.</string>
+  <string name="library_com_squareup_retrofit2__converter_moshi_libraryName" translatable="false">Converter: Moshi</string>
+  <string name="library_com_squareup_retrofit2__converter_moshi_libraryDescription" translatable="false"><![CDATA[A Retrofit Converter which uses Moshi for serialization.]]></string>
+  <string name="library_com_squareup_retrofit2__converter_moshi_libraryVersion" translatable="false">2.9.0</string>
+  <string name="library_com_squareup_retrofit2__converter_moshi_libraryArtifactId" translatable="false">com.squareup.retrofit2:converter-moshi:2.9.0</string>
+  <string name="library_com_squareup_retrofit2__converter_moshi_libraryWebsite" translatable="false">https://github.com/square/retrofit</string>
+  <string name="library_com_squareup_retrofit2__converter_moshi_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_squareup_retrofit2__converter_moshi_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_squareup_retrofit2__converter_moshi_isOpenSource" translatable="false">true</string>
+  <string name="library_com_squareup_retrofit2__converter_moshi_repositoryLink" translatable="false">https://github.com/square/retrofit/</string>
+  <string name="library_com_squareup_retrofit2__converter_moshi_owner" translatable="false">Square, Inc.</string>
+  <string name="define_plu_com_google_firebase__firebase_installations_interop" translatable="false"></string>
+  <string name="library_com_google_firebase__firebase_installations_interop_libraryName" translatable="false">firebase-installations-interop</string>
+  <string name="library_com_google_firebase__firebase_installations_interop_libraryDescription" translatable="false"><![CDATA[]]></string>
+  <string name="library_com_google_firebase__firebase_installations_interop_libraryVersion" translatable="false">17.0.1</string>
+  <string name="library_com_google_firebase__firebase_installations_interop_libraryArtifactId" translatable="false">com.google.firebase:firebase-installations-interop:17.0.1</string>
+  <string name="library_com_google_firebase__firebase_installations_interop_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_google_firebase__firebase_installations_interop_licenseId" translatable="false">Apache_2_0</string>
+  <string name="define_plu_com_google_guava__guava" translatable="false">owner</string>
+  <string name="library_com_google_guava__guava_author" translatable="false">Kevin Bourrillion</string>
+  <string name="library_com_google_guava__guava_authorWebsite" translatable="false">http://www.google.com</string>
+  <string name="library_com_google_guava__guava_libraryName" translatable="false">Guava: Google Core Libraries for Java</string>
+  <string name="library_com_google_guava__guava_libraryDescription" translatable="false"><![CDATA[
+    Guava is a suite of core and expanded libraries that include
+    utility classes, google\'s collections, io classes, and much
+    much more.
+
+    Guava has only one code dependency - javax.annotation,
+    per the JSR-305 spec.
+  ]]></string>
+  <string name="library_com_google_guava__guava_libraryVersion" translatable="false">18.0</string>
+  <string name="library_com_google_guava__guava_libraryArtifactId" translatable="false">com.google.guava:guava:18.0</string>
+  <string name="library_com_google_guava__guava_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_google_guava__guava_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_google_guava__guava_owner" translatable="false">Kevin Bourrillion</string>
+  <string name="define_plu_io_objectbox__objectbox_java" translatable="false">owner</string>
+  <string name="library_io_objectbox__objectbox_java_author" translatable="false">ObjectBox</string>
+  <string name="library_io_objectbox__objectbox_java_authorWebsite" translatable="false">https://objectbox.io</string>
+  <string name="library_io_objectbox__objectbox_java_libraryName" translatable="false">ObjectBox Java (only)</string>
+  <string name="library_io_objectbox__objectbox_java_libraryDescription" translatable="false"><![CDATA[ObjectBox is a fast NoSQL database for Objects]]></string>
+  <string name="library_io_objectbox__objectbox_java_libraryVersion" translatable="false">3.5.0</string>
+  <string name="library_io_objectbox__objectbox_java_libraryArtifactId" translatable="false">io.objectbox:objectbox-java:3.5.0</string>
+  <string name="library_io_objectbox__objectbox_java_libraryWebsite" translatable="false">https://objectbox.io</string>
+  <string name="library_io_objectbox__objectbox_java_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_io_objectbox__objectbox_java_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_io_objectbox__objectbox_java_isOpenSource" translatable="false">true</string>
+  <string name="library_io_objectbox__objectbox_java_repositoryLink" translatable="false">https://github.com/objectbox/objectbox-java</string>
+  <string name="library_io_objectbox__objectbox_java_owner" translatable="false">ObjectBox</string>
+  <string name="define_plu_io_reactivex_rxjava2__rxjava" translatable="false">owner</string>
+  <string name="library_io_reactivex_rxjava2__rxjava_author" translatable="false">David Karnok</string>
+  <string name="library_io_reactivex_rxjava2__rxjava_libraryName" translatable="false">RxJava</string>
+  <string name="library_io_reactivex_rxjava2__rxjava_libraryDescription" translatable="false"><![CDATA[Reactive Extensions for Java]]></string>
+  <string name="library_io_reactivex_rxjava2__rxjava_libraryVersion" translatable="false">2.2.21</string>
+  <string name="library_io_reactivex_rxjava2__rxjava_libraryArtifactId" translatable="false">io.reactivex.rxjava2:rxjava:2.2.21</string>
+  <string name="library_io_reactivex_rxjava2__rxjava_libraryWebsite" translatable="false">https://github.com/ReactiveX/RxJava</string>
+  <string name="library_io_reactivex_rxjava2__rxjava_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_io_reactivex_rxjava2__rxjava_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_io_reactivex_rxjava2__rxjava_isOpenSource" translatable="false">true</string>
+  <string name="library_io_reactivex_rxjava2__rxjava_repositoryLink" translatable="false">scm:git:git@github.com:ReactiveX/RxJava.git</string>
+  <string name="library_io_reactivex_rxjava2__rxjava_owner" translatable="false">David Karnok</string>
+  <string name="define_plu_info_debatty__java_string_similarity" translatable="false">owner</string>
+  <string name="library_info_debatty__java_string_similarity_author" translatable="false">Thibault Debatty</string>
+  <string name="library_info_debatty__java_string_similarity_authorWebsite" translatable="false">http://debatty.info</string>
+  <string name="library_info_debatty__java_string_similarity_libraryName" translatable="false">${project.artifactId}</string>
+  <string name="library_info_debatty__java_string_similarity_libraryDescription" translatable="false"><![CDATA[Implementation of various string similarity and distance algorithms: Levenshtein, Jaro-winkler, n-Gram, Q-Gram, Jaccard index, Longest Common Subsequence edit distance, cosine similarity...]]></string>
+  <string name="library_info_debatty__java_string_similarity_libraryVersion" translatable="false">2.0.0</string>
+  <string name="library_info_debatty__java_string_similarity_libraryArtifactId" translatable="false">info.debatty:java-string-similarity:2.0.0</string>
+  <string name="library_info_debatty__java_string_similarity_libraryWebsite" translatable="false">https://github.com/tdebatty/java-string-similarity</string>
+  <string name="library_info_debatty__java_string_similarity_licenseIds" translatable="false">MIT</string>
+  <string name="library_info_debatty__java_string_similarity_licenseId" translatable="false">MIT</string>
+  <string name="library_info_debatty__java_string_similarity_isOpenSource" translatable="false">true</string>
+  <string name="library_info_debatty__java_string_similarity_repositoryLink" translatable="false">git@github.com:tdebatty/java-string-similarity.git</string>
+  <string name="library_info_debatty__java_string_similarity_owner" translatable="false">Thibault Debatty</string>
+  <string name="define_plu_io_objectbox__objectbox_android" translatable="false">owner</string>
+  <string name="library_io_objectbox__objectbox_android_author" translatable="false">ObjectBox</string>
+  <string name="library_io_objectbox__objectbox_android_authorWebsite" translatable="false">https://objectbox.io</string>
+  <string name="library_io_objectbox__objectbox_android_libraryName" translatable="false">ObjectBox Android</string>
+  <string name="library_io_objectbox__objectbox_android_libraryDescription" translatable="false"><![CDATA[ObjectBox is a fast NoSQL database for Objects]]></string>
+  <string name="library_io_objectbox__objectbox_android_libraryVersion" translatable="false">3.5.0</string>
+  <string name="library_io_objectbox__objectbox_android_libraryArtifactId" translatable="false">io.objectbox:objectbox-android:3.5.0</string>
+  <string name="library_io_objectbox__objectbox_android_libraryWebsite" translatable="false">https://objectbox.io</string>
+  <string name="library_io_objectbox__objectbox_android_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_io_objectbox__objectbox_android_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_io_objectbox__objectbox_android_isOpenSource" translatable="false">true</string>
+  <string name="library_io_objectbox__objectbox_android_repositoryLink" translatable="false">https://github.com/objectbox/</string>
+  <string name="library_io_objectbox__objectbox_android_owner" translatable="false">ObjectBox</string>
+  <string name="define_plu_com_google_firebase__firebase_encoders" translatable="false"></string>
+  <string name="library_com_google_firebase__firebase_encoders_libraryName" translatable="false">firebase-encoders</string>
+  <string name="library_com_google_firebase__firebase_encoders_libraryDescription" translatable="false"><![CDATA[]]></string>
+  <string name="library_com_google_firebase__firebase_encoders_libraryVersion" translatable="false">17.0.0</string>
+  <string name="library_com_google_firebase__firebase_encoders_libraryArtifactId" translatable="false">com.google.firebase:firebase-encoders:17.0.0</string>
+  <string name="library_com_google_firebase__firebase_encoders_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_google_firebase__firebase_encoders_licenseId" translatable="false">Apache_2_0</string>
+  <string name="define_plu_org_jetbrains_kotlin__kotlin_stdlib_common" translatable="false">owner</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_common_author" translatable="false">Kotlin Team</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_common_authorWebsite" translatable="false">https://www.jetbrains.com</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_common_libraryName" translatable="false">Kotlin Stdlib Common</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_common_libraryDescription" translatable="false"><![CDATA[Kotlin Common Standard Library]]></string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_common_libraryVersion" translatable="false">1.7.20</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_common_libraryArtifactId" translatable="false">org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_common_libraryWebsite" translatable="false">https://kotlinlang.org/</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_common_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_common_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_common_isOpenSource" translatable="false">true</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_common_repositoryLink" translatable="false">https://github.com/JetBrains/kotlin</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_common_owner" translatable="false">Kotlin Team</string>
+  <string name="define_plu_com_github_bumptech_glide__glide" translatable="false">owner</string>
+  <string name="library_com_github_bumptech_glide__glide_author" translatable="false">Sam Judd</string>
+  <string name="library_com_github_bumptech_glide__glide_libraryName" translatable="false">Glide</string>
+  <string name="library_com_github_bumptech_glide__glide_libraryDescription" translatable="false"><![CDATA[A fast and efficient image loading library for Android focused on smooth scrolling.]]></string>
+  <string name="library_com_github_bumptech_glide__glide_libraryVersion" translatable="false">4.14.2</string>
+  <string name="library_com_github_bumptech_glide__glide_libraryArtifactId" translatable="false">com.github.bumptech.glide:glide:4.14.2</string>
+  <string name="library_com_github_bumptech_glide__glide_libraryWebsite" translatable="false">https://github.com/bumptech/glide</string>
+  <string name="library_com_github_bumptech_glide__glide_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_bumptech_glide__glide_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_bumptech_glide__glide_isOpenSource" translatable="false">true</string>
+  <string name="library_com_github_bumptech_glide__glide_repositoryLink" translatable="false">https://github.com/bumptech/glide</string>
+  <string name="library_com_github_bumptech_glide__glide_owner" translatable="false">Sam Judd</string>
+  <string name="define_plu_com_squareup_okhttp3__okhttp_dnsoverhttps" translatable="false">owner</string>
+  <string name="library_com_squareup_okhttp3__okhttp_dnsoverhttps_author" translatable="false">Square, Inc.</string>
+  <string name="library_com_squareup_okhttp3__okhttp_dnsoverhttps_libraryName" translatable="false">okhttp-dnsoverhttps</string>
+  <string name="library_com_squareup_okhttp3__okhttp_dnsoverhttps_libraryDescription" translatable="false"><![CDATA[Square’s meticulous HTTP client for Java and Kotlin.]]></string>
+  <string name="library_com_squareup_okhttp3__okhttp_dnsoverhttps_libraryVersion" translatable="false">4.9.1</string>
+  <string name="library_com_squareup_okhttp3__okhttp_dnsoverhttps_libraryArtifactId" translatable="false">com.squareup.okhttp3:okhttp-dnsoverhttps:4.9.1</string>
+  <string name="library_com_squareup_okhttp3__okhttp_dnsoverhttps_libraryWebsite" translatable="false">https://square.github.io/okhttp/</string>
+  <string name="library_com_squareup_okhttp3__okhttp_dnsoverhttps_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_squareup_okhttp3__okhttp_dnsoverhttps_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_squareup_okhttp3__okhttp_dnsoverhttps_isOpenSource" translatable="false">true</string>
+  <string name="library_com_squareup_okhttp3__okhttp_dnsoverhttps_repositoryLink" translatable="false">https://github.com/square/okhttp</string>
+  <string name="library_com_squareup_okhttp3__okhttp_dnsoverhttps_owner" translatable="false">Square, Inc.</string>
+  <string name="define_plu_org_jetbrains_kotlinx__kotlinx_coroutines_bom" translatable="false">owner</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_bom_author" translatable="false">JetBrains Team</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_bom_authorWebsite" translatable="false">https://www.jetbrains.com</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_bom_libraryName" translatable="false">kotlinx-coroutines-bom</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_bom_libraryDescription" translatable="false"><![CDATA[Coroutines support libraries for Kotlin]]></string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_bom_libraryVersion" translatable="false">1.6.1</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_bom_libraryArtifactId" translatable="false">org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.6.1</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_bom_libraryWebsite" translatable="false">https://github.com/Kotlin/kotlinx.coroutines</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_bom_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_bom_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_bom_isOpenSource" translatable="false">true</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_bom_repositoryLink" translatable="false">https://github.com/Kotlin/kotlinx.coroutines</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_bom_owner" translatable="false">JetBrains Team</string>
+  <string name="define_plu_com_github_zjupure__webpdecoder" translatable="false">owner</string>
+  <string name="library_com_github_zjupure__webpdecoder_author" translatable="false">zjupure</string>
+  <string name="library_com_github_zjupure__webpdecoder_libraryName" translatable="false">Glide WebpDecoder Integration</string>
+  <string name="library_com_github_zjupure__webpdecoder_libraryDescription" translatable="false"><![CDATA[An integration library to decode and show animated webp for Glide]]></string>
+  <string name="library_com_github_zjupure__webpdecoder_libraryVersion" translatable="false">2.3.4.14.2</string>
+  <string name="library_com_github_zjupure__webpdecoder_libraryArtifactId" translatable="false">com.github.zjupure:webpdecoder:2.3.4.14.2</string>
+  <string name="library_com_github_zjupure__webpdecoder_libraryWebsite" translatable="false">https://github.com/zjupure/GlideWebpDecoder</string>
+  <string name="library_com_github_zjupure__webpdecoder_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_zjupure__webpdecoder_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_zjupure__webpdecoder_isOpenSource" translatable="false">true</string>
+  <string name="library_com_github_zjupure__webpdecoder_repositoryLink" translatable="false">scm:git@github.com:zjupure/GlideWebpDecoder.git</string>
+  <string name="library_com_github_zjupure__webpdecoder_owner" translatable="false">zjupure</string>
+  <string name="define_plu_org_greenrobot__eventbus_java" translatable="false">owner</string>
+  <string name="library_org_greenrobot__eventbus_java_author" translatable="false">greenrobot</string>
+  <string name="library_org_greenrobot__eventbus_java_authorWebsite" translatable="false">https://greenrobot.org</string>
+  <string name="library_org_greenrobot__eventbus_java_libraryName" translatable="false">EventBus</string>
+  <string name="library_org_greenrobot__eventbus_java_libraryDescription" translatable="false"><![CDATA[EventBus is a publish/subscribe event bus.]]></string>
+  <string name="library_org_greenrobot__eventbus_java_libraryVersion" translatable="false">3.3.1</string>
+  <string name="library_org_greenrobot__eventbus_java_libraryArtifactId" translatable="false">org.greenrobot:eventbus-java:3.3.1</string>
+  <string name="library_org_greenrobot__eventbus_java_libraryWebsite" translatable="false">https://greenrobot.org/eventbus/</string>
+  <string name="library_org_greenrobot__eventbus_java_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_org_greenrobot__eventbus_java_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_org_greenrobot__eventbus_java_isOpenSource" translatable="false">true</string>
+  <string name="library_org_greenrobot__eventbus_java_repositoryLink" translatable="false">https://github.com/greenrobot/EventBus</string>
+  <string name="library_org_greenrobot__eventbus_java_owner" translatable="false">greenrobot</string>
+  <string name="define_plu_com_github_bumptech_glide__okhttp3_integration" translatable="false">owner</string>
+  <string name="library_com_github_bumptech_glide__okhttp3_integration_author" translatable="false">Sam Judd</string>
+  <string name="library_com_github_bumptech_glide__okhttp3_integration_libraryName" translatable="false">Glide OkHttp 3.x Integration</string>
+  <string name="library_com_github_bumptech_glide__okhttp3_integration_libraryDescription" translatable="false"><![CDATA[An integration library to use OkHttp 3.x to fetch data over http/https in Glide]]></string>
+  <string name="library_com_github_bumptech_glide__okhttp3_integration_libraryVersion" translatable="false">4.14.2</string>
+  <string name="library_com_github_bumptech_glide__okhttp3_integration_libraryArtifactId" translatable="false">com.github.bumptech.glide:okhttp3-integration:4.14.2</string>
+  <string name="library_com_github_bumptech_glide__okhttp3_integration_libraryWebsite" translatable="false">https://github.com/bumptech/glide</string>
+  <string name="library_com_github_bumptech_glide__okhttp3_integration_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_bumptech_glide__okhttp3_integration_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_bumptech_glide__okhttp3_integration_isOpenSource" translatable="false">true</string>
+  <string name="library_com_github_bumptech_glide__okhttp3_integration_repositoryLink" translatable="false">https://github.com/bumptech/glide</string>
+  <string name="library_com_github_bumptech_glide__okhttp3_integration_owner" translatable="false">Sam Judd</string>
+  <string name="define_plu_com_github_penfeizhou_android_animation__frameanimation" translatable="false"></string>
+  <string name="library_com_github_penfeizhou_android_animation__frameanimation_libraryName" translatable="false">com.github.penfeizhou.android.animation:frameanimation</string>
+  <string name="library_com_github_penfeizhou_android_animation__frameanimation_libraryDescription" translatable="false"><![CDATA[e8f8fd3a5a9dfffe6151b922a76a61edd0a3609c]]></string>
+  <string name="library_com_github_penfeizhou_android_animation__frameanimation_libraryVersion" translatable="false">2.24.0</string>
+  <string name="library_com_github_penfeizhou_android_animation__frameanimation_libraryArtifactId" translatable="false">com.github.penfeizhou.android.animation:frameanimation:2.24.0</string>
+  <string name="define_plu_io_reactivex_rxjava2__rxandroid" translatable="false">owner</string>
+  <string name="library_io_reactivex_rxjava2__rxandroid_author" translatable="false">Jake Wharton, Matthias Käppler, Dan Lew</string>
+  <string name="library_io_reactivex_rxjava2__rxandroid_libraryName" translatable="false">RxAndroid</string>
+  <string name="library_io_reactivex_rxjava2__rxandroid_libraryDescription" translatable="false"><![CDATA[RxAndroid]]></string>
+  <string name="library_io_reactivex_rxjava2__rxandroid_libraryVersion" translatable="false">2.1.1</string>
+  <string name="library_io_reactivex_rxjava2__rxandroid_libraryArtifactId" translatable="false">io.reactivex.rxjava2:rxandroid:2.1.1</string>
+  <string name="library_io_reactivex_rxjava2__rxandroid_libraryWebsite" translatable="false">https://github.com/ReactiveX/RxAndroid</string>
+  <string name="library_io_reactivex_rxjava2__rxandroid_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_io_reactivex_rxjava2__rxandroid_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_io_reactivex_rxjava2__rxandroid_isOpenSource" translatable="false">true</string>
+  <string name="library_io_reactivex_rxjava2__rxandroid_repositoryLink" translatable="false">https://github.com/ReactiveX/RxAndroid</string>
+  <string name="library_io_reactivex_rxjava2__rxandroid_owner" translatable="false">Jake Wharton, Matthias Käppler, Dan Lew</string>
+  <string name="define_plu_com_google_firebase__firebase_analytics" translatable="false"></string>
+  <string name="library_com_google_firebase__firebase_analytics_libraryName" translatable="false">firebase-analytics</string>
+  <string name="library_com_google_firebase__firebase_analytics_libraryDescription" translatable="false"><![CDATA[]]></string>
+  <string name="library_com_google_firebase__firebase_analytics_libraryVersion" translatable="false">21.1.0</string>
+  <string name="library_com_google_firebase__firebase_analytics_libraryArtifactId" translatable="false">com.google.firebase:firebase-analytics:21.1.0</string>
+  <string name="library_com_google_firebase__firebase_analytics_licenseIds" translatable="false">ASDKL</string>
+  <string name="library_com_google_firebase__firebase_analytics_licenseId" translatable="false">ASDKL</string>
+  <string name="define_plu_org_greenrobot__eventbus" translatable="false">owner</string>
+  <string name="library_org_greenrobot__eventbus_author" translatable="false">greenrobot</string>
+  <string name="library_org_greenrobot__eventbus_authorWebsite" translatable="false">https://greenrobot.org</string>
+  <string name="library_org_greenrobot__eventbus_libraryName" translatable="false">EventBus</string>
+  <string name="library_org_greenrobot__eventbus_libraryDescription" translatable="false"><![CDATA[EventBus is a publish/subscribe event bus optimized for Android.]]></string>
+  <string name="library_org_greenrobot__eventbus_libraryVersion" translatable="false">3.3.1</string>
+  <string name="library_org_greenrobot__eventbus_libraryArtifactId" translatable="false">org.greenrobot:eventbus:3.3.1</string>
+  <string name="library_org_greenrobot__eventbus_libraryWebsite" translatable="false">https://greenrobot.org/eventbus/</string>
+  <string name="library_org_greenrobot__eventbus_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_org_greenrobot__eventbus_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_org_greenrobot__eventbus_isOpenSource" translatable="false">true</string>
+  <string name="library_org_greenrobot__eventbus_repositoryLink" translatable="false">https://github.com/greenrobot/EventBus</string>
+  <string name="library_org_greenrobot__eventbus_owner" translatable="false">greenrobot</string>
+  <string name="define_plu_pl_droidsonroids__jspoon" translatable="false">owner</string>
+  <string name="library_pl_droidsonroids__jspoon_author" translatable="false">Bruno Wieczorek, Karol Wrótniak</string>
+  <string name="library_pl_droidsonroids__jspoon_libraryName" translatable="false">jspoon</string>
+  <string name="library_pl_droidsonroids__jspoon_libraryDescription" translatable="false"><![CDATA[Annotation based HTML to Java parser]]></string>
+  <string name="library_pl_droidsonroids__jspoon_libraryVersion" translatable="false">1.3.2</string>
+  <string name="library_pl_droidsonroids__jspoon_libraryArtifactId" translatable="false">pl.droidsonroids:jspoon:1.3.2</string>
+  <string name="library_pl_droidsonroids__jspoon_libraryWebsite" translatable="false">https://github.com/DroidsOnRoids/jspoon</string>
+  <string name="library_pl_droidsonroids__jspoon_licenseIds" translatable="false">MIT</string>
+  <string name="library_pl_droidsonroids__jspoon_licenseId" translatable="false">MIT</string>
+  <string name="library_pl_droidsonroids__jspoon_isOpenSource" translatable="false">true</string>
+  <string name="library_pl_droidsonroids__jspoon_repositoryLink" translatable="false">https://github.com/DroidsOnRoids/jspoon</string>
+  <string name="library_pl_droidsonroids__jspoon_owner" translatable="false">Bruno Wieczorek, Karol Wrótniak</string>
+  <string name="define_plu_com_github_omicronapps__7_Zip_JBinding_4Android" translatable="false">owner</string>
+  <string name="library_com_github_omicronapps__7_Zip_JBinding_4Android_author" translatable="false">Fredrik Claesson</string>
+  <string name="library_com_github_omicronapps__7_Zip_JBinding_4Android_libraryName" translatable="false">sevenzipjbinding</string>
+  <string name="library_com_github_omicronapps__7_Zip_JBinding_4Android_libraryDescription" translatable="false"><![CDATA[Android Java wrapper for 7z archiver engine]]></string>
+  <string name="library_com_github_omicronapps__7_Zip_JBinding_4Android_libraryVersion" translatable="false">Release-16.02-2.02</string>
+  <string name="library_com_github_omicronapps__7_Zip_JBinding_4Android_libraryArtifactId" translatable="false">com.github.omicronapps:7-Zip-JBinding-4Android:Release-16.02-2.02</string>
+  <string name="library_com_github_omicronapps__7_Zip_JBinding_4Android_libraryWebsite" translatable="false">https://github.com/omicronapps/7-Zip-JBinding-4Android</string>
+  <string name="library_com_github_omicronapps__7_Zip_JBinding_4Android_licenseIds" translatable="false">GNU Lesser General Public License, version 2.1</string>
+  <string name="library_com_github_omicronapps__7_Zip_JBinding_4Android_licenseId" translatable="false">GNU Lesser General Public License, version 2.1</string>
+  <string name="library_com_github_omicronapps__7_Zip_JBinding_4Android_isOpenSource" translatable="false">true</string>
+  <string name="library_com_github_omicronapps__7_Zip_JBinding_4Android_repositoryLink" translatable="false">https://github.com/omicronapps/7-Zip-JBinding-4Android</string>
+  <string name="library_com_github_omicronapps__7_Zip_JBinding_4Android_owner" translatable="false">Fredrik Claesson</string>
+  <string name="define_plu_com_squareup_retrofit2__adapter_rxjava2" translatable="false">owner</string>
+  <string name="library_com_squareup_retrofit2__adapter_rxjava2_author" translatable="false">Square, Inc.</string>
+  <string name="library_com_squareup_retrofit2__adapter_rxjava2_libraryName" translatable="false">Adapter: RxJava 2</string>
+  <string name="library_com_squareup_retrofit2__adapter_rxjava2_libraryDescription" translatable="false"><![CDATA[A Retrofit CallAdapter for RxJava 2\'s stream types.]]></string>
+  <string name="library_com_squareup_retrofit2__adapter_rxjava2_libraryVersion" translatable="false">2.9.0</string>
+  <string name="library_com_squareup_retrofit2__adapter_rxjava2_libraryArtifactId" translatable="false">com.squareup.retrofit2:adapter-rxjava2:2.9.0</string>
+  <string name="library_com_squareup_retrofit2__adapter_rxjava2_libraryWebsite" translatable="false">https://github.com/square/retrofit</string>
+  <string name="library_com_squareup_retrofit2__adapter_rxjava2_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_squareup_retrofit2__adapter_rxjava2_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_squareup_retrofit2__adapter_rxjava2_isOpenSource" translatable="false">true</string>
+  <string name="library_com_squareup_retrofit2__adapter_rxjava2_repositoryLink" translatable="false">https://github.com/square/retrofit/</string>
+  <string name="library_com_squareup_retrofit2__adapter_rxjava2_owner" translatable="false">Square, Inc.</string>
+  <string name="define_plu_javax_inject__javax_inject" translatable="false"></string>
+  <string name="library_javax_inject__javax_inject_libraryName" translatable="false">javax.inject</string>
+  <string name="library_javax_inject__javax_inject_libraryDescription" translatable="false"><![CDATA[The javax.inject API]]></string>
+  <string name="library_javax_inject__javax_inject_libraryVersion" translatable="false">1</string>
+  <string name="library_javax_inject__javax_inject_libraryArtifactId" translatable="false">javax.inject:javax.inject:1</string>
+  <string name="library_javax_inject__javax_inject_libraryWebsite" translatable="false">http://code.google.com/p/atinject/</string>
+  <string name="library_javax_inject__javax_inject_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_javax_inject__javax_inject_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_javax_inject__javax_inject_isOpenSource" translatable="false">true</string>
+  <string name="library_javax_inject__javax_inject_repositoryLink" translatable="false">http://code.google.com/p/atinject/source/checkout</string>
+  <string name="define_plu_com_github_skydoves__powerspinner" translatable="false">owner</string>
+  <string name="library_com_github_skydoves__powerspinner_author" translatable="false">Jaewoong Eum</string>
+  <string name="library_com_github_skydoves__powerspinner_libraryName" translatable="false">powerspinner</string>
+  <string name="library_com_github_skydoves__powerspinner_libraryDescription" translatable="false"><![CDATA[A lightweight dropdown popup spinner, fully customizable with an arrow and animations for Android.]]></string>
+  <string name="library_com_github_skydoves__powerspinner_libraryVersion" translatable="false">1.2.4</string>
+  <string name="library_com_github_skydoves__powerspinner_libraryArtifactId" translatable="false">com.github.skydoves:powerspinner:1.2.4</string>
+  <string name="library_com_github_skydoves__powerspinner_libraryWebsite" translatable="false">https://github.com/skydoves/powerspinner</string>
+  <string name="library_com_github_skydoves__powerspinner_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_skydoves__powerspinner_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_skydoves__powerspinner_isOpenSource" translatable="false">true</string>
+  <string name="library_com_github_skydoves__powerspinner_repositoryLink" translatable="false">https://github.com/skydoves/powerspinner/tree/main</string>
+  <string name="library_com_github_skydoves__powerspinner_owner" translatable="false">Jaewoong Eum</string>
+  <string name="define_plu_com_jakewharton_timber__timber" translatable="false">owner</string>
+  <string name="library_com_jakewharton_timber__timber_author" translatable="false">Jake Wharton</string>
+  <string name="library_com_jakewharton_timber__timber_libraryName" translatable="false">Timber</string>
+  <string name="library_com_jakewharton_timber__timber_libraryDescription" translatable="false"><![CDATA[No-nonsense injectable logging.]]></string>
+  <string name="library_com_jakewharton_timber__timber_libraryVersion" translatable="false">5.0.1</string>
+  <string name="library_com_jakewharton_timber__timber_libraryArtifactId" translatable="false">com.jakewharton.timber:timber:5.0.1</string>
+  <string name="library_com_jakewharton_timber__timber_libraryWebsite" translatable="false">https://github.com/JakeWharton/timber</string>
+  <string name="library_com_jakewharton_timber__timber_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_jakewharton_timber__timber_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_jakewharton_timber__timber_isOpenSource" translatable="false">true</string>
+  <string name="library_com_jakewharton_timber__timber_repositoryLink" translatable="false">https://github.com/JakeWharton/timber</string>
+  <string name="library_com_jakewharton_timber__timber_owner" translatable="false">Jake Wharton</string>
+  <string name="define_plu_io_objectbox__objectbox_kotlin" translatable="false">owner</string>
+  <string name="library_io_objectbox__objectbox_kotlin_author" translatable="false">ObjectBox</string>
+  <string name="library_io_objectbox__objectbox_kotlin_authorWebsite" translatable="false">https://objectbox.io</string>
+  <string name="library_io_objectbox__objectbox_kotlin_libraryName" translatable="false">ObjectBox Kotlin</string>
+  <string name="library_io_objectbox__objectbox_kotlin_libraryDescription" translatable="false"><![CDATA[ObjectBox is a fast NoSQL database for Objects]]></string>
+  <string name="library_io_objectbox__objectbox_kotlin_libraryVersion" translatable="false">3.5.0</string>
+  <string name="library_io_objectbox__objectbox_kotlin_libraryArtifactId" translatable="false">io.objectbox:objectbox-kotlin:3.5.0</string>
+  <string name="library_io_objectbox__objectbox_kotlin_libraryWebsite" translatable="false">https://objectbox.io</string>
+  <string name="library_io_objectbox__objectbox_kotlin_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_io_objectbox__objectbox_kotlin_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_io_objectbox__objectbox_kotlin_isOpenSource" translatable="false">true</string>
+  <string name="library_io_objectbox__objectbox_kotlin_repositoryLink" translatable="false">https://github.com/objectbox/objectbox-java</string>
+  <string name="library_io_objectbox__objectbox_kotlin_owner" translatable="false">ObjectBox</string>
+  <string name="define_plu_org_apache_commons__commons_lang3" translatable="false">owner</string>
+  <string name="library_org_apache_commons__commons_lang3_author" translatable="false">Daniel Rall, Stephen Colebourne, Henri Yandell, Steven Caswell, Robert Burrell Donkin, Gary D. Gregory, Fredrik Westermarck, James Carman, Niall Pemberton, Matt Benson, Joerg Schaible, Oliver Heger, Paul Benedict, Benedikt Ritter, Duncan Jones, Loic Guibert, Rob Tompkins</string>
+  <string name="library_org_apache_commons__commons_lang3_libraryName" translatable="false">Apache Commons Lang</string>
+  <string name="library_org_apache_commons__commons_lang3_libraryDescription" translatable="false"><![CDATA[
+  Apache Commons Lang, a package of Java utility classes for the
+  classes that are in java.lang\'s hierarchy, or are considered to be so
+  standard as to justify existence in java.lang.
+  ]]></string>
+  <string name="library_org_apache_commons__commons_lang3_libraryVersion" translatable="false">3.12.0</string>
+  <string name="library_org_apache_commons__commons_lang3_libraryArtifactId" translatable="false">org.apache.commons:commons-lang3:3.12.0</string>
+  <string name="library_org_apache_commons__commons_lang3_libraryWebsite" translatable="false">https://commons.apache.org/proper/commons-lang/</string>
+  <string name="library_org_apache_commons__commons_lang3_isOpenSource" translatable="false">true</string>
+  <string name="library_org_apache_commons__commons_lang3_repositoryLink" translatable="false">https://gitbox.apache.org/repos/asf?p=commons-lang.git</string>
+  <string name="library_org_apache_commons__commons_lang3_owner" translatable="false">Daniel Rall, Stephen Colebourne, Henri Yandell, Steven Caswell, Robert Burrell Donkin, Gary D. Gregory, Fredrik Westermarck, James Carman, Niall Pemberton, Matt Benson, Joerg Schaible, Oliver Heger, Paul Benedict, Benedikt Ritter, Duncan Jones, Loic Guibert, Rob Tompkins</string>
+  <string name="define_plu_org_jsoup__jsoup" translatable="false">owner</string>
+  <string name="library_org_jsoup__jsoup_author" translatable="false">Jonathan Hedley</string>
+  <string name="library_org_jsoup__jsoup_authorWebsite" translatable="false">https://jhy.io/</string>
+  <string name="library_org_jsoup__jsoup_libraryName" translatable="false">jsoup Java HTML Parser</string>
+  <string name="library_org_jsoup__jsoup_libraryDescription" translatable="false"><![CDATA[jsoup is a Java library for working with real-world HTML. It provides a very convenient API for fetching URLs and extracting and manipulating data, using the best of HTML5 DOM methods and CSS selectors. jsoup implements the WHATWG HTML5 specification, and parses HTML to the same DOM as modern browsers do.]]></string>
+  <string name="library_org_jsoup__jsoup_libraryVersion" translatable="false">1.15.3</string>
+  <string name="library_org_jsoup__jsoup_libraryArtifactId" translatable="false">org.jsoup:jsoup:1.15.3</string>
+  <string name="library_org_jsoup__jsoup_libraryWebsite" translatable="false">https://jsoup.org/</string>
+  <string name="library_org_jsoup__jsoup_licenseIds" translatable="false">MIT</string>
+  <string name="library_org_jsoup__jsoup_licenseId" translatable="false">MIT</string>
+  <string name="library_org_jsoup__jsoup_isOpenSource" translatable="false">true</string>
+  <string name="library_org_jsoup__jsoup_repositoryLink" translatable="false">https://github.com/jhy/jsoup</string>
+  <string name="library_org_jsoup__jsoup_owner" translatable="false">Jonathan Hedley</string>
+  <string name="define_plu_com_github_bumptech_glide__gifdecoder" translatable="false">owner</string>
+  <string name="library_com_github_bumptech_glide__gifdecoder_author" translatable="false">Sam Judd</string>
+  <string name="library_com_github_bumptech_glide__gifdecoder_libraryName" translatable="false">Glide GIF Decoder Library</string>
+  <string name="library_com_github_bumptech_glide__gifdecoder_libraryDescription" translatable="false"><![CDATA[Implementation of GifDecoder that is more memory efficient to animate for Android devices.]]></string>
+  <string name="library_com_github_bumptech_glide__gifdecoder_libraryVersion" translatable="false">4.14.2</string>
+  <string name="library_com_github_bumptech_glide__gifdecoder_libraryArtifactId" translatable="false">com.github.bumptech.glide:gifdecoder:4.14.2</string>
+  <string name="library_com_github_bumptech_glide__gifdecoder_libraryWebsite" translatable="false">https://github.com/bumptech/glide</string>
+  <string name="library_com_github_bumptech_glide__gifdecoder_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_bumptech_glide__gifdecoder_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_bumptech_glide__gifdecoder_isOpenSource" translatable="false">true</string>
+  <string name="library_com_github_bumptech_glide__gifdecoder_repositoryLink" translatable="false">https://github.com/bumptech/glide</string>
+  <string name="library_com_github_bumptech_glide__gifdecoder_owner" translatable="false">Sam Judd</string>
+  <string name="define_plu_com_github_skydoves__powermenu" translatable="false">owner</string>
+  <string name="library_com_github_skydoves__powermenu_author" translatable="false">Jaewoong Eum</string>
+  <string name="library_com_github_skydoves__powermenu_libraryName" translatable="false">powermenu</string>
+  <string name="library_com_github_skydoves__powermenu_libraryDescription" translatable="false"><![CDATA[Powerful and modernized popup menu with fully customizable.]]></string>
+  <string name="library_com_github_skydoves__powermenu_libraryVersion" translatable="false">2.2.1</string>
+  <string name="library_com_github_skydoves__powermenu_libraryArtifactId" translatable="false">com.github.skydoves:powermenu:2.2.1</string>
+  <string name="library_com_github_skydoves__powermenu_libraryWebsite" translatable="false">https://github.com/skydoves/powermenu</string>
+  <string name="library_com_github_skydoves__powermenu_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_skydoves__powermenu_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_skydoves__powermenu_isOpenSource" translatable="false">true</string>
+  <string name="library_com_github_skydoves__powermenu_repositoryLink" translatable="false">https://github.com/skydoves/powermenu/tree/main</string>
+  <string name="library_com_github_skydoves__powermenu_owner" translatable="false">Jaewoong Eum</string>
+  <string name="define_plu_org_greenrobot__essentials" translatable="false">owner</string>
+  <string name="library_org_greenrobot__essentials_author" translatable="false">greenrobot</string>
+  <string name="library_org_greenrobot__essentials_authorWebsite" translatable="false">https://greenrobot.org</string>
+  <string name="library_org_greenrobot__essentials_libraryName" translatable="false">greenrobot-essentials</string>
+  <string name="library_org_greenrobot__essentials_libraryDescription" translatable="false"><![CDATA[Essentials for high-performance Android and Java projects]]></string>
+  <string name="library_org_greenrobot__essentials_libraryVersion" translatable="false">3.1.0</string>
+  <string name="library_org_greenrobot__essentials_libraryArtifactId" translatable="false">org.greenrobot:essentials:3.1.0</string>
+  <string name="library_org_greenrobot__essentials_libraryWebsite" translatable="false">https://greenrobot.org/essentials/</string>
+  <string name="library_org_greenrobot__essentials_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_org_greenrobot__essentials_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_org_greenrobot__essentials_isOpenSource" translatable="false">true</string>
+  <string name="library_org_greenrobot__essentials_repositoryLink" translatable="false">https://github.com/greenrobot/essentials</string>
+  <string name="library_org_greenrobot__essentials_owner" translatable="false">greenrobot</string>
+  <string name="define_plu_com_waynejo__androidndkgif" translatable="false"></string>
+  <string name="library_com_waynejo__androidndkgif_libraryName" translatable="false">com.waynejo:androidndkgif</string>
+  <string name="library_com_waynejo__androidndkgif_libraryDescription" translatable="false"><![CDATA[]]></string>
+  <string name="library_com_waynejo__androidndkgif_libraryVersion" translatable="false">0.3.3</string>
+  <string name="library_com_waynejo__androidndkgif_libraryArtifactId" translatable="false">com.waynejo:androidndkgif:0.3.3</string>
+  <string name="define_plu_com_mikepenz__aboutlibraries_core" translatable="false">owner</string>
+  <string name="library_com_mikepenz__aboutlibraries_core_author" translatable="false">Mike Penz</string>
+  <string name="library_com_mikepenz__aboutlibraries_core_libraryName" translatable="false">AboutLibraries Library</string>
+  <string name="library_com_mikepenz__aboutlibraries_core_libraryDescription" translatable="false"><![CDATA[AboutLibraries is a library to offer some information of libraries.]]></string>
+  <string name="library_com_mikepenz__aboutlibraries_core_libraryVersion" translatable="false">8.9.4</string>
+  <string name="library_com_mikepenz__aboutlibraries_core_libraryArtifactId" translatable="false">com.mikepenz:aboutlibraries-core:8.9.4</string>
+  <string name="library_com_mikepenz__aboutlibraries_core_libraryWebsite" translatable="false">https://github.com/mikepenz/AboutLibraries</string>
+  <string name="library_com_mikepenz__aboutlibraries_core_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_mikepenz__aboutlibraries_core_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_mikepenz__aboutlibraries_core_isOpenSource" translatable="false">true</string>
+  <string name="library_com_mikepenz__aboutlibraries_core_repositoryLink" translatable="false">https://github.com/mikepenz/AboutLibraries</string>
+  <string name="library_com_mikepenz__aboutlibraries_core_owner" translatable="false">Mike Penz</string>
+  <string name="define_plu_com_github_skydoves__submarine" translatable="false">owner</string>
+  <string name="library_com_github_skydoves__submarine_author" translatable="false">Jaewoong Eum</string>
+  <string name="library_com_github_skydoves__submarine_libraryName" translatable="false">submarine</string>
+  <string name="library_com_github_skydoves__submarine_libraryDescription" translatable="false"><![CDATA[Floating navigation view for listing items dynamically on Android.]]></string>
+  <string name="library_com_github_skydoves__submarine_libraryVersion" translatable="false">1.0.7</string>
+  <string name="library_com_github_skydoves__submarine_libraryArtifactId" translatable="false">com.github.skydoves:submarine:1.0.7</string>
+  <string name="library_com_github_skydoves__submarine_libraryWebsite" translatable="false">https://github.com/skydoves/submarine/</string>
+  <string name="library_com_github_skydoves__submarine_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_skydoves__submarine_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_skydoves__submarine_isOpenSource" translatable="false">true</string>
+  <string name="library_com_github_skydoves__submarine_repositoryLink" translatable="false">https://github.com/skydoves/submarine/</string>
+  <string name="library_com_github_skydoves__submarine_owner" translatable="false">Jaewoong Eum</string>
+  <string name="define_plu_org_threeten__threetenbp" translatable="false">owner</string>
+  <string name="library_org_threeten__threetenbp_author" translatable="false">Stephen Colebourne</string>
+  <string name="library_org_threeten__threetenbp_authorWebsite" translatable="false">https://www.threeten.org</string>
+  <string name="library_org_threeten__threetenbp_libraryName" translatable="false">ThreeTen backport</string>
+  <string name="library_org_threeten__threetenbp_libraryDescription" translatable="false"><![CDATA[Backport of JSR-310 from JDK 8 to JDK 7 and JDK 6. NOT an implementation of the JSR.]]></string>
+  <string name="library_org_threeten__threetenbp_libraryVersion" translatable="false">1.6.3</string>
+  <string name="library_org_threeten__threetenbp_libraryArtifactId" translatable="false">org.threeten:threetenbp:1.6.3</string>
+  <string name="library_org_threeten__threetenbp_libraryWebsite" translatable="false">https://www.threeten.org/threetenbp</string>
+  <string name="library_org_threeten__threetenbp_licenseIds" translatable="false">BSD_3_Clause</string>
+  <string name="library_org_threeten__threetenbp_licenseId" translatable="false">BSD_3_Clause</string>
+  <string name="library_org_threeten__threetenbp_isOpenSource" translatable="false">true</string>
+  <string name="library_org_threeten__threetenbp_repositoryLink" translatable="false">https://github.com/ThreeTen/threetenbp</string>
+  <string name="library_org_threeten__threetenbp_owner" translatable="false">Stephen Colebourne</string>
+  <string name="define_plu_org_jetbrains_kotlin__kotlin_stdlib_jdk7" translatable="false">owner</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk7_author" translatable="false">Kotlin Team</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk7_authorWebsite" translatable="false">https://www.jetbrains.com</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk7_libraryName" translatable="false">Kotlin Stdlib Jdk7</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk7_libraryDescription" translatable="false"><![CDATA[Kotlin Standard Library JDK 7 extension]]></string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk7_libraryVersion" translatable="false">1.7.20</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk7_libraryArtifactId" translatable="false">org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.20</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk7_libraryWebsite" translatable="false">https://kotlinlang.org/</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk7_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk7_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk7_isOpenSource" translatable="false">true</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk7_repositoryLink" translatable="false">https://github.com/JetBrains/kotlin</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk7_owner" translatable="false">Kotlin Team</string>
+  <string name="define_plu_org_jetbrains_kotlinx__kotlinx_coroutines_core" translatable="false">owner</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_author" translatable="false">JetBrains Team</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_authorWebsite" translatable="false">https://www.jetbrains.com</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_libraryName" translatable="false">kotlinx-coroutines-core</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_libraryDescription" translatable="false"><![CDATA[Coroutines support libraries for Kotlin]]></string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_libraryVersion" translatable="false">1.6.1</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_libraryArtifactId" translatable="false">org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_libraryWebsite" translatable="false">https://github.com/Kotlin/kotlinx.coroutines</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_isOpenSource" translatable="false">true</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_repositoryLink" translatable="false">https://github.com/Kotlin/kotlinx.coroutines</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_owner" translatable="false">JetBrains Team</string>
+  <string name="define_plu_org_jetbrains_kotlin__kotlin_stdlib_jdk8" translatable="false">owner</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk8_author" translatable="false">Kotlin Team</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk8_authorWebsite" translatable="false">https://www.jetbrains.com</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk8_libraryName" translatable="false">Kotlin Stdlib Jdk8</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk8_libraryDescription" translatable="false"><![CDATA[Kotlin Standard Library JDK 8 extension]]></string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk8_libraryVersion" translatable="false">1.7.20</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk8_libraryArtifactId" translatable="false">org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.20</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk8_libraryWebsite" translatable="false">https://kotlinlang.org/</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk8_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk8_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk8_isOpenSource" translatable="false">true</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk8_repositoryLink" translatable="false">https://github.com/JetBrains/kotlin</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_jdk8_owner" translatable="false">Kotlin Team</string>
+  <string name="define_plu_org_reactivestreams__reactive_streams" translatable="false">owner</string>
+  <string name="library_org_reactivestreams__reactive_streams_author" translatable="false">Reactive Streams SIG</string>
+  <string name="library_org_reactivestreams__reactive_streams_libraryName" translatable="false">reactive-streams</string>
+  <string name="library_org_reactivestreams__reactive_streams_libraryDescription" translatable="false"><![CDATA[A Protocol for Asynchronous Non-Blocking Data Sequence]]></string>
+  <string name="library_org_reactivestreams__reactive_streams_libraryVersion" translatable="false">1.0.3</string>
+  <string name="library_org_reactivestreams__reactive_streams_libraryArtifactId" translatable="false">org.reactivestreams:reactive-streams:1.0.3</string>
+  <string name="library_org_reactivestreams__reactive_streams_libraryWebsite" translatable="false">http://www.reactive-streams.org/</string>
+  <string name="library_org_reactivestreams__reactive_streams_licenseIds" translatable="false">CC0_1_0</string>
+  <string name="library_org_reactivestreams__reactive_streams_licenseId" translatable="false">CC0_1_0</string>
+  <string name="library_org_reactivestreams__reactive_streams_isOpenSource" translatable="false">true</string>
+  <string name="library_org_reactivestreams__reactive_streams_repositoryLink" translatable="false">git@github.com:reactive-streams/reactive-streams.git</string>
+  <string name="library_org_reactivestreams__reactive_streams_owner" translatable="false">Reactive Streams SIG</string>
+  <string name="define_plu_com_squareup_retrofit2__retrofit" translatable="false">owner</string>
+  <string name="library_com_squareup_retrofit2__retrofit_author" translatable="false">Square, Inc.</string>
+  <string name="library_com_squareup_retrofit2__retrofit_libraryName" translatable="false">Retrofit</string>
+  <string name="library_com_squareup_retrofit2__retrofit_libraryDescription" translatable="false"><![CDATA[A type-safe HTTP client for Android and Java.]]></string>
+  <string name="library_com_squareup_retrofit2__retrofit_libraryVersion" translatable="false">2.9.0</string>
+  <string name="library_com_squareup_retrofit2__retrofit_libraryArtifactId" translatable="false">com.squareup.retrofit2:retrofit:2.9.0</string>
+  <string name="library_com_squareup_retrofit2__retrofit_libraryWebsite" translatable="false">https://github.com/square/retrofit</string>
+  <string name="library_com_squareup_retrofit2__retrofit_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_squareup_retrofit2__retrofit_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_squareup_retrofit2__retrofit_isOpenSource" translatable="false">true</string>
+  <string name="library_com_squareup_retrofit2__retrofit_repositoryLink" translatable="false">https://github.com/square/retrofit/</string>
+  <string name="library_com_squareup_retrofit2__retrofit_owner" translatable="false">Square, Inc.</string>
+  <string name="define_plu_org_jetbrains_kotlin__kotlin_stdlib" translatable="false">owner</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_author" translatable="false">Kotlin Team</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_authorWebsite" translatable="false">https://www.jetbrains.com</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_libraryName" translatable="false">Kotlin Stdlib</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_libraryDescription" translatable="false"><![CDATA[Kotlin Standard Library for JVM]]></string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_libraryVersion" translatable="false">1.7.20</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_libraryArtifactId" translatable="false">org.jetbrains.kotlin:kotlin-stdlib:1.7.20</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_libraryWebsite" translatable="false">https://kotlinlang.org/</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_isOpenSource" translatable="false">true</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_repositoryLink" translatable="false">https://github.com/JetBrains/kotlin</string>
+  <string name="library_org_jetbrains_kotlin__kotlin_stdlib_owner" translatable="false">Kotlin Team</string>
+  <string name="define_plu_com_google_guava__listenablefuture" translatable="false">owner</string>
+  <string name="library_com_google_guava__listenablefuture_author" translatable="false">Kevin Bourrillion</string>
+  <string name="library_com_google_guava__listenablefuture_authorWebsite" translatable="false">http://www.google.com</string>
+  <string name="library_com_google_guava__listenablefuture_libraryName" translatable="false">Guava ListenableFuture only</string>
+  <string name="library_com_google_guava__listenablefuture_libraryDescription" translatable="false"><![CDATA[
+    An empty artifact that Guava depends on to signal that it is providing
+    ListenableFuture -- but is also available in a second \"version\" that
+    contains com.google.common.util.concurrent.ListenableFuture class, without
+    any other Guava classes. The idea is:
+
+    - If users want only ListenableFuture, they depend on listenablefuture-1.0.
+
+    - If users want all of Guava, they depend on guava, which, as of Guava
+    27.0, depends on
+    listenablefuture-9999.0-empty-to-avoid-conflict-with-guava. The 9999.0-...
+    version number is enough for some build systems (notably, Gradle) to select
+    that empty artifact over the \"real\" listenablefuture-1.0 -- avoiding a
+    conflict with the copy of ListenableFuture in guava itself. If users are
+    using an older version of Guava or a build system other than Gradle, they
+    may see class conflicts. If so, they can solve them by manually excluding
+    the listenablefuture artifact or manually forcing their build systems to
+    use 9999.0-....
+  ]]></string>
+  <string name="library_com_google_guava__listenablefuture_libraryVersion" translatable="false">9999.0-empty-to-avoid-conflict-with-guava</string>
+  <string name="library_com_google_guava__listenablefuture_libraryArtifactId" translatable="false">com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava</string>
+  <string name="library_com_google_guava__listenablefuture_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_google_guava__listenablefuture_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_google_guava__listenablefuture_owner" translatable="false">Kevin Bourrillion</string>
+  <string name="define_plu_com_squareup_moshi__moshi_adapters" translatable="false">owner</string>
+  <string name="library_com_squareup_moshi__moshi_adapters_author" translatable="false">Square, Inc.</string>
+  <string name="library_com_squareup_moshi__moshi_adapters_libraryName" translatable="false">Moshi Adapters</string>
+  <string name="library_com_squareup_moshi__moshi_adapters_libraryDescription" translatable="false"><![CDATA[A modern JSON API for Android and Java]]></string>
+  <string name="library_com_squareup_moshi__moshi_adapters_libraryVersion" translatable="false">1.14.0</string>
+  <string name="library_com_squareup_moshi__moshi_adapters_libraryArtifactId" translatable="false">com.squareup.moshi:moshi-adapters:1.14.0</string>
+  <string name="library_com_squareup_moshi__moshi_adapters_libraryWebsite" translatable="false">https://github.com/square/moshi/</string>
+  <string name="library_com_squareup_moshi__moshi_adapters_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_squareup_moshi__moshi_adapters_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_squareup_moshi__moshi_adapters_isOpenSource" translatable="false">true</string>
+  <string name="library_com_squareup_moshi__moshi_adapters_repositoryLink" translatable="false">https://github.com/square/moshi/</string>
+  <string name="library_com_squareup_moshi__moshi_adapters_owner" translatable="false">Square, Inc.</string>
+  <string name="define_plu_pl_droidsonroids_retrofit2__converter_jspoon" translatable="false">owner</string>
+  <string name="library_pl_droidsonroids_retrofit2__converter_jspoon_author" translatable="false">Bruno Wieczorek, Karol Wrótniak</string>
+  <string name="library_pl_droidsonroids_retrofit2__converter_jspoon_libraryName" translatable="false">Retrofit jspoon converter</string>
+  <string name="library_pl_droidsonroids_retrofit2__converter_jspoon_libraryDescription" translatable="false"><![CDATA[Retrofit Converter which usekotlin s jspoon for parsing body from HTML]]></string>
+  <string name="library_pl_droidsonroids_retrofit2__converter_jspoon_libraryVersion" translatable="false">1.3.2</string>
+  <string name="library_pl_droidsonroids_retrofit2__converter_jspoon_libraryArtifactId" translatable="false">pl.droidsonroids.retrofit2:converter-jspoon:1.3.2</string>
+  <string name="library_pl_droidsonroids_retrofit2__converter_jspoon_libraryWebsite" translatable="false">https://github.com/DroidsOnRoids/Jspoon/tree/master/retrofit-converter-jspoon</string>
+  <string name="library_pl_droidsonroids_retrofit2__converter_jspoon_licenseIds" translatable="false">MIT</string>
+  <string name="library_pl_droidsonroids_retrofit2__converter_jspoon_licenseId" translatable="false">MIT</string>
+  <string name="library_pl_droidsonroids_retrofit2__converter_jspoon_isOpenSource" translatable="false">true</string>
+  <string name="library_pl_droidsonroids_retrofit2__converter_jspoon_repositoryLink" translatable="false">https://github.com/DroidsOnRoids/Jspoon/tree/master/retrofit-converter-jspoon</string>
+  <string name="library_pl_droidsonroids_retrofit2__converter_jspoon_owner" translatable="false">Bruno Wieczorek, Karol Wrótniak</string>
+  <string name="define_plu_net_grey_panther__natural_comparator" translatable="false">owner</string>
+  <string name="library_net_grey_panther__natural_comparator_author" translatable="false">Grey Panther</string>
+  <string name="library_net_grey_panther__natural_comparator_authorWebsite" translatable="false">https://www.grey-panther.net/</string>
+  <string name="library_net_grey_panther__natural_comparator_libraryName" translatable="false">Natural order comparator for Java</string>
+  <string name="library_net_grey_panther__natural_comparator_libraryDescription" translatable="false"><![CDATA[Java implementation of the \"natural sort\" (also known as Alphanum sort) algorithm]]></string>
+  <string name="library_net_grey_panther__natural_comparator_libraryVersion" translatable="false">1.1</string>
+  <string name="library_net_grey_panther__natural_comparator_libraryArtifactId" translatable="false">net.grey-panther:natural-comparator:1.1</string>
+  <string name="library_net_grey_panther__natural_comparator_libraryWebsite" translatable="false">https://github.com/gpanther/java-nat-sort</string>
+  <string name="library_net_grey_panther__natural_comparator_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_net_grey_panther__natural_comparator_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_net_grey_panther__natural_comparator_isOpenSource" translatable="false">true</string>
+  <string name="library_net_grey_panther__natural_comparator_repositoryLink" translatable="false">git@github.com:gpanther/java-nat-sort.git</string>
+  <string name="library_net_grey_panther__natural_comparator_owner" translatable="false">Grey Panther</string>
+  <string name="define_plu_com_squareup_moshi__moshi" translatable="false">owner</string>
+  <string name="library_com_squareup_moshi__moshi_author" translatable="false">Square, Inc.</string>
+  <string name="library_com_squareup_moshi__moshi_libraryName" translatable="false">Moshi</string>
+  <string name="library_com_squareup_moshi__moshi_libraryDescription" translatable="false"><![CDATA[A modern JSON API for Android and Java]]></string>
+  <string name="library_com_squareup_moshi__moshi_libraryVersion" translatable="false">1.14.0</string>
+  <string name="library_com_squareup_moshi__moshi_libraryArtifactId" translatable="false">com.squareup.moshi:moshi:1.14.0</string>
+  <string name="library_com_squareup_moshi__moshi_libraryWebsite" translatable="false">https://github.com/square/moshi/</string>
+  <string name="library_com_squareup_moshi__moshi_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_squareup_moshi__moshi_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_squareup_moshi__moshi_isOpenSource" translatable="false">true</string>
+  <string name="library_com_squareup_moshi__moshi_repositoryLink" translatable="false">https://github.com/square/moshi/</string>
+  <string name="library_com_squareup_moshi__moshi_owner" translatable="false">Square, Inc.</string>
+  <string name="define_plu_com_annimon__stream" translatable="false">owner</string>
+  <string name="library_com_annimon__stream_author" translatable="false">Victor Melnik</string>
+  <string name="library_com_annimon__stream_libraryName" translatable="false">Lightweight-Stream-API</string>
+  <string name="library_com_annimon__stream_libraryDescription" translatable="false"><![CDATA[Stream API from Java 8 rewritten on iterators for Java 7 and below]]></string>
+  <string name="library_com_annimon__stream_libraryVersion" translatable="false">1.2.2</string>
+  <string name="library_com_annimon__stream_libraryArtifactId" translatable="false">com.annimon:stream:1.2.2</string>
+  <string name="library_com_annimon__stream_libraryWebsite" translatable="false">https://github.com/aNNiMON/Lightweight-Stream-API</string>
+  <string name="library_com_annimon__stream_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_annimon__stream_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_annimon__stream_isOpenSource" translatable="false">true</string>
+  <string name="library_com_annimon__stream_repositoryLink" translatable="false">https://github.com/aNNiMON/Lightweight-Stream-API</string>
+  <string name="library_com_annimon__stream_owner" translatable="false">Victor Melnik</string>
+  <string name="define_plu_com_github_AppIntro__AppIntro" translatable="false">owner</string>
+  <string name="library_com_github_AppIntro__AppIntro_author" translatable="false">Paolo Rotolo, Nicola Corti</string>
+  <string name="library_com_github_AppIntro__AppIntro_libraryName" translatable="false">AppIntro</string>
+  <string name="library_com_github_AppIntro__AppIntro_libraryDescription" translatable="false"><![CDATA[Make a cool intro for your Android app.]]></string>
+  <string name="library_com_github_AppIntro__AppIntro_libraryVersion" translatable="false">6.1.0</string>
+  <string name="library_com_github_AppIntro__AppIntro_libraryArtifactId" translatable="false">com.github.AppIntro:AppIntro:6.1.0</string>
+  <string name="library_com_github_AppIntro__AppIntro_libraryWebsite" translatable="false">git://github.com/AppIntro/AppIntro.git</string>
+  <string name="library_com_github_AppIntro__AppIntro_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_AppIntro__AppIntro_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_AppIntro__AppIntro_isOpenSource" translatable="false">true</string>
+  <string name="library_com_github_AppIntro__AppIntro_repositoryLink" translatable="false">git://github.com/AppIntro/AppIntro.git</string>
+  <string name="library_com_github_AppIntro__AppIntro_owner" translatable="false">Paolo Rotolo, Nicola Corti</string>
+  <string name="define_plu_com_github_penfeizhou_android_animation__apng" translatable="false"></string>
+  <string name="library_com_github_penfeizhou_android_animation__apng_libraryName" translatable="false">com.github.penfeizhou.android.animation:apng</string>
+  <string name="library_com_github_penfeizhou_android_animation__apng_libraryDescription" translatable="false"><![CDATA[e8f8fd3a5a9dfffe6151b922a76a61edd0a3609c]]></string>
+  <string name="library_com_github_penfeizhou_android_animation__apng_libraryVersion" translatable="false">2.24.0</string>
+  <string name="library_com_github_penfeizhou_android_animation__apng_libraryArtifactId" translatable="false">com.github.penfeizhou.android.animation:apng:2.24.0</string>
+  <string name="define_plu_com_google_firebase__firebase_encoders_proto" translatable="false"></string>
+  <string name="library_com_google_firebase__firebase_encoders_proto_libraryName" translatable="false">firebase-encoders-proto</string>
+  <string name="library_com_google_firebase__firebase_encoders_proto_libraryDescription" translatable="false"><![CDATA[]]></string>
+  <string name="library_com_google_firebase__firebase_encoders_proto_libraryVersion" translatable="false">16.0.0</string>
+  <string name="library_com_google_firebase__firebase_encoders_proto_libraryArtifactId" translatable="false">com.google.firebase:firebase-encoders-proto:16.0.0</string>
+  <string name="library_com_google_firebase__firebase_encoders_proto_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_google_firebase__firebase_encoders_proto_licenseId" translatable="false">Apache_2_0</string>
+  <string name="define_plu_org_jetbrains_kotlinx__kotlinx_coroutines_core_jvm" translatable="false">owner</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_jvm_author" translatable="false">JetBrains Team</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_jvm_authorWebsite" translatable="false">https://www.jetbrains.com</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_jvm_libraryName" translatable="false">kotlinx-coroutines-core</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_jvm_libraryDescription" translatable="false"><![CDATA[Coroutines support libraries for Kotlin]]></string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_jvm_libraryVersion" translatable="false">1.6.1</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_jvm_libraryArtifactId" translatable="false">org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.1</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_jvm_libraryWebsite" translatable="false">https://github.com/Kotlin/kotlinx.coroutines</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_jvm_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_jvm_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_jvm_isOpenSource" translatable="false">true</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_jvm_repositoryLink" translatable="false">https://github.com/Kotlin/kotlinx.coroutines</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_core_jvm_owner" translatable="false">JetBrains Team</string>
+  <string name="define_plu_com_github_bumptech_glide__annotations" translatable="false">owner</string>
+  <string name="library_com_github_bumptech_glide__annotations_author" translatable="false">Sam Judd</string>
+  <string name="library_com_github_bumptech_glide__annotations_libraryName" translatable="false">Glide Annotations</string>
+  <string name="library_com_github_bumptech_glide__annotations_libraryDescription" translatable="false"><![CDATA[A set of annotations for configuring Glide.]]></string>
+  <string name="library_com_github_bumptech_glide__annotations_libraryVersion" translatable="false">4.14.2</string>
+  <string name="library_com_github_bumptech_glide__annotations_libraryArtifactId" translatable="false">com.github.bumptech.glide:annotations:4.14.2</string>
+  <string name="library_com_github_bumptech_glide__annotations_libraryWebsite" translatable="false">https://github.com/bumptech/glide</string>
+  <string name="library_com_github_bumptech_glide__annotations_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_bumptech_glide__annotations_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_bumptech_glide__annotations_isOpenSource" translatable="false">true</string>
+  <string name="library_com_github_bumptech_glide__annotations_repositoryLink" translatable="false">https://github.com/bumptech/glide</string>
+  <string name="library_com_github_bumptech_glide__annotations_owner" translatable="false">Sam Judd</string>
+  <string name="define_plu_com_google_firebase__firebase_components" translatable="false"></string>
+  <string name="library_com_google_firebase__firebase_components_libraryName" translatable="false">firebase-components</string>
+  <string name="library_com_google_firebase__firebase_components_libraryDescription" translatable="false"><![CDATA[]]></string>
+  <string name="library_com_google_firebase__firebase_components_libraryVersion" translatable="false">17.0.0</string>
+  <string name="library_com_google_firebase__firebase_components_libraryArtifactId" translatable="false">com.google.firebase:firebase-components:17.0.0</string>
+  <string name="library_com_google_firebase__firebase_components_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_google_firebase__firebase_components_licenseId" translatable="false">Apache_2_0</string>
+  <string name="define_plu_com_github_bumptech_glide__disklrucache" translatable="false">owner</string>
+  <string name="library_com_github_bumptech_glide__disklrucache_author" translatable="false">Sam Judd</string>
+  <string name="library_com_github_bumptech_glide__disklrucache_libraryName" translatable="false">Glide Disk LRU Cache Library</string>
+  <string name="library_com_github_bumptech_glide__disklrucache_libraryDescription" translatable="false"><![CDATA[A cache that uses a bounded amount of space on a filesystem. Based on Jake Wharton\'s tailored for Glide.]]></string>
+  <string name="library_com_github_bumptech_glide__disklrucache_libraryVersion" translatable="false">4.14.2</string>
+  <string name="library_com_github_bumptech_glide__disklrucache_libraryArtifactId" translatable="false">com.github.bumptech.glide:disklrucache:4.14.2</string>
+  <string name="library_com_github_bumptech_glide__disklrucache_libraryWebsite" translatable="false">https://github.com/bumptech/glide</string>
+  <string name="library_com_github_bumptech_glide__disklrucache_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_bumptech_glide__disklrucache_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_github_bumptech_glide__disklrucache_isOpenSource" translatable="false">true</string>
+  <string name="library_com_github_bumptech_glide__disklrucache_repositoryLink" translatable="false">https://github.com/bumptech/glide</string>
+  <string name="library_com_github_bumptech_glide__disklrucache_owner" translatable="false">Sam Judd</string>
+  <string name="define_plu_com_google_firebase__firebase_crashlytics" translatable="false"></string>
+  <string name="library_com_google_firebase__firebase_crashlytics_libraryName" translatable="false">firebase-crashlytics</string>
+  <string name="library_com_google_firebase__firebase_crashlytics_libraryDescription" translatable="false"><![CDATA[]]></string>
+  <string name="library_com_google_firebase__firebase_crashlytics_libraryVersion" translatable="false">18.2.12</string>
+  <string name="library_com_google_firebase__firebase_crashlytics_libraryArtifactId" translatable="false">com.google.firebase:firebase-crashlytics:18.2.12</string>
+  <string name="library_com_google_firebase__firebase_crashlytics_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_google_firebase__firebase_crashlytics_licenseId" translatable="false">Apache_2_0</string>
+  <string name="define_plu_commons_io__commons_io" translatable="false">owner</string>
+  <string name="library_commons_io__commons_io_author" translatable="false">Scott Sanders, dIon Gillard, Nicola Ken Barozzi, Henri Yandell, Stephen Colebourne, Jeremias Maerki, Matthew Hawthorne, Martin Cooper, Rob Oxspring, Jochen Wiedmann, Niall Pemberton, Jukka Zitting, Gary Gregory, Kristian Rosenvold</string>
+  <string name="library_commons_io__commons_io_authorWebsite" translatable="false">https://www.apache.org/</string>
+  <string name="library_commons_io__commons_io_libraryName" translatable="false">Apache Commons IO</string>
+  <string name="library_commons_io__commons_io_libraryDescription" translatable="false"><![CDATA[
+The Apache Commons IO library contains utility classes, stream implementations, file filters,
+file comparators, endian transformation classes, and much more.
+  ]]></string>
+  <string name="library_commons_io__commons_io_libraryVersion" translatable="false">2.11.0</string>
+  <string name="library_commons_io__commons_io_libraryArtifactId" translatable="false">commons-io:commons-io:2.11.0</string>
+  <string name="library_commons_io__commons_io_libraryWebsite" translatable="false">https://commons.apache.org/proper/commons-io/</string>
+  <string name="library_commons_io__commons_io_isOpenSource" translatable="false">true</string>
+  <string name="library_commons_io__commons_io_repositoryLink" translatable="false">https://gitbox.apache.org/repos/asf?p=commons-io.git</string>
+  <string name="library_commons_io__commons_io_owner" translatable="false">Scott Sanders, dIon Gillard, Nicola Ken Barozzi, Henri Yandell, Stephen Colebourne, Jeremias Maerki, Matthew Hawthorne, Martin Cooper, Rob Oxspring, Jochen Wiedmann, Niall Pemberton, Jukka Zitting, Gary Gregory, Kristian Rosenvold</string>
+  <string name="define_plu_com_google_firebase__firebase_encoders_json" translatable="false"></string>
+  <string name="library_com_google_firebase__firebase_encoders_json_libraryName" translatable="false">firebase-encoders-json</string>
+  <string name="library_com_google_firebase__firebase_encoders_json_libraryDescription" translatable="false"><![CDATA[]]></string>
+  <string name="library_com_google_firebase__firebase_encoders_json_libraryVersion" translatable="false">18.0.0</string>
+  <string name="library_com_google_firebase__firebase_encoders_json_libraryArtifactId" translatable="false">com.google.firebase:firebase-encoders-json:18.0.0</string>
+  <string name="library_com_google_firebase__firebase_encoders_json_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_google_firebase__firebase_encoders_json_licenseId" translatable="false">Apache_2_0</string>
+  <string name="define_plu_io_reactivex_rxjava2__rxkotlin" translatable="false">owner</string>
+  <string name="library_io_reactivex_rxjava2__rxkotlin_author" translatable="false">Thomas Nield, Vedran Prišćan</string>
+  <string name="library_io_reactivex_rxjava2__rxkotlin_authorWebsite" translatable="false">http://reactivex.io/</string>
+  <string name="library_io_reactivex_rxjava2__rxkotlin_libraryName" translatable="false">RxKotlin</string>
+  <string name="library_io_reactivex_rxjava2__rxkotlin_libraryDescription" translatable="false"><![CDATA[RxJava bindings for Kotlin]]></string>
+  <string name="library_io_reactivex_rxjava2__rxkotlin_libraryVersion" translatable="false">2.4.0</string>
+  <string name="library_io_reactivex_rxjava2__rxkotlin_libraryArtifactId" translatable="false">io.reactivex.rxjava2:rxkotlin:2.4.0</string>
+  <string name="library_io_reactivex_rxjava2__rxkotlin_libraryWebsite" translatable="false">https://github.com/ReactiveX/RxKotlin</string>
+  <string name="library_io_reactivex_rxjava2__rxkotlin_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_io_reactivex_rxjava2__rxkotlin_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_io_reactivex_rxjava2__rxkotlin_isOpenSource" translatable="false">true</string>
+  <string name="library_io_reactivex_rxjava2__rxkotlin_repositoryLink" translatable="false">https://github.com/ReactiveX/RxKotlin.git</string>
+  <string name="library_io_reactivex_rxjava2__rxkotlin_owner" translatable="false">Thomas Nield, Vedran Prišćan</string>
+  <string name="define_plu_com_jakewharton_threetenabp__threetenabp" translatable="false">owner</string>
+  <string name="library_com_jakewharton_threetenabp__threetenabp_author" translatable="false">Jake Wharton</string>
+  <string name="library_com_jakewharton_threetenabp__threetenabp_libraryName" translatable="false">ThreeTenAbp</string>
+  <string name="library_com_jakewharton_threetenabp__threetenabp_libraryDescription" translatable="false"><![CDATA[An adaptation of the JSR-310 backport for Android.]]></string>
+  <string name="library_com_jakewharton_threetenabp__threetenabp_libraryVersion" translatable="false">1.4.2</string>
+  <string name="library_com_jakewharton_threetenabp__threetenabp_libraryArtifactId" translatable="false">com.jakewharton.threetenabp:threetenabp:1.4.2</string>
+  <string name="library_com_jakewharton_threetenabp__threetenabp_libraryWebsite" translatable="false">https://github.com/JakeWharton/ThreeTenABP/</string>
+  <string name="library_com_jakewharton_threetenabp__threetenabp_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_jakewharton_threetenabp__threetenabp_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_jakewharton_threetenabp__threetenabp_isOpenSource" translatable="false">true</string>
+  <string name="library_com_jakewharton_threetenabp__threetenabp_repositoryLink" translatable="false">https://github.com/JakeWharton/ThreeTenABP/</string>
+  <string name="library_com_jakewharton_threetenabp__threetenabp_owner" translatable="false">Jake Wharton</string>
+  <string name="define_plu_com_google_firebase__firebase_measurement_connector" translatable="false"></string>
+  <string name="library_com_google_firebase__firebase_measurement_connector_libraryName" translatable="false">firebase-measurement-connector</string>
+  <string name="library_com_google_firebase__firebase_measurement_connector_libraryDescription" translatable="false"><![CDATA[]]></string>
+  <string name="library_com_google_firebase__firebase_measurement_connector_libraryVersion" translatable="false">19.0.0</string>
+  <string name="library_com_google_firebase__firebase_measurement_connector_libraryArtifactId" translatable="false">com.google.firebase:firebase-measurement-connector:19.0.0</string>
+  <string name="library_com_google_firebase__firebase_measurement_connector_licenseIds" translatable="false">ASDKL</string>
+  <string name="library_com_google_firebase__firebase_measurement_connector_licenseId" translatable="false">ASDKL</string>
+  <string name="define_plu_org_jetbrains_kotlinx__kotlinx_coroutines_android" translatable="false">owner</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_android_author" translatable="false">JetBrains Team</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_android_authorWebsite" translatable="false">https://www.jetbrains.com</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_android_libraryName" translatable="false">kotlinx-coroutines-android</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_android_libraryDescription" translatable="false"><![CDATA[Coroutines support libraries for Kotlin]]></string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_android_libraryVersion" translatable="false">1.6.1</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_android_libraryArtifactId" translatable="false">org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_android_libraryWebsite" translatable="false">https://github.com/Kotlin/kotlinx.coroutines</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_android_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_android_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_android_isOpenSource" translatable="false">true</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_android_repositoryLink" translatable="false">https://github.com/Kotlin/kotlinx.coroutines</string>
+  <string name="library_org_jetbrains_kotlinx__kotlinx_coroutines_android_owner" translatable="false">JetBrains Team</string>
+  <string name="define_plu_io_whitfin__siphash" translatable="false">owner</string>
+  <string name="library_io_whitfin__siphash_author" translatable="false">Isaac Whitfield</string>
+  <string name="library_io_whitfin__siphash_libraryName" translatable="false">SipHash</string>
+  <string name="library_io_whitfin__siphash_libraryDescription" translatable="false"><![CDATA[
+        Various Java implementations of the SipHash cryptographic hash family.
+    ]]></string>
+  <string name="library_io_whitfin__siphash_libraryVersion" translatable="false">2.0.0</string>
+  <string name="library_io_whitfin__siphash_libraryArtifactId" translatable="false">io.whitfin:siphash:2.0.0</string>
+  <string name="library_io_whitfin__siphash_libraryWebsite" translatable="false">https://github.com/whitfin/siphash-java</string>
+  <string name="library_io_whitfin__siphash_licenseIds" translatable="false">MIT</string>
+  <string name="library_io_whitfin__siphash_licenseId" translatable="false">MIT</string>
+  <string name="library_io_whitfin__siphash_isOpenSource" translatable="false">true</string>
+  <string name="library_io_whitfin__siphash_repositoryLink" translatable="false">git@github.com:whitfin/siphash-java.git</string>
+  <string name="library_io_whitfin__siphash_owner" translatable="false">Isaac Whitfield</string>
+  <string name="define_plu_com_github_nekocode__Badge" translatable="false"></string>
+  <string name="library_com_github_nekocode__Badge_libraryName" translatable="false">com.github.nekocode:Badge</string>
+  <string name="library_com_github_nekocode__Badge_libraryDescription" translatable="false"><![CDATA[]]></string>
+  <string name="library_com_github_nekocode__Badge_libraryVersion" translatable="false">2.1</string>
+  <string name="library_com_github_nekocode__Badge_libraryArtifactId" translatable="false">com.github.nekocode:Badge:2.1</string>
+  <string name="define_plu_com_google_firebase__firebase_common" translatable="false"></string>
+  <string name="library_com_google_firebase__firebase_common_libraryName" translatable="false">firebase-common</string>
+  <string name="library_com_google_firebase__firebase_common_libraryDescription" translatable="false"><![CDATA[]]></string>
+  <string name="library_com_google_firebase__firebase_common_libraryVersion" translatable="false">20.1.1</string>
+  <string name="library_com_google_firebase__firebase_common_libraryArtifactId" translatable="false">com.google.firebase:firebase-common:20.1.1</string>
+  <string name="library_com_google_firebase__firebase_common_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_google_firebase__firebase_common_licenseId" translatable="false">Apache_2_0</string>
+  <string name="define_plu_com_squareup_okio__okio" translatable="false">owner</string>
+  <string name="library_com_squareup_okio__okio_author" translatable="false">Square, Inc</string>
+  <string name="library_com_squareup_okio__okio_libraryName" translatable="false">Okio</string>
+  <string name="library_com_squareup_okio__okio_libraryDescription" translatable="false"><![CDATA[A modern I/O API for Java]]></string>
+  <string name="library_com_squareup_okio__okio_libraryVersion" translatable="false">2.10.0</string>
+  <string name="library_com_squareup_okio__okio_libraryArtifactId" translatable="false">com.squareup.okio:okio:2.10.0</string>
+  <string name="library_com_squareup_okio__okio_libraryWebsite" translatable="false">https://github.com/square/okio/</string>
+  <string name="library_com_squareup_okio__okio_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_squareup_okio__okio_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_squareup_okio__okio_isOpenSource" translatable="false">true</string>
+  <string name="library_com_squareup_okio__okio_repositoryLink" translatable="false">https://github.com/square/okio/</string>
+  <string name="library_com_squareup_okio__okio_owner" translatable="false">Square, Inc</string>
+  <string name="define_plu_com_mikepenz__fastadapter" translatable="false">owner</string>
+  <string name="library_com_mikepenz__fastadapter_author" translatable="false">Mike Penz</string>
+  <string name="library_com_mikepenz__fastadapter_libraryName" translatable="false">FastAdapter Library</string>
+  <string name="library_com_mikepenz__fastadapter_libraryDescription" translatable="false"><![CDATA[The bullet proof, fast and easy to use adapter library, which minimizes developing time to a fraction...]]></string>
+  <string name="library_com_mikepenz__fastadapter_libraryVersion" translatable="false">5.7.0</string>
+  <string name="library_com_mikepenz__fastadapter_libraryArtifactId" translatable="false">com.mikepenz:fastadapter:5.7.0</string>
+  <string name="library_com_mikepenz__fastadapter_libraryWebsite" translatable="false">https://github.com/mikepenz/FastAdapter</string>
+  <string name="library_com_mikepenz__fastadapter_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_mikepenz__fastadapter_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_com_mikepenz__fastadapter_isOpenSource" translatable="false">true</string>
+  <string name="library_com_mikepenz__fastadapter_repositoryLink" translatable="false">https://github.com/mikepenz/FastAdapter</string>
+  <string name="library_com_mikepenz__fastadapter_owner" translatable="false">Mike Penz</string>
+  <string name="define_plu_com_google_firebase__firebase_bom" translatable="false"></string>
+  <string name="library_com_google_firebase__firebase_bom_libraryName" translatable="false">com.google.firebase:firebase-bom</string>
+  <string name="library_com_google_firebase__firebase_bom_libraryDescription" translatable="false"><![CDATA[]]></string>
+  <string name="library_com_google_firebase__firebase_bom_libraryVersion" translatable="false">30.3.1</string>
+  <string name="library_com_google_firebase__firebase_bom_libraryArtifactId" translatable="false">com.google.firebase:firebase-bom:30.3.1</string>
+  <string name="library_com_google_firebase__firebase_bom_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_google_firebase__firebase_bom_licenseId" translatable="false">Apache_2_0</string>
+  <string name="define_plu_com_google_firebase__firebase_installations" translatable="false"></string>
+  <string name="library_com_google_firebase__firebase_installations_libraryName" translatable="false">firebase-installations</string>
+  <string name="library_com_google_firebase__firebase_installations_libraryDescription" translatable="false"><![CDATA[]]></string>
+  <string name="library_com_google_firebase__firebase_installations_libraryVersion" translatable="false">17.0.1</string>
+  <string name="library_com_google_firebase__firebase_installations_libraryArtifactId" translatable="false">com.google.firebase:firebase-installations:17.0.1</string>
+  <string name="library_com_google_firebase__firebase_installations_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_com_google_firebase__firebase_installations_licenseId" translatable="false">Apache_2_0</string>
+  <string name="define_plu_net_jcip__jcip_annotations" translatable="false"></string>
+  <string name="library_net_jcip__jcip_annotations_libraryName" translatable="false">\"Java Concurrency in Practice\" book annotations</string>
+  <string name="library_net_jcip__jcip_annotations_libraryDescription" translatable="false"><![CDATA[]]></string>
+  <string name="library_net_jcip__jcip_annotations_libraryVersion" translatable="false">1.0</string>
+  <string name="library_net_jcip__jcip_annotations_libraryArtifactId" translatable="false">net.jcip:jcip-annotations:1.0</string>
+  <string name="library_net_jcip__jcip_annotations_libraryWebsite" translatable="false">http://jcip.net/</string>
+  <string name="define_plu_org_jetbrains__annotations" translatable="false">owner</string>
+  <string name="library_org_jetbrains__annotations_author" translatable="false">JetBrains Team</string>
+  <string name="library_org_jetbrains__annotations_authorWebsite" translatable="false">https://www.jetbrains.com</string>
+  <string name="library_org_jetbrains__annotations_libraryName" translatable="false">JetBrains Java Annotations</string>
+  <string name="library_org_jetbrains__annotations_libraryDescription" translatable="false"><![CDATA[A set of annotations used for code inspection support and code documentation.]]></string>
+  <string name="library_org_jetbrains__annotations_libraryVersion" translatable="false">20.1.0</string>
+  <string name="library_org_jetbrains__annotations_libraryArtifactId" translatable="false">org.jetbrains:annotations:20.1.0</string>
+  <string name="library_org_jetbrains__annotations_libraryWebsite" translatable="false">https://github.com/JetBrains/java-annotations</string>
+  <string name="library_org_jetbrains__annotations_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_org_jetbrains__annotations_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_org_jetbrains__annotations_isOpenSource" translatable="false">true</string>
+  <string name="library_org_jetbrains__annotations_repositoryLink" translatable="false">https://github.com/JetBrains/java-annotations</string>
+  <string name="library_org_jetbrains__annotations_owner" translatable="false">JetBrains Team</string>
+  <string name="define_plu_org_isomorphism__token_bucket" translatable="false">owner</string>
+  <string name="library_org_isomorphism__token_bucket_author" translatable="false">Brandon Beck</string>
+  <string name="library_org_isomorphism__token_bucket_libraryName" translatable="false">token-bucket</string>
+  <string name="library_org_isomorphism__token_bucket_libraryDescription" translatable="false"><![CDATA[Token bucket algorithm for rate-limiting]]></string>
+  <string name="library_org_isomorphism__token_bucket_libraryVersion" translatable="false">1.6</string>
+  <string name="library_org_isomorphism__token_bucket_libraryArtifactId" translatable="false">org.isomorphism:token-bucket:1.6</string>
+  <string name="library_org_isomorphism__token_bucket_libraryWebsite" translatable="false">http://github.com/bbeck/token-bucket</string>
+  <string name="library_org_isomorphism__token_bucket_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_org_isomorphism__token_bucket_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_org_isomorphism__token_bucket_isOpenSource" translatable="false">true</string>
+  <string name="library_org_isomorphism__token_bucket_repositoryLink" translatable="false">http://github.com/bbeck/token-bucket</string>
+  <string name="library_org_isomorphism__token_bucket_owner" translatable="false">Brandon Beck</string>
+  <string name="define_plu_org_apache_commons__commons_text" translatable="false">owner</string>
+  <string name="library_org_apache_commons__commons_text_author" translatable="false">Bruno P. Kinoshita, Benedikt Ritter, Rob Tompkins, Gary Gregory, Duncan Jones</string>
+  <string name="library_org_apache_commons__commons_text_libraryName" translatable="false">Apache Commons Text</string>
+  <string name="library_org_apache_commons__commons_text_libraryDescription" translatable="false"><![CDATA[Apache Commons Text is a library focused on algorithms working on strings.]]></string>
+  <string name="library_org_apache_commons__commons_text_libraryVersion" translatable="false">1.9</string>
+  <string name="library_org_apache_commons__commons_text_libraryArtifactId" translatable="false">org.apache.commons:commons-text:1.9</string>
+  <string name="library_org_apache_commons__commons_text_libraryWebsite" translatable="false">https://commons.apache.org/proper/commons-text</string>
+  <string name="library_org_apache_commons__commons_text_isOpenSource" translatable="false">true</string>
+  <string name="library_org_apache_commons__commons_text_repositoryLink" translatable="false">https://gitbox.apache.org/repos/asf?p=commons-text.git</string>
+  <string name="library_org_apache_commons__commons_text_owner" translatable="false">Bruno P. Kinoshita, Benedikt Ritter, Rob Tompkins, Gary Gregory, Duncan Jones</string>
+  <string name="define_plu_io_objectbox__objectbox_java_api" translatable="false">owner</string>
+  <string name="library_io_objectbox__objectbox_java_api_author" translatable="false">ObjectBox</string>
+  <string name="library_io_objectbox__objectbox_java_api_authorWebsite" translatable="false">https://objectbox.io</string>
+  <string name="library_io_objectbox__objectbox_java_api_libraryName" translatable="false">ObjectBox API</string>
+  <string name="library_io_objectbox__objectbox_java_api_libraryDescription" translatable="false"><![CDATA[ObjectBox is a fast NoSQL database for Objects]]></string>
+  <string name="library_io_objectbox__objectbox_java_api_libraryVersion" translatable="false">3.5.0</string>
+  <string name="library_io_objectbox__objectbox_java_api_libraryArtifactId" translatable="false">io.objectbox:objectbox-java-api:3.5.0</string>
+  <string name="library_io_objectbox__objectbox_java_api_libraryWebsite" translatable="false">https://objectbox.io</string>
+  <string name="library_io_objectbox__objectbox_java_api_licenseIds" translatable="false">Apache_2_0</string>
+  <string name="library_io_objectbox__objectbox_java_api_licenseId" translatable="false">Apache_2_0</string>
+  <string name="library_io_objectbox__objectbox_java_api_isOpenSource" translatable="false">true</string>
+  <string name="library_io_objectbox__objectbox_java_api_repositoryLink" translatable="false">https://github.com/objectbox/objectbox-java</string>
+  <string name="library_io_objectbox__objectbox_java_api_owner" translatable="false">ObjectBox</string>
+  <string name="config_aboutLibraries_plugin" translatable="false">yes</string>
+</resources>

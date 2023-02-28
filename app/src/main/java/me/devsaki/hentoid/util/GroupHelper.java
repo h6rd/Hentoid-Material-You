@@ -22,7 +22,6 @@ import me.devsaki.hentoid.database.domains.Group;
 import me.devsaki.hentoid.database.domains.GroupItem;
 import me.devsaki.hentoid.database.domains.ImageFile;
 import me.devsaki.hentoid.enums.Grouping;
-import me.devsaki.hentoid.enums.StorageLocation;
 import me.devsaki.hentoid.json.JsonContentCollection;
 import me.devsaki.hentoid.util.file.FileHelper;
 import timber.log.Timber;
@@ -87,8 +86,6 @@ public final class GroupHelper {
 
     /**
      * Update the JSON file that stores the groups with all the groups of the app
-     * NB : JSON is created to keep the information in case the app gets uninstalled
-     * or the library gets refreshed
      *
      * @param context Context to be used
      * @param dao     DAO to be used
@@ -96,20 +93,12 @@ public final class GroupHelper {
      */
     public static boolean updateGroupsJson(@NonNull Context context, @NonNull CollectionDAO dao) {
         Helper.assertNonUiThread();
-
-        JsonContentCollection contentCollection = new JsonContentCollection();
-
-        // Save custom groups
         List<Group> customGroups = dao.selectGroups(Grouping.CUSTOM.getId());
-        contentCollection.setGroups(Grouping.CUSTOM, customGroups);
+        // Save custom groups (to be able to restore them in case the app gets uninstalled)
+        JsonContentCollection contentCollection = new JsonContentCollection();
+        contentCollection.setCustomGroups(customGroups);
 
-        // Save other groups whose favourite or rating has been set
-        List<Group> editedArtistGroups = dao.selectEditedGroups(Grouping.ARTIST.getId());
-        contentCollection.setGroups(Grouping.ARTIST, editedArtistGroups);
-        List<Group> editedDateGroups = dao.selectEditedGroups(Grouping.DL_DATE.getId());
-        contentCollection.setGroups(Grouping.DL_DATE, editedDateGroups);
-
-        DocumentFile rootFolder = FileHelper.getDocumentFromTreeUriString(context, Preferences.getStorageUri(StorageLocation.PRIMARY_1));
+        DocumentFile rootFolder = FileHelper.getFolderFromTreeUriString(context, Preferences.getStorageUri());
         if (null == rootFolder) return false;
 
         try {
@@ -217,13 +206,6 @@ public final class GroupHelper {
         return artistGroup;
     }
 
-    /**
-     * Indicate wether the given Content is linked to the given Group
-     *
-     * @param content Content to test
-     * @param group   Group to test against
-     * @return True if the given Content is linked to the given Group; false if not
-     */
     private static boolean isContentLinkedToGroup(@NonNull Content content, @NonNull Group group) {
         for (GroupItem item : content.getGroupItems(group.grouping)) {
             if (item.group.getTarget().equals(group)) return true;
@@ -231,13 +213,7 @@ public final class GroupHelper {
         return false;
     }
 
-    /**
-     * Remove the given Content from the given Grouping
-     *
-     * @param grouping Grouping to remove the given Content from
-     * @param content  Content to remove
-     * @param dao      DAO to use
-     */
+    // TODO
     public static void removeContentFromGrouping(@NonNull Grouping grouping, @NonNull Content content, @NonNull CollectionDAO dao) {
         List<GroupItem> toRemove = new ArrayList<>();
         List<Group> needCoverUpdate = new ArrayList<>();

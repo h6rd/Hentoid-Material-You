@@ -15,6 +15,8 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
+import com.bumptech.glide.integration.webp.decoder.WebpDrawable
+import com.bumptech.glide.integration.webp.decoder.WebpDrawableTransformation
 import com.bumptech.glide.load.Transformation
 import com.bumptech.glide.load.resource.bitmap.CenterInside
 import com.bumptech.glide.request.RequestOptions
@@ -140,8 +142,9 @@ class MetadataEditActivity : BaseActivity(), GalleyPickerDialogFragment.Parent,
         viewModel = ViewModelProvider(this, vmFactory)[MetadataEditViewModel::class.java]
 
         val currentContent = viewModel.getContent().value
-        // ViewModel hasn't loaded anything yet (fresh start)
-        if (currentContent.isNullOrEmpty()) viewModel.loadContent(contentIds)
+        if (null == currentContent || currentContent.isEmpty()) { // ViewModel hasn't loaded anything yet (fresh start)
+            viewModel.loadContent(contentIds)
+        }
 
         bindInteractions()
 
@@ -294,7 +297,6 @@ class MetadataEditActivity : BaseActivity(), GalleyPickerDialogFragment.Parent,
                         count: Int,
                         after: Int
                     ) {
-                        // Nothing to override here
                     }
 
                     override fun onTextChanged(
@@ -303,7 +305,6 @@ class MetadataEditActivity : BaseActivity(), GalleyPickerDialogFragment.Parent,
                         before: Int,
                         count: Int
                     ) {
-                        // Nothing to override here
                     }
                 }
             )
@@ -337,13 +338,7 @@ class MetadataEditActivity : BaseActivity(), GalleyPickerDialogFragment.Parent,
             // Cover
             it.ivCover.setOnClickListener {
                 binding?.let { b2 ->
-                    if (contents.size > 1) {
-                        Snackbar.make(
-                            b2.root,
-                            R.string.meta_cover_multiple_warning,
-                            BaseTransientBottomBar.LENGTH_SHORT
-                        ).show()
-                    } else {
+                    if (1 == contents.size) {
                         if (contents[0].isArchive) {
                             Snackbar.make(
                                 b2.root,
@@ -354,10 +349,20 @@ class MetadataEditActivity : BaseActivity(), GalleyPickerDialogFragment.Parent,
                             val imgs = contents[0].imageFiles?.filter { i -> i.isReadable }
                             if (imgs != null) {
                                 b2.titleNew.visibility = View.GONE
+                                b2.tags.visibility = View.GONE
                                 b2.tagsFab.visibility = View.GONE
-                                GalleyPickerDialogFragment.invoke(supportFragmentManager, imgs)
+                                GalleyPickerDialogFragment.invoke(
+                                    supportFragmentManager,
+                                    imgs
+                                )
                             }
                         }
+                    } else {
+                        Snackbar.make(
+                            b2.root,
+                            R.string.meta_cover_multiple_warning,
+                            BaseTransientBottomBar.LENGTH_SHORT
+                        ).show()
                     }
                 }
             }
@@ -412,30 +417,24 @@ class MetadataEditActivity : BaseActivity(), GalleyPickerDialogFragment.Parent,
             .addItem(
                 PowerMenuItem(
                     resources.getString(R.string.menu_edit_name),
-                    false,
                     R.drawable.ic_edit_square,
-                    null,
-                    null,
+                    false,
                     0
                 )
             )
             .addItem(
                 PowerMenuItem(
                     resources.getString(R.string.meta_replace_with),
-                    false,
                     R.drawable.ic_replace,
-                    null,
-                    null,
+                    false,
                     1
                 )
             )
             .addItem(
                 PowerMenuItem(
                     resources.getString(R.string.remove_generic),
-                    false,
                     R.drawable.ic_action_delete,
-                    null,
-                    null,
+                    false,
                     3
                 )
             )
@@ -454,10 +453,8 @@ class MetadataEditActivity : BaseActivity(), GalleyPickerDialogFragment.Parent,
                 1,
                 PowerMenuItem(
                     resources.getString(R.string.meta_tag_all_selected),
-                    false,
                     R.drawable.ic_action_select_all,
-                    null,
-                    null,
+                    false,
                     2
                 )
             )
@@ -473,14 +470,12 @@ class MetadataEditActivity : BaseActivity(), GalleyPickerDialogFragment.Parent,
                             item.attribute.id
                         )
                     }
-
                     1 -> { // Replace with...
                         MetaEditBottomSheetFragment.invoke(
                             this,
                             supportFragmentManager, false, item.attribute.id
                         )
                     }
-
                     2 -> { // Tag all selected books
                         val builder = MaterialAlertDialogBuilder(this)
                         val title = resources.getString(
@@ -498,7 +493,6 @@ class MetadataEditActivity : BaseActivity(), GalleyPickerDialogFragment.Parent,
                             .create().show()
 
                     }
-
                     else -> { // Remove
                         viewModel.removeContentAttribute(item.attribute)
                     }
@@ -526,7 +520,7 @@ class MetadataEditActivity : BaseActivity(), GalleyPickerDialogFragment.Parent,
     }
 
     private fun cancelEdit() {
-        finish()
+        onBackPressed()
     }
 
     /**
@@ -567,5 +561,9 @@ class MetadataEditActivity : BaseActivity(), GalleyPickerDialogFragment.Parent,
         val centerInside: Transformation<Bitmap> = CenterInside()
         val glideRequestOptions = RequestOptions()
             .optionalTransform(centerInside)
+            .optionalTransform(
+                WebpDrawable::class.java,
+                WebpDrawableTransformation(centerInside)
+            )
     }
 }

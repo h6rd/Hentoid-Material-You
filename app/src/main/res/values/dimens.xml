@@ -34,7 +34,7 @@
     <dimen name="drawer_layout_elevation">4dp</dimen>
     <dimen name="drawer_layout_header_elevation">6dp</dimen>
     <dimen name="drawer_menu_elevation">2dp</dimen>
-    <dimen name="toolbar_layout_elevation">6dp</dimen>
+    <dimen name="toolbar_layout_elevation">0dp</dimen>
 
     <!-- browser -->
     <dimen name="download_fab_margin">8dp</dimen>
@@ -56,7 +56,7 @@
     <dimen name="about_ic_icons_width">30dp</dimen>
     <dimen name="about_ic_icons_height">30dp</dimen>
     <dimen name="about_ic_icons_textSize">12sp</dimen>
-    <dimen name="about_textSize">10sp</dimen>
+    <dimen name="about_textSize">12sp</dimen>
 
     <!-- card view -->
     <dimen name="default_cardview_margin">8dp</dimen>

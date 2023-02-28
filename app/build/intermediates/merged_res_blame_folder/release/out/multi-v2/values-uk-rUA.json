@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "me.devsaki.hentoid.app-mergeReleaseResources-66:/values-uk-rUA/values-uk-rUA.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\hrdq\\.gradle\\caches\\transforms-3\\791595cb6e1032b66326571e0be886a4\\transformed\\AppIntro-6.1.0\\res\\values-uk-rUA\\values-uk-rUA.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,111,168,243,298",
+                        "endColumns": "55,56,74,54,60",
+                        "endOffsets": "106,163,238,293,354"
+                    }
+                }
+            ]
+        }
+    ]
+}

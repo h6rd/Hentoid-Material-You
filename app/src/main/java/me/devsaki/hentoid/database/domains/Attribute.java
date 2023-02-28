@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 
 import java.io.DataInputStream;
 import java.io.IOException;
-import java.util.Locale;
 import java.util.Objects;
 
 import javax.annotation.Nonnull;
@@ -207,7 +206,7 @@ public class Attribute {
     @NonNull
     @Override
     public String toString() {
-        return getType().name().toLowerCase(Locale.ROOT) + ":" + getName();
+        return getName();
     }
 
     // Hashcode (and by consequence equals) has to take into account fields that get visually updated on the app UI

@@ -1,0 +1,1354 @@
+[
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_fragment_pin_preference_off.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_pin_preference_off.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_direction_ltr_icons.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_direction_ltr_icons.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_mrm.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_mrm.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_item_changelog.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_changelog.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_hdporncomics.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_hdporncomics.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_archive.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_archive.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_folder_delete.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_folder_delete.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_reader_browse_mode_chooser.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_reader_browse_mode_chooser.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_progress.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_progress.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_include_queue_bottom_bar.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_queue_bottom_bar.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_next_item.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_next_item.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_fragment_duplicate_details.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_duplicate_details.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_nhentai.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_nhentai.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/menu_queue_queue_selection_menu.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/menu/queue_queue_selection_menu.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_meta_rename.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_meta_rename.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_selector_back_action.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/selector_back_action.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_item_attribute_type_filter.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_attribute_type_filter.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_selector_download_action.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/selector_download_action.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable-xxxhdpi_ic_hentoid.png.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable-xxxhdpi/ic_hentoid.png"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_flag_unknown.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/flag_unknown.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_intro_slide_02.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/intro_slide_02.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_forbidden_disabled.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_forbidden_disabled.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_star_3.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_star_3.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_add.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_add.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_fav_toggle.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_fav_toggle.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_fav_empty.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_fav_empty.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_attribute_source.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_attribute_source.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_item_rule.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_rule.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_menu_prefs.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_menu_prefs.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/menu_rules_menu.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/menu/rules_menu.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_flag_vn.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/flag_vn.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_nexus.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_nexus.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_bg_book_card.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/bg_book_card.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_activity_library.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_library.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_selector_page_seek.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/selector_page_seek.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/menu_viewer_pager_menu.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/menu/viewer_pager_menu.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_simple_arrow_up.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_simple_arrow_up.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_star_4.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_star_4.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_activity_meta_edit.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_meta_edit.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_storage.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_storage.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_exhentai.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_exhentai.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_item_duplicate_detail.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_duplicate_detail.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_selector_chip_pressed.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/selector_chip_pressed.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/menu_queue_error_selection_menu.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/menu/queue_error_selection_menu.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_panda.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_panda.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_star_1.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_star_1.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_intro_slide_01.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/intro_slide_01.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_meta_new_attribute.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_meta_new_attribute.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_library_update_success.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_library_update_success.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_hbrowse.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_hbrowse.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_drop_down.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_drop_down.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/color_selector_tab_icon.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/color/selector_tab_icon.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_item_badge.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_badge.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_star_full.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_star_full.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_filter_favs_off.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_filter_favs_off.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_folders.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_folders.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_intro_slide_04.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/intro_slide_04.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_flag_hu.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/flag_hu.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_close.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_close.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_tools_app_logs.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_tools_app_logs.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_lightbulb.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_lightbulb.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_attribute_language.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_attribute_language.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_prefs_refresh.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_prefs_refresh.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_library_change_group.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_library_change_group.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_include_library_groups_bottom_panel.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_library_groups_bottom_panel.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_hentaicafe.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_hentaicafe.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_fragment_pin_dialog.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_pin_dialog.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_queue_errors.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_queue_errors.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/color_secondary_color_selector.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/color/secondary_color_selector.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_activity_splash.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_ehentai.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_ehentai.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_selector_button_solid.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/selector_button_solid.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_bookmark_full.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_bookmark_full.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/anim_fade_out.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/anim/fade_out.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_toonily.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_toonily.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_activity_base_web.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_base_web.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_library_merge.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_library_merge.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_selector_chip_enabled.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/selector_chip_enabled.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_item_text.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_text.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_import_export.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_import_export.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_include_library_sort_filter_bottom_panel.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_library_sort_filter_bottom_panel.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_item_library_content.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_library_content.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_flag_cn.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/flag_cn.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_item_library_group.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_library_group.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_simply.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_simply.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_selector_chip_disabled.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/selector_chip_disabled.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_launcher_background.xml.flat",
+        "source": "me.devsaki.hentoid.app-debug-70:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_hentoid_big.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_hentoid_big.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_select_all.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_select_all.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_edit.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_edit.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_menu_home.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_menu_home.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/menu_library_selection_menu.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/menu/library_selection_menu.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_intro_slide_06.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/intro_slide_06.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_item_reader_image.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_reader_image.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_include_rules_controls.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_rules_controls.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_item_reader_gallery_image.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_reader_gallery_image.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_queue.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_queue.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_pause.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_pause.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_page_seek.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_page_seek.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/color_secondary_text_color_selector.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/color/secondary_text_color_selector.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_book.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_book.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_include_reader_controls_overlay.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_reader_controls_overlay.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_include_library_alert_banner.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_library_alert_banner.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_activity_missing_web_view.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_missing_web_view.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_include_library_search_subbar.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_library_search_subbar.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_prefs_memory.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_prefs_memory.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_images.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_images.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_chapter.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_chapter.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_page.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_page.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_attribute_tag.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_attribute_tag.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_activity_drawer_edit.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_drawer_edit.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_download_stream_disabled.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_download_stream_disabled.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_item_library_group_grid.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_library_group_grid.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_fragment_library_content.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_library_content.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_library_split.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_library_split.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/menu_library_menu.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/menu/library_menu.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_fragment_reader_gallery.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_reader_gallery.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_clock.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_clock.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_intro_slide_05.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/intro_slide_05.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable-xhdpi_ic_hentoid_trans.png.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable-xhdpi/ic_hentoid_trans.png"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_check_mark.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/check_mark.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_menu_sort_123.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_menu_sort_123.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_previous_item.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_previous_item.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_share.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_share.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/menu_viewer_gallery_menu.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/menu/viewer_gallery_menu.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_download_stream.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_download_stream.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_filter_favs_on.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_filter_favs_on.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_include_import_steps.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_import_steps.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_flag_cz.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/flag_cz.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_flag_pt.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/flag_pt.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_item_expandable.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_expandable.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_item_library_content_grid.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_library_content_grid.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_fragment_reader_pager.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_reader_pager.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_hentoid_shape.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_hentoid_shape.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_star_5.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_star_5.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_ui.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_ui.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_web_duplicate.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_web_duplicate.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_edit_square.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_edit_square.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/xml_file_paths.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/xml/file_paths.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_item_queue.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_queue.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_star_none.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_star_none.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_cancel.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_cancel.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_asmcomics.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_asmcomics.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_menu_sort_random.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_menu_sort_random.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_fragment_library_groups.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_library_groups.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_asmhentai.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_asmhentai.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/raw_license_apache_2_0.txt.flat",
+        "source": "me.devsaki.hentoid.app-debug-60:/raw/license_apache_2_0.txt"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable-xxhdpi_ic_hentoid_trans.png.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable-xxhdpi/ic_hentoid_trans.png"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_folder_edit.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_folder_edit.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_lock.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_lock.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_include_duplicate_controls.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_duplicate_controls.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_drawer.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_drawer.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_porncomix.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_porncomix.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_refresh.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_refresh.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_settings.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/raw_license_asdkl.txt.flat",
+        "source": "me.devsaki.hentoid.app-debug-60:/raw/license_asdkl.txt"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_activity_duplicate_detector.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_duplicate_detector.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_flag_ru.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/flag_ru.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_item_chip_choice.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_chip_choice.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_bookmark.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_bookmark.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_fragment_duplicate_main.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_duplicate_main.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_download.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_download.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_fav_bottom_half.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_fav_bottom_half.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_split.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_split.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_manhwa18.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_manhwa18.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_page_seek_disabled.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_page_seek_disabled.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_new.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_new.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_attribute_artist.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_attribute_artist.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_page_fav.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_page_fav.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_include_item_details.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_item_details.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_attribute_serie.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_attribute_serie.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_fragment_pin_preference_on.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_pin_preference_on.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_web_bookmarks.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_web_bookmarks.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_item_pagecarousel.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_pagecarousel.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_sort.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_sort.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_completed_empty.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_completed_empty.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_tsumino.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_tsumino.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_view_gallery.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_view_gallery.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "me.devsaki.hentoid.app-debug-70:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/menu_duplicate_detector_menu.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/menu/duplicate_detector_menu.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_view_list.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_view_list.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_info.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_info.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_flag_es.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/flag_es.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/anim_check_animation.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/anim/check_animation.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_intro_slide_end.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/intro_slide_end.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_library_rating.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_library_rating.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_unchecked.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_unchecked.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_warning.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_warning.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_bg_nav_header.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/bg_nav_header.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_queue_downloads_import.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_queue_downloads_import.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_checked_circle.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_checked_circle.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_delete.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_delete.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/menu_web_menu_bottom.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/menu/web_menu_bottom.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_reorder.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_reorder.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/raw_license_mit.txt.flat",
+        "source": "me.devsaki.hentoid.app-debug-60:/raw/license_mit.txt"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_download_plus.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_download_plus.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_hentaifox.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_hentaifox.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_backspace.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_backspace.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_selector_button_neutral.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/selector_button_neutral.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_error.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_error.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_open_in_new.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_open_in_new.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_flag_uk.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/flag_uk.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/raw_license_cc0_1_0.txt.flat",
+        "source": "me.devsaki.hentoid.app-debug-60:/raw/license_cc0_1_0.txt"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_book_fav.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_book_fav.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_fragment_queue_errors.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_queue_errors.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_merge.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_merge.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_bg_badge.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/bg_badge.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_fav_top_half.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_fav_top_half.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_reader_delete.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_reader_delete.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_hitomi.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_hitomi.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_flag_fr.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/flag_fr.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_library_search_id.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_library_search_id.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_hentai2read.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_hentai2read.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_folder.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_folder.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/xml_searchable.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/xml/searchable.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_flag_de.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/flag_de.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable-mdpi_ic_hentoid_trans.png.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable-mdpi/ic_hentoid_trans.png"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_replace.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_replace.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_menu_search.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_menu_search.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_social_reddit.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_social_reddit.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_library_errors.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_library_errors.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable-mdpi_ic_hentoid.png.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable-mdpi/ic_hentoid.png"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_reader_book_prefs.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_reader_book_prefs.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_activity_about.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_about.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_back_gallery_disabled.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_back_gallery_disabled.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_meta_gallery.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_meta_gallery.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/menu_meta_edit_menu.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/menu/meta_edit_menu.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_selector_button_circle.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/selector_button_circle.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/menu_rules_selection_menu.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/menu/rules_selection_menu.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable-xhdpi_ic_hentoid.png.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable-xhdpi/ic_hentoid.png"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_simple_arrow_down.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_simple_arrow_down.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_item_drawer_edit.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_drawer_edit.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_8muses.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_8muses.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/color_secondary_text_color_selector_check.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/color/secondary_text_color_selector_check.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_slideshow.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_slideshow.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_search.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_search.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_flag_kr.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/flag_kr.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_error_outline.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_error_outline.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_pixiv.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_pixiv.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/color_primary_text_color_selector.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/color/primary_text_color_selector.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_forward.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_forward.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_multporn.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_multporn.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_tools_meta_export.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_tools_meta_export.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_fragment_queue.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_queue.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_back_gallery.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_back_gallery.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_back.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_back.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_activity_queue.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_queue.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/xml_preferences.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/xml/preferences.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_include_reader_content_bottom_panel.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_reader_content_bottom_panel.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable-hdpi_ic_hentoid.png.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable-hdpi/ic_hentoid.png"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/menu_web_bookmarks_selection_menu.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/menu/web_bookmarks_selection_menu.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_logs.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_logs.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_item_drawer.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_drawer.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_manhwa.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_manhwa.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_selector_back_gallery.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/selector_back_gallery.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_bottom.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_bottom.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_launcher.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_launcher.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_flag_multiple.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/flag_multiple.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_round_corners.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/round_corners.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable-hdpi_ic_hentoid_trans.png.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable-hdpi/ic_hentoid_trans.png"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_play.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_play.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_bg_pin_dialog.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/bg_pin_dialog.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_download_disabled.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_download_disabled.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_meta_rule_edit.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_meta_rule_edit.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/menu_drawer_edit_menu.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/menu/drawer_edit_menu.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_direction_rtl_icons.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_direction_rtl_icons.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_fragment_library.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_library.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_make_cover.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_make_cover.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_help_outline.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_help_outline.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_include_reader_image_bottom_panel.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_reader_image_bottom_panel.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/raw_sites.json.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/raw/sites.json"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/menu_web_menu_top.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/menu/web_menu_top.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_icon.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_icon.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/raw_languages.json.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/raw/languages.json"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_circle.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_circle.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_selector_search_card.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/selector_search_card.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_activity_api29_migration.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_api29_migration.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable-xxxhdpi_ic_hentoid_trans.png.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable-xxxhdpi/ic_hentoid_trans.png"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_fav_full.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_fav_full.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_fragment_changelog.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_changelog.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_forbidden.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_forbidden.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_download_scratch.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_download_scratch.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_flag_th.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/flag_th.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_imhentai.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_imhentai.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_tools.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_tools.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_keyboard_arrow_up.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_keyboard_arrow_up.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_include_search_bottom_panel.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_search_bottom_panel.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_nuclear.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_nuclear.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_forward_disabled.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_forward_disabled.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_doujins.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_doujins.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_activity_search.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_search.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_item_duplicate_main.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/item_duplicate_main.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_activity_rules.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/activity_rules.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_flag_it.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/flag_it.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_tools_settings_import.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_tools_settings_import.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_flag_jp.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/flag_jp.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_flag_tr.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/flag_tr.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_checked.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_checked.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_social_github.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_social_github.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_direction_ttb_icons.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_direction_ttb_icons.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_bg_spinner_border.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/bg_spinner_border.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_fragment_navigation_drawer.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/fragment_navigation_drawer.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable-xxhdpi_ic_hentoid.png.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable-xxhdpi/ic_hentoid.png"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/color_secondary_color_selector_check.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/color/secondary_color_selector_check.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_fakku.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_fakku.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_allporncomic.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_allporncomic.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_bg_fab_extended.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/bg_fab_extended.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_copy.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_copy.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_selector_chip.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/selector_chip.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/xml_tools.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/xml/tools.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_cache.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_cache.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_flag_in.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/flag_in.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_back_disabled.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_back_disabled.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_check_mark_anim.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/check_mark_anim.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_folder_full.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_folder_full.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/xml_locales_config.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/xml/locales_config.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_attribute_character.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_attribute_character.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_reorder_lines.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_reorder_lines.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_flag_pl.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/flag_pl.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/menu_viewer_gallery_selection_menu.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/menu/viewer_gallery_selection_menu.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_star_2.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_star_2.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_completed.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_completed.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_action_top.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_action_top.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_social_discord.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_social_discord.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_selector_forward_action.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/selector_forward_action.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_drop_up.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_drop_up.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/menu_queue_and_error_menu.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/menu/queue_and_error_menu.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_selector_download_stream_action.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/selector_download_stream_action.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/anim_fade_in.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/anim/fade_in.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_dialog_tools_meta_import.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/dialog_tools_meta_import.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_selector_search_card_base.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/selector_search_card_base.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_exclamation.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_exclamation.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_luscious.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_luscious.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_checked_square.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_checked_square.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_site_pururin.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_site_pururin.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_arrow_back.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_arrow_back.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/drawable_ic_star_empty.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/drawable/ic_star_empty.xml"
+    },
+    {
+        "merged": "me.devsaki.hentoid.app-merged_res-68:/layout_include_library_pager.xml.flat",
+        "source": "me.devsaki.hentoid.app-main-71:/layout/include_library_pager.xml"
+    }
+]

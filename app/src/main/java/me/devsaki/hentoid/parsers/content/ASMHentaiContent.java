@@ -19,6 +19,8 @@ import me.devsaki.hentoid.util.StringHelper;
 import pl.droidsonroids.jspoon.annotation.Selector;
 
 public class ASMHentaiContent extends BaseContentParser {
+    @Selector(value = "div.cover a", attr = "href", defValue = "")
+    private String galleryUrl;
     @Selector(value = "div.cover a img")
     private Element cover;
     @Selector(value = "div.info h1:first-child", defValue = NO_TITLE)
@@ -43,8 +45,9 @@ public class ASMHentaiContent extends BaseContentParser {
             return new Content().setSite(Site.ASMHENTAI).setStatus(StatusContent.IGNORED);
 
         content.setSite(theUrl.toLowerCase().contains("comics") ? Site.ASMHENTAI_COMICS : Site.ASMHENTAI);
-        content.setRawUrl(theUrl);
+        if (galleryUrl.isEmpty()) return new Content().setStatus(StatusContent.IGNORED);
 
+        content.setRawUrl(galleryUrl);
         if (cover != null)
             content.setCoverImageUrl("https:" + ParseHelper.getImgSrc(cover));
 

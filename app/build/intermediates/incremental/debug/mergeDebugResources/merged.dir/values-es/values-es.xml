@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools" xmlns:ns2="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="duplicate_use_sensitivities">
+        <item>Permisiva</item>
+        <item>Normal</item>
+        <item>Estricta</item>
+    </string-array>
+    <string-array name="page_delete_choices">
+        <item>Volver a preguntar la próxima vez</item>
+        <item>No volver a preguntar para el libro actual</item>
+        <item>No volver a preguntar para la sesión actual</item>
+    </string-array>
+    <string-array name="splash_quotes" ns1:ignore="InconsistentArrays">
+        <item>arte en una aplicación</item>
+        <item>¿El libro de siempre?</item>
+        <item>app de entrenamiento a una mano</item>
+        <item>5 minutos de brazo</item>
+        <item>Manuela es tu mejor amiga</item>
+        <item>aplicación abierta, igual que la bragueta</item>
+        <item>consejo: revisa tus alrededores</item>
+        <item>sé gentil, senpai~~</item>
+        <item>cambia de pareja</item>
+        <item>hoy toca brazo</item>
+        <item>apunta arriba</item>
+        <item>daño por salpicadura</item>
+        <item>MESSIRVE</item>
+        <item>ahorcando el ganso</item>
+        <item>saltarín :3</item>
+        <item>DETRÁS DE TI</item>
+        <item>NO TE PAJEES CONMIGO, BAKA</item>
+        <item>Cargando Puerco</item>
+        <item>Papiii...</item>
+        <item>Arriba y abajo, hasta que salga</item>
+        <item>BUENARDO</item>
+        <item>¿Estás viendo porno solo, en serio?</item>
+        <item>Invita a unos amigos ;3</item>
+        <item>Pide una novia, ah, espera…</item>
+        <item>El tiempo de carga más rápido</item>
+        <item>¡LOS LIBROS SON MÁS DE 8,000!</item>
+        <item>Sorpresa, ¡ES UN TRAPO! </item>
+        <item>Disparo de larga distancia</item>
+        <item>Erectus</item>
+        <item>El niño paja</item>
+        <item>Esto se va a poner feo</item>
+        <item>Cómo le haría un buen brrrrrr</item>
+        <item>Miren esos magumbos</item>
+        <item>Viscoso pero sabroso</item>
+        <item>En tiempos de guerra, cualquier hoyo es trinchera</item>
+        <item>¿Ir a por todas?</item>
+        <item>ADVERTENCIA: NEPE COCHINO</item>
+        <item>¿Eh? ¿Ese es un pene?</item>
+        <item>Puaj, aleja eso</item>
+        <item>menuda aplicación</item>
+        <item>lubrícalo, viejo</item>
+        <item>https://youtu.be/dQw4w9WgXcQ</item>
+        <item>tremendo PERRO</item>
+        <item>Lecturas cristianas</item>
+        <item>Soy malo para empujar</item>
+        <item>Espera, ¿no es manga?</item>
+        <item>Eres un diablillo</item>
+        <item>¿No dijo que había almejas al vapor? </item>
+        <item>¿Está preparado para un almuerzo inolvidable?</item>
+    </string-array>
+    <plurals name="add_to_queue" ns1:ignore="MissingQuantity">
+        <item quantity="one"><ns2:g example="1" id="processed">%1$d</ns2:g><ns2:g example="10" id="total">%2$d</ns2:g> artículo agregado a la cola de descarga</item>
+        <item quantity="other"><ns2:g example="2" id="processed">%1$d</ns2:g><ns2:g example="10" id="total">%2$d</ns2:g> artículos agregados a la cola de descarga</item>
+    </plurals>
+    <plurals name="archive_success">
+        <item quantity="one"><ns2:g example="1" id="count">%d</ns2:g> libro archivado en la carpeta Descargas</item>
+        <item quantity="other"><ns2:g example="2" id="count">%d</ns2:g> libros archivados en la carpeta Descargas</item>
+    </plurals>
+    <plurals name="ask_archive_multiple">
+        <item quantity="one">¿Archivar el elemento seleccionado?</item>
+        <item quantity="other">¿Archivar los <ns2:g example="2" id="count">%d</ns2:g>elementos seleccionados?</item>
+    </plurals>
+    <plurals name="ask_cancel_multiple" ns1:ignore="impliedQuantity">
+        <item quantity="one">¿Cancelar el elemento seleccionado?</item>
+        <item quantity="other">¿Cancelar los elementos seleccionados?</item>
+    </plurals>
+    <plurals name="ask_delete_multiple">
+        <item quantity="one">¿Eliminar el elemento seleccionado? </item>
+        <item quantity="other">¿Eliminar los <ns2:g example="2" id="count">%d</ns2:g> elementos seleccionados? </item>
+    </plurals>
+    <plurals name="book" ns1:ignore="ImpliedQuantity">
+        <item quantity="one">libro</item>
+        <item quantity="other">libros</item>
+    </plurals>
+    <plurals name="book_progress">
+        <item quantity="one"><ns2:g example="1" id="number">%1$d</ns2:g> / <ns2:g example="42" id="total">%2$d</ns2:g> libro</item>
+        <item quantity="other"><ns2:g example="2" id="number">%1$d</ns2:g> / <ns2:g example="42" id="total">%2$d</ns2:g> libros</item>
+    </plurals>
+    <plurals name="confirm_cancel_all_errors" ns1:ignore="MissingQuantity">
+        <item quantity="other">¿Cancelar los <ns2:g example="42" id="count">%d</ns2:g>libros con errores?</item>
+    </plurals>
+    <plurals name="confirm_redownload_all" ns1:ignore="MissingQuantity">
+        <item quantity="other">¿Volver a descargar <ns2:g example="42" id="count">%d</ns2:g> elementos?</item>
+    </plurals>
+    <plurals name="delete_success_books">
+        <item quantity="one"><ns2:g example="1" id="count">%d</ns2:g> libro</item>
+        <item quantity="other"><ns2:g example="2" id="count">%d</ns2:g> libros</item>
+    </plurals>
+    <plurals name="delete_success_groups">
+        <item quantity="one"><ns2:g example="1" id="count">%d</ns2:g> grupo</item>
+        <item quantity="other"><ns2:g example="2" id="count">%d</ns2:g> grupos</item>
+    </plurals>
+    <plurals name="download_completed" ns1:ignore="MissingQuantity">
+        <item quantity="one" ns1:ignore="ImpliedQuantity">Descarga finalizada</item>
+        <item quantity="other"><ns2:g example="2" id="number">%d</ns2:g> descargas finalizadas</item>
+    </plurals>
+    <plurals name="download_confirm" ns1:ignore="ImpliedQuantity">
+        <item quantity="one">¿Descargar el libro seleccionado?</item>
+        <item quantity="other">¿Descargar los libros seleccionados?</item>
+    </plurals>
+    <plurals name="download_non_streamed_content">
+        <item quantity="one">Uno de los libros seleccionados ya está descargado\nSe omitirán.</item>
+        <item quantity="other"><ns2:g example="2" id="count">%d</ns2:g>de los libros seleccionados ya están descargados\nSe omitirán.</item>
+    </plurals>
+    <plurals name="duplicate_count">
+        <item quantity="one"><ns2:g example="1" id="number">%d</ns2:g> duplicado</item>
+        <item quantity="other"><ns2:g example="2" id="number">%d</ns2:g> duplicados</item>
+    </plurals>
+    <plurals name="duplicate_detail_title">
+        <item quantity="one"><ns2:g example="1" id="number">%d</ns2:g> duplicado</item>
+        <item quantity="other"><ns2:g example="2" id="number">%d</ns2:g> duplicados</item>
+    </plurals>
+    <plurals name="duplicate_main_title">
+        <item quantity="one"><ns2:g example="1" id="number">%d</ns2:g> elemento restante</item>
+        <item quantity="other"><ns2:g example="2" id="number">%d</ns2:g> elementos restantes</item>
+    </plurals>
+    <plurals name="duplicate_notif_complete_desc">
+        <item quantity="one"><ns2:g example="1" id="number">%d</ns2:g> duplicado detectado</item>
+        <item quantity="other"><ns2:g example="2" id="number">%d</ns2:g> duplicados detectados</item>
+    </plurals>
+    <plurals name="export_file_bookmarks">
+        <item quantity="one">Exportar marcador (<ns2:g example="1" id="number">%d</ns2:g> elemento)</item>
+        <item quantity="other">Exportar marcadores (<ns2:g example="2" id="number">%d</ns2:g> elementos)</item>
+    </plurals>
+    <plurals name="export_file_library">
+        <item quantity="one">Exportar biblioteca (<ns2:g example="1" id="number">%d</ns2:g> libro)</item>
+        <item quantity="other">Exportar biblioteca (<ns2:g example="2" id="number">%d</ns2:g> libros)</item>
+    </plurals>
+    <plurals name="export_file_queue">
+        <item quantity="one">Exportar cola de descargas (<ns2:g example="1" id="number">%d</ns2:g> libro)</item>
+        <item quantity="other">Exportar cola de descargas (<ns2:g example="2" id="number">%d</ns2:g> libros)</item>
+    </plurals>
+    <plurals name="external_not_removed">
+        <item quantity="one">Un libro de la biblioteca externa no será removido</item>
+        <item quantity="other"><ns2:g example="2" id="count">%d</ns2:g> libros de la biblioteca externa no serán removidos</item>
+    </plurals>
+    <plurals name="file" ns1:ignore="ImpliedQuantity">
+        <item quantity="one">archivo</item>
+        <item quantity="other">archivos</item>
+    </plurals>
+    <plurals name="group_delete_selected_book">
+        <item quantity="one">Eliminar <ns2:g example="1" id="count">%d</ns2:g> libro</item>
+        <item quantity="other">Eliminar <ns2:g example="2" id="count">%d</ns2:g> libros</item>
+    </plurals>
+    <plurals name="group_delete_selected_group" ns1:ignore="ImpliedQuantity">
+        <item quantity="one">Solo eliminar grupo</item>
+        <item quantity="other">Solo eliminar grupos</item>
+    </plurals>
+    <plurals name="group_delete_selected_group_books" ns1:ignore="ImpliedQuantity">
+        <item quantity="one">Eliminar grupo y libros</item>
+        <item quantity="other">Eliminar grupos y libros</item>
+    </plurals>
+    <plurals name="group_progress">
+        <item quantity="one"><ns2:g example="1" id="number">%1$d</ns2:g> / <ns2:g example="42" id="total">%2$d</ns2:g> grupo</item>
+        <item quantity="other"><ns2:g example="2" id="number">%1$d</ns2:g> / <ns2:g example="42" id="total">%2$d</ns2:g> grupos</item>
+    </plurals>
+    <plurals name="import_complete_details_failure">
+        <item quantity="one"><ns2:g example="1" id="number">%s</ns2:g> fallido</item>
+        <item quantity="other"><ns2:g example="2" id="number">%s</ns2:g> fallidos</item>
+    </plurals>
+    <plurals name="import_complete_details_success">
+        <item quantity="one"><ns2:g example="1" id="number">%s</ns2:g> importado con éxito</item>
+        <item quantity="other"><ns2:g example="2" id="number">%s</ns2:g>importados con éxito</item>
+    </plurals>
+    <plurals name="import_downloads_found">
+        <item quantity="one"><ns2:g example="1" id="downloads">%d</ns2:g> descarga válida encontrada</item>
+        <item quantity="other"><ns2:g example="2" id="downloads">%d</ns2:g> descargas válidas encontradas</item>
+    </plurals>
+    <plurals name="import_file_bookmarks">
+        <item quantity="one">Importar marcador (<ns2:g example="1" id="number">%d</ns2:g> elemento)</item>
+        <item quantity="other">Importar marcadores (<ns2:g example="2" id="number">%d</ns2:g> elementos)</item>
+    </plurals>
+    <plurals name="import_file_groups">
+        <item quantity="one">Importar grupo personalizado (<ns2:g example="1" id="number">%d</ns2:g> grupo)</item>
+        <item quantity="other">Importar grupos personalizados (<ns2:g example="2" id="number">%d</ns2:g>grupos)</item>
+    </plurals>
+    <plurals name="import_file_library">
+        <item quantity="one">Importar biblioteca (<ns2:g example="1" id="number">%d</ns2:g> libro)</item>
+        <item quantity="other">Importar biblioteca (<ns2:g example="2" id="number">%d</ns2:g> libros)</item>
+    </plurals>
+    <plurals name="import_file_queue">
+        <item quantity="one">Importar cola de descargas (<ns2:g example="1" id="number">%d</ns2:g> libro)</item>
+        <item quantity="other">Importar cola de descargas (<ns2:g example="2" id="number">%d</ns2:g> libros)</item>
+    </plurals>
+    <plurals name="import_result">
+        <item quantity="one"><ns2:g example="1" id="number">%1$d</ns2:g> / <ns2:g example="2" id="number">%2$d</ns2:g> elemento importado con éxito</item>
+        <item quantity="other"><ns2:g example="2" id="number">%1$d</ns2:g>/ <ns2:g example="2" id="number">%2$d</ns2:g>elementos importados con éxito</item>
+    </plurals>
+    <plurals name="import_result_bookmarks">
+        <item quantity="one"><ns2:g example="1" id="number">%d</ns2:g>marcador importado con éxito</item>
+        <item quantity="other"><ns2:g example="2" id="number">%d</ns2:g>marcadores importados con éxito</item>
+    </plurals>
+    <plurals name="import_result_books">
+        <item quantity="one"><ns2:g example="1" id="number">%d</ns2:g> libro importado con éxito</item>
+        <item quantity="other"><ns2:g example="2" id="number">%d</ns2:g>libros importados con éxito</item>
+    </plurals>
+    <plurals name="item" ns1:ignore="ImpliedQuantity">
+        <item quantity="one">elemento</item>
+        <item quantity="other">elementos</item>
+    </plurals>
+    <plurals name="items_selected">
+        <item quantity="one"><ns2:g example="1" id="count">%d</ns2:g> elemento seleccionado</item>
+        <item quantity="other"><ns2:g example="2" id="count">%d</ns2:g> elementos seleccionados</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d notificación nueva</item>
+    <item quantity="other">%d notificaciones nuevas</item>
+  </plurals>
+    <plurals name="notif_archive_complete_details">
+        <item quantity="one"><ns2:g example="1" id="count">%d</ns2:g>libro archivado con éxito</item>
+        <item quantity="other"><ns2:g example="2" id="count">%d</ns2:g> libros archivados con éxito</item>
+    </plurals>
+    <plurals name="notif_delete_complete_details">
+        <item quantity="one"><ns2:g example="1" id="number">%d</ns2:g> eliminado con éxito</item>
+        <item quantity="other"><ns2:g example="1" id="number">%d</ns2:g> eliminado con éxito</item>
+    </plurals>
+    <plurals name="number_of_book_search_results">
+        <item quantity="one"><ns2:g example="1" id="number">%1$d</ns2:g>/<ns2:g example="7" id="total">%2$d</ns2:g> resultado</item>
+        <item quantity="other"><ns2:g example="2" id="number">%1$d</ns2:g>/<ns2:g example="7" id="total">%2$d</ns2:g> resultados</item>
+    </plurals>
+    <plurals name="number_of_items">
+        <item quantity="one"><ns2:g example="1" id="count">%d</ns2:g> elemento</item>
+        <item quantity="other"><ns2:g example="2" id="count">%d</ns2:g> elementos</item>
+    </plurals>
+    <plurals name="page" ns1:ignore="ImpliedQuantity">
+        <item quantity="one">página</item>
+        <item quantity="other">páginas</item>
+    </plurals>
+    <plurals name="queue_bottom_bar_errors">
+        <item quantity="one">(<ns2:g example="1" id="errors">%d</ns2:g> error)</item>
+        <item quantity="other">(<ns2:g example="2" id="errors">%d</ns2:g> errores)</item>
+    </plurals>
+    <plurals name="redownload_confirm" ns1:ignore="ImpliedQuantity">
+        <item quantity="one">¿Volver a descargar el libro desde cero?</item>
+        <item quantity="other">¿Volver a descargar los libros desde cero?</item>
+    </plurals>
+    <plurals name="redownload_external_content">
+        <item quantity="one">Uno de los libros seleccionados está guardado en la biblioteca externa y no se puede volver a descargar\nSe omitirá.</item>
+        <item quantity="other"><ns2:g example="2" id="count">%d</ns2:g>de los libros seleccionados están guardados en la biblioteca externa y no se pueden volver a descargar\nSe omitirán.</item>
+    </plurals>
+    <plurals name="redownloaded_scratch">
+        <item quantity="one"><ns2:g example="1" id="number">%1$d</ns2:g>/2<ns2:g example="42" id="total">%2$d</ns2:g> elemento listo para volver a descargarse</item>
+        <item quantity="other"><ns2:g example="2" id="number">%1$d</ns2:g>/<ns2:g example="42" id="total">%2$d</ns2:g> elementos listos para volver a descargarse</item>
+    </plurals>
+    <plurals name="search_button">
+        <item quantity="one"><ns2:g example="1" id="count">%s</ns2:g>resultado encontrado</item>
+        <item quantity="other"><ns2:g example="2" id="count">%s</ns2:g>resultados encontrados</item>
+    </plurals>
+    <plurals name="stream_confirm" ns1:ignore="ImpliedQuantity">
+        <item quantity="one">¿Cambiar el libro seleccionado a lectura vía internet? </item>
+        <item quantity="other">¿Cambiar los libros seleccionados a lectura vía internet?</item>
+    </plurals>
+    <plurals name="stream_external_streamed_content">
+        <item quantity="one">Uno de los libros seleccionados ya está vía internet o en la biblioteca externa\nSe omitirá.</item>
+        <item quantity="other"><ns2:g example="2" id="count">%d</ns2:g>de los libros seleccionados ya está vía internet o en la biblioteca externa\nSe omitirá.</item>
+    </plurals>
+    <plurals name="work_pages_library">
+        <item quantity="one"><ns2:g example="1" id="pages_count">%1$d</ns2:g> página / <ns2:g example="3.88" id="size_mb">%2$.1f</ns2:g> MB</item>
+        <item quantity="other"><ns2:g example="2" id="pages_count">%1$d</ns2:g> páginas / <ns2:g example="3.88" id="size_mb">%2$.1f</ns2:g> MB</item>
+    </plurals>
+    <plurals name="work_pages_missing">
+        <item quantity="one">(<ns2:g example="1" id="number">%d</ns2:g> faltante)</item>
+        <item quantity="other">(<ns2:g example="2" id="number">%d</ns2:g> faltantes)</item>
+    </plurals>
+    <string name="_default">predeterminado</string>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Ir a inicio"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Desplazarse hacia arriba"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Más opciones"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Hecho"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Ver todo"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Seleccionar una aplicación"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"DESACTIVADO"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"ACTIVADO"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt +"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl +"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"Suprimir"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"Intro"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Función +"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta +"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Mayús +"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"Espacio"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym +"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menú +"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Buscar…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Borrar consulta"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Consulta de búsqueda"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Buscar"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Enviar consulta"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Búsqueda por voz"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Compartir con"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Compartir con <ns2:g id="APPLICATION_NAME">%s</ns2:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Ocultar"</string>
+    <string name="about1"><b>Hentoid</b> es una aplicación para archivar Doujinshi y Manga-H. <b>Hentoid</b> fue creada originalmente por Cesar Arasaki.</string>
+    <string name="about_app_version" ns1:ignore="MissingTranslation">Hentoid v<ns2:g example="1.15.20" id="ver_name">%1$s</ns2:g> (<ns2:g example="130" id="ver_code">%2$d</ns2:g>)</string>
+    <string name="about_chrome_unavailable">WebView no disponible</string>
+    <string name="about_chrome_updating">WebView actualizándose</string>
+    <string name="about_chrome_version" ns1:ignore="MissingTranslation">Chrome v<ns2:g example="98" id="chrome_ver">%1$d</ns2:g></string>
+    <string name="about_licenses">Mostrar licencias</string>
+    <string name="alert_black">Este sitio no está disponible actualmente. La aplicación no tiene nada que hacer al respecto.Vuelve a intentarlo más tarde.</string>
+    <string name="alert_browser_mode">Modo navegador activo: sin acceso a almacenamiento</string>
+    <string name="alert_fix_available">Hay una solución disponible en la última versión de la aplicación. Actualiza.</string>
+    <string name="alert_grey">Este sitio presenta graves problemas de estabilidad actualmente. La aplicación no tiene nada que hacer al respecto.Vuelve a intentarlo más tarde.</string>
+    <string name="alert_orange">Toma en cuenta que las descargas en este sitio podrían fallar.</string>
+    <string name="alert_red">El botón de descarga no sirve por ahora en este sitio.</string>
+    <string name="alert_unwanted_tags">Este libro tiene la etiqueta de <ns2:g example="bad" id="tag">%s</ns2:g></string>
+    <string name="alert_wip">El equipo de desarrollo de Hentoid está trabajando en una solución. La aplicación te notificará cuando haya una nueva versión.</string>
+    <string name="already_downloaded">Ya había sido descargado</string>
+    <string name="already_queued">Ya había sido agregado a la cola</string>
+    <string name="api29_migration_allow_write">Por favor autoriza el permiso de escritura</string>
+    <string name="api29_migration_location">Ubicación actual de la carpeta de Hentoid<ns2:g example="/storage/emulated/0/Hentoid" id="path">%s</ns2:g></string>
+    <string name="api29_migration_select_folder">Por favor seleccionar una carpeta de Hentoid existente. La ubicación de esta se muestra en la pantalla.</string>
+    <string name="api29_migration_step1">Carpeta de Hentoid</string>
+    <string name="api29_migration_step1_external">Carpeta externa</string>
+    <string name="api29_migration_step1_select">Selecciona la carpeta de Hentoid</string>
+    <string name="api29_migration_step1_select_external">Selecciona la carpeta externa</string>
+    <string name="api29_migration_step2">Escanear las carpetas de los sitios web</string>
+    <string name="api29_migration_step3">Escanear la librería ( <ns2:g example="1" id="number">%1$d</ns2:g> / <ns2:g example="7" id="total">%2$d</ns2:g> )</string>
+    <string name="api29_migration_step3_init">Escaneando la librería…</string>
+    <string name="api29_migration_step4_init">Importando la cola de descarga…</string>
+    <string name="api29_migration_subtitle">Hentoid esta actualizando tu colección. Esto puede tomar algunos minutos.</string>
+    <string name="api29_migration_title">Hentoid v12 Actualización del manejo de archivos</string>
+    <string name="app_intro">Bienvenido</string>
+    <string name="app_intro_back_button">ATRÁS</string>
+    <string name="app_intro_done_button">HECHO</string>
+    <string name="app_intro_image_content_description">gráficos</string>
+    <string name="app_intro_next_button">SIGUIENTE</string>
+    <string name="app_intro_skip_button">SALTAR</string>
+    <string name="app_lock_disabled">Bloqueo de Aplicación Deshabilitado</string>
+    <string name="app_lock_enable">Bloqueo de Aplicación Habilitado</string>
+    <string name="app_lock_pin">Ingresar PIN</string>
+    <string name="app_settings">Configuración de la aplicación </string>
+    <string name="apply_final">Aplicar opciones</string>
+    <string name="archive_progress">Archivando libros</string>
+    <string name="archive_progress_subtitle">Completado: <ns2:g example="42" id="count">%s</ns2:g></string>
+    <string name="ask_clear_chapters">¿Eliminar todos los capítulos?</string>
+    <string name="audio_plug1">yameteee~~♡</string>
+    <string name="audio_plug2">oye… por ese hoyo no~</string>
+    <string name="audio_plug3">ughhh~</string>
+    <string name="audio_plug4">qué asco ♡ ♡</string>
+    <string name="audio_plug5">aquí no~~♡</string>
+    <string name="audio_plug6">chico malo~~</string>
+    <string name="audio_plug7">es tan… apretado…♡</string>
+    <string name="blocked_tag">El libro tiene una etiqueta bloqueada (<ns2:g example="bad" id="tag">%s</ns2:g>)\nDescarga cancelada</string>
+    <string name="blocked_tag_queued">El libro tiene una etiqueta bloqueada (<ns2:g example="bad" id="tag">%s</ns2:g>)\nPuesto en la cola de descargas como error</string>
+    <string name="book_edit_title">Editar título del libro</string>
+    <string name="book_favourite_success">Libro marcado como favorito</string>
+    <string name="book_launchcode">Código nuclear: <ns2:g example="4567" id="launchcode">%s</ns2:g></string>
+    <string name="book_list_loading_failed">Error al cargar la lista de libros</string>
+    <string name="book_prefs">Configuración del libro</string>
+    <string name="book_settings">Configuración del libro</string>
+    <string name="book_unfavourite_success">Libro desmarcado como favorito</string>
+    <string name="bookmark_copy_url">Copiar URL de marcador</string>
+    <string name="bookmark_current">Añadir esta página a marcadores</string>
+    <string name="bookmark_homepage">Inicio</string>
+    <string name="bookmark_toggle_welcome">Usar URL del marcador como página de inicio</string>
+    <string name="bottomsheet_action_expand_halfway">Desplegar hasta la mitad</string>
+    <string name="cancel">Cancelar</string>
+    <string name="cancel_all">Cancelar todo</string>
+    <string name="cancel_all_errors">Cancelar descargas con errores</string>
+    <string name="cancel_queue_progress">Cancelando elementos en fila</string>
+    <string name="category_any">Todos</string>
+    <string name="category_artist">Artista</string>
+    <string name="category_category">Categoría</string>
+    <string name="category_character">Personaje</string>
+    <string name="category_circle">Círculo</string>
+    <string name="category_language">Idioma</string>
+    <string name="category_publisher">Editorial</string>
+    <string name="category_series">Serie</string>
+    <string name="category_source">Origen</string>
+    <string name="category_tag">Etiqueta</string>
+    <string name="category_translator">Traductor</string>
+    <string name="category_undefined">Indefinido</string>
+    <string name="category_uploader">Uploader</string>
+    <string name="changelog">Registro de cambios</string>
+    <string name="chapter_move_failed">No se pudo mover el capítulo</string>
+    <string name="chapter_toggle_failed">No se pudo crear capítulo a partir de la página <ns2:g example="2" id="number">%d</ns2:g></string>
+    <string name="chapters_remove_failed">No se pudieron eliminar los capítulos</string>
+    <string name="character_counter_content_description">Caracteres introducidos: %1$d de %2$d</string>
+    <string name="character_counter_overflowed_content_description">Límite de caracteres superado (%1$d de %2$d)</string>
+    <string name="checking_file">Comprobando archivo…</string>
+    <string name="checking_updates">Buscando actualizaciones</string>
+    <string name="clear_rating">Borrar valoración</string>
+    <string name="clear_search_history">Limpiar historial de búsqueda</string>
+    <string name="clear_text_end_icon_content_description">Borrar texto</string>
+    <string name="close_drawer">Cerrar panel </string>
+    <string name="common_google_play_services_unknown_issue">La aplicación %1$s tiene problemas con los Servicios de Google Play. Vuelve a intentarlo.</string>
+    <string name="confirm">Confirmar</string>
+    <string name="confirm_cancel_all">¿Cancelar todas las descargas?</string>
+    <string name="content_not_found">Error - contenido no encontrado</string>
+    <string name="content_removal_failed">Error al remover el contenido</string>
+    <string name="contents_detected">Hentoid encontró una biblioteca existente en esta ubicación.\n¿Desea importar esta biblioteca?</string>
+    <string msgid="6083905920877235314" name="copy">"Copiar"</string>
+    <string name="copy_download_folder_fail">No se pudo escribir en la carpeta Descargas</string>
+    <string name="copy_download_folder_success">Copiado a la carpeta Descargas</string>
+    <string name="create_generic">Crear</string>
+    <string name="delete_progress">Borrando libros</string>
+    <string name="delete_success">Eliminados</string>
+    <string name="delete_title">Borrar todo excepto favoritos</string>
+    <string name="dialog_prompt">Elegir Carpeta</string>
+    <string name="disabled_generic">Desactivado</string>
+    <string name="display">Mostrar</string>
+    <string name="display_artists">Artistas</string>
+    <string name="display_groups">Grupos</string>
+    <string name="display_groups_title">Mostrar grupos</string>
+    <string name="download_canceled">Descarga cancelada-libro no disponible online </string>
+    <string name="download_cancelled">Descarga cancelada</string>
+    <string name="download_complete">Descarga finalizada</string>
+    <string name="download_error">Descarga completada pero hay un error</string>
+    <string name="download_missing_webview">Descarga cancelada - WebView no disponible</string>
+    <string name="download_notif_failed">Descarga fallida</string>
+    <string name="download_notif_failed_details">No se puede descargar <ns2:g example="Cool H-Manga" id="book_name">%1$s</ns2:g>: no se puede crear la carpeta <ns2:g example="/storage/emulated/0/Hentoid/nhentai/coolhmanga" id="path">%2$s</ns2:g>. Revisa la carpeta Hentoid y vuelve a intentar descargar usando el botón \'!\'.</string>
+    <string name="download_notif_speed" ns1:ignore="MissingTranslation"><ns2:g example="3.88" id="size_dled">%1$d</ns2:g><ns2:g example="/14.56" id="formatted_estimated_total">%2$s</ns2:g> MB a <ns2:g example="102.4" id="speed_kbps">%3$d</ns2:g>  kB/s</string>
+    <string name="download_updating_webview">Descarga cancelada - WebView actualizándose</string>
+    <string name="downloader_title">Descargas</string>
+    <string name="downloading_update">Descargando actualización</string>
+    <string name="downloads_empty_library">Anda, ve y descarga algo.</string>
+    <string name="downloads_loading">Cargando~</string>
+    <string name="drag_help">Arrastrar elemento</string>
+    <string name="duplicate_alert">¡Alerta de duplicado!</string>
+    <string name="duplicate_alert_always_download">Descargar siempre y no preguntar de nuevo</string>
+    <string name="duplicate_alert_download_book">Descargar libro</string>
+    <string name="duplicate_alert_download_pages">Descargar páginas extra</string>
+    <string name="duplicate_alert_never_extra_on_dupes">No volver a añadir páginas de posibles duplicados</string>
+    <string name="duplicate_alert_replace_existing">Reemplazar libro existente</string>
+    <string name="duplicate_alert_similarity">Similitud: <ns2:g example="50%" id="similarity_percentage">%.0f%%</ns2:g></string>
+    <string name="duplicate_alert_subtitle_book">El libro que vas a descargar puede ser un duplicado de un libro ya existente.</string>
+    <string name="duplicate_alert_subtitle_pages">El libro del que vas a descargar páginas puede no ser el ya existente.</string>
+    <string name="duplicate_artist_score">Artista: <ns2:g example="50%" id="similarity_percentage">%.0f%%</ns2:g></string>
+    <string name="duplicate_artist_score_nodata">Artista: sin datos</string>
+    <string name="duplicate_cover_score">Portada: <ns2:g example="50%" id="similarity_percentage">%.0f%%</ns2:g></string>
+    <string name="duplicate_cover_score_nodata">Portada: sin datos</string>
+    <string name="duplicate_delete">Borrar</string>
+    <string name="duplicate_empty_first_use">Nada para mostrar - Ejecutar una nueva búsqueda de duplicados</string>
+    <string name="duplicate_empty_no_result">No se han encontrado duplicados</string>
+    <string name="duplicate_find">Detectando libros duplicados</string>
+    <string name="duplicate_find_action">Encontrar duplicados</string>
+    <string name="duplicate_ignore_chapters">Ignorar capítulos y secuelas</string>
+    <string name="duplicate_index_covers">Indexando imágenes de portada</string>
+    <string name="duplicate_keep">Guardar</string>
+    <string name="duplicate_notif_complete_title">Detección de duplicados completada</string>
+    <string name="duplicate_notif_start">Iniciando de la detección de duplicados</string>
+    <string name="duplicate_processing">Detectando duplicados…</string>
+    <string name="duplicate_title_score">Título: <ns2:g example="50%" id="similarity_percentage">%.0f%%</ns2:g></string>
+    <string name="duplicate_title_score_nodata">Título: sin datos</string>
+    <string name="duplicate_use_artist">Artista</string>
+    <string name="duplicate_use_cover">Portada</string>
+    <string name="duplicate_use_same_language">Solo en el mismo idioma</string>
+    <string name="duplicate_use_sensitivity">Sensibilidad</string>
+    <string name="duplicate_use_title">Título</string>
+    <string name="duplicate_wait_index">Indexando…</string>
+    <string name="edit_generic">Editar</string>
+    <string name="empty">vacío</string>
+    <string name="err_no_content">El libro aún no existe</string>
+    <string name="err_stats_help">Mostrar estadísticas detalladas de los errores de descarga actuales</string>
+    <string name="err_stats_title">Estadísticas de errores</string>
+    <string name="error_browser">Error al abrir el enlace: no se ha encontrado ningún navegador</string>
+    <string name="error_creating_folder">Carpeta no válida.</string>
+    <string name="error_icon_content_description">Error</string>
+    <string name="error_missing_webview">WebView no disponible, no se puede abrir el navegador de la aplicación en este momento</string>
+    <string name="error_open">Error al abrir el archivo: no se encontró una aplicación pertinente</string>
+    <string name="error_updating_webview">WebView actualizándose en este momento, no se puede abrir el navegador de la aplicación todavía</string>
+    <string name="error_write_permission">No tienes permiso de escritura en esa carpeta, prueba con otra.</string>
+    <string name="errors_empty">No se detectaron errores en las descargas</string>
+    <string name="errortype_account">Sin cuenta o credenciales insuficientes</string>
+    <string name="errortype_blocked">El libro contiene una etiqueta bloqueada</string>
+    <string name="errortype_captcha">Captcha</string>
+    <string name="errortype_img_processing">Procesamiento de imágenes</string>
+    <string name="errortype_import">No se encontró archivo local al importar</string>
+    <string name="errortype_io">E/S</string>
+    <string name="errortype_networking">Conexión</string>
+    <string name="errortype_parsing">Analizar</string>
+    <string name="errortype_site_limit">Límite de descargas/ancho de banda alcanzado</string>
+    <string name="errortype_undefined">Indefinido</string>
+    <string name="errortype_wifi">Libro omitido debido a limitaciones de tamaño de descargas vía Wi-Fi</string>
+    <string name="exclude">Excluir</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"Ajustes avanzados"</string>
+    <string name="export_failed">Exportación fallida</string>
+    <string name="export_favs_only">Exportar solo favoritos</string>
+    <string name="export_groups">Exportar grupos personalizados</string>
+    <string name="export_run">EJECUTAR LA EXPORTACIÓN</string>
+    <string name="export_title">Exportar metadatos</string>
+    <string name="export_warning1">La exportación de metadatos está pensada para crear una lista de los libros en formato JSON.\nNo está pensada para trasladar la colección a tu PC o a tu tarjeta SD.\nToca aquí para aprender a hacer esto último.</string>
+    <string name="export_warning2">Los libros se exportan sin imágenes.\nTendrás que descargarlos de nuevo al restaurar si no está la carpeta de imágenes.</string>
+    <string name="exposed_dropdown_menu_content_description">Mostrar menú desplegable</string>
+    <string name="external_help">Pertenece a la librería externa</string>
+    <string name="fav_help">Marcar/desmarcar como favorito</string>
+    <string name="file_removal_failed">Error al remover el archivo</string>
+    <string name="filter_completed">Mostrar solo completados</string>
+    <string name="filter_not_completed">Mostrar solo no completados</string>
+    <string name="filter_rating">Filtrar por valoración</string>
+    <string name="fix_permissions">Reparar</string>
+    <string name="folder_undefined">Error - carpeta contenedora no definida</string>
+    <string name="gallery_add_remove_chapters">Agregar y eliminar capítulos</string>
+    <string name="gallery_chapter_prefix">Capítulo</string>
+    <string name="gallery_clear_chapters">Eliminar todos los capítulos</string>
+    <string name="gallery_display_chapter">Cap <ns2:g example="2" id="number">%d</ns2:g></string>
+    <string name="gallery_display_page"><ns2:g example=">" id="startMarker">%1$s</ns2:g>Página <ns2:g example="2" id="number">%2$d</ns2:g><ns2:g example="♥" id="isFavourite">%3$s</ns2:g><ns2:g example="&lt;" id="endMarker">%4$s</ns2:g></string>
+    <string name="gallery_edit_chapters_help">Para crear o eliminar un capítulo, seleccione su primera página</string>
+    <string name="gallery_help">Galería del libro</string>
+    <string name="gallery_no_chapter">Sin capítulo</string>
+    <string name="gallery_title">Galería</string>
+    <string name="generic_progress" ns1:ignore="MissingTranslation"><ns2:g example="7" id="number">%1$d</ns2:g> / <ns2:g example="42" id="total">%2$d</ns2:g> <ns2:g example="books" id="type">%3$s</ns2:g></string>
+    <string name="get_latest">Obtener la última versión (<ns2:g example="1.18.1" id="version">%1$s</ns2:g>)</string>
+    <string name="goto_app_prefs">Configuración de la aplicación </string>
+    <string name="goto_page">Ir a la página...</string>
+    <string name="group_30">Últimos 30 días</string>
+    <string name="group_60">Últimos 60 días</string>
+    <string name="group_7">Últimos 7 días</string>
+    <string name="group_change">Mover a grupo personalizado</string>
+    <string name="group_delete_nothing">Nada que borrar - verificar \"Permitir borrar contenido externo\" para solucionarlo</string>
+    <string name="group_edit_name">Editar nombre de grupo</string>
+    <string name="group_existing">Grupo existente</string>
+    <string name="group_long">Hace mucho tiempo</string>
+    <string name="group_make_cover">Establecer como portada de grupo</string>
+    <string name="group_make_cover_ask">¿Establecer portada del libro como portada del grupo actual?</string>
+    <string name="group_name_empty">¡Nombre de grupo vacío!</string>
+    <string name="group_name_exists">Ya existe un grupo con ese nombre.</string>
+    <string name="group_new">Crear nuevo</string>
+    <string name="group_new_name">Nombre de nuevo grupo personalizado</string>
+    <string name="group_no_group">Sin agrupar</string>
+    <string name="group_not_selected">¡No se ha seleccionado un grupo!</string>
+    <string name="group_remove">Separar de grupo actual</string>
+    <string name="group_rename_forbidden">¡No se puede renombrar ese grupo!</string>
+    <string name="group_today">Hoy</string>
+    <string name="group_year">Último año</string>
+    <string name="groups">Grupos</string>
+    <string name="groups_by_artist">Por Artista</string>
+    <string name="groups_by_dl_date">Por fecha de Descarga (procesada)</string>
+    <string name="groups_custom">Grupos personalizados</string>
+    <string name="groups_flat">Todos los libros</string>
+    <string name="help_page_slider">Puedes buscar más rápido deslizando a través de los números de página. </string>
+    <string name="help_search">Busca cualquier cosa: título, artista, etiqueta\n¡y código nuclear también!</string>
+    <string name="help_swipe_cancel">Puedes cancelar las descargas deslizándolas a la izquierda</string>
+    <string name="help_web_download">Has llegado a un libro.\n¡Hora de descargarlo con la barra inferior!</string>
+    <string name="help_web_exh_account">Usa o crea una cuenta de exHentai</string>
+    <string name="help_web_incomplete_exh_credentials">Credenciales incompletas, ingresa de nuevo. Si el problema persiste, considera la posibilidad de acceder al sitio desde otro país o de crear una nueva cuenta.</string>
+    <string name="help_web_invalid_exh_credentials">Credenciales no válidas, ingresa de nuevo</string>
+    <string name="icon_content_description">Icono del cuadro de diálogo</string>
+    <string name="image_extracting">Extrayendo imagen…</string>
+    <string name="image_not_found">Imagen no encontrada</string>
+    <string name="image_streaming">Transmitiendo imagen…</string>
+    <string name="import_app_folder">No se puede seleccionar la carpeta de aplicación como una carpeta externa - selecciona una diferente</string>
+    <string name="import_canceled">Importación cancelada</string>
+    <string name="import_complete">Importación completada</string>
+    <string name="import_create_fail">Creación de la carpeta Hentoid fallida - selecciona otra ubicación</string>
+    <string name="import_download_folder">No deberías seleccionar la carpeta Descargas de tu dispositivo - crea o selecciona otra</string>
+    <string name="import_downloads">Importar descargas</string>
+    <string name="import_downloads_title">Importar descargas</string>
+    <string name="import_file_invalid">El archivo <ns2:g example="metadata.json" id="filename">%s</ns2:g> no es válido</string>
+    <string name="import_invalid">Carpeta no válida - selecciona otra</string>
+    <string name="import_invalid_uri">Carpeta no reconocida - seleccione de nuevo</string>
+    <string name="import_mode_add">Agregar elementos importados</string>
+    <string name="import_mode_replace">Remplazar con elementos importados</string>
+    <string name="import_other">La importación se ha detenido</string>
+    <string name="import_run">INICIAR IMPORTACIÓN</string>
+    <string name="import_select_file">Seleccionar archivo para importar</string>
+    <string name="import_settings_success">Importado</string>
+    <string name="import_settings_title">Importar ajustes</string>
+    <string name="import_streamed">Importar como libros con lectura vía internet</string>
+    <string name="import_title">Importar metadatos</string>
+    <string name="import_unexpected">La importación se ha detenido inesperadamente</string>
+    <string name="importing_downloads">Importando descargas…</string>
+    <string name="importing_library">Importando Biblioteca</string>
+    <string name="importing_metadata">Importando metadatos…</string>
+    <string name="information_help">Información</string>
+    <string name="invert_queue">Invertir cola de descarga</string>
+    <string name="item_view_role_description">Pestaña</string>
+    <string name="lang_cs">checo</string>
+    <string name="lang_de">alemán</string>
+    <string name="lang_en">inglés</string>
+    <string name="lang_es">español</string>
+    <string name="lang_fr">francés</string>
+    <string name="lang_hu">húngaro</string>
+    <string name="lang_id">indonesio</string>
+    <string name="lang_it">italiano</string>
+    <string name="lang_ja">japonés</string>
+    <string name="lang_ko">coreano</string>
+    <string name="lang_pl">polaco</string>
+    <string name="lang_pt">portugués</string>
+    <string name="lang_ru">ruso</string>
+    <string name="lang_th">tailandés</string>
+    <string name="lang_tr">turco</string>
+    <string name="lang_vi">vietnamita</string>
+    <string name="lang_zh">chino</string>
+    <string name="launchcode_present">Ya has leído este libro. </string>
+    <string name="library_filter_favourite_help">Mostrar solo favoritos</string>
+    <string name="library_filters_title">Filtros</string>
+    <string name="library_imports_title">Importación de la biblioteca</string>
+    <string name="library_metrics_storage"><ns2:g example="3.88" id="size_mb">%.0f</ns2:g> MB</string>
+    <string name="library_search_hint">Título, artista, etiqueta o ID del libro</string>
+    <string name="loading_archive">Cargando: <ns2:g example="1" id="number">%1$d</ns2:g>/<ns2:g example="42" id="total">%2$d</ns2:g></string>
+    <string name="loading_image">Cargando imagen: <ns2:g example="50%" id="percentage">%d%%</ns2:g></string>
+    <string name="log_api29_migration">Migración de biblioteca desde Hentoid v1.11</string>
+    <string name="log_cleanup">Limpieza de biblioteca principal</string>
+    <string name="log_import">Importar/actualizar biblioteca principal</string>
+    <string name="log_import_external">Importar/actualizar biblioteca externa</string>
+    <string name="logs_open">Abrir registro</string>
+    <string name="logs_share">Compartir registro</string>
+    <string name="logs_title">Últimos registros</string>
+    <string name="low_memory">¡Queda poco espacio de almacenamiento!</string>
+    <string name="malformed_url">Error - URL malformada</string>
+    <string name="masterdata_no_result">Sin resultados :(</string>
+    <string name="material_clock_toggle_content_description">Selecciona AM o PM</string>
+    <string name="material_hour_selection">Seleccionar hora</string>
+    <string name="material_hour_suffix">%1$s en punto</string>
+    <string name="material_minute_selection">Seleccionar minutos</string>
+    <string name="material_minute_suffix">%1$s minutos</string>
+    <string name="material_timepicker_am">A.M.</string>
+    <string name="material_timepicker_clock_mode_description">Cambia al modo de reloj para escribir la hora.</string>
+    <string name="material_timepicker_hour">Hora</string>
+    <string name="material_timepicker_minute">Minuto</string>
+    <string name="material_timepicker_pm">P.M.</string>
+    <string name="material_timepicker_select_time">Seleccionar la hora</string>
+    <string name="material_timepicker_text_input_mode_description">Cambia al modo de introducción de texto para escribir la hora.</string>
+    <string name="memory_database">Base de datos: <ns2:g example="1.52 MB" id="size_mb">%1$s</ns2:g> (<ns2:g example="40%" id="percentage">%2$.1f%%</ns2:g> lleno)</string>
+    <string name="memory_details">Ver detalles (principal)</string>
+    <string name="memory_details_books">Libros</string>
+    <string name="memory_details_size">Tamaño</string>
+    <string name="memory_details_source">Origen</string>
+    <string name="memory_free">Libre: <ns2:g example="50 MB" id="total">%s</ns2:g></string>
+    <string name="memory_hentoid_ext">Hentoid (externa): <ns2:g example="3 MB" id="total">%s</ns2:g></string>
+    <string name="memory_hentoid_main">Hentoid (principal): <ns2:g example="2 MB" id="total">%s</ns2:g></string>
+    <string name="memory_title">Uso del almacenamiento</string>
+    <string name="memory_total">Total: <ns2:g example="100 MB" id="total">%s</ns2:g></string>
+    <string name="menu_archive">Archivar</string>
+    <string name="menu_archive_help">Archivar el libro en un archivo ZIP</string>
+    <string name="menu_change_dl_mode">Cambiar modo de descarga</string>
+    <string name="menu_change_group">Mover a grupo</string>
+    <string name="menu_completed_single">Marcar como completado</string>
+    <string name="menu_delete_single">Borrar</string>
+    <string name="menu_download_streamed">Descargar</string>
+    <string name="menu_edit_cancel">Cancelar edición</string>
+    <string name="menu_edit_chapters">Editar capítulos</string>
+    <string name="menu_edit_confirm">Confirmar edición</string>
+    <string name="menu_edit_name">Renombrar</string>
+    <string name="menu_edit_order">Reordenar</string>
+    <string name="menu_edit_warning_custom">El nuevo orden personalizado sobrescribirá el previo.</string>
+    <string name="menu_fav">Cambiar el filtro de favoritos</string>
+    <string name="menu_group_new">Nuevo grupo</string>
+    <string name="menu_mark_fav">Cambiar favorito</string>
+    <string name="menu_open_folder">Abrir carpeta contenedora</string>
+    <string name="menu_redownload">Volver a descargar</string>
+    <string name="menu_redownload_scratch">Volver a descargar desde cero </string>
+    <string name="menu_reset_read">Marcar como no leído</string>
+    <string name="menu_search">Búsqueda</string>
+    <string name="menu_select_all">Seleccionar todo</string>
+    <string name="menu_share">Compartir </string>
+    <string name="menu_share_help">Compartir URL y título del libro con otra aplicación</string>
+    <string name="menu_share_title">URL del libro</string>
+    <string name="menu_sort_filter">Ordenar y filtrar</string>
+    <string name="menu_stream">Cambiar a lectura vía internet</string>
+    <string name="merge_delete_after_merging">Borrar libros después de unir</string>
+    <string name="merge_merge">Unir</string>
+    <string name="merge_progress">Uniendo libros…</string>
+    <string name="merge_split">Separar</string>
+    <string name="merge_success">Se ha unido el contenido</string>
+    <string name="meta_choose_type">Elegir un tipo para \'%s\'</string>
+    <string name="meta_cover_archive_warning">La portada no se puede cambiar para los archivos</string>
+    <string name="meta_cover_multiple_warning">La portada no se puede cambiar para varios libros</string>
+    <string name="meta_rename_new_name">Nuevo nombre</string>
+    <string name="meta_rename_new_rule">Recordar para descargas futuras</string>
+    <string name="meta_replace_with">Reemplazar con…</string>
+    <string name="meta_rule_source">Origen</string>
+    <string name="meta_rule_target">Objetivo </string>
+    <string name="meta_rule_wildcard">Si el origen tiene un carácter comodín, el objetivo también debe tenerlo </string>
+    <string name="meta_tag_all_selected">Etiquetar todos los libros seleccionados</string>
+    <string name="meta_tag_all_selected_confirm">¿Etiquetar los %1$d libros seleccionados con \'%2$s\'?</string>
+    <string name="missing_web_view">Hentoid no ha podido encontrar el visor web integrado de Android para las aplicaciones.\nSin este no se puede navegar por las fuentes, volver a descargar libros, etc…; realmente no se puede hacer mucho que requiera internet.\n\nLo más probable es que sí esté instalada en tu sistema, pero deshabilitada: dirígete a <b>Configuración</b> > <b>Aplicaciones</b> > <b>Aplicaciones Deshabilitadas</b> y habilita <b>Android System WebView</b>.\n\nSi no encuentras la aplicación, instálala desde Google Play:<b><a href="https://play.google.com/store/apps/details?id=com.google.android.webview"/></b>.</string>
+    <string name="missing_web_view_library">Volver a la biblioteca</string>
+    <string name="missing_web_view_title">La WebView no está instalada o está desactivada</string>
+    <string name="mode_dl">Descargar imágenes</string>
+    <string name="mode_stream">Transmitiendo</string>
+    <string name="move_bottom">Mover hasta abajo</string>
+    <string name="move_top">Mover hasta arriba</string>
+    <string name="mtrl_badge_numberless_content_description">Notificación nueva</string>
+    <string name="mtrl_chip_close_icon_content_description">Retirar %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns1:ignore="PluralsCandidate">Más de %1$d notificaciones nuevas</string>
+    <string name="mtrl_picker_a11y_next_month">Cambiar al mes siguiente</string>
+    <string name="mtrl_picker_a11y_prev_month">Cambiar al mes anterior</string>
+    <string name="mtrl_picker_announce_current_selection">Selección actual: %1$s</string>
+    <string name="mtrl_picker_cancel">Cancelar</string>
+    <string name="mtrl_picker_confirm">Aceptar</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Selecciona una fecha</string>
+    <string name="mtrl_picker_date_header_unselected">Fecha seleccionada</string>
+    <string name="mtrl_picker_day_of_week_column_header">Columna de días: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Formato no válido.</string>
+    <string name="mtrl_picker_invalid_format_example">Ejemplo: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Usar: %1$s</string>
+    <string name="mtrl_picker_invalid_range">El periodo no es válido.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Ir al año %1$s</string>
+    <string name="mtrl_picker_out_of_range">Fuera del periodo válido: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Fecha de inicio–%1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s–Fecha de finalización</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Selecciona un periodo</string>
+    <string name="mtrl_picker_range_header_unselected">Fecha de inicio–Fecha de finalización</string>
+    <string name="mtrl_picker_save">Guardar</string>
+    <string name="mtrl_picker_text_input_date_hint">Fecha</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Fecha de finalización</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Fecha de inicio</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">a</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Cambiar al modo de introducción Calendario</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Toca para seleccionar un día</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Cambiar al modo de introducción Texto</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Toca para seleccionar un año</string>
+    <string name="mtrl_timepicker_cancel">Cancelar</string>
+    <string name="mtrl_timepicker_confirm">Aceptar</string>
+    <string name="new_group_name">¿Nombre del grupo nuevo?</string>
+    <string name="new_title">Nuevo título</string>
+    <string name="next_book_help">Libro siguiente</string>
+    <string name="no">No</string>
+    <string name="no_artist_group_name">[sin artista]</string>
+    <string name="no_error_detected">No se han detectado errores.</string>
+    <string name="no_images">No se pudo cargar el libro: No se encontraron imágenes</string>
+    <string name="none">Ninguno</string>
+    <string msgid="6573031135582639649" name="not_set">"Sin establecer"</string>
+    <string name="notif_archive_complete">Archivo completado</string>
+    <string name="notif_archive_fail">Archivo fallido</string>
+    <string name="notif_archive_fail_details">Al menos un libro no fue archivado</string>
+    <string name="notif_archive_title">Archivo de contenido</string>
+    <string name="notif_delete_complete">Eliminación completada</string>
+    <string name="notif_delete_fail">Eliminación fallida</string>
+    <string name="notif_delete_fail_details">Al menos un libro no pudo ser eliminado</string>
+    <string name="notif_delete_title">Eliminación de contenido</string>
+    <string name="notification_action_dl_revive">Presiona aquí para reactivar tu descarga</string>
+    <string name="notification_user_action_needed">Se necesita acción de usuario</string>
+    <string name="notification_user_action_title">Acciones de usuario</string>
+    <string name="object_artist">Artista</string>
+    <string name="object_category">Categoría</string>
+    <string name="object_character">Personaje</string>
+    <string name="object_circle">Círculo</string>
+    <string name="object_language">Idioma</string>
+    <string name="object_publisher">Editorial</string>
+    <string name="object_series">Serie</string>
+    <string name="object_source">Origen</string>
+    <string name="object_tag">Etiqueta</string>
+    <string name="object_translator">Traductor</string>
+    <string name="object_undefined">Indefinido</string>
+    <string name="object_uploader">Uploader</string>
+    <string name="off">Apagado</string>
+    <string name="ok" ns1:ignore="MissingTranslation">Ok</string>
+    <string name="on">Encendido</string>
+    <string name="open_drawer">Abrir panel </string>
+    <string name="open_folder">Abrir carpeta</string>
+    <string name="open_settings">Abrir configuración </string>
+    <string name="page_copy_help">Copiar la página en la carpeta Descargas de Android</string>
+    <string name="page_delete_help">Eliminar página</string>
+    <string name="page_fav_help">Marcar/desmarcar página como favorita</string>
+    <string name="page_favourite_success">Página marcada como favorita</string>
+    <string name="page_removal_failed">Error al remover la página</string>
+    <string name="page_share_help">Compartir página usando otra aplicación</string>
+    <string name="page_unfavourite_success">Página desmarcada como favorita</string>
+    <string name="password_toggle_content_description">Mostrar contraseña</string>
+    <string name="pause">Pausar</string>
+    <string name="paused_dl_folder_credentials">No se puede descargar - Credenciales insuficientes en la carpeta de descarga. Usa la configuración de la aplicación para volver a seleccionarla</string>
+    <string name="paused_dl_folder_not_found">No se puede descargar - Carpeta de descarga no encontrada. Usa la configuración de la aplicación para seleccionar una</string>
+    <string name="paused_dl_stale_online_credentials">No se puede descargar - Cookies o credenciales obsoletas. Usa la notificación para volver a generarlas</string>
+    <string name="paused_no_dl_folder">No se puede descargar - No hay carpeta de descarga. Usa la configuración de la aplicación para seleccionar una</string>
+    <string name="paused_no_internet">No se puede descargar - Sin Internet</string>
+    <string name="paused_no_storage">No se puede descargar - Poco espacio de almacenamiento (<ns2:g example="0 bytes" id="size_left_bytes">%s</ns2:g> libres). Libera espacio o cambia el directorio de descarga</string>
+    <string name="paused_no_wifi">No se puede descargar - Sin Wi-Fi</string>
+    <string name="permissioncomplaint_snackbar">Debes conceder permisos antes de poder continuar</string>
+    <string name="permissioncomplaint_snackbar_manual">Debes conceder permisos manualmente antes de poder continuar</string>
+    <string name="permissions_lost">Se han perdido los permisos de almacenamiento</string>
+    <string name="personalDataStatement1"><b>DECLARACIÓN DE PRIVACIDAD DE LOS DATOS PERSONALES</b>\n\nHentoid es un software libre y de código abierto mantenido por la Comunidad Hentoid (únete a nosotros en Discord - ver el enlace más arriba)</string>
+    <string name="personalDataStatement2">Hentoid recopila los siguientes datos personales y los envía a Google para que los procese a través de la librería firebase:\n - ID de sesión\n - Dirección IP</string>
+    <string name="personalDataStatement3">Los datos mencionados se eliminan del sistema Firebase live y de las copias de seguridad en un plazo de 180 días (véase https://firebase.google.com/support/privacy/ para más detalles)\n\nNo se recopilan otros datos personales ni se envían a ninguna otra parte. </string>
+    <string name="pin_current">Ingresar PIN actual</string>
+    <string name="pin_explanation">El Bloqueo de Aplicación evita su uso no autorizado solicitando un PIN de 4 dígitos al iniciarla</string>
+    <string name="pin_lock_on_restore">Bloquear cuando se restablece\nde segundo plano</string>
+    <string name="pin_new">Ingresar nuevo PIN</string>
+    <string name="pin_new_confirm">Confirmar nuevo PIN</string>
+    <string name="pin_reset">Restablecer PIN</string>
+    <string name="pin_reset_success">PIN restablecido</string>
+    <string name="please_wait">Un momento, por favor...</string>
+    <string name="power_plug1">justo ahí~~</string>
+    <string name="power_plug2">mételo más hondo~~~♡</string>
+    <string name="power_plug3">ikuuuu~~</string>
+    <string name="power_plug4">ahh ♡</string>
+    <string name="power_plug5">ohhh~</string>
+    <string name="power_plug6">dame más ♡</string>
+    <string name="pref_attribute_list_order_entries_1">Alfabéticamente</string>
+    <string name="pref_attribute_list_order_entries_2">Por número de elementos (Los más usados primero)</string>
+    <string name="pref_browser_dns_entries_1">Ninguno</string>
+    <string name="pref_browser_quick_dl_threshold_entries_1" ns1:ignore="MissingTranslation">500 ms</string>
+    <string name="pref_browser_quick_dl_threshold_entries_2" ns1:ignore="MissingTranslation">1 s</string>
+    <string name="pref_browser_quick_dl_threshold_entries_3">1.5 segundos (Predeterminado)</string>
+    <string name="pref_browser_quick_dl_threshold_entries_4" ns1:ignore="MissingTranslation">2 s</string>
+    <string name="pref_browser_quick_dl_threshold_entries_5" ns1:ignore="MissingTranslation">3 s</string>
+    <string name="pref_cat_library">Librería</string>
+    <string name="pref_cat_search">Búsqueda avanzada</string>
+    <string name="pref_dl_blocked_tags_behaviour_entries_1">No agregar a la cola de descargas</string>
+    <string name="pref_dl_blocked_tags_behaviour_entries_2">Agregar a la cola de descargas con errores</string>
+    <string name="pref_dl_pages_wifi_threshold_entries_1">Sin limite de páginas</string>
+    <string name="pref_dl_pages_wifi_threshold_entries_2">60 páginas</string>
+    <string name="pref_dl_pages_wifi_threshold_entries_3">120 páginas</string>
+    <string name="pref_dl_pages_wifi_threshold_entries_4">200 páginas</string>
+    <string name="pref_dl_pages_wifi_threshold_entries_5">500 páginas</string>
+    <string name="pref_dl_retries_mem_limit_entries_4">Ninguno</string>
+    <string name="pref_dl_size_wifi_threshold_entries_1">Sin limite de tamaño</string>
+    <string name="pref_dl_size_wifi_threshold_entries_2" ns1:ignore="MissingTranslation">20 MB</string>
+    <string name="pref_dl_size_wifi_threshold_entries_3" ns1:ignore="MissingTranslation">40 MB</string>
+    <string name="pref_dl_size_wifi_threshold_entries_4" ns1:ignore="MissingTranslation">100 MB</string>
+    <string name="pref_dl_size_wifi_threshold_entries_5" ns1:ignore="MissingTranslation">200 MB</string>
+    <string name="pref_dl_threads_quantity_entries_1">Automático (Predeterminado)</string>
+    <string name="pref_dl_threads_quantity_entries_2">2 (Internet lento)</string>
+    <string name="pref_dl_threads_quantity_entries_6">10 (Internet rápido, teléfono de gama alta)</string>
+    <string name="pref_folder_naming_content_entries_1" ns1:ignore="MissingTranslation">ID</string>
+    <string name="pref_folder_naming_content_entries_2">Título - ID</string>
+    <string name="pref_folder_naming_content_entries_3">Artista - Título - ID</string>
+    <string name="pref_folder_naming_content_entries_4">Título - Artista - ID</string>
+    <string name="pref_folder_trunc_content_entries_1">Ninguno</string>
+    <string name="pref_folder_trunc_content_entries_2">60 caracteres</string>
+    <string name="pref_folder_trunc_content_entries_3">80 caracteres</string>
+    <string name="pref_folder_trunc_content_entries_4">100 caracteres</string>
+    <string name="pref_folder_trunc_content_entries_5">120 caracteres</string>
+    <string name="pref_library_display_entries_1">Lista (Predeterminado)</string>
+    <string name="pref_library_display_entries_2">Cuadrícula</string>
+    <string name="pref_lock_timer_entries_1">Sin retraso</string>
+    <string name="pref_lock_timer_entries_2" ns1:ignore="MissingTranslation">10 s</string>
+    <string name="pref_lock_timer_entries_3">30 s (Predeterminado)</string>
+    <string name="pref_lock_timer_entries_4" ns1:ignore="MissingTranslation">1 min</string>
+    <string name="pref_lock_timer_entries_5">2 min</string>
+    <string name="pref_memory_alert_entries_1">Sin alerta</string>
+    <string name="pref_memory_alert_entries_2" ns1:ignore="StringFormatInvalid">cuando este ocupado al 90%</string>
+    <string name="pref_memory_alert_entries_3" ns1:ignore="StringFormatInvalid">cuando este ocupado al 95%</string>
+    <string name="pref_memory_alert_entries_4" ns1:ignore="StringFormatInvalid">cuando este ocupado al 98%</string>
+    <string name="pref_queue_new_position_entries_1">Parte superior</string>
+    <string name="pref_queue_new_position_entries_2">Parte Inferior</string>
+    <string name="pref_queue_new_position_entries_3">Siempre hacer esta pregunta</string>
+    <string name="pref_screen_interface">Interfaz y Navegación</string>
+    <string name="pref_screen_updates">Actualizaciones</string>
+    <string name="pref_viewer_browse_mode_entries_1">De izquierda a derecha</string>
+    <string name="pref_viewer_browse_mode_entries_2">De derecha a izquierda</string>
+    <string name="pref_viewer_browse_mode_entries_3">De arriba a abajo</string>
+    <string name="pref_viewer_cap_tap_zoom_entries_1">Sin límites</string>
+    <string name="pref_viewer_cap_tap_zoom_entries_2" ns1:ignore="MissingTranslation">2x</string>
+    <string name="pref_viewer_cap_tap_zoom_entries_3" ns1:ignore="MissingTranslation">4x</string>
+    <string name="pref_viewer_cap_tap_zoom_entries_4" ns1:ignore="MissingTranslation">6x</string>
+    <string name="pref_viewer_display_mode_entries_1">Ajustar a la pantalla (Predeterminado)</string>
+    <string name="pref_viewer_display_mode_entries_2">Rellenar la pantalla (Proporcionadamente)</string>
+    <string name="pref_viewer_display_mode_entries_3">Rellenar pantalla (Estirar)</string>
+    <string name="pref_viewer_dl_action_entries_1">Descargar todas las páginas</string>
+    <string name="pref_viewer_dl_action_entries_2">Transmitir las páginas mientras se lee</string>
+    <string name="pref_viewer_read_threshold_entries_1">1 página (Predeterminado)</string>
+    <string name="pref_viewer_read_threshold_entries_2">2 páginas</string>
+    <string name="pref_viewer_read_threshold_entries_3">5 páginas</string>
+    <string name="pref_viewer_read_threshold_entries_4">Todas las páginas</string>
+    <string name="pref_viewer_rendering_entries_1">Renderización nítida (Predeterminado)</string>
+    <string name="pref_viewer_rendering_entries_2">Renderización suave</string>
+    <string name="pref_viewer_separating_bars_entries_1">Apagado (Predeterminado)</string>
+    <string name="pref_viewer_separating_bars_entries_2">Pequeño</string>
+    <string name="pref_viewer_separating_bars_entries_3">Mediano</string>
+    <string name="pref_viewer_separating_bars_entries_4">Largo</string>
+    <string name="pref_viewer_slideshow_delay_entries_1" ns1:ignore="MissingTranslation">500 ms</string>
+    <string name="pref_viewer_slideshow_delay_entries_2" ns1:ignore="MissingTranslation">1 s</string>
+    <string name="pref_viewer_slideshow_delay_entries_3">2 segundos (Predeterminado)</string>
+    <string name="pref_viewer_slideshow_delay_entries_4" ns1:ignore="MissingTranslation">4 segundos</string>
+    <string name="pref_viewer_slideshow_delay_entries_5" ns1:ignore="MissingTranslation">8 segundos</string>
+    <string name="pref_viewer_slideshow_delay_entries_6" ns1:ignore="MissingTranslation">16 segundos</string>
+    <string name="pref_viewer_slideshow_delay_entries_vertical_1">Muy lento</string>
+    <string name="pref_viewer_slideshow_delay_entries_vertical_2">Lento</string>
+    <string name="pref_viewer_slideshow_delay_entries_vertical_3">Normal (Predeterminado)</string>
+    <string name="pref_viewer_slideshow_delay_entries_vertical_4">Deprisa</string>
+    <string name="pref_viewer_slideshow_delay_entries_vertical_5">Rápido</string>
+    <string name="pref_viewer_slideshow_delay_entries_vertical_6">Muy rápido</string>
+    <string msgid="6685851473431805375" name="preference_copied">"\"<ns2:g id="SUMMARY">%1$s</ns2:g>\" se ha copiado en el portapapeles."</string>
+    <string name="press_back_again">Presiona dos veces (rápido) para salir.</string>
+    <string name="previous_book_help">Libro anterior</string>
+    <string name="purge_progress">Purgando libros</string>
+    <string name="queue_add_bottom">Añadir hasta abajo</string>
+    <string name="queue_add_top">Añadir hasta arriba</string>
+    <string name="queue_bottom_bar_processed"><ns2:g example="3" id="processed">%1$s</ns2:g>/<ns2:g example="7" id="total">%2$d</ns2:g> procesadas</string>
+    <string name="queue_bottom_bar_retry">reintentar <ns2:g example="1" id="number">%1$d</ns2:g>/<ns2:g example="42" id="total">%2$d</ns2:g></string>
+    <string name="queue_bottom_bar_speed" ns1:ignore="MissingTranslation"><ns2:g example="/102.4" id="formatted_speed_kbps">%d</ns2:g> kB/s </string>
+    <string name="queue_content_size_estimate">estimado <ns2:g example="13.37" id="size_mbytes">%.1f</ns2:g> MB</string>
+    <string name="queue_dl">Descargando <ns2:g example="Cool H-Manga" id="book_name">%s</ns2:g></string>
+    <string name="queue_empty">¿Qué hago vacía?</string>
+    <string name="queue_errors_tab">Errores</string>
+    <string name="queue_json_failed">No se pudo guardar el archivo JSON de la cola de descargas</string>
+    <string name="queue_json_saved">Archivo JSON de la cola de descargas guardado</string>
+    <string name="queue_paused">Cola de descargas pausada</string>
+    <string name="queue_preparing">Preparando descarga</string>
+    <string name="queue_queue_tab">En progreso</string>
+    <string name="rating_help">Valoración</string>
+    <string name="read_log">Leer registro</string>
+    <string name="redownload_action">VOLVER A DESCARGAR</string>
+    <string name="redownload_all">Volver a descargar todo</string>
+    <string name="redownload_dialog_message">Total de imágenes en la descarga: <ns2:g example="10" id="total_imgs">%1$d</ns2:g>\nImágenes sin errores: <ns2:g example="8" id="fine_imgs">%2$d</ns2:g>\nImágenes con errores: <ns2:g example="2" id="failed_imgs">%3$d</ns2:g></string>
+    <string name="redownload_dialog_title">¿Intentar volver a descargar? </string>
+    <string name="redownload_first_error">Primer error: <ns2:g id="errortype">%s</ns2:g></string>
+    <string name="redownload_generating_log_file">Generando archivo de registro…</string>
+    <string name="redownload_open_log">Abrir registro de errores</string>
+    <string name="redownload_queue_progress">Volviendo a descargar libros seleccionados</string>
+    <string name="redownload_share_log">Compartir registro de errores</string>
+    <string name="redownloaded_error">Ha ocurrido un error al volver a descargar - cancelada</string>
+    <string name="redownloaded_missing_webview">WebView no disponible, no es posible volver a descargar ahora</string>
+    <string name="redownloaded_updating_webview">La WebView se está actualizando, no se puede volver a descargar aún</string>
+    <string name="refresh_caption">Actualizar automáticamente los datos de la biblioteca volviendo a analizar los archivos y las carpetas.</string>
+    <string name="refresh_location_external">Biblioteca externa</string>
+    <string name="refresh_location_internal">Biblioteca de Hentoid</string>
+    <string name="refresh_options">Opciones de limpieza</string>
+    <string name="refresh_options_remove">Eliminar carpetas donde…</string>
+    <string name="refresh_options_remove_1">Falta el archivo JSON (recomendado)</string>
+    <string name="refresh_options_remove_2">No se ha descargado ninguna imagen</string>
+    <string name="refresh_options_remove_or">o</string>
+    <string name="refresh_options_remove_placeholders">Eliminar libros provisionales importados a través de los metadatos</string>
+    <string name="refresh_options_rename">Renombrar todas las carpetas según las preferencias actuales de nomenclatura y longitud máxima</string>
+    <string name="refresh_title">Actualizar biblioteca</string>
+    <string name="remove_generic">Eliminar</string>
+    <string name="renaming_progress">Renombrando archivos</string>
+    <string name="restart_needed">\"Los cambios se aplicarán luego de que Hentoid se reinicie\"</string>
+    <string name="resume">Continuar </string>
+    <string name="resume_closed">¿Resumir lectura?</string>
+    <string name="revive_missing_webview">WebView no disponible, no se pueden recuperar las descargas ahora</string>
+    <string name="revive_updating_webview">La WebView se está actualizando, no se pueden recuperar las descargas aún</string>
+    <string name="revive_wait">Permanece en esta pantalla mientras se recupera tu descarga</string>
+    <string name="search_bookid_label">Buscar <ns2:g example="4567" id="launchcode">\'%s\'</ns2:g> en…</string>
+    <string name="search_category"><ns2:g example="Language" id="search_category">%s</ns2:g> buscar</string>
+    <string name="search_entry_not_found">No está aquí, anda a descargarlo.</string>
+    <string name="search_location">Ubicación</string>
+    <string name="search_location_entries_1">Todas las ubicaciones</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Buscar"</string>
+    <string name="search_prompt">Buscar <ns2:g id="search_prompt">%s</ns2:g></string>
+    <string name="search_select_a_filter">Seleccionar un filtro</string>
+    <string name="search_type">Tipo</string>
+    <string name="search_type_entries_1">Todos los tipos de libros</string>
+    <string name="search_type_entries_2">Carpeta</string>
+    <string name="search_type_entries_3">Vía internet </string>
+    <string name="search_type_entries_4">Archivar</string>
+    <string name="search_type_entries_5">Marcador de posición</string>
+    <string name="searching_generic">Buscando </string>
+    <string name="select_all">Seleccionar todo</string>
+    <string name="select_file_manager">Selecciona tu administrador de archivos</string>
+    <string name="select_none">No seleccionar ninguna</string>
+    <string name="send_to">Compartir con:</string>
+    <string name="service_running">El servicio ya esta siendo ejecutado</string>
+    <string name="slide_01_header">¡Bienvenido a Hentoid!</string>
+    <string name="slide_01_text">Hentoid es una aplicación para archivar Doujinshi y manga Hentai.</string>
+    <string name="slide_02_browser_mode_description">Usa la app para explorar los sitios web.
+\nNo podrás descargar ningún libro ni administrar tu biblioteca.\n\nNo requiere permisos.</string>
+    <string name="slide_02_browser_mode_title">Solo explorador</string>
+    <string name="slide_02_header">Permisos</string>
+    <string name="slide_02_library_mode_description">Usa la app para descargar y administrar tu biblioteca.\n\ Se requieren permisos de almacenamiento. </string>
+    <string name="slide_02_library_mode_title">Navegador y Descarga</string>
+    <string name="slide_04_header">Biblioteca</string>
+    <string name="slide_04_skip">Omitir</string>
+    <string name="slide_04_skip_msg">No se podrá hacer una descarga si omites este paso. Para hacer una descarga tendrás que configurar una carpeta desde la configuración de la aplicación.</string>
+    <string name="slide_04_skip_title">¿Omitir?</string>
+    <string name="slide_04_text">Hentoid requiere una carpeta dedicada para almacenar tus archivos.</string>
+    <string name="slide_05_header">Tema</string>
+    <string name="slide_05_text">Escoge un tema.</string>
+    <string name="slide_06_header">Fuentes</string>
+    <string name="slide_06_subtext">Puedes cambiar esta selección en cualquier momento al utilizar el botón Edición en el menú izquierdo.</string>
+    <string name="slide_06_text">Selecciona una fuente de donde quieres descargar.</string>
+    <string name="slide_end_header">¡Todo esta configurado!</string>
+    <string name="slide_end_text">¡Estamos listos! Disfruta de la aplicación.</string>
+    <string name="slideshow_start">Comenzando presentación (retraso <ns2:g example="0.5" id="time">%.1f</ns2:g>s)</string>
+    <string name="slideshow_start_vertical">Comenzando presentación (<ns2:g example="fast" id="speed">%s</ns2:g>)</string>
+    <string name="slideshow_stop">Presentación detenida</string>
+    <string name="sort_artist">Artista</string>
+    <string name="sort_ascending">Ascendente</string>
+    <string name="sort_books">Libros</string>
+    <string name="sort_custom">Personalizado</string>
+    <string name="sort_descending">Descendente</string>
+    <string name="sort_dl_completion_date">Fecha de Descarga (completada)</string>
+    <string name="sort_dl_date">Fecha de Descarga (procesada)</string>
+    <string name="sort_invalid">-inválido-</string>
+    <string name="sort_pages">Páginas</string>
+    <string name="sort_random">Revolver</string>
+    <string name="sort_read_date">Fecha de lectura</string>
+    <string name="sort_reading_progress">Progreso de lectura</string>
+    <string name="sort_reads">Lecturas</string>
+    <string name="sort_reshuffle">Revolver de nuevo</string>
+    <string name="sort_size">Tamaño</string>
+    <string name="sort_title">Título</string>
+    <string name="sort_uplodad_date">Fecha de subida</string>
+    <string name="split_create_chapters">Crear capítulos</string>
+    <string name="split_no_chapters">Aún no se han creado capítulos :-(</string>
+    <string name="split_progress">Separando libros…</string>
+    <string name="split_select_help">Mantén pulsado y arrastra para seleccionar\nCada capítulo seleccionado crea un nuevo libro</string>
+    <string name="split_success">Se ha separado el contenido</string>
+    <string name="starting_download">Comenzando descarga</string>
+    <string name="starting_import">Comenzando importación…</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="step_complete_download">Completando descarga</string>
+    <string name="step_fetch_img">Obtener imágenes</string>
+    <string name="step_init">Iniciando</string>
+    <string name="step_prepare_download">Preparando cadena de descarga</string>
+    <string name="step_prepare_folder">Preparando carpeta de descarga</string>
+    <string name="step_prepare_img">Preparando imágenes</string>
+    <string name="step_remove_duplicate">Remplazando duplicado</string>
+    <string name="step_save_queue">Guardando cola de descargas</string>
+    <string name="step_start_download">¡Descarga en cadena iniciada!</string>
+    <string name="step_wait_purge">Esperando a que se complete la limpieza</string>
+    <string name="stop">Detener</string>
+    <string name="storage_permission_denied">Permisos de almacenamiento denegados - no se puede abrir el visualizador</string>
+    <string name="stream_canceled">Lectura vía internet cancelada - libro no disponible online</string>
+    <string name="stream_missing_webview">Lectura vía internet cancelada - WebView no disponible</string>
+    <string name="stream_updating_webview">Lectura vía internet cancelada - WebView actualizándose</string>
+    <string name="streamed_help">Libro vía internet</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns2:g id="CURRENT_ITEMS">%1$s</ns2:g>, <ns2:g id="ADDED_ITEMS">%2$s</ns2:g>"</string>
+    <string name="tap_to_download">Toca para descargar</string>
+    <string name="tap_to_install">Toca para instalar</string>
+    <string name="tap_to_retry">Toca para volver a intentar</string>
+    <string name="task_done">Tarea completada - consulta los detalles en el registro</string>
+    <string name="theme_dark">Oscuro</string>
+    <string name="theme_deep_red">Rojo intenso</string>
+    <string name="theme_light">Claro</string>
+    <string name="title_activity_about">Acerca de</string>
+    <string name="title_activity_api29_migration">Migración de API 29</string>
+    <string name="title_activity_app_lock">Bloqueo de la aplicación</string>
+    <string name="title_activity_downloads">Biblioteca</string>
+    <string name="title_activity_drawer_edit">Menú de edición</string>
+    <string name="title_activity_duplicate_detector">Detector de duplicados</string>
+    <string name="title_activity_meta_edit">Editar metadatos</string>
+    <string name="title_activity_preferences">Ajustes</string>
+    <string name="title_activity_queue">Cola de descargas</string>
+    <string name="title_activity_rules">Reglas al renombrar</string>
+    <string name="title_activity_search">Búsqueda Avanzada</string>
+    <string name="title_startup">Inicio</string>
+    <string name="title_startup_complete">Inicialización completa</string>
+    <string name="title_startup_progress">Iniciando…</string>
+    <string name="tools_cache_app">Eliminar caché de la aplicación</string>
+    <string name="tools_cache_app_success">La caché de la aplicación se ha borrado con éxito</string>
+    <string name="tools_cache_browser">Eliminar el caché del explorador</string>
+    <string name="tools_cache_browser_missing_webview">WebView no esta disponible, no se puede limpiar la memoria caché en este momento</string>
+    <string name="tools_cache_browser_success">La caché del Webview se ha borrado con éxito</string>
+    <string name="tools_cache_browser_updating_webview">WebView esta siendo actualizado en este momento, todavía no se puede limpiar la memoria caché</string>
+    <string name="tools_duplicate_detector_summary">Identificar y remover libros duplicados</string>
+    <string name="tools_duplicate_detector_title">Detector de duplicados</string>
+    <string name="tools_export_library_summary">Exportar a un archivo JSON los libros de Hentoid</string>
+    <string name="tools_export_library_title">Exportar metadatos</string>
+    <string name="tools_export_settings_summary">Exportar a un archivo JSON los ajustes</string>
+    <string name="tools_export_settings_title">Exportar ajustes</string>
+    <string name="tools_import_empty_books_entries_1">No importar</string>
+    <string name="tools_import_empty_books_entries_2">Importar como un libro vacío</string>
+    <string name="tools_import_empty_books_entries_3">Importar como un libro en línea</string>
+    <string name="tools_import_empty_books_entries_4">Agregar a la cola de error</string>
+    <string name="tools_import_empty_books_intro">Si una carpeta de imágenes no se detecta...</string>
+    <string name="tools_import_library_summary">Restaurar desde un archivo JSON los libros exportados de Hentoid</string>
+    <string name="tools_import_library_title">Importar metadatos</string>
+    <string name="tools_import_settings_summary">Importar desde un archivo JSON los ajustes exportados</string>
+    <string name="tools_import_settings_title">Importar ajustes</string>
+    <string name="tools_latest_logs_summary">Revisar los últimos registros de la aplicación</string>
+    <string name="tools_latest_logs_title">Registros de la aplicación</string>
+    <string name="tools_renaming_rules_summary">Administrar reglas para renombrar propiedades</string>
+    <string name="tools_renaming_rules_title">Reglas para renombrar propiedades</string>
+    <string name="tools_screen_cache">Gestionar caché</string>
+    <string name="tools_screen_cat_settings">Ajustes</string>
+    <string name="tools_screen_import_export">Importar / Exportar</string>
+    <string name="tools_title">Herramientas</string>
+    <string name="torrent_dl_fail">No se pudo realizar la descarga del torrent: <ns2:g id="torrent">%s</ns2:g></string>
+    <string name="u_byte" ns1:ignore="MissingTranslation">bytes</string>
+    <string name="u_exabyte" ns1:ignore="MissingTranslation">EB</string>
+    <string name="u_gigabyte" ns1:ignore="MissingTranslation">GB</string>
+    <string name="u_kilobyte" ns1:ignore="MissingTranslation">KB</string>
+    <string name="u_megabyte" ns1:ignore="MissingTranslation">MB</string>
+    <string name="u_petabyte" ns1:ignore="MissingTranslation">PB</string>
+    <string name="u_terabyte" ns1:ignore="MissingTranslation">TB</string>
+    <string name="unbookmark_current">Quitar esta página de marcadores</string>
+    <string name="unsupported_site">Error - Sitio no compatible</string>
+    <string name="update_available">¡Actualización disponible!</string>
+    <string name="update_download_failed">Ha fallado la descarga de la actualización</string>
+    <string name="update_ready">¡Actualización completada!</string>
+    <string name="update_success">¡Actualización exitosa!</string>
+    <string name="updates_title">Actualizaciones</string>
+    <string name="use_app_prefs">Usar la configuración de la aplicación (<ns2:g example="Left to right" id="app_default">%s</ns2:g>)</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"DESACTIVADA"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"ACTIVADO"</string>
+    <string name="view_changelog">Ver el registro de cambios​</string>
+    <string name="view_changelog_flagged">Ver el registro de cambios​*</string>
+    <string name="view_queue">Ver cola de descargas</string>
+    <string name="view_source_help">Ver fuente en navegador</string>
+    <string name="viewer_ask_cover">¿Establecer esta imagen como portada? </string>
+    <string name="viewer_ask_delete_page">¿Eliminar est página?</string>
+    <string name="viewer_choose_direction">Elige el sentido de lectura</string>
+    <string name="viewer_delete_book">Borrar libro</string>
+    <string name="viewer_direction_ltr">De izquierda a derecha</string>
+    <string name="viewer_direction_rtl">De derecha a izquierda</string>
+    <string name="viewer_direction_ttb">De arriba a abajo</string>
+    <string name="viewer_filter_favourite_help">Alternar mostrar páginas favoritas</string>
+    <string name="viewer_filter_favourite_off">Solo mostrar páginas favoritas</string>
+    <string name="viewer_filter_favourite_on">Mostrar todas las páginas</string>
+    <string name="viewer_fix">Arreglar error de descarga</string>
+    <string name="viewer_img_details"><ns2:g example="800" id="dimen_x">%1$d</ns2:g> x <ns2:g example="600" id="dimen_y">%2$d</ns2:g> (<ns2:g example="100%" id="scale_percentage">%3$.0f%%</ns2:g> escala) - <ns2:g example="544.40 KB" id="file_size">%4$s</ns2:g></string>
+    <string name="viewer_make_cover">Establecer como portada</string>
+    <string name="viewer_order_123">Reordenar páginas</string>
+    <string name="viewer_order_shuffle">Revolver páginas</string>
+    <string name="viewer_order_shuffle_help">Alternar mezclar páginas</string>
+    <string name="viewer_reload_page">Recargar página</string>
+    <string name="viewer_reparse_book">Volver a analizar libro</string>
+    <string name="viewer_slideshow">Presentación</string>
+    <string name="viewer_slideshow_help">Modo presentación</string>
+    <string name="web_back">Retroceder</string>
+    <string name="web_bookmarks">Marcadores</string>
+    <string name="web_copy_url">Copiar URL actual al portapapeles </string>
+    <string name="web_download">Descargar</string>
+    <string name="web_forward">Avanzar</string>
+    <string name="web_gallery">Regresar a la última página de la galería</string>
+    <string name="web_home">Volver a la biblioteca</string>
+    <string name="web_refresh_stop">Actualizar/detener</string>
+    <string name="web_storage_permission_denied">Permisos de almacenamiento denegados - no se puede usar el sistema de descargas</string>
+    <string name="web_unparsable">No se puede descargar este contenido. Perdón~</string>
+    <string name="web_url_clipboard">URL copiada al portapapeles</string>
+    <string name="work_artist">Artista: <ns2:g example="hayao miyazaki" id="artist">%s</ns2:g></string>
+    <string name="work_pages_duplicate_dialog_library">Páginas (en la librería): %d</string>
+    <string name="work_pages_duplicate_dialog_queue">Páginas (en cola): %d</string>
+    <string name="work_pages_duplicate_dialog_source">Páginas (fuente): %d</string>
+    <string name="work_pages_queue">Páginas: %1$s%2$s</string>
+    <string name="work_series">Serie: <ns2:g example="original" id="series">%s</ns2:g></string>
+    <string name="yes">Sí</string>
+</resources>
